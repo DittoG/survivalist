@@ -384,6 +384,17 @@ public class Survivalist {
         String uncleDarwinInfo = uncleDarwin.toString();
         System.out.println(uncleDarwin);
         
+        //Aviator Bill
+        
+        Npc aviatorBill = new Npc();
+        aviatorBill.setName("Aviator Bill");
+        System.out.println(aviatorBill);
+        
+        //Forest Ranger Dan
+        
+        Npc rangerDan = new Npc();
+        rangerDan.setName("Ranger Dan");
+        System.out.println(rangerDan);
         
         //Building codes
         //Cabin
