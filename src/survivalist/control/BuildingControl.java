@@ -10,11 +10,10 @@ package survivalist.control;
  *
  * @author Madison
  */
-public class InventoryControl {
+public class BuildingControl {
     
     public double calcBuildingArea(double length, double width) {
         
-        //Is the user input for length within the accepted values?
         if (length < 7 || length > 20) { //  length value not within the accepted range?
             return 0;
         }
@@ -29,4 +28,19 @@ public class InventoryControl {
                 
     }
     
+    public double calcWoodNeeded(double inputLength, double inputWidth) {
+        
+        if (inputLength < 1 || inputLength > 51) { //  length value not within the accepted range?
+            return 0;
+        }
+        
+        if (inputWidth < 1 || inputWidth > 51) { // width value not within the accepted range?
+            return 0;
+        }
+        
+        double woodNeeded = inputWidth * inputLength * 3;
+        
+        return woodNeeded;
+        
+    }
 }
