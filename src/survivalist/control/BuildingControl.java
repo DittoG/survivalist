@@ -29,15 +29,15 @@ public class BuildingControl {
 
     public double calcWoodNeeded(double inputLength, double inputWidth) {
         
-        if (inputLength < 1 || inputLength > 51) { //  length value not within the accepted range?
+        if (inputLength < 1 || inputLength > 50) { //  length value not within the accepted range?
             return 0;
         }
         
-        if (inputWidth < 1 || inputWidth > 51) { // width value not within the accepted range?
+        if (inputWidth < 1 || inputWidth > 50) { // width value not within the accepted range?
             return 0;
         }
         
-        double woodNeeded = inputWidth * inputLength * 3;
+        double woodNeeded = inputWidth * inputLength * 4;
         
         return woodNeeded;
         
