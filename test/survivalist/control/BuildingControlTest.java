@@ -192,7 +192,7 @@ public class BuildingControlTest {
         double inputLength = 10;
         double inputWidth = 8;
         
-        double expResult = 240;// expected output returned value
+        double expResult = 320;// expected output returned value
         
         // create instance of BuildingControl class
         BuildingControl instance = new BuildingControl();
@@ -250,9 +250,9 @@ public class BuildingControlTest {
         
         // input values for test case 4
         inputLength = 20;
-        inputWidth = 50;
+        inputWidth = 51;
         
-        expResult = 3000;// expected output returned value
+        expResult = 0;// expected output returned value
         
         // create instance of BuildingControl class
         instance = new BuildingControl();
@@ -269,10 +269,10 @@ public class BuildingControlTest {
         System.out.println("\tTest Case #5");
         
         // input values for test case 5
-        inputLength = 50;
+        inputLength = 51;
         inputWidth = 15;
         
-        expResult = 2250;// expected output returned value
+        expResult = 0;// expected output returned value
         
         // create instance of BuildingControl class
         instance = new BuildingControl();
@@ -290,9 +290,9 @@ public class BuildingControlTest {
         
         // input values for test case 6
         inputLength = 1;
-        inputWidth = 50;
+        inputWidth = 1;
         
-        expResult = 150;// expected output returned value
+        expResult = 4;// expected output returned value
         
         // create instance of BuildingControl class
         instance = new BuildingControl();
@@ -310,9 +310,9 @@ public class BuildingControlTest {
         
         // input values for test case 7
         inputLength = 50;
-        inputWidth = 1;
+        inputWidth = 50;
         
-        expResult = 150;// expected output returned value
+        expResult = 10000;// expected output returned value
         
         // create instance of BuildingControl class
         instance = new BuildingControl();
