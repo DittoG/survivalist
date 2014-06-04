@@ -18,14 +18,15 @@ public class HelpMenuView {
 
     private final String HELPMENU = "\n"
             + "\n------------------------------------------------"
-            + "\n| Help Menu                                    |"
+            + "\n| How to Play                                  |"
             + "\n------------------------------------------------"
             + "\nG - What is the goal of the game?"
             + "\nM - How to move"
-            + "\nE - Estimating the amount of resources"
-            + "\nH - Harvesting resources"
-            + "\nD - Delivering resources to warehouse"
-            + "\nQ - Quit"
+            + "\nH - How to hunt"
+            + "\nC - How to craft"
+            + "\nR - How to collect resources"
+            + "\nQ - Return to previous menu"
+            + "\nE - Exit the Program"
             + "\n------------------------------------------------";
     
     public void displayMenu() {
@@ -47,8 +48,8 @@ public class HelpMenuView {
         
         switch (choice) {
             case 'G': // display the game menu
-                GameMenuView gameMenu = new GameMenuView();
-                gameMenu.displayMenu();
+                GameGoalView goalView = new GameGoalView();
+                goalView.displayGameGoalView();
                 break;
             case 'H': // display the help menu
                 HelpMenuView helpMenu = new HelpMenuView();

@@ -38,7 +38,7 @@ public class GameMenuView {
             
             this.doAction(selection); // do action based on selection
             
-        } while (selection != 'E'); // a selection is not "Exit"
+        } while (selection != 'Q'); // a selection is not "Exit"
     }
     
     public void doAction(char choice) {
@@ -69,9 +69,6 @@ public class GameMenuView {
         Scanner keyboard = new Scanner(System.in); // keyboard input stream
         
         while(!valid) { // while input has not been received
-            
-            // display the Main Menu
-            System.out.println(MENU);
             
             // get the input from the keyboard and trim off the blanks
             Input = keyboard.nextLine();
