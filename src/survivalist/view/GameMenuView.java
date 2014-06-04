@@ -64,25 +64,25 @@ public class GameMenuView {
     }
     
     public String getInput() {
-        boolean valid = false; // indicates if Input has been received
-        String Input = null;
+        boolean valid = false; // indicates if input has been received
+        String input = null;
         Scanner keyboard = new Scanner(System.in); // keyboard input stream
         
         while(!valid) { // while input has not been received
             
             // get the input from the keyboard and trim off the blanks
-            Input = keyboard.nextLine();
-            Input = Input.trim();
+            input = keyboard.nextLine();
+            input = input.trim();
+            input = input.toUpperCase();
             
-            if (Input.toUpperCase().equals("Q")) { // Quitting?
-                return null;
+            if (input.equals("Q")) { // Quitting?
+                return input;
             }
             else {
-                valid = true; // signal that a valid Input was entered
+                valid = true; // signal that a valid input was entered
             }
         }
         
-        return Input; // return the input
-    }
-    
+        return input; // return the input
+    }  
 }
