@@ -6,6 +6,7 @@
 
 package survivalist.view;
 
+import java.util.Scanner;
 import survivalist.Survivalist;
 import survivalist.control.ProgramControl;
 
@@ -22,7 +23,7 @@ public class MainMenuView {
             + "\nG - Start game"
             + "\nH - Get help on how to play the game"
             + "\nS - Save game"
-            + "\nE - Exit"
+            + "\nQ - Quit"
             + "\n------------------------------------------------";
     
     public void displayMenu() {
@@ -36,7 +37,7 @@ public class MainMenuView {
             
             this.doAction(selection); // do action based on selection
             
-        } while (selection != 'E'); // a selection is not Exit
+        } while (selection != 'Q'); // a selection is not Exit
         
     }
 
@@ -54,12 +55,33 @@ public class MainMenuView {
             case 'S': // save the current game to disk
                 ProgramControl.saveGame(Survivalist.getCurrentGame());
                 break;
-            case 'E': // Exit the program
+            case 'Q': // Exit the program
                 return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");
                 break;
         }
     }
-    
+
+    public String getInput() {
+        boolean valid = false; // indicates if Input has been received
+        String Input = null;
+        Scanner keyboard = new Scanner(System.in); // keyboard input stream
+        
+        while(!valid) { // while input has not been received
+            
+            // get the input from the keyboard and trim off the blanks
+            Input = keyboard.nextLine();
+            Input = Input.trim();
+            
+            if (Input.toUpperCase().equals("Q")) { // Quitting?
+                return null;
+            }
+            else {
+                valid = true; // signal that a valid Input was entered
+            }
+        }
+        
+        return Input; // return the input
+    }
 }
