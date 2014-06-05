@@ -13,4 +13,23 @@ package survivalist.control;
 public class Constants {
     public static int NUMBER_OF_INVENTORY_ITEMS;
     
+    // Inventory Items
+    // WEAPONS******************************************************************************
+    
+    public final static int KNIFE = 0;
+    public final static int BOW = 1;
+    public final static int MACHETE = 2;
+    public final static int  = 0;
+    public final static int  = 0;
+    public final static int  = 0;
+    public final static int  = 0;
+    public final static int  = 0;
+    public final static int  = 0;
+    public final static int  = 0;
+    public final static int  = 0;
+    
+    static int ;
+    
+    
+    
 }

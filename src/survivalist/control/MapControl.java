@@ -4,18 +4,16 @@
  * and open the template in the editor.
  */
 
-package survivalist.model;
+package survivalist.control;
 
 /**
  *
  * @author Madison
  */
-public class Game {
+public class MapControl {
 
-    public void setPlayer(Player player) {
+    static void moveActorsToStartingLocation(int i, int i0) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
     
 }
