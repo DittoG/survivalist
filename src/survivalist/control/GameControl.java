@@ -67,6 +67,8 @@ public class GameControl {
         bow.setType("weapon");
         bow.setPossibleQuantity(1);
         bow.setActualQuantity(0);
+        inventory[Constants.BOW] = bow;
+
         
         // Arrow
         
@@ -76,6 +78,7 @@ public class GameControl {
         arrow.setType("weapon");
         arrow.setPossibleQuantity(20);
         arrow.setActualQuantity(0);
+        inventory[Constants.ARROW] = arrow;
         
         // Machete
         
@@ -85,6 +88,7 @@ public class GameControl {
         machete.setType("weapon");
         machete.setPossibleQuantity(1);
         machete.setActualQuantity(0);
+        inventory[Constants.MACHETE] = machete;
         
         // TOOL codes*******************************************************************************
         // Axe
@@ -95,6 +99,7 @@ public class GameControl {
         axe.setType("tool");
         axe.setPossibleQuantity(1);
         axe.setActualQuantity(0);
+        inventory[Constants.AXE] = axe;
         
         // Hammer
         
@@ -104,6 +109,7 @@ public class GameControl {
         hammer.setType("tool");
         hammer.setPossibleQuantity(1);
         hammer.setActualQuantity(0);
+        inventory[Constants.HAMMER] = hammer;
         
         // Flint and Stone
         
@@ -113,6 +119,7 @@ public class GameControl {
         flintAndStone.setType("tool");
         flintAndStone.setPossibleQuantity(1);
         flintAndStone.setActualQuantity(0);
+        inventory[Constants.FLINTANDSTONE] = flintAndStone;
         
         // Hook
         
@@ -122,6 +129,7 @@ public class GameControl {
         grapplingHook.setType("tool");
         grapplingHook.setPossibleQuantity(1);
         grapplingHook.setActualQuantity(0);
+        inventory[Constants.GRAPPLINGHOOK] = grapplingHook;
         
         // INGREDIENT codes********************************************************************************
         // Branch
@@ -132,6 +140,7 @@ public class GameControl {
         branch.setType("ingredient");
         branch.setPossibleQuantity(15);
         branch.setActualQuantity(0);
+        inventory[Constants.BRANCH] = branch;
         
         // Flat Rock
         
@@ -141,6 +150,7 @@ public class GameControl {
         flatRock.setType("ingredient");
         flatRock.setPossibleQuantity(3);
         flatRock.setActualQuantity(0);
+        inventory[Constants.FLATROCK] = flatRock;
         
         // Sharp Rock
         
@@ -150,6 +160,7 @@ public class GameControl {
         sharpRock.setType("ingredient");
         sharpRock.setPossibleQuantity(3);
         sharpRock.setActualQuantity(0);
+        inventory[Constants.SHARPROCK] = sharpRock;
         
         // Animal Skin
         
@@ -159,6 +170,7 @@ public class GameControl {
         animalSkin.setType("ingredient");
         animalSkin.setPossibleQuantity(5);
         animalSkin.setActualQuantity(0);
+        inventory[Constants.ANIMALSKIN] = animalSkin;
         
         // Raw Meat
         
@@ -168,6 +180,7 @@ public class GameControl {
         rawMeat.setType("ingredient");
         rawMeat.setPossibleQuantity(5);
         rawMeat.setActualQuantity(0);
+        inventory[Constants.RAWMEAT] = rawMeat;
         
         // Leather Strip
         
@@ -177,6 +190,7 @@ public class GameControl {
         leatherStrip.setType("ingredient");
         leatherStrip.setPossibleQuantity(20);
         leatherStrip.setActualQuantity(0);
+        inventory[Constants.LEATHERSTRIP] = leatherStrip;
         
         // Flint
         
@@ -186,6 +200,7 @@ public class GameControl {
         flint.setType("ingredient");
         flint.setPossibleQuantity(5);
         flint.setActualQuantity(0);
+        inventory[Constants.FLINT] = flint;
         
         // Stone
         
@@ -195,6 +210,7 @@ public class GameControl {
         stone.setType("ingredient");
         stone.setPossibleQuantity(5);
         stone.setActualQuantity(0);
+        inventory[Constants.STONE] = stone;
         
         // Log
         
@@ -204,6 +220,7 @@ public class GameControl {
         log.setType("ingredient");
         log.setPossibleQuantity(2);
         log.setActualQuantity(0);
+        inventory[Constants.LOG] = log;
         
         // Gut String
         
@@ -213,6 +230,7 @@ public class GameControl {
         gutString.setType("ingredient");
         gutString.setPossibleQuantity(10);
         gutString.setActualQuantity(0);
+        inventory[Constants.GUTSTRING] = gutString;
         
         
         // FOOD codes***************************************************************************************
@@ -224,6 +242,7 @@ public class GameControl {
         berry.setType("ingredient");
         berry.setPossibleQuantity(50);
         berry.setActualQuantity(0);
+        inventory[Constants.BERRY] = berry;
         
         // Cooked Meat
         
@@ -233,6 +252,7 @@ public class GameControl {
         cookedMeat.setType("ingredient");
         cookedMeat.setPossibleQuantity(10);
         cookedMeat.setActualQuantity(0);
+        inventory[Constants.COOKEDMEAT] = cookedMeat;
         
         // Animal codes************************************************************************************
         // DOCILE animals**********************************************************************************
