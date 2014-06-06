@@ -32,7 +32,7 @@ public class GameControl {
         GameControl.game.setPlayer(Survivalist.getPlayer());
         
         GameControl.createInventoryList(); // create the invetory list
-        GameControl.createActorList(); // create list of actors
+        GameControl.createNpcList(); // create list of actors
         GameControl.createMap(); // create and initialize the map
         
         // move player to starting position
@@ -42,6 +42,87 @@ public class GameControl {
     public static void startSavedGame() {
         System.out.println("\n*** Calling saved game ***");
     }
+    
+    private static void createAnimalList() {
+        
+        Animal[] animal = 
+                new Animal[Constants.NUMBER_OF_ANIMALS];
+        
+        // Animal codes************************************************************************************
+        // DOCILE animals**********************************************************************************
+        // Deer
+        
+        Animal deer = new Animal();
+        deer.setName("Deer");
+        deer.setDescription("A medium sized, agile animal that scares easily.");
+        deer.setType("docile");
+        deer.setMeat(20);
+        deer.setHitpoints(20);
+        animal[Constants.DEER] = deer;
+        
+        // Elk
+        
+        Animal elk = new Animal();
+        elk.setName("Elk");
+        elk.setDescription("A large animal that scares easily.");
+        elk.setType("docile");
+        elk.setMeat(30);
+        elk.setHitpoints(40);
+        animal[Constants.ELK] = elk;
+        
+        // Rabbit
+
+        Animal rabbit = new Animal();
+        rabbit.setName("Rabbit");
+        rabbit.setDescription("A small, quick animal that scares easily.");
+        rabbit.setType("docile");
+        rabbit.setMeat(5);
+        rabbit.setHitpoints(5);
+        animal[Constants.RABBIT] = rabbit;
+        
+        // Raccoon
+        
+        Animal raccoon = new Animal();
+        raccoon.setName("Raccoon");
+        raccoon.setDescription("A small, curious animal that doesn't scare easily and likes to steal food!");
+        raccoon.setType("docile");
+        raccoon.setMeat(5);
+        raccoon.setHitpoints(10);
+        animal[Constants.RACCOON] = raccoon;
+        
+        // DANGEROUS animals**************************************************************************************
+        // Wolf
+        
+        Animal wolf = new Animal();
+        wolf.setName("Wolf");
+        wolf.setDescription("medium sized carnivore that is dangerous. Careful about hunting wolves, they'll fight back!");
+        wolf.setType("dangerous");
+        wolf.setMeat(10);
+        wolf.setHitpoints(30);
+        animal[Constants.WOLF] = wolf;
+        
+        // Moose
+        
+        Animal moose = new Animal();
+        moose.setName("Moose");
+        moose.setDescription("A huge animal that is very dangerous. Hunting a moose is a daunting task!");
+        moose.setType("dangerous");
+        moose.setMeat(50);
+        moose.setHitpoints(60);
+        animal[Constants.MOOSE] = moose;
+        
+        // Bear
+        
+        Animal bear = new Animal();
+        bear.setName("Bear");
+        bear.setDescription("A huge animal that is extremely dangerous! Stay away from this animal!!");
+        bear.setType("dangerous");
+        bear.setMeat(40);
+        bear.setHitpoints(80);
+        animal[Constants.BEAR] = bear;
+        
+    }
+    
     
     private static void createInventoryList() {
         // created array(list) of inventory items
@@ -254,94 +335,12 @@ public class GameControl {
         cookedMeat.setActualQuantity(0);
         inventory[Constants.COOKEDMEAT] = cookedMeat;
         
-        // Animal codes************************************************************************************
-        // DOCILE animals**********************************************************************************
-        // Deer
-        
-        Animal deer = new Animal();
-        deer.setName("Deer");
-        deer.setDescription("A medium sized, agile animal that scares easily.");
-        deer.setType("docile");
-        deer.setMeat(20);
-        deer.setHitpoints(20);
-        
-        // Elk
-        
-        Animal elk = new Animal();
-        elk.setName("Elk");
-        elk.setDescription("A large animal that scares easily.");
-        elk.setType("docile");
-        elk.setMeat(30);
-        elk.setHitpoints(40);
-        
-        // Rabbit
-
-        Animal rabbit = new Animal();
-        rabbit.setName("Rabbit");
-        rabbit.setDescription("A small, quick animal that scares easily.");
-        rabbit.setType("docile");
-        rabbit.setMeat(5);
-        rabbit.setHitpoints(5);
-        
-        // Raccoon
-        
-        Animal raccoon = new Animal();
-        raccoon.setName("Raccoon");
-        raccoon.setDescription("A small, curious animal that doesn't scare easily, raccoons like to steal food!");
-        raccoon.setType("docile");
-        raccoon.setMeat(5);
-        raccoon.setHitpoints(10);
-        
-        // DANGEROUS animals**************************************************************************************
-        // Wolf
-        
-        Animal wolf = new Animal();
-        wolf.setName("Wolf");
-        wolf.setDescription("medium sized carnivore that is dangerous. Careful about hunting wolves, they'll fight back!");
-        wolf.setType("dangerous");
-        wolf.setMeat(10);
-        wolf.setHitpoints(30);
-        
-        // Moose
-        
-        Animal moose = new Animal();
-        moose.setName("Moose");
-        moose.setDescription("A huge animal that is very dangerous. Hunting a moose is a daunting task!");
-        moose.setType("dangerous");
-        moose.setMeat(50);
-        moose.setHitpoints(60);
-        
-        // Bear
-        
-        Animal bear = new Animal();
-        bear.setName("Bear");
-        bear.setDescription("A huge animal that is extremely dangerous! Stay away from this animal!!");
-        bear.setType("dangerous");
-        bear.setMeat(40);
-        bear.setHitpoints(80);
-        
-        // Npc codes******************************************************************************************
-        // Uncle Darwin
-        
-        Npc uncleDarwin = new Npc();
-        uncleDarwin.setName("Uncle Darwin");
-        
-        // Aviator Bill
-        
-        Npc aviatorBill = new Npc();
-        aviatorBill.setName("Aviator Bill");
-        
-        // Forest Ranger Dan
-        
-        Npc rangerDan = new Npc();
-        rangerDan.setName("Ranger Dan");
-        
         // Building codes*************************************************************************************
         // Cabin
         
         Building cabin = new Building();
         cabin.setName("Cabin");
-        cabin.setDescription("A sturdy shelter that requires a medium amount of materials to build.");
+        cabin.setDescription("A sturdy shelter.");
         cabin.setType("permanent");
         cabin.setLength(0);
         cabin.setWidth(0);
@@ -351,7 +350,7 @@ public class GameControl {
         
         Building tower = new Building();
         tower.setName("Tower");
-        tower.setDescription("A tall, solid structure that requires lots of materials to build but will reveal the surrounding area for miles.");
+        tower.setDescription("A tall, solid structure that will reveal the surrounding area for miles.");
         tower.setType("permanent");
         tower.setLength(0);
         tower.setWidth(0);
@@ -361,7 +360,7 @@ public class GameControl {
         
         Building leanTo = new Building();
         leanTo.setName("Lean-to");
-        leanTo.setDescription("A small makeshift shelter, requiring few materials to build, that provides protection from the elements for a short period of time.");
+        leanTo.setDescription("A small makeshift shelter that provides protection for a night.");
         leanTo.setType("temporary");
         leanTo.setLength(0);
         leanTo.setWidth(0);
@@ -389,15 +388,39 @@ public class GameControl {
         }
     
         ResourceScene wheat = new ResourceScene();
-        wheat.setAmountOfrabbit(2000);
+        location.setAmountOfRabbit(2000);
+        location.setAmountOfWolf();
         wheat.setBlocked(false);
         wheat.setBlocked(false);
         wheat.setMapSymbol()
         
     }
-
-    private static void createActorList() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    
+    private static void createNpcList() {
+        // created array(list) of Npcs
+        Npc[] NpcList =
+                new Npc[Constants.NUMBER_OF_NPCS];
+        
+        // Npc codes******************************************************************************************
+        // Uncle Darwin
+        
+        Npc uncleDarwin = new Npc();
+        uncleDarwin.setName("Uncle Darwin");
+        NpcList[Constants.UNCLEDARWIN] = uncleDarwin;
+        
+        // Aviator Bill
+        
+        Npc aviatorBill = new Npc();
+        aviatorBill.setName("Aviator Bill");
+        NpcList[Constants.AVIATORBILL] = uncleDarwin;
+        
+        // Forest Ranger Dan
+        
+        Npc rangerDan = new Npc();
+        rangerDan.setName("Ranger Dan");
+        NpcList[Constants.RANGERDAN] = uncleDarwin;
+        
+        
     }
 
     private static class game {

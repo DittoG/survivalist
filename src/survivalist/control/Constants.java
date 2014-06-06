@@ -32,7 +32,7 @@ public class Constants {
     public final static int FLATROCK= 9;
     public final static int SHARPROCK = 10;
     public final static int ANIMALSKIN = 11;
-    public final static int RawMeat = 12;
+    public final static int RAWMEAT = 12;
     public final static int LEATHERSTRIP = 13;
     public final static int FLINT = 14;
     public final static int STONE = 15;
@@ -45,8 +45,19 @@ public class Constants {
     
     
     
-    static int ;
+    public static int NUMBER_OF_NPCS;
     
+    public final static int UNCLEDARWIN = 20;
+    public final static int AVIATORBILL = 21;
+    public final static int RANGERDAN = 22;
     
+    public static int NUMBER_OF_ANIMALS;
     
+    public final static int DEER = 23;
+    public final static int ELK = 24;
+    public final static int RABBIT = 25;
+    public final static int RACCOON = 26;
+    public final static int WOLF = 27;
+    public final static int MOOSE = 28;
+    public final static int BEAR = 29;
 }
