@@ -6,14 +6,71 @@
 
 package survivalist.model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Madison
  */
-public class Game {
+public class Game implements Serializable {
+    
+    private double totalTime;
+    private Item[] inventory;
+    private Player player;
+    private Map map;
+    private Animal[] animal;
+    private Npc[] npc;
+
+    public Game() {
+        this.totalTime = 0;
+    }
+
+    public double getTotalTime() {
+        return totalTime;
+    }
+
+    public void setTotalTime(double totalTime) {
+        this.totalTime = totalTime;
+    }
+
+    public Item[] getInventory() {
+        return inventory;
+    }
+
+    public void setInventory(Item[] inventory) {
+        this.inventory = inventory;
+    }
+
+    public Player getPlayer() {
+        return player;
+    }
 
     public void setPlayer(Player player) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.player = player;
+    }
+
+    public Map getMap() {
+        return map;
+    }
+
+    public void setMap(Map map) {
+        this.map = map;
+    }
+
+    public Animal[] getAnimal() {
+        return animal;
+    }
+
+    public void setAnimal(Animal[] animal) {
+        this.animal = animal;
+    }
+
+    public Npc[] getNpc() {
+        return npc;
+    }
+
+    public void setNpc(Npc[] npc) {
+        this.npc = npc;
     }
     
     

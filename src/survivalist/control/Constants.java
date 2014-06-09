@@ -11,7 +11,7 @@ package survivalist.control;
  * @author Madison
  */
 public class Constants {
-    public static int NUMBER_OF_INVENTORY_ITEMS;
+    public static int NUMBER_OF_INVENTORY_ITEMS = 20;
     
     // Inventory Items
     // WEAPONS******************************************************************************
@@ -43,13 +43,15 @@ public class Constants {
     public final static int BERRY = 18;
     public final static int COOKEDMEAT = 19;
     
-    
+    //NPCS*********************************************************************************
     
     public static int NUMBER_OF_NPCS;
     
     public final static int UNCLEDARWIN = 20;
     public final static int AVIATORBILL = 21;
     public final static int RANGERDAN = 22;
+    
+    //ANIMALS*******************************************************************************
     
     public static int NUMBER_OF_ANIMALS;
     
@@ -60,4 +62,9 @@ public class Constants {
     public final static int WOLF = 27;
     public final static int MOOSE = 28;
     public final static int BEAR = 29;
+    
+    //MAP INFO*******************************************************************************
+    
+    static int MAP_ROW_COUNT;
+    static int MAP_COLUMN_COUNT;
 }

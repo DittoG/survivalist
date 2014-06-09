@@ -11,6 +11,8 @@ import survivalist.model.Animal;
 import survivalist.model.Building;
 import survivalist.model.Game;
 import survivalist.model.Item;
+import survivalist.model.Location;
+import survivalist.model.Map;
 import survivalist.model.Npc;
 
 /**
@@ -31,12 +33,17 @@ public class GameControl {
         // set (save) the player in the game object
         GameControl.game.setPlayer(Survivalist.getPlayer());
         
-        GameControl.createInventoryList(); // create the invetory list
-        GameControl.createNpcList(); // create list of actors
-        GameControl.createMap(); // create and initialize the map
+        // create the inventory list and save in the game.
+        Item[] inventoryList = GameControl.createInventoryList();
+        GameControl.game.setInventory(inventoryList);
         
-        // move player to starting position
-        MapControl.moveActorsToStartingLocation(0,3);
+         // create list of Npcs
+        Npc[] npc = GameControl.createNpcList();
+        GameControl.game.setNpc(npc);
+        
+        Map map = GameControl.createMap();
+        GameControl.game.setMap(map); // create and initialize the map
+        
     }
     
     public static void startSavedGame() {
@@ -124,7 +131,7 @@ public class GameControl {
     }
     
     
-    private static void createInventoryList() {
+    private static Item[] createInventoryList() {
         // created array(list) of inventory items
         Item[] inventory = 
                 new Item[Constants.NUMBER_OF_INVENTORY_ITEMS];
@@ -367,9 +374,13 @@ public class GameControl {
         leanTo.setHeight(0);
         
         GameControl.game.setInventory(inventory);
+        return inventory;
     }
     
-    private static void createMap() {
+    private static map createMap() {
+        // create the map
+        
+        
         
         Location[][] map = new Location[Constants.MAP_ROW_COUNT][Constants.MAP_COLUMN_COUNT];
         
@@ -387,18 +398,19 @@ public class GameControl {
             
         }
     
-        ResourceScene wheat = new ResourceScene();
+        Scene grass = new Scene();
         location.setAmountOfRabbit(2000);
         location.setAmountOfWolf();
         wheat.setBlocked(false);
         wheat.setBlocked(false);
         wheat.setMapSymbol()
+        return map;
         
     }
     
-    private static void createNpcList() {
+    private static Npc[] createNpcList() {
         // created array(list) of Npcs
-        Npc[] NpcList =
+        Npc[] npcList =
                 new Npc[Constants.NUMBER_OF_NPCS];
         
         // Npc codes******************************************************************************************
@@ -406,19 +418,20 @@ public class GameControl {
         
         Npc uncleDarwin = new Npc();
         uncleDarwin.setName("Uncle Darwin");
-        NpcList[Constants.UNCLEDARWIN] = uncleDarwin;
+        npcList[Constants.UNCLEDARWIN] = uncleDarwin;
         
         // Aviator Bill
         
         Npc aviatorBill = new Npc();
         aviatorBill.setName("Aviator Bill");
-        NpcList[Constants.AVIATORBILL] = uncleDarwin;
+        npcList[Constants.AVIATORBILL] = uncleDarwin;
         
         // Forest Ranger Dan
         
         Npc rangerDan = new Npc();
         rangerDan.setName("Ranger Dan");
-        NpcList[Constants.RANGERDAN] = uncleDarwin;
+        npcList[Constants.RANGERDAN] = uncleDarwin;
+        return npcList;
         
         
     }
