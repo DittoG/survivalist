@@ -41,6 +41,9 @@ public class GameControl {
         Npc[] npc = GameControl.createNpcList();
         GameControl.game.setNpc(npc);
         
+        Animal[] animal = GameControl.createAnimalList();
+        GameControl.game.setAnimal(animal);
+        
         Map map = GameControl.createMap();
         GameControl.game.setMap(map); // create and initialize the map
         
@@ -50,9 +53,9 @@ public class GameControl {
         System.out.println("\n*** Calling saved game ***");
     }
     
-    private static void createAnimalList() {
+    private static Animal[] createAnimalList() {
         
-        Animal[] animal = 
+        Animal[] animalList = 
                 new Animal[Constants.NUMBER_OF_ANIMALS];
         
         // Animal codes************************************************************************************
@@ -65,7 +68,7 @@ public class GameControl {
         deer.setType("docile");
         deer.setMeat(20);
         deer.setHitpoints(20);
-        animal[Constants.DEER] = deer;
+        animalList[Constants.DEER] = deer;
         
         // Elk
         
@@ -75,7 +78,7 @@ public class GameControl {
         elk.setType("docile");
         elk.setMeat(30);
         elk.setHitpoints(40);
-        animal[Constants.ELK] = elk;
+        animalList[Constants.ELK] = elk;
         
         // Rabbit
 
@@ -85,7 +88,7 @@ public class GameControl {
         rabbit.setType("docile");
         rabbit.setMeat(5);
         rabbit.setHitpoints(5);
-        animal[Constants.RABBIT] = rabbit;
+        animalList[Constants.RABBIT] = rabbit;
         
         // Raccoon
         
@@ -95,7 +98,7 @@ public class GameControl {
         raccoon.setType("docile");
         raccoon.setMeat(5);
         raccoon.setHitpoints(10);
-        animal[Constants.RACCOON] = raccoon;
+        animalList[Constants.RACCOON] = raccoon;
         
         // DANGEROUS animals**************************************************************************************
         // Wolf
@@ -106,7 +109,7 @@ public class GameControl {
         wolf.setType("dangerous");
         wolf.setMeat(10);
         wolf.setHitpoints(30);
-        animal[Constants.WOLF] = wolf;
+        animalList[Constants.WOLF] = wolf;
         
         // Moose
         
@@ -116,7 +119,7 @@ public class GameControl {
         moose.setType("dangerous");
         moose.setMeat(50);
         moose.setHitpoints(60);
-        animal[Constants.MOOSE] = moose;
+        animalList[Constants.MOOSE] = moose;
         
         // Bear
         
@@ -126,8 +129,9 @@ public class GameControl {
         bear.setType("dangerous");
         bear.setMeat(40);
         bear.setHitpoints(80);
-        animal[Constants.BEAR] = bear;
+        animalList[Constants.BEAR] = bear;
         
+        return animalList;
     }
     
     
@@ -377,7 +381,7 @@ public class GameControl {
         return inventory;
     }
     
-    private static map createMap() {
+    private static Map createMap() {
         // create the map
         
         
