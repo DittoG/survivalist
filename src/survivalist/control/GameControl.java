@@ -21,6 +21,9 @@ import survivalist.model.Npc;
  */
 public class GameControl {
     private static Game game;
+    private static Building building;
+    private static Animal animal;
+    private static Item inventory;
     
     public static void startNewGame() {
         
@@ -37,12 +40,21 @@ public class GameControl {
         Item[] inventoryList = GameControl.createInventoryList();
         GameControl.game.setInventory(inventoryList);
         
-         // create list of Npcs
-        Npc[] npc = GameControl.createNpcList();
-        GameControl.game.setNpc(npc);
+        // create list of Npcs
+        Npc[] npcList = GameControl.createNpcList();
+        GameControl.game.setNpc(npcList);
         
+        // create list of animals
+        Animal[] animalList = GameControl.createAnimalList();
+        GameControl.game.setAnimal(animalList);
+        
+        // create list of buildings
+        Building[] buildingList = GameControl.createBuildingList();
+        GameControl.game.setBuilding(buildingList);
+        
+        // create and initialize the map
         Map map = GameControl.createMap();
-        GameControl.game.setMap(map); // create and initialize the map
+        GameControl.game.setMap(map);
         
     }
     
@@ -50,9 +62,9 @@ public class GameControl {
         System.out.println("\n*** Calling saved game ***");
     }
     
-    private static void createAnimalList() {
+    private static Animal[] createAnimalList() {
         
-        Animal[] animal = 
+        Animal[] animalList = 
                 new Animal[Constants.NUMBER_OF_ANIMALS];
         
         // Animal codes************************************************************************************
@@ -65,7 +77,7 @@ public class GameControl {
         deer.setType("docile");
         deer.setMeat(20);
         deer.setHitpoints(20);
-        animal[Constants.DEER] = deer;
+        animalList[Constants.DEER] = deer;
         
         // Elk
         
@@ -75,7 +87,7 @@ public class GameControl {
         elk.setType("docile");
         elk.setMeat(30);
         elk.setHitpoints(40);
-        animal[Constants.ELK] = elk;
+        animalList[Constants.ELK] = elk;
         
         // Rabbit
 
@@ -85,7 +97,7 @@ public class GameControl {
         rabbit.setType("docile");
         rabbit.setMeat(5);
         rabbit.setHitpoints(5);
-        animal[Constants.RABBIT] = rabbit;
+        animalList[Constants.RABBIT] = rabbit;
         
         // Raccoon
         
@@ -95,7 +107,7 @@ public class GameControl {
         raccoon.setType("docile");
         raccoon.setMeat(5);
         raccoon.setHitpoints(10);
-        animal[Constants.RACCOON] = raccoon;
+        animalList[Constants.RACCOON] = raccoon;
         
         // DANGEROUS animals**************************************************************************************
         // Wolf
@@ -106,7 +118,7 @@ public class GameControl {
         wolf.setType("dangerous");
         wolf.setMeat(10);
         wolf.setHitpoints(30);
-        animal[Constants.WOLF] = wolf;
+        animalList[Constants.WOLF] = wolf;
         
         // Moose
         
@@ -116,7 +128,7 @@ public class GameControl {
         moose.setType("dangerous");
         moose.setMeat(50);
         moose.setHitpoints(60);
-        animal[Constants.MOOSE] = moose;
+        animalList[Constants.MOOSE] = moose;
         
         // Bear
         
@@ -126,14 +138,59 @@ public class GameControl {
         bear.setType("dangerous");
         bear.setMeat(40);
         bear.setHitpoints(80);
-        animal[Constants.BEAR] = bear;
+        animalList[Constants.BEAR] = bear;
         
+        GameControl.game.setAnimal(animalList);
+        return animalList;
+    }
+    
+    private static Building[] createBuildingList() {
+        // create a building
+        
+         Building[] buildingList = 
+                new Building[Constants.NUMBER_OF_BUILDINGS];
+        
+        // Building codes*************************************************************************************
+        // Cabin
+        
+        Building cabin = new Building("Cabin");
+        cabin.setDescription("A sturdy shelter.");
+        cabin.setType("permanent");
+        cabin.setLength(0);
+        cabin.setWidth(0);
+        cabin.setHeight(0);
+        buildingList[Constants.CABIN] = cabin;
+        
+        // Tower
+        
+        Building tower = new Building();
+        tower.setName("Tower");
+        tower.setDescription("A tall, solid structure that will reveal the surrounding area for miles.");
+        tower.setType("permanent");
+        tower.setLength(0);
+        tower.setWidth(0);
+        tower.setHeight(0);
+        buildingList[Constants.TOWER] = tower;
+        
+        // Lean-to
+        
+        Building leanTo = new Building();
+        leanTo.setName("Lean-to");
+        leanTo.setDescription("A small makeshift shelter that provides protection for a night.");
+        leanTo.setType("temporary");
+        leanTo.setLength(0);
+        leanTo.setWidth(0);
+        leanTo.setHeight(0);
+        buildingList[Constants.LEANTO] = leanTo;
+        
+        GameControl.game.setBuilding(buildingList);
+        return buildingList;
     }
     
     
     private static Item[] createInventoryList() {
         // created array(list) of inventory items
-        Item[] inventory = 
+        Item[] inventoryList = 
                 new Item[Constants.NUMBER_OF_INVENTORY_ITEMS];
         
         // WEAPON codes*************************************************************************
@@ -145,7 +202,7 @@ public class GameControl {
         knife.setType("weapon");
         knife.setPossibleQuantity(1);
         knife.setActualQuantity(0);
-        inventory[Constants.KNIFE] = knife;
+        inventoryList[Constants.KNIFE] = knife;
         
         // Bow
         
@@ -155,7 +212,7 @@ public class GameControl {
         bow.setType("weapon");
         bow.setPossibleQuantity(1);
         bow.setActualQuantity(0);
-        inventory[Constants.BOW] = bow;
+        inventoryList[Constants.BOW] = bow;
 
         
         // Arrow
@@ -166,7 +223,7 @@ public class GameControl {
         arrow.setType("weapon");
         arrow.setPossibleQuantity(20);
         arrow.setActualQuantity(0);
-        inventory[Constants.ARROW] = arrow;
+        inventoryList[Constants.ARROW] = arrow;
         
         // Machete
         
@@ -176,7 +233,7 @@ public class GameControl {
         machete.setType("weapon");
         machete.setPossibleQuantity(1);
         machete.setActualQuantity(0);
-        inventory[Constants.MACHETE] = machete;
+        inventoryList[Constants.MACHETE] = machete;
         
         // TOOL codes*******************************************************************************
         // Axe
@@ -187,7 +244,7 @@ public class GameControl {
         axe.setType("tool");
         axe.setPossibleQuantity(1);
         axe.setActualQuantity(0);
-        inventory[Constants.AXE] = axe;
+        inventoryList[Constants.AXE] = axe;
         
         // Hammer
         
@@ -197,7 +254,7 @@ public class GameControl {
         hammer.setType("tool");
         hammer.setPossibleQuantity(1);
         hammer.setActualQuantity(0);
-        inventory[Constants.HAMMER] = hammer;
+        inventoryList[Constants.HAMMER] = hammer;
         
         // Flint and Stone
         
@@ -207,7 +264,7 @@ public class GameControl {
         flintAndStone.setType("tool");
         flintAndStone.setPossibleQuantity(1);
         flintAndStone.setActualQuantity(0);
-        inventory[Constants.FLINTANDSTONE] = flintAndStone;
+        inventoryList[Constants.FLINTANDSTONE] = flintAndStone;
         
         // Hook
         
@@ -217,7 +274,7 @@ public class GameControl {
         grapplingHook.setType("tool");
         grapplingHook.setPossibleQuantity(1);
         grapplingHook.setActualQuantity(0);
-        inventory[Constants.GRAPPLINGHOOK] = grapplingHook;
+        inventoryList[Constants.GRAPPLINGHOOK] = grapplingHook;
         
         // INGREDIENT codes********************************************************************************
         // Branch
@@ -228,7 +285,7 @@ public class GameControl {
         branch.setType("ingredient");
         branch.setPossibleQuantity(15);
         branch.setActualQuantity(0);
-        inventory[Constants.BRANCH] = branch;
+        inventoryList[Constants.BRANCH] = branch;
         
         // Flat Rock
         
@@ -238,7 +295,7 @@ public class GameControl {
         flatRock.setType("ingredient");
         flatRock.setPossibleQuantity(3);
         flatRock.setActualQuantity(0);
-        inventory[Constants.FLATROCK] = flatRock;
+        inventoryList[Constants.FLATROCK] = flatRock;
         
         // Sharp Rock
         
@@ -248,7 +305,7 @@ public class GameControl {
         sharpRock.setType("ingredient");
         sharpRock.setPossibleQuantity(3);
         sharpRock.setActualQuantity(0);
-        inventory[Constants.SHARPROCK] = sharpRock;
+        inventoryList[Constants.SHARPROCK] = sharpRock;
         
         // Animal Skin
         
@@ -258,7 +315,7 @@ public class GameControl {
         animalSkin.setType("ingredient");
         animalSkin.setPossibleQuantity(5);
         animalSkin.setActualQuantity(0);
-        inventory[Constants.ANIMALSKIN] = animalSkin;
+        inventoryList[Constants.ANIMALSKIN] = animalSkin;
         
         // Raw Meat
         
@@ -268,7 +325,7 @@ public class GameControl {
         rawMeat.setType("ingredient");
         rawMeat.setPossibleQuantity(5);
         rawMeat.setActualQuantity(0);
-        inventory[Constants.RAWMEAT] = rawMeat;
+        inventoryList[Constants.RAWMEAT] = rawMeat;
         
         // Leather Strip
         
@@ -278,7 +335,7 @@ public class GameControl {
         leatherStrip.setType("ingredient");
         leatherStrip.setPossibleQuantity(20);
         leatherStrip.setActualQuantity(0);
-        inventory[Constants.LEATHERSTRIP] = leatherStrip;
+        inventoryList[Constants.LEATHERSTRIP] = leatherStrip;
         
         // Flint
         
@@ -288,7 +345,7 @@ public class GameControl {
         flint.setType("ingredient");
         flint.setPossibleQuantity(5);
         flint.setActualQuantity(0);
-        inventory[Constants.FLINT] = flint;
+        inventoryList[Constants.FLINT] = flint;
         
         // Stone
         
@@ -298,7 +355,7 @@ public class GameControl {
         stone.setType("ingredient");
         stone.setPossibleQuantity(5);
         stone.setActualQuantity(0);
-        inventory[Constants.STONE] = stone;
+        inventoryList[Constants.STONE] = stone;
         
         // Log
         
@@ -308,7 +365,7 @@ public class GameControl {
         log.setType("ingredient");
         log.setPossibleQuantity(2);
         log.setActualQuantity(0);
-        inventory[Constants.LOG] = log;
+        inventoryList[Constants.LOG] = log;
         
         // Gut String
         
@@ -318,7 +375,7 @@ public class GameControl {
         gutString.setType("ingredient");
         gutString.setPossibleQuantity(10);
         gutString.setActualQuantity(0);
-        inventory[Constants.GUTSTRING] = gutString;
+        inventoryList[Constants.GUTSTRING] = gutString;
         
         
         // FOOD codes***************************************************************************************
@@ -330,54 +387,54 @@ public class GameControl {
         berry.setType("ingredient");
         berry.setPossibleQuantity(50);
         berry.setActualQuantity(0);
-        inventory[Constants.BERRY] = berry;
+        inventoryList[Constants.BERRY] = berry;
         
         // Cooked Meat
         
-        Item cookedMeat = new Item();
-        cookedMeat.setName("Cooked Meat");
+        Item cookedMeat = new Item("Cooked Meat");
         cookedMeat.setDescription("Cooked meat, ready to eat! Has lots of protein to keep your strength up!");
         cookedMeat.setType("ingredient");
         cookedMeat.setPossibleQuantity(10);
         cookedMeat.setActualQuantity(0);
-        inventory[Constants.COOKEDMEAT] = cookedMeat;
+        inventoryList[Constants.COOKEDMEAT] = cookedMeat;
         
-        // Building codes*************************************************************************************
-        // Cabin
-        
-        Building cabin = new Building();
-        cabin.setName("Cabin");
-        cabin.setDescription("A sturdy shelter.");
-        cabin.setType("permanent");
-        cabin.setLength(0);
-        cabin.setWidth(0);
-        cabin.setHeight(0);
-        
-        // Tower
-        
-        Building tower = new Building();
-        tower.setName("Tower");
-        tower.setDescription("A tall, solid structure that will reveal the surrounding area for miles.");
-        tower.setType("permanent");
-        tower.setLength(0);
-        tower.setWidth(0);
-        tower.setHeight(0);
-        
-        // Lean-to
-        
-        Building leanTo = new Building();
-        leanTo.setName("Lean-to");
-        leanTo.setDescription("A small makeshift shelter that provides protection for a night.");
-        leanTo.setType("temporary");
-        leanTo.setLength(0);
-        leanTo.setWidth(0);
-        leanTo.setHeight(0);
-        
-        GameControl.game.setInventory(inventory);
-        return inventory;
+        GameControl.game.setInventory(inventoryList);
+        return inventoryList;
     }
     
-    private static map createMap() {
+    private static Npc[] createNpcList() {
+        // created array(list) of Npcs
+        Npc[] npcList =
+                new Npc[Constants.NUMBER_OF_NPCS];
+        
+        // Npc codes******************************************************************************************
+        // Uncle Darwin
+        
+        Npc uncleDarwin = new Npc("Uncle Darwin");
+        npcList[Constants.UNCLEDARWIN] = uncleDarwin;
+        
+        // Aviator Bill
+        
+        Npc aviatorBill = new Npc("Aviator Bill");
+        npcList[Constants.AVIATORBILL] = aviatorBill;
+        
+        // Forest Ranger Dan
+        
+        Npc rangerDan = new Npc("Ranger Dan");
+        npcList[Constants.RANGERDAN] = rangerDan;
+        
+        GameControl.game.setNpc(npcList);
+        return npcList;
+        
+    }
+    
+    private static class game {
+
+        public game() {
+        }
+    }
+    
+    private static Map createMap() {
         // create the map
         
         
@@ -406,40 +463,6 @@ public class GameControl {
         wheat.setMapSymbol()
         return map;
         
-    }
-    
-    private static Npc[] createNpcList() {
-        // created array(list) of Npcs
-        Npc[] npcList =
-                new Npc[Constants.NUMBER_OF_NPCS];
-        
-        // Npc codes******************************************************************************************
-        // Uncle Darwin
-        
-        Npc uncleDarwin = new Npc();
-        uncleDarwin.setName("Uncle Darwin");
-        npcList[Constants.UNCLEDARWIN] = uncleDarwin;
-        
-        // Aviator Bill
-        
-        Npc aviatorBill = new Npc();
-        aviatorBill.setName("Aviator Bill");
-        npcList[Constants.AVIATORBILL] = uncleDarwin;
-        
-        // Forest Ranger Dan
-        
-        Npc rangerDan = new Npc();
-        rangerDan.setName("Ranger Dan");
-        npcList[Constants.RANGERDAN] = uncleDarwin;
-        return npcList;
-        
-        
-    }
-
-    private static class game {
-
-        public game() {
-        }
     }
     
 }

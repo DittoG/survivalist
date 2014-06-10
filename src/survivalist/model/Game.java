@@ -20,6 +20,7 @@ public class Game implements Serializable {
     private Map map;
     private Animal[] animal;
     private Npc[] npc;
+    private Building[] building;
 
     public Game() {
         this.totalTime = 0;
@@ -71,6 +72,14 @@ public class Game implements Serializable {
 
     public void setNpc(Npc[] npc) {
         this.npc = npc;
+    }
+
+    public Building[] getBuilding() {
+        return building;
+    }
+
+    public void setBuilding(Building[] building) {
+        this.building = building;
     }
     
     

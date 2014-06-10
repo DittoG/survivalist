@@ -63,6 +63,14 @@ public class Constants {
     public final static int MOOSE = 28;
     public final static int BEAR = 29;
     
+    //BUILDINGS******************************************************************************
+    
+    public final static int NUMBER_OF_BUILDINGS = 30;
+    
+    public final static int CABIN = 31;
+    public final static int TOWER = 32;
+    public final static int LEANTO = 33;
+    
     //MAP INFO*******************************************************************************
     
     static int MAP_ROW_COUNT;

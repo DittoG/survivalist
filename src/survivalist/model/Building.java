@@ -25,7 +25,11 @@ public class Building implements Serializable{
 
     public Building() {
     }
-
+    
+    public Building(String name) {
+        this.name = name;
+    }
+    
     public String getName() {
         return name;
     }

@@ -20,6 +20,10 @@ public class Npc implements Serializable{
 
     public Npc() {
     }
+    
+    public Npc(String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;

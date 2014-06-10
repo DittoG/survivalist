@@ -7,38 +7,42 @@ import java.io.Serializable;
 public class Map implements Serializable {
  
     //class instance variables
-    private double rowCount;
-    private double columnCount;
+    private int numberOfRows;
+    private int numberOfColumns;
+    private Location[][] locations;
 
     public Map() {
     }
 
-    public double getRowCount() {
-        return rowCount;
+    public int getNumberOfRows() {
+        return numberOfRows;
     }
 
-    public void setRowCount(double rowCount) {
-        this.rowCount = rowCount;
+    public void setNumberOfRows(int numberOfRows) {
+        this.numberOfRows = numberOfRows;
     }
 
-    public double getColumnCount() {
-        return columnCount;
+    public int getNumberOfColumns() {
+        return numberOfColumns;
     }
 
-    public void setColumnCount(double columnCount) {
-        this.columnCount = columnCount;
+    public void setNumberOfColumns(int numberOfColumns) {
+        this.numberOfColumns = numberOfColumns;
     }
 
-    @Override
-    public String toString() {
-        return "Map{" + "rowCount=" + rowCount + ", columnCount=" + columnCount + '}';
+    public Location[][] getLocations() {
+        return locations;
+    }
+
+    public void setLocations(Location[][] locations) {
+        this.locations = locations;
     }
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 59 * hash + (int) (Double.doubleToLongBits(this.rowCount) ^ (Double.doubleToLongBits(this.rowCount) >>> 32));
-        hash = 59 * hash + (int) (Double.doubleToLongBits(this.columnCount) ^ (Double.doubleToLongBits(this.columnCount) >>> 32));
+        int hash = 3;
+        hash = 67 * hash + this.numberOfRows;
+        hash = 67 * hash + this.numberOfColumns;
         return hash;
     }
 
@@ -51,14 +55,13 @@ public class Map implements Serializable {
             return false;
         }
         final Map other = (Map) obj;
-        if (Double.doubleToLongBits(this.rowCount) != Double.doubleToLongBits(other.rowCount)) {
+        if (this.numberOfRows != other.numberOfRows) {
             return false;
         }
-        if (Double.doubleToLongBits(this.columnCount) != Double.doubleToLongBits(other.columnCount)) {
+        if (this.numberOfColumns != other.numberOfColumns) {
             return false;
         }
         return true;
     }
-    
     
 }
