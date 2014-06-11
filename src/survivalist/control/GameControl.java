@@ -71,8 +71,7 @@ public class GameControl {
         // DOCILE animals**********************************************************************************
         // Deer
         
-        Animal deer = new Animal();
-        deer.setName("Deer");
+        Animal deer = new Animal("Deer");
         deer.setDescription("A medium sized, agile animal that scares easily.");
         deer.setType("docile");
         deer.setMeat(20);
@@ -81,8 +80,7 @@ public class GameControl {
         
         // Elk
         
-        Animal elk = new Animal();
-        elk.setName("Elk");
+        Animal elk = new Animal("Elk");
         elk.setDescription("A large animal that scares easily.");
         elk.setType("docile");
         elk.setMeat(30);
@@ -91,8 +89,7 @@ public class GameControl {
         
         // Rabbit
 
-        Animal rabbit = new Animal();
-        rabbit.setName("Rabbit");
+        Animal rabbit = new Animal("Rabbit");
         rabbit.setDescription("A small, quick animal that scares easily.");
         rabbit.setType("docile");
         rabbit.setMeat(5);
@@ -101,8 +98,7 @@ public class GameControl {
         
         // Raccoon
         
-        Animal raccoon = new Animal();
-        raccoon.setName("Raccoon");
+        Animal raccoon = new Animal("Raccoon");
         raccoon.setDescription("A small, curious animal that doesn't scare easily and likes to steal food!");
         raccoon.setType("docile");
         raccoon.setMeat(5);
@@ -112,8 +108,7 @@ public class GameControl {
         // DANGEROUS animals**************************************************************************************
         // Wolf
         
-        Animal wolf = new Animal();
-        wolf.setName("Wolf");
+        Animal wolf = new Animal("Wolf");
         wolf.setDescription("medium sized carnivore that is dangerous. Careful about hunting wolves, they'll fight back!");
         wolf.setType("dangerous");
         wolf.setMeat(10);
@@ -122,8 +117,7 @@ public class GameControl {
         
         // Moose
         
-        Animal moose = new Animal();
-        moose.setName("Moose");
+        Animal moose = new Animal("Moose");
         moose.setDescription("A huge animal that is very dangerous. Hunting a moose is a daunting task!");
         moose.setType("dangerous");
         moose.setMeat(50);
@@ -132,8 +126,7 @@ public class GameControl {
         
         // Bear
         
-        Animal bear = new Animal();
-        bear.setName("Bear");
+        Animal bear = new Animal("Bear");
         bear.setDescription("A huge animal that is extremely dangerous! Stay away from this animal!!");
         bear.setType("dangerous");
         bear.setMeat(40);
@@ -163,8 +156,7 @@ public class GameControl {
         
         // Tower
         
-        Building tower = new Building();
-        tower.setName("Tower");
+        Building tower = new Building("Tower");
         tower.setDescription("A tall, solid structure that will reveal the surrounding area for miles.");
         tower.setType("permanent");
         tower.setLength(0);
@@ -174,8 +166,7 @@ public class GameControl {
         
         // Lean-to
         
-        Building leanTo = new Building();
-        leanTo.setName("Lean-to");
+        Building leanTo = new Building("Lean-to");
         leanTo.setDescription("A small makeshift shelter that provides protection for a night.");
         leanTo.setType("temporary");
         leanTo.setLength(0);
@@ -196,8 +187,7 @@ public class GameControl {
         // WEAPON codes*************************************************************************
         // Knife
         
-        Item knife = new Item();
-        knife.setName("Knife");
+        Item knife = new Item("Knife");
         knife.setDescription("A hunting knife.");
         knife.setType("weapon");
         knife.setPossibleQuantity(1);
@@ -206,8 +196,7 @@ public class GameControl {
         
         // Bow
         
-        Item bow = new Item();
-        bow.setName("Bow");
+        Item bow = new Item("Bow");
         bow.setDescription("Used with arrows to take down animals from a distance.");
         bow.setType("weapon");
         bow.setPossibleQuantity(1);
@@ -217,8 +206,7 @@ public class GameControl {
         
         // Arrow
         
-        Item arrow = new Item();
-        arrow.setName("Arrow");
+        Item arrow = new Item("Arrow");
         arrow.setDescription("Arrows can be shot using a bow, to hunt animals from a distance.");
         arrow.setType("weapon");
         arrow.setPossibleQuantity(20);
@@ -227,8 +215,7 @@ public class GameControl {
         
         // Machete
         
-        Item machete = new Item();
-        machete.setName("Machete");
+        Item machete = new Item("Machete");
         machete.setDescription("A machete can be used to hunt larger animals and is also useful for clearing a path through dense undergrowth.");
         machete.setType("weapon");
         machete.setPossibleQuantity(1);
@@ -238,8 +225,7 @@ public class GameControl {
         // TOOL codes*******************************************************************************
         // Axe
         
-        Item axe = new Item();
-        axe.setName("Axe");
+        Item axe = new Item("Axe");
         axe.setDescription("An axe is used for chopping down trees.");
         axe.setType("tool");
         axe.setPossibleQuantity(1);
@@ -248,8 +234,7 @@ public class GameControl {
         
         // Hammer
         
-        Item hammer = new Item();
-        hammer.setName("Hammer");
+        Item hammer = new Item("Hammer");
         hammer.setDescription("A hammer is used to build structures.");
         hammer.setType("tool");
         hammer.setPossibleQuantity(1);
@@ -258,8 +243,7 @@ public class GameControl {
         
         // Flint and Stone
         
-        Item flintAndStone = new Item();
-        flintAndStone.setName("Flint and Stone");
+        Item flintAndStone = new Item("Flint and Stone");
         flintAndStone.setDescription("Flint and Stone are used to make fires.");
         flintAndStone.setType("tool");
         flintAndStone.setPossibleQuantity(1);
@@ -268,8 +252,7 @@ public class GameControl {
         
         // Hook
         
-        Item grapplingHook = new Item();
-        grapplingHook.setName("Grappling Hook");
+        Item grapplingHook = new Item("Grappling Hook");
         grapplingHook.setDescription("A hook attached to a rope, this is used to climb rocks by throwing it up the side of a cliff and climbing it up a string.");
         grapplingHook.setType("tool");
         grapplingHook.setPossibleQuantity(1);
@@ -279,8 +262,7 @@ public class GameControl {
         // INGREDIENT codes********************************************************************************
         // Branch
         
-        Item branch = new Item();
-        branch.setName("Branch");
+        Item branch = new Item("Branch");
         branch.setDescription("A branch from a tree.");
         branch.setType("ingredient");
         branch.setPossibleQuantity(15);
@@ -289,8 +271,7 @@ public class GameControl {
         
         // Flat Rock
         
-        Item flatRock = new Item();
-        flatRock.setName("Flat Rock");
+        Item flatRock = new Item("Flat Rock");
         flatRock.setDescription("A flat rock");
         flatRock.setType("ingredient");
         flatRock.setPossibleQuantity(3);
@@ -299,8 +280,7 @@ public class GameControl {
         
         // Sharp Rock
         
-        Item sharpRock = new Item();
-        sharpRock.setName("Sharp Rock");
+        Item sharpRock = new Item("Sharp Rock");
         sharpRock.setDescription("A sharp rock.");
         sharpRock.setType("ingredient");
         sharpRock.setPossibleQuantity(3);
@@ -309,8 +289,7 @@ public class GameControl {
         
         // Animal Skin
         
-        Item animalSkin = new Item();
-        animalSkin.setName("Animal Skin");
+        Item animalSkin = new Item("Animal Skin");
         animalSkin.setDescription("A skin obtained from a dead animal.");
         animalSkin.setType("ingredient");
         animalSkin.setPossibleQuantity(5);
@@ -319,8 +298,7 @@ public class GameControl {
         
         // Raw Meat
         
-        Item rawMeat = new Item();
-        rawMeat.setName("Raw Meat");
+        Item rawMeat = new Item("Raw Meat");
         rawMeat.setDescription("Raw meat obtained from killing an animal.");
         rawMeat.setType("ingredient");
         rawMeat.setPossibleQuantity(5);
@@ -329,8 +307,7 @@ public class GameControl {
         
         // Leather Strip
         
-        Item leatherStrip = new Item();
-        leatherStrip.setName("Leather Strip");
+        Item leatherStrip = new Item("Leather Strip");
         leatherStrip.setDescription("A strip of leather cut from an animal skin.");
         leatherStrip.setType("ingredient");
         leatherStrip.setPossibleQuantity(20);
@@ -339,8 +316,7 @@ public class GameControl {
         
         // Flint
         
-        Item flint = new Item();
-        flint.setName("Flint");
+        Item flint = new Item("Flint");
         flint.setDescription("A piece of flint.");
         flint.setType("ingredient");
         flint.setPossibleQuantity(5);
@@ -349,8 +325,7 @@ public class GameControl {
         
         // Stone
         
-        Item stone = new Item();
-        stone.setName("Stone");
+        Item stone = new Item("Stone");
         stone.setDescription("A small stone.");
         stone.setType("ingredient");
         stone.setPossibleQuantity(5);
@@ -359,8 +334,7 @@ public class GameControl {
         
         // Log
         
-        Item log = new Item();
-        log.setName("Log");
+        Item log = new Item("Log");
         log.setDescription("A large log obtained by cutting down a tree.");
         log.setType("ingredient");
         log.setPossibleQuantity(2);
@@ -369,8 +343,7 @@ public class GameControl {
         
         // Gut String
         
-        Item gutString = new Item();
-        gutString.setName("Gut String");
+        Item gutString = new Item("Gut String");
         gutString.setDescription("String made from animal gut. Can be used as bow string or thread.");
         gutString.setType("ingredient");
         gutString.setPossibleQuantity(10);
@@ -381,8 +354,7 @@ public class GameControl {
         // FOOD codes***************************************************************************************
         // Berry
         
-        Item berry = new Item();
-        berry.setName("Berry");
+        Item berry = new Item("Berry");
         berry.setDescription("A wild berry. Provides fruit to round out your diet!");
         berry.setType("ingredient");
         berry.setPossibleQuantity(50);
