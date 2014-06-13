@@ -73,6 +73,14 @@ public class Constants {
     
     //MAP INFO*******************************************************************************
     
-    static int MAP_ROW_COUNT;
-    static int MAP_COLUMN_COUNT;
+    public static int MAP_ROW_COUNT;
+    public static int MAP_COLUMN_COUNT;
+    
+    public static int NUMBER_OF_SCENES;
+    
+    public final static int FOREST = 34;
+    public final static int WATER = 35;
+    public final static int GRASS = 36;
+    public final static int CLIFF = 37;
+    public final static int MOUNTAIN = 38;
 }

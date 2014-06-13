@@ -14,6 +14,7 @@ import survivalist.model.Item;
 import survivalist.model.Location;
 import survivalist.model.Map;
 import survivalist.model.Npc;
+import survivalist.model.Scene;
 
 /**
  *
@@ -55,6 +56,13 @@ public class GameControl {
         // create and initialize the map
         Map map = GameControl.createMap();
         GameControl.game.setMap(map);
+        
+        // create list of scenes
+        Scene[] sceneList = GameControl.createSceneList();
+        GameControl.game.setScene(sceneList);
+        
+        // assign scenes to each location
+        
         
     }
     
@@ -426,10 +434,47 @@ public class GameControl {
         }
     }
     
+    private static Scene[] createSceneList() {
+        // created array(list) of Scenes
+        Scene[] SceneList =
+                new Scene[Constants.NUMBER_OF_SCENES];
+        
+        // Npc codes******************************************************************************************
+        // Forest
+        
+        Scene forest = new Scene("Forest");
+        SceneList[Constants.FOREST] = forest;
+        
+        // Water
+        
+        Scene water = new Scene("Water");
+        SceneList[Constants.WATER] = water;
+        
+        // Grass
+        
+        Scene grass = new Scene("Grass");
+        SceneList[Constants.GRASS] = grass;
+        
+        // Cliff
+        
+        Scene cliff = new Scene("Cliff");
+        SceneList[Constants.CLIFF] = cliff;
+        
+        // Mountiain
+        
+        Scene mountain = new Scene("Mountain");
+        SceneList[Constants.MOUNTAIN] = mountain;
+        
+    }
+    
     private static Map createMap() {
         // create the map
+        Map map = new Map(20, 20);
         
+        // create the scenes for the game
+        Scene[] scenes = createScenes() {
         
+    }
         
         Location[][] map = new Location[Constants.MAP_ROW_COUNT][Constants.MAP_COLUMN_COUNT];
         
@@ -437,7 +482,7 @@ public class GameControl {
             for(int column = 0; column < Constants.MAP_COLUMN_COUNT; column++) {
                 
                 
-                Location location = new location();
+                Location location = new Location();
                 location.setColumn(column);
                 location.setRow(row);
                 location.setVisited(false);
@@ -446,14 +491,35 @@ public class GameControl {
             }
             
         }
-    
-        Scene grass = new Scene();
-        location.setAmountOfRabbit(2000);
-        location.setAmountOfWolf();
-        wheat.setBlocked(false);
-        wheat.setBlocked(false);
-        wheat.setMapSymbol()
-        return map;
+        
+        private static void assignScenesToLocations(Map map, Scene[] scenes) {
+            Location[][] locations = map.getLocations();
+            
+            locations[0][0].setScene(scenes[Constants.FOREST]);
+            locations[1][0].setScene(scenes[Constants.FOREST]);
+            locations[2][0].setScene(scenes[Constants.MOUNTAIN]);
+            locations[3][0].setScene(scenes[Constants.MOUNTAIN]);
+            locations[4][0].setScene(scenes[Constants.MOUNTAIN]);
+            locations[5][0].setScene(scenes[Constants.MOUNTAIN]);
+            locations[6][0].setScene(scenes[Constants.MOUNTAIN]);
+            locations[7][0].setScene(scenes[Constants.MOUNTAIN]);
+            locations[8][0].setScene(scenes[Constants.MOUNTAIN]);
+            locations[9][0].setScene(scenes[Constants.MOUNTAIN]);
+            locations[10][0].setScene(scenes[Constants.MOUNTAIN]);
+            locations[11][0].setScene(scenes[Constants.FOREST]);
+            locations[12][0].setScene(scenes[Constants.FOREST]);
+            locations[13][0].setScene(scenes[Constants.WATER]);
+            locations[14][0].setScene(scenes[Constants.FOREST]);
+            locations[15][0].setScene(scenes[Constants.FOREST]);
+            locations[16][0].setScene(scenes[Constants.FOREST]);
+            locations[17][0].setScene(scenes[Constants.FOREST]);
+            locations[18][0].setScene(scenes[Constants.FOREST]);
+            locations[19][0].setScene(scenes[Constants.FOREST]);
+            
+            
+            
+            
+            
         
     }
     

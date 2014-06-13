@@ -21,6 +21,15 @@ public class Game implements Serializable {
     private Animal[] animal;
     private Npc[] npc;
     private Building[] building;
+    private Scene[] scene;
+
+    public Scene[] getScene() {
+        return scene;
+    }
+
+    public void setScene(Scene[] scene) {
+        this.scene = scene;
+    }
 
     public Game() {
         this.totalTime = 0;

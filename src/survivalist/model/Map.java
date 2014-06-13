@@ -1,33 +1,44 @@
-
-
 package survivalist.model;
 
 import java.io.Serializable;
 
 public class Map implements Serializable {
- 
+
     //class instance variables
-    private int numberOfRows;
-    private int numberOfColumns;
+    private int noOfRows;
+    private int noOfColumns;
     private Location[][] locations;
 
     public Map() {
     }
 
-    public int getNumberOfRows() {
-        return numberOfRows;
-    }
+    public Map(int noOfRows, int noOfColumns) {
 
-    public void setNumberOfRows(int numberOfRows) {
-        this.numberOfRows = numberOfRows;
-    }
+        if (noOfRows < 1 || noOfColumns < 1) {
+            System.out.println("The number of rows and columns must be greater than zero");
+            return;
+        }
 
-    public int getNumberOfColumns() {
-        return numberOfColumns;
-    }
+        this.noOfRows = noOfRows;
+        this.noOfColumns = noOfColumns;
 
-    public void setNumberOfColumns(int numberOfColumns) {
-        this.numberOfColumns = numberOfColumns;
+        // create 2D array for Location objects
+        this.locations = new Location[noOfRows][noOfColumns];
+
+        for (int row = 0; row < noOfRows; row++) {
+            for (int column = 0; column < noOfColumns; column++) {
+                // create and initialize new Location object instance
+                Location location = new Location();
+                location.setColumn(column);
+                location.setRow(row);
+                location.setVisited(false);
+
+                //assign the Location object to the current position in an array
+                locations[row][column] = location;
+
+            }
+        }
+
     }
 
     public Location[][] getLocations() {
@@ -39,10 +50,15 @@ public class Map implements Serializable {
     }
 
     @Override
+    public String toString() {
+        return "Map{" + "noOfRows=" + noOfRows + ", noOfColumns=" + noOfColumns + ", locations=" + locations + '}';
+    }
+
+    @Override
     public int hashCode() {
         int hash = 3;
-        hash = 67 * hash + this.numberOfRows;
-        hash = 67 * hash + this.numberOfColumns;
+        hash = 11 * hash + this.noOfRows;
+        hash = 11 * hash + this.noOfColumns;
         return hash;
     }
 
@@ -55,13 +71,29 @@ public class Map implements Serializable {
             return false;
         }
         final Map other = (Map) obj;
-        if (this.numberOfRows != other.numberOfRows) {
+        if (this.noOfRows != other.noOfRows) {
             return false;
         }
-        if (this.numberOfColumns != other.numberOfColumns) {
+        if (this.noOfColumns != other.noOfColumns) {
             return false;
         }
         return true;
     }
-    
+
+    public int getNoOfRows() {
+        return noOfRows;
+    }
+
+    public void setNoOfRows(int noOfRows) {
+        this.noOfRows = noOfRows;
+    }
+
+    public int getNoOfColumns() {
+        return noOfColumns;
+    }
+
+    public void setNoOfColumns(int noOfColumns) {
+        this.noOfColumns = noOfColumns;
+    }
+
 }
