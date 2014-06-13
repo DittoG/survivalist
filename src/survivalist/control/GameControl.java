@@ -374,6 +374,26 @@ public class GameControl {
         return inventoryList;
     }
     
+        // Sort Inventory
+         public static Item[] getSortedInventoryList(){
+        
+        Item[] inventoryList =
+                    Survivalist.getCurrentGame().getInventory();
+        
+        Item tempItem;
+        for(int i =0; i < inventoryList.length-1; i++){
+            for(int j = 0; j < inventoryList.length-1-i; j++){
+                if (inventoryList[j].getDescription().
+                        compareToIgnoreCase(inventoryList[j + 1].getDescription()) > 0){
+                    tempItem =inventoryList[j];
+                    inventoryList[j] = inventoryList[j+1];
+                    inventoryList[j+1] = tempItem;
+                }
+            }
+        }
+        return inventoryList;
+    }
+    
     private static Npc[] createNpcList() {
         // created array(list) of Npcs
         Npc[] npcList =
