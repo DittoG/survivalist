@@ -83,4 +83,10 @@ public class Constants {
     public final static int GRASS = 36;
     public final static int CLIFF = 37;
     public final static int MOUNTAIN = 38;
+    public final static int ROAD = 39;
+    public final static int CRASH = 40;
+    public final static int STREAM = 41;
+    public final static int CRASH_SITE= 42;
+    
+    
 }
