@@ -436,34 +436,35 @@ public class GameControl {
     
     private static Scene[] createSceneList() {
         // created array(list) of Scenes
-        Scene[] SceneList =
+        Scene[] sceneList =
                 new Scene[Constants.NUMBER_OF_SCENES];
         
-        // Npc codes******************************************************************************************
+        // Scene codes******************************************************************************************
         // Forest
         
         Scene forest = new Scene("Forest");
-        SceneList[Constants.FOREST] = forest;
+        sceneList[Constants.FOREST] = forest;
         
         // Water
         
         Scene water = new Scene("Water");
-        SceneList[Constants.WATER] = water;
+        sceneList[Constants.WATER] = water;
         
         // Grass
         
         Scene grass = new Scene("Grass");
-        SceneList[Constants.GRASS] = grass;
+        sceneList[Constants.GRASS] = grass;
         
         // Cliff
         
         Scene cliff = new Scene("Cliff");
-        SceneList[Constants.CLIFF] = cliff;
+        sceneList[Constants.CLIFF] = cliff;
         
         // Mountiain
         
         Scene mountain = new Scene("Mountain");
-        SceneList[Constants.MOUNTAIN] = mountain;
+        sceneList[Constants.MOUNTAIN] = mountain;
+        return sceneList;
         
     }
     
@@ -491,6 +492,7 @@ public class GameControl {
             }
             
         }
+        return map;
         
         private static void assignScenesToLocations(Map map, Scene[] scenes) {
             Location[][] locations = map.getLocations();

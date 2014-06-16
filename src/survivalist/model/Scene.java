@@ -44,6 +44,10 @@ public class Scene implements Serializable {
 
     public Scene() {
     }
+    
+    public Scene(String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;
