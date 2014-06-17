@@ -513,7 +513,6 @@ public class GameControl {
         mountain.setNoOfLeanTos(0);
         mountain.setNoOfTowers(0);
         sceneList[Constants.MOUNTAIN] = mountain;
-        return sceneList;
         
         Scene road = new Scene("Road");
         road.setDescription("A man-made road");
@@ -528,7 +527,6 @@ public class GameControl {
         road.setNoOfLeanTos(0);
         road.setNoOfTowers(0);
         sceneList[Constants.ROAD] = road;
-        return sceneList;
         
         Scene crashSite = new Scene("Crash Site");
         crashSite.setDescription("The crash site");
