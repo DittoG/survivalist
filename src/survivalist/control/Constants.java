@@ -79,14 +79,20 @@ public class Constants {
     public static int NUMBER_OF_SCENES;
     
     public final static int FOREST = 34;
-    public final static int WATER = 35;
-    public final static int GRASS = 36;
-    public final static int CLIFF = 37;
-    public final static int MOUNTAIN = 38;
-    public final static int ROAD = 39;
-    public final static int CRASH = 40;
-    public final static int STREAM = 41;
-    public final static int CRASH_SITE= 42;
+    public final static int FOREST2 = 35;
+    public final static int FOREST3 = 36;
+    public final static int WATER = 37;
+    public final static int GRASS = 38;
+    public final static int GRASS2 = 39;
+    public final static int CLIFF = 40;
+    public final static int CLIFF2 = 41;
+    public final static int MOUNTAIN = 42;
+    public final static int MOUNTAIN2 = 43;
+    public final static int ROAD = 44;
+    public final static int CRASH = 45;
+    public final static int STREAM = 46;
+    public final static int STREAM2 = 47;
+    public final static int CRASH_SITE= 48;
     
     
 }

@@ -450,7 +450,39 @@ public class GameControl {
         forest.setNoOfTowers(0);
         sceneList[Constants.FOREST] = forest;
         
-        // Water
+        // Forest 2
+        
+        Scene forest2 = new Scene("Forest 2");
+        forest.setDescription("A forest of trees");
+        forest.setNoOfBerries(200);
+        forest.setNoOfBranches(10);
+        forest.setNoOfFlatRocks(3);
+        forest.setNoOfSharpRocks(5);
+        forest.setNoOfLogs(5);
+        forest.setNoOfFlint(6);
+        forest.setNoOfStone(3);
+        forest.setNoOfCabins(0);
+        forest.setNoOfLeanTos(0);
+        forest.setNoOfTowers(0);
+        sceneList[Constants.FOREST2] = forest;
+        
+        // Forest 3
+        
+        Scene forest3 = new Scene("Forest 3");
+        forest.setDescription("A forest of trees");
+        forest.setNoOfBerries(50);
+        forest.setNoOfBranches(30);
+        forest.setNoOfFlatRocks(6);
+        forest.setNoOfSharpRocks(1);
+        forest.setNoOfLogs(15);
+        forest.setNoOfFlint(3);
+        forest.setNoOfStone(15);
+        forest.setNoOfCabins(0);
+        forest.setNoOfLeanTos(0);
+        forest.setNoOfTowers(0);
+        sceneList[Constants.FOREST3] = forest;
+        
+        // Stream
         
         Scene stream = new Scene("Stream");
         stream.setDescription("A small stream");
@@ -465,6 +497,22 @@ public class GameControl {
         stream.setNoOfLeanTos(0);
         stream.setNoOfTowers(0);
         sceneList[Constants.STREAM] = stream;
+        
+        // Stream 2
+        
+        Scene stream2 = new Scene("Stream 2");
+        stream.setDescription("A small stream");
+        stream.setNoOfBerries(0);
+        stream.setNoOfBranches(0);
+        stream.setNoOfFlatRocks(2);
+        stream.setNoOfSharpRocks(0);
+        stream.setNoOfLogs(0);
+        stream.setNoOfFlint(0);
+        stream.setNoOfStone(8);
+        stream.setNoOfCabins(0);
+        stream.setNoOfLeanTos(0);
+        stream.setNoOfTowers(0);
+        sceneList[Constants.STREAM2] = stream;
         
         // Grass
         
@@ -482,6 +530,22 @@ public class GameControl {
         grass.setNoOfTowers(0);
         sceneList[Constants.GRASS] = grass;
         
+        // Grass2
+        
+        Scene grass2 = new Scene("Grass 2");
+        grass.setDescription("A patch of land covered in grass");
+        grass.setNoOfBerries(0);
+        grass.setNoOfBranches(0);
+        grass.setNoOfFlatRocks(3);
+        grass.setNoOfSharpRocks(0);
+        grass.setNoOfLogs(0);
+        grass.setNoOfFlint(0);
+        grass.setNoOfStone(4);
+        grass.setNoOfCabins(0);
+        grass.setNoOfLeanTos(0);
+        grass.setNoOfTowers(0);
+        sceneList[Constants.GRASS2] = grass;
+        
         // Cliff
         
         Scene cliff = new Scene("Cliff");
@@ -497,6 +561,22 @@ public class GameControl {
         cliff.setNoOfLeanTos(0);
         cliff.setNoOfTowers(0);
         sceneList[Constants.CLIFF] = cliff;
+        
+         // Cliff 2
+        
+        Scene cliff2 = new Scene("Cliff 2");
+        cliff.setDescription("An impassable rocky cliff");
+        cliff.setNoOfBerries(0);
+        cliff.setNoOfBranches(0);
+        cliff.setNoOfFlatRocks(6);
+        cliff.setNoOfSharpRocks(2);
+        cliff.setNoOfLogs(0);
+        cliff.setNoOfFlint(4);
+        cliff.setNoOfStone(10);
+        cliff.setNoOfCabins(0);
+        cliff.setNoOfLeanTos(0);
+        cliff.setNoOfTowers(0);
+        sceneList[Constants.CLIFF2] = cliff;
         
         // Mountiain
         
@@ -514,6 +594,24 @@ public class GameControl {
         mountain.setNoOfTowers(0);
         sceneList[Constants.MOUNTAIN] = mountain;
         
+        // Mountiain 2
+        
+        Scene mountain2 = new Scene("Mountain 2");
+        mountain.setDescription("A small stream");
+        mountain.setNoOfBerries(55);
+        mountain.setNoOfBranches(9);
+        mountain.setNoOfFlatRocks(6);
+        mountain.setNoOfSharpRocks(2);
+        mountain.setNoOfLogs(5);
+        mountain.setNoOfFlint(8);
+        mountain.setNoOfStone(4);
+        mountain.setNoOfCabins(0);
+        mountain.setNoOfLeanTos(0);
+        mountain.setNoOfTowers(0);
+        sceneList[Constants.MOUNTAIN2] = mountain;
+        
+        // Road
+        
         Scene road = new Scene("Road");
         road.setDescription("A man-made road");
         road.setNoOfBerries(0);
@@ -527,6 +625,8 @@ public class GameControl {
         road.setNoOfLeanTos(0);
         road.setNoOfTowers(0);
         sceneList[Constants.ROAD] = road;
+        
+        // Crash Site
         
         Scene crashSite = new Scene("Crash Site");
         crashSite.setDescription("The crash site");
