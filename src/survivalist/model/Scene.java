@@ -15,6 +15,9 @@ import java.util.Objects;
  */
 public class Scene implements Serializable {
     
+    // define symbol variable
+    private String symbol;
+    
     // class instance variables
     private String name;
     private String description;
@@ -201,6 +204,14 @@ public class Scene implements Serializable {
         this.noOfLeanTos = noOfLeanTos;
     }
 
+    public String getSymbol() {
+        return symbol;
+    }
+
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
+
     @Override
     public int hashCode() {
         int hash = 7;
@@ -223,6 +234,7 @@ public class Scene implements Serializable {
         hash = 11 * hash + this.noOfCabins;
         hash = 11 * hash + this.noOfTowers;
         hash = 11 * hash + this.noOfLeanTos;
+        hash = 11 * hash + Objects.hashCode(this.symbol);
         return hash;
     }
 
@@ -292,12 +304,16 @@ public class Scene implements Serializable {
         if (this.noOfLeanTos != other.noOfLeanTos) {
             return false;
         }
+        if (this.symbol != other.symbol) {
+            return false;
+        }
+        
         return true;
     }
 
     @Override
     public String toString() {
-        return "Scene{" + "name=" + name + ", description=" + description + ", noOfBranches=" + noOfBranches + ", noOfFlatRocks=" + noOfFlatRocks + ", noOfSharpRocks=" + noOfSharpRocks + ", noOfFlint=" + noOfFlint + ", noOfStone=" + noOfStone + ", noOfLogs=" + noOfLogs + ", NoOfBerries=" + NoOfBerries + ", noOfDeer=" + noOfDeer + ", noOfElk=" + noOfElk + ", noOfRabbits=" + noOfRabbits + ", noOfRaccoons=" + noOfRaccoons + ", noOfWolves=" + noOfWolves + ", noOfMoose=" + noOfMoose + ", noOfBear=" + noOfBear + ", noOfCabins=" + noOfCabins + ", noOfTowers=" + noOfTowers + ", noOfLeanTos=" + noOfLeanTos + '}';
+        return "Scene{" + "name=" + name + ", description=" + description + ", noOfBranches=" + noOfBranches + ", noOfFlatRocks=" + noOfFlatRocks + ", noOfSharpRocks=" + noOfSharpRocks + ", noOfFlint=" + noOfFlint + ", noOfStone=" + noOfStone + ", noOfLogs=" + noOfLogs + ", NoOfBerries=" + NoOfBerries + ", noOfDeer=" + noOfDeer + ", noOfElk=" + noOfElk + ", noOfRabbits=" + noOfRabbits + ", noOfRaccoons=" + noOfRaccoons + ", noOfWolves=" + noOfWolves + ", noOfMoose=" + noOfMoose + ", noOfBear=" + noOfBear + ", noOfCabins=" + noOfCabins + ", noOfTowers=" + noOfTowers + ", noOfLeanTos=" + noOfLeanTos + ", symbol=" + symbol + '}';
     }
     
     

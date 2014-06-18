@@ -94,5 +94,6 @@ public class Constants {
     public final static int STREAM2 = 47;
     public final static int CRASH_SITE= 48;
     
+    public final static int PLAYER = 49;
     
 }
