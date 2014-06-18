@@ -84,11 +84,11 @@ public class Constants {
     public final static int MOUNTAIN = 42;
     public final static int MOUNTAIN2 = 43;
     public final static int ROAD = 44;
-    public final static int CRASH = 45;
+    public final static int CRASH_SITE= 45;
     public final static int STREAM = 46;
     public final static int STREAM2 = 47;
-    public final static int CRASH_SITE= 48;
     
-    public final static int PLAYER = 49;
+    
+    public final static int PLAYER = 48;
     
 }

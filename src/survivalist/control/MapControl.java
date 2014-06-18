@@ -40,8 +40,6 @@ public class MapControl {
         return map;
     }
     
-    
-    
     private static Scene[] createSceneList() {
         // created array(list) of Scenes
         Scene[] sceneList =
@@ -62,40 +60,42 @@ public class MapControl {
         forest.setNoOfCabins(0);
         forest.setNoOfLeanTos(0);
         forest.setNoOfTowers(0);
-        forest.setSymbol("#");
+        forest.setSymbol("†");
         sceneList[Constants.FOREST] = forest;
         
         // Forest 2
         
         Scene forest2 = new Scene("Forest 2");
-        forest.setDescription("A forest of trees");
-        forest.setNoOfBerries(200);
-        forest.setNoOfBranches(10);
-        forest.setNoOfFlatRocks(3);
-        forest.setNoOfSharpRocks(5);
-        forest.setNoOfLogs(5);
-        forest.setNoOfFlint(6);
-        forest.setNoOfStone(3);
-        forest.setNoOfCabins(0);
-        forest.setNoOfLeanTos(0);
-        forest.setNoOfTowers(0);
-        sceneList[Constants.FOREST2] = forest;
+        forest2.setDescription("A forest of trees");
+        forest2.setNoOfBerries(200);
+        forest2.setNoOfBranches(10);
+        forest2.setNoOfFlatRocks(3);
+        forest2.setNoOfSharpRocks(5);
+        forest2.setNoOfLogs(5);
+        forest2.setNoOfFlint(6);
+        forest2.setNoOfStone(3);
+        forest2.setNoOfCabins(0);
+        forest2.setNoOfLeanTos(0);
+        forest2.setNoOfTowers(0);
+        forest2.setSymbol("†");
+        sceneList[Constants.FOREST2] = forest2;
         
         // Forest 3
         
         Scene forest3 = new Scene("Forest 3");
-        forest.setDescription("A forest of trees");
-        forest.setNoOfBerries(50);
-        forest.setNoOfBranches(30);
-        forest.setNoOfFlatRocks(6);
-        forest.setNoOfSharpRocks(1);
-        forest.setNoOfLogs(15);
-        forest.setNoOfFlint(3);
-        forest.setNoOfStone(15);
-        forest.setNoOfCabins(0);
-        forest.setNoOfLeanTos(0);
-        forest.setNoOfTowers(0);
-        sceneList[Constants.FOREST3] = forest;
+        forest3.setDescription("A forest of trees");
+        forest3.setNoOfBerries(50);
+        forest3.setNoOfBranches(30);
+        forest3.setNoOfFlatRocks(6);
+        forest3.setNoOfSharpRocks(1);
+        forest3.setNoOfLogs(15);
+        forest3.setNoOfFlint(3);
+        forest3.setNoOfStone(15);
+        forest3.setNoOfCabins(0);
+        forest3.setNoOfLeanTos(0);
+        forest3.setNoOfTowers(0);
+        forest3.setSymbol("†");
+        sceneList[Constants.FOREST3] = forest3;
         
         // Stream
         
@@ -111,23 +111,25 @@ public class MapControl {
         stream.setNoOfCabins(0);
         stream.setNoOfLeanTos(0);
         stream.setNoOfTowers(0);
+        stream.setSymbol("≈");
         sceneList[Constants.STREAM] = stream;
         
         // Stream 2
         
         Scene stream2 = new Scene("Stream 2");
-        stream.setDescription("A small stream");
-        stream.setNoOfBerries(0);
-        stream.setNoOfBranches(0);
-        stream.setNoOfFlatRocks(2);
-        stream.setNoOfSharpRocks(0);
-        stream.setNoOfLogs(0);
-        stream.setNoOfFlint(0);
-        stream.setNoOfStone(8);
-        stream.setNoOfCabins(0);
-        stream.setNoOfLeanTos(0);
-        stream.setNoOfTowers(0);
-        sceneList[Constants.STREAM2] = stream;
+        stream2.setDescription("A small stream");
+        stream2.setNoOfBerries(0);
+        stream2.setNoOfBranches(0);
+        stream2.setNoOfFlatRocks(2);
+        stream2.setNoOfSharpRocks(0);
+        stream2.setNoOfLogs(0);
+        stream2.setNoOfFlint(0);
+        stream2.setNoOfStone(8);
+        stream2.setNoOfCabins(0);
+        stream2.setNoOfLeanTos(0);
+        stream2.setNoOfTowers(0);
+        stream2.setSymbol("≈");
+        sceneList[Constants.STREAM2] = stream2;
         
         // Grass
         
@@ -143,23 +145,25 @@ public class MapControl {
         grass.setNoOfCabins(0);
         grass.setNoOfLeanTos(0);
         grass.setNoOfTowers(0);
+        grass.setSymbol("-");
         sceneList[Constants.GRASS] = grass;
         
         // Grass2
         
         Scene grass2 = new Scene("Grass 2");
-        grass.setDescription("A patch of land covered in grass");
-        grass.setNoOfBerries(0);
-        grass.setNoOfBranches(0);
-        grass.setNoOfFlatRocks(3);
-        grass.setNoOfSharpRocks(0);
-        grass.setNoOfLogs(0);
-        grass.setNoOfFlint(0);
-        grass.setNoOfStone(4);
-        grass.setNoOfCabins(0);
-        grass.setNoOfLeanTos(0);
-        grass.setNoOfTowers(0);
-        sceneList[Constants.GRASS2] = grass;
+        grass2.setDescription("A patch of land covered in grass");
+        grass2.setNoOfBerries(0);
+        grass2.setNoOfBranches(0);
+        grass2.setNoOfFlatRocks(3);
+        grass2.setNoOfSharpRocks(0);
+        grass2.setNoOfLogs(0);
+        grass2.setNoOfFlint(0);
+        grass2.setNoOfStone(4);
+        grass2.setNoOfCabins(0);
+        grass2.setNoOfLeanTos(0);
+        grass2.setNoOfTowers(0);
+        grass2.setSymbol("-");
+        sceneList[Constants.GRASS2] = grass2;
         
         // Cliff
         
@@ -175,23 +179,25 @@ public class MapControl {
         cliff.setNoOfCabins(0);
         cliff.setNoOfLeanTos(0);
         cliff.setNoOfTowers(0);
+        cliff.setSymbol("¦");
         sceneList[Constants.CLIFF] = cliff;
         
          // Cliff 2
         
         Scene cliff2 = new Scene("Cliff 2");
-        cliff.setDescription("An impassable rocky cliff");
-        cliff.setNoOfBerries(0);
-        cliff.setNoOfBranches(0);
-        cliff.setNoOfFlatRocks(6);
-        cliff.setNoOfSharpRocks(2);
-        cliff.setNoOfLogs(0);
-        cliff.setNoOfFlint(4);
-        cliff.setNoOfStone(10);
-        cliff.setNoOfCabins(0);
-        cliff.setNoOfLeanTos(0);
-        cliff.setNoOfTowers(0);
-        sceneList[Constants.CLIFF2] = cliff;
+        cliff2.setDescription("An impassable rocky cliff");
+        cliff2.setNoOfBerries(0);
+        cliff2.setNoOfBranches(0);
+        cliff2.setNoOfFlatRocks(6);
+        cliff2.setNoOfSharpRocks(2);
+        cliff2.setNoOfLogs(0);
+        cliff2.setNoOfFlint(4);
+        cliff2.setNoOfStone(10);
+        cliff2.setNoOfCabins(0);
+        cliff2.setNoOfLeanTos(0);
+        cliff2.setNoOfTowers(0);
+        cliff2.setSymbol("¦");
+        sceneList[Constants.CLIFF2] = cliff2;
         
         // Mountiain
         
@@ -207,23 +213,25 @@ public class MapControl {
         mountain.setNoOfCabins(0);
         mountain.setNoOfLeanTos(0);
         mountain.setNoOfTowers(0);
+        mountain.setSymbol("^");
         sceneList[Constants.MOUNTAIN] = mountain;
         
         // Mountiain 2
         
         Scene mountain2 = new Scene("Mountain 2");
-        mountain.setDescription("A small stream");
-        mountain.setNoOfBerries(55);
-        mountain.setNoOfBranches(9);
-        mountain.setNoOfFlatRocks(6);
-        mountain.setNoOfSharpRocks(2);
-        mountain.setNoOfLogs(5);
-        mountain.setNoOfFlint(8);
-        mountain.setNoOfStone(4);
-        mountain.setNoOfCabins(0);
-        mountain.setNoOfLeanTos(0);
-        mountain.setNoOfTowers(0);
-        sceneList[Constants.MOUNTAIN2] = mountain;
+        mountain2.setDescription("A small stream");
+        mountain2.setNoOfBerries(55);
+        mountain2.setNoOfBranches(9);
+        mountain2.setNoOfFlatRocks(6);
+        mountain2.setNoOfSharpRocks(2);
+        mountain2.setNoOfLogs(5);
+        mountain2.setNoOfFlint(8);
+        mountain2.setNoOfStone(4);
+        mountain2.setNoOfCabins(0);
+        mountain2.setNoOfLeanTos(0);
+        mountain2.setNoOfTowers(0);
+        mountain2.setSymbol("^");
+        sceneList[Constants.MOUNTAIN2] = mountain2;
         
         // Road
         
@@ -239,6 +247,7 @@ public class MapControl {
         road.setNoOfCabins(0);
         road.setNoOfLeanTos(0);
         road.setNoOfTowers(0);
+        road.setSymbol("║");
         sceneList[Constants.ROAD] = road;
         
         // Crash Site
@@ -255,7 +264,8 @@ public class MapControl {
         crashSite.setNoOfCabins(0);
         crashSite.setNoOfLeanTos(0);
         crashSite.setNoOfTowers(0);
-        sceneList[Constants.CRASH_SITE] = road;
+        crashSite.setSymbol("×");
+        sceneList[Constants.CRASH_SITE] = crashSite;
         return sceneList;
         
     }
@@ -467,7 +477,7 @@ public class MapControl {
             locations[15][8].setScene(scenes[Constants.GRASS]);
             locations[16][8].setScene(scenes[Constants.GRASS]);
             locations[17][8].setScene(scenes[Constants.GRASS]);
-            locations[18][8].setScene(scenes[Constants.CRASH]);
+            locations[18][8].setScene(scenes[Constants.CRASH_SITE]);
             locations[19][8].setScene(scenes[Constants.WATER]);
             
             // Tenth Row
@@ -727,23 +737,23 @@ public class MapControl {
     static void moveToLocation(Player player, Npc[] npcList) {
         
          Npc aviatorBill = npcList[Constants.AVIATORBILL];
-         MapControl.moveToLocation(aviatorBill, 1, 1);
+         MapControl.moveToLocation(aviatorBill, 18, 9);
          
          Npc uncleDarwin = npcList[Constants.UNCLEDARWIN];
-         MapControl.moveToLocation(uncleDarwin, row, column);
+         MapControl.moveToLocation(uncleDarwin, 18, 8);
          
          Npc rangerDan = npcList[Constants.RANGERDAN];
-         MapControl.moveToLocation(rangerDan, row, column);
+         MapControl.moveToLocation(rangerDan, 0, 12);
          
          Player player = player[Constants.PLAYER];
-         MapControl.moveToLocation(player, row, column);
+         MapControl.moveToLocation(player, 18, 8);
     }
     
-    private static void moveToLocation(Npc npcList, int row, int column) {
+    private static void moveToLocation(Npc npcList, int column, int row) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
-    private static void moveToLocation(Player player, int row, int column) {
+    private static void moveToLocation(Player player, int column, int row) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

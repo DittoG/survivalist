@@ -53,11 +53,6 @@ public class GameControl {
         Building[] buildingList = GameControl.createBuildingList();
         GameControl.game.setBuilding(buildingList);
         
-        // create and initialize the map
-        Map map = GameControl.createMap();
-        GameControl.game.setMap(map);
-        
-        
     }
     
     public static void startSavedGame() {
@@ -421,21 +416,5 @@ public class GameControl {
         return npcList;
         
     }   
-        
-        Location[][] map = new Location[Constants.MAP_ROW_COUNT][Constants.MAP_COLUMN_COUNT];
-        
-        for (int row = 0; row < Constants.MAP_ROW_COUNT; row++) {
-            for(int column = 0; column < Constants.MAP_COLUMN_COUNT; column++) {
-                
-                
-                Location location = new Location();
-                location.setColumn(column);
-                location.setRow(row);
-                location.setVisited(false);
-                
-                map[row][column] = location;
-            }
-            
-        }
     
 }
