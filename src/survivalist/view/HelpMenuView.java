@@ -60,7 +60,7 @@ public class HelpMenuView {
                 break;
             case 'Q': // Return to MainMenuView
                 MainMenuView mainMenu = new MainMenuView();
-                mainMenu.displayMenu();
+                mainMenu.display();
                 return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");

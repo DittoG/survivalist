@@ -742,7 +742,6 @@ public class MapControl {
          Npc rangerDan = npcList[Constants.RANGERDAN];
          MapControl.moveToLocation(rangerDan, 0, 12);
          
-         Player player = player[Constants.PLAYER];
          MapControl.moveToLocation(player, 18, 8);
     }
     
