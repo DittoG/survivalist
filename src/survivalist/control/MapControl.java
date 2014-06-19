@@ -29,9 +29,6 @@ public class MapControl {
         // assign scenes to locations
         assignScenesToLocations(map, scenes);
         
-        // assign viewable symbol to scene
-        
-        
         // move actors to starting location
         moveToLocation(Survivalist.getCurrentGame().getPlayer(), Survivalist.getCurrentGame().getNpc());
         
