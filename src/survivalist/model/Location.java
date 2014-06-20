@@ -15,6 +15,7 @@ public class Location implements Serializable {
     private double row;
     private double column;
     private boolean visited;
+    private boolean displayed;
     private Scene scene;
     private Npc[] npc;
     private Animal[] animal;
@@ -27,6 +28,14 @@ public class Location implements Serializable {
         return row;
     }
 
+    public boolean isDisplayed() {
+        return displayed;
+    }
+
+    public void setDisplayed(boolean displayed) {
+        this.displayed = displayed;
+    }
+    
     public void setRow(double row) {
         this.row = row;
     }
@@ -101,6 +110,9 @@ public class Location implements Serializable {
             return false;
         }
         if (Double.doubleToLongBits(this.column) != Double.doubleToLongBits(other.column)) {
+            return false;
+        }
+        if (this.displayed != other.displayed) {
             return false;
         }
         if (this.visited != other.visited) {

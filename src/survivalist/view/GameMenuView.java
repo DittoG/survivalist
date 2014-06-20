@@ -20,10 +20,14 @@ public class GameMenuView {
             + "\n------------------------------------------------"
             + "\n| Main Menu                                    |"
             + "\n------------------------------------------------"
-            + "\nS - Start game"
             + "\nH - Get help on how to play the game"
+            + "\nE - Exploring Menu"
+            + "\nI - Inventory"
+            + "\nC - Crafting Menu"
+            + "\nB - Building Menu"
+            + "\nM - Hunting/Gathering Menu"
             + "\nS - Save game"
-            + "\nE - Exit"
+            + "\nQ - Exit"
             + "\n------------------------------------------------";
 
     public void displayMenu() {
