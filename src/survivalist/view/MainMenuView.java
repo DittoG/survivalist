@@ -26,7 +26,9 @@ public class MainMenuView extends View {
                 + "\nQ - Quit"
                 + "\n------------------------------------------------");
     }
-
+    
+    @Override
+    
     public void doAction(String choice) {
 
         switch (choice) {
@@ -36,7 +38,7 @@ public class MainMenuView extends View {
                 break;
             case "H": // display the help menu
                 HelpMenuView helpMenu = new HelpMenuView();
-                helpMenu.displayMenu();
+                helpMenu.display();
                 break;
             case "S": // save the current game to disk
                 ProgramControl.saveGame(Survivalist.getCurrentGame());

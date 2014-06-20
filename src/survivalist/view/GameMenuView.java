@@ -50,7 +50,7 @@ public class GameMenuView {
                 break;
             case 'H': // display the help menu
                 HelpMenuView helpMenu = new HelpMenuView();
-                helpMenu.displayMenu();
+                helpMenu.display();
                 break;
             case 'S': // save the current game to disk
                 ProgramControl.saveGame(Survivalist.getCurrentGame());

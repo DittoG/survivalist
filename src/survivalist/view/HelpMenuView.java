@@ -14,9 +14,11 @@ import survivalist.control.ProgramControl;
  *
  * @author Madison
  */
-public class HelpMenuView {
+public class HelpMenuView extends View{
+  
+    public HelpMenuView() {
 
-    private final String HELPMENU = "\n"
+            super("\n"
             + "\n------------------------------------------------"
             + "\n| How to Play                                  |"
             + "\n------------------------------------------------"
@@ -27,38 +29,26 @@ public class HelpMenuView {
             + "\nR - How to collect resources"
             + "\nQ - Return to previous menu"
             + "\nE - Exit the Program"
-            + "\n------------------------------------------------";
-    
-    public void displayMenu() {
-        
-        char selection = ' ';
-        do{
-            
-            System.out.println(HELPMENU); // display the help menu
-            
-            String input = this.getInput(); // get the user's selection
-            selection = input.charAt(0); // get first character of string
-            
-            this.doAction(selection); // do action based on selection
-            
-        } while (selection != 'E'); // a selection is not "Exit"
+            + "\n------------------------------------------------");
     }
     
-    public void doAction(char choice) {
+    @Override
+    
+    public void doAction(String choice) {
         
         switch (choice) {
-            case 'G': // display the game menu
+            case "G": // display the game menu
                 GameGoalView goalView = new GameGoalView();
                 goalView.displayGameGoalView();
                 break;
-            case 'H': // display the help menu
+            case "H": // display the help menu
                 HelpMenuView helpMenu = new HelpMenuView();
-                helpMenu.displayMenu();
+                helpMenu.display();
                 break;
-            case 'S': // save the current game to disk
+            case "S": // save the current game to disk
                 ProgramControl.saveGame(Survivalist.getCurrentGame());
                 break;
-            case 'Q': // Return to MainMenuView
+            case "Q": // Return to MainMenuView
                 MainMenuView mainMenu = new MainMenuView();
                 mainMenu.display();
                 return;
@@ -66,29 +56,5 @@ public class HelpMenuView {
                 System.out.println("\n*** Invalid Selection *** Try again");
                 break;
         }
-    }
-    
-    public String getInput() {
-        boolean valid = false; // indicates if input has been received
-        String input = null;
-        Scanner keyboard = new Scanner(System.in); // keyboard input stream
-        
-        while(!valid) { // while input has not been received
-            
-            // get the input from the keyboard and trim off the blanks
-            input = keyboard.nextLine();
-            input = input.trim();
-            input = input.toUpperCase();
-            
-            if (input.equals("Q")) { // Quitting?
-                return input;
-            }
-            else {
-                valid = true; // signal that a valid input was entered
-            }
-        }
-        
-        return input; // return the input
-    }
-        
+    }    
 }

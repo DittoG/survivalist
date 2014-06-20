@@ -65,7 +65,7 @@ public class GameGoalView {
         switch (choice) {
             case 'Q': // display the help menu
                 HelpMenuView helpMenu = new HelpMenuView();
-                helpMenu.displayMenu();
+                helpMenu.display();
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");
                 break;

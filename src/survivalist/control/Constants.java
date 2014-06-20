@@ -76,19 +76,22 @@ public class Constants {
     public final static int FOREST = 34;
     public final static int FOREST2 = 35;
     public final static int FOREST3 = 36;
-    public final static int WATER = 37;
-    public final static int GRASS = 38;
-    public final static int GRASS2 = 39;
+    public final static int GRASS = 37;
+    public final static int GRASS2 = 38;
+    public final static int GRASS3 = 39;
     public final static int CLIFF = 40;
     public final static int CLIFF2 = 41;
-    public final static int MOUNTAIN = 42;
-    public final static int MOUNTAIN2 = 43;
-    public final static int ROAD = 44;
-    public final static int CRASH_SITE= 45;
-    public final static int STREAM = 46;
-    public final static int STREAM2 = 47;
+    public final static int CLIFF3 = 42;
+    public final static int MOUNTAIN = 43;
+    public final static int MOUNTAIN2 = 44;
+    public final static int MOUNTAIN3 = 45;
+    public final static int ROAD = 46;
+    public final static int CRASH_SITE= 47;
+    public final static int STREAM = 48;
+    public final static int STREAM2 = 49;
+    public final static int STREAM3 = 50;
     
     
-    public final static int PLAYER = 48;
+    public final static int PLAYER = 51;
     
 }
