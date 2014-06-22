@@ -9,14 +9,14 @@ import survivalist.control.ProgramControl;
 
 /**
  *
- * @author Madison
+ * @author Jerry
  */
-public class MapView extends View{
+public class HelpHuntGatherView extends View{
     
-    public MapView() {
+    public HelpHuntGatherView() {
         super("\n"
             + "\n------------------------------------------------"
-            + "\n|               Map/Move Menu                  |"
+            + "\n|            How to Hunt and Gather            |"
             + "\n------------------------------------------------"
             + "\n"
             + "\n"
@@ -25,7 +25,7 @@ public class MapView extends View{
             + "\n"
             + "\n"
             + "\n"
-            + "\n*******Press Q to return to the game menu*******"
+            + "\n*******Press Q to return to the help menu*******"
             + "\n------------------------------------------------");
     }
     

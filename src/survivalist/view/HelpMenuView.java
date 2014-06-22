@@ -20,7 +20,7 @@ public class HelpMenuView extends View{
 
             super("\n"
             + "\n------------------------------------------------"
-            + "\n| How to Play                                  |"
+            + "\n|                 How to Play                  |"
             + "\n------------------------------------------------"
             + "\nG - What is the goal of the game?"
             + "\nM - How to move"
@@ -36,25 +36,23 @@ public class HelpMenuView extends View{
         
         switch (choice) {
             case "G": // display the game goal screen
-                GameGoalView goalView = new GameGoalView();
+                HelpGoalView goalView = new HelpGoalView();
                 goalView.displayGameGoalView();
                 break;
             case "M": // display the move help screen
-                HelpMenuView helpMenu = new HelpMenuView();
-                helpMenu.display();
+                HelpMoveView moveView = new HelpMoveView();
+                moveView.display();
                 break;
             case "H": // display the hunting help screen
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                HelpHuntGatherView helpHuntGatherView = new HelpHuntGatherView();
+                helpHuntGatherView.display();
                 break;
             case "C": // display the crafting help screen
-                MainMenuView mainMenu = new MainMenuView();
-                mainMenu.display();
+                HelpCraftView helpCraftView = new HelpCraftView();
+                helpCraftView.display();
             case "Q": // exit to the previous menu
-                MainMenuView mainMenu = new MainMenuView();0.
-                mainMenu.display();
-            case "Q": // Return to MainMenuView
-                MainMenuView mainMenu = new MainMenuView();
-                mainMenu.display();
+                GameMenuView gameMenu = new GameMenuView();
+                gameMenu.display();
                 return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");

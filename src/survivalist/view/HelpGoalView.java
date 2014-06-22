@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author Jerry
  */
-public class GameGoalView {
+public class HelpGoalView {
     
     private final String GOALVIEW = "\n"
             + "\n* You are a college student going to visit     *"
@@ -41,9 +41,7 @@ public class GameGoalView {
             + "\n*                                              *"
             + "\n*     Good luck! You're going to need it!      *"
             + "\n*                                              *"
-            + "\n*     Press Q to return to the Help Menu.      *"
-            + "\n*                                              *"
-            + "\n************************************************";    
+            + "\n*******Press Q to return to the help menu*******";    
     
     public void displayGameGoalView() {
         

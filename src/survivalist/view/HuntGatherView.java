@@ -9,23 +9,25 @@ import survivalist.control.ProgramControl;
 
 /**
  *
- * @author Madison
+ * @author Jerry
  */
-public class MapView extends View{
+public class HuntGatherView extends View{
     
-    public MapView() {
+    public HuntGatherView() {
         super("\n"
             + "\n------------------------------------------------"
-            + "\n|               Map/Move Menu                  |"
+            + "\n|          Hunting and Gathering Menu          |"
             + "\n------------------------------------------------"
-            + "\n"
-            + "\n"
-            + "\n"
-            + "\n"
-            + "\n"
-            + "\n"
-            + "\n"
-            + "\n*******Press Q to return to the game menu*******"
+            + "\nH - Get Help on how to use the Crafting Menu"
+            + "\nK - Knife"
+            + "\nB - Bow"
+            + "\nA - Arrows"
+            + "\nM - Machete"
+            + "\nX - Axe"
+            + "\nT - Hammer"
+            + "\nF - Flint and Stone"
+            + "\nG - Grappling Hook"
+            + "\nQ - Exit to previous menu"
             + "\n------------------------------------------------");
     }
     
@@ -35,30 +37,36 @@ public class MapView extends View{
         
         switch (choice) {
             case "H": // display the help menu
-                GameMenuView gameMenu = new GameMenuView();
-                gameMenu.display();
-                break;
-            case "E": // display the exploring menu
                 HelpMenuView helpMenu = new HelpMenuView();
                 helpMenu.display();
                 break;
-            case "I": // save the inventory menu
+            case "K": // craft a knife
+                
+                break;
+            case "B": // craft a bow
                 ProgramControl.saveGame(Survivalist.getCurrentGame());
                 break;
-            case "C": // display the crafting menu
+            case "A": // craft arrows
                 ProgramControl.saveGame(Survivalist.getCurrentGame());
                 break;
-            case "B": // display the building menu
+            case "M": // craft a machete
                 ProgramControl.saveGame(Survivalist.getCurrentGame());
                 break;
-            case "M": // display the hunting/gathering menu
+            case "X": // craft an axe
                 ProgramControl.saveGame(Survivalist.getCurrentGame());
                 break;
-            case "S": // save the current game to disk
+            case "T": // craft a hammer
                 ProgramControl.saveGame(Survivalist.getCurrentGame());
                 break;
-            case "Q": // Exit the game
-                return;
+            case "F": // craft flint and stone
+                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                break;
+            case "G": // craft a grappling hook
+                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                break;
+            case "Q": // Exit to previous menu
+                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                break;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");
                 break;

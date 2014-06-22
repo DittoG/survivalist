@@ -18,7 +18,7 @@ public class InventoryView extends View{
     public InventoryView() {
         super("\n"
                 + "\n------------------------------------------------"
-                + "\n| Inveentory Menu                                |"
+                + "\n|                  Inventory                   |"
                 + "\n------------------------------------------------"
                 + "\nH - Get Help on how to use the Inventory Menu"
                 + "\nW - Weapons"
@@ -35,20 +35,20 @@ public class InventoryView extends View{
         
         switch (choice) {
             case "H": // display the Inventory Help Menu
-                
-                break;
-            case "W": // display weapons
                 HelpMenuView helpMenu = new HelpMenuView();
                 helpMenu.display();
                 break;
+            case "W": // display weapons
+                // ********INSERT FUNCTION HERE**********
+                break;
             case "T": // display tools
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                // ********INSERT FUNCTION HERE**********
                 break;
             case "I": // display ingredients
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                // ********INSERT FUNCTION HERE**********
                 break;
             case "F": // display food
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                // ********INSERT FUNCTION HERE**********
                 break;
             case "Q": // Exit to game menu
                 GameMenuView gameMenu = new GameMenuView();

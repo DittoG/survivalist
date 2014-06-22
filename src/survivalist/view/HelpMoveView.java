@@ -9,14 +9,14 @@ import survivalist.control.ProgramControl;
 
 /**
  *
- * @author Madison
+ * @author Jerry
  */
-public class MapView extends View{
+public class HelpMoveView extends View{
     
-    public MapView() {
+    public HelpMoveView() {
         super("\n"
             + "\n------------------------------------------------"
-            + "\n|               Map/Move Menu                  |"
+            + "\n|                 How to Move                  |"
             + "\n------------------------------------------------"
             + "\n"
             + "\n"
@@ -25,7 +25,7 @@ public class MapView extends View{
             + "\n"
             + "\n"
             + "\n"
-            + "\n*******Press Q to return to the game menu*******"
+            + "\n*******Press Q to return to the help menu*******"
             + "\n------------------------------------------------");
     }
     
