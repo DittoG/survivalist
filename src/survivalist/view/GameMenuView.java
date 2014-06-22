@@ -14,11 +14,12 @@ import survivalist.control.ProgramControl;
  *
  * @author Madison
  */
-public class GameMenuView {
+public class GameMenuView extends View{
     
-    private final String MENU = "\n"
+    public GameMenuView() {
+        super("\n"
             + "\n------------------------------------------------"
-            + "\n| Main Menu                                    |"
+            + "\n| Game Menu                                    |"
             + "\n------------------------------------------------"
             + "\nH - Get help on how to play the game"
             + "\nE - Exploring Menu"
@@ -28,38 +29,38 @@ public class GameMenuView {
             + "\nM - Hunting/Gathering Menu"
             + "\nS - Save game"
             + "\nQ - Exit"
-            + "\n------------------------------------------------";
-
-    public void displayMenu() {
-        
-        char selection = ' ';
-        do {
-            
-            System.out.println(MENU); // display the main menu
-            
-            String input = this.getInput(); // get the user's selection
-            selection = input.charAt(0); // get first character of string
-            
-            this.doAction(selection); // do action based on selection
-            
-        } while (selection != 'Q'); // a selection is not "Exit"
+            + "\n------------------------------------------------");
     }
     
-    public void doAction(char choice) {
+    @Override
+    
+    public void doAction(String choice) {
         
         switch (choice) {
-            case 'G': // display the game menu
+            case "H": // display the help menu
                 GameMenuView gameMenu = new GameMenuView();
-                gameMenu.displayMenu();
+                gameMenu.display();
                 break;
-            case 'H': // display the help menu
+            case "E": // display the exploring menu
                 HelpMenuView helpMenu = new HelpMenuView();
                 helpMenu.display();
                 break;
-            case 'S': // save the current game to disk
+            case "I": // save the inventory menu
                 ProgramControl.saveGame(Survivalist.getCurrentGame());
                 break;
-            case 'Q': // Exit the program
+            case "C": // display the crafting menu
+                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                break;
+            case "B": // display the building menu
+                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                break;
+            case "M": // display the hunting/gathering menu
+                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                break;
+            case "S": // save the current game to disk
+                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                break;
+            case "Q": // Exit the game
                 return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");

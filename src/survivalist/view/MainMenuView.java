@@ -5,7 +5,6 @@
  */
 package survivalist.view;
 
-import java.util.Scanner;
 import survivalist.Survivalist;
 import survivalist.control.ProgramControl;
 
