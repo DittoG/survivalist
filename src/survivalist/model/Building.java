@@ -22,6 +22,7 @@ public class Building implements Serializable{
     private double width;
     private double length;
     private double height;
+    private Location location;
 
     public Building() {
     }
@@ -78,7 +79,14 @@ public class Building implements Serializable{
         this.height = height;
     }
 
-    @Override
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
     public String toString() {
         return "Building{" + "name=" + name + ", description=" + description + ", type=" + type + ", width=" + width + ", length=" + length + ", height=" + height + '}';
     }
