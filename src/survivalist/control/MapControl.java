@@ -59,7 +59,7 @@ public class MapControl {
         forest.setNoOfTowers(0);
         forest.setNoOfDeer(4);
         forest.setNoOfElk(1);
-        forest.setNoOfRabbits(11);
+        forest.setNoOfRabbits(3);
         forest.setNoOfRaccoons(4);
         forest.setNoOfWolves(0);
         forest.setNoOfMoose(0);
@@ -110,8 +110,8 @@ public class MapControl {
         forest3.setNoOfRabbits(8);
         forest3.setNoOfRaccoons(2);
         forest3.setNoOfWolves(4);
-        forest3.setNoOfMoose(1);
-        forest3.setNoOfBear(1); 
+        forest3.setNoOfMoose(0);
+        forest3.setNoOfBear(0); 
         forest3.setSymbol("†");
         sceneList[Constants.FOREST3] = forest3;
         
@@ -129,7 +129,7 @@ public class MapControl {
         stream.setNoOfCabins(0);
         stream.setNoOfLeanTos(0);
         stream.setNoOfTowers(0);
-        stream.setNoOfDeer(6);
+        stream.setNoOfDeer(1);
         stream.setNoOfElk(0);
         stream.setNoOfRabbits(4);
         stream.setNoOfRaccoons(0);
@@ -154,7 +154,7 @@ public class MapControl {
         stream2.setNoOfLeanTos(0);
         stream2.setNoOfTowers(0);
         stream2.setNoOfDeer(2);
-        stream2.setNoOfElk(4);
+        stream2.setNoOfElk(2);
         stream2.setNoOfRabbits(2);
         stream2.setNoOfRaccoons(0);
         stream2.setNoOfWolves(2);
@@ -278,7 +278,7 @@ public class MapControl {
         cliff.setNoOfRabbits(0);
         cliff.setNoOfRaccoons(3);
         cliff.setNoOfWolves(0);
-        cliff.setNoOfMoose(1);
+        cliff.setNoOfMoose(0);
         cliff.setNoOfBear(0);
         cliff.setSymbol("¦");
         sceneList[Constants.CLIFF] = cliff;
@@ -326,7 +326,7 @@ public class MapControl {
         cliff3.setNoOfRabbits(2);
         cliff3.setNoOfRaccoons(3);
         cliff3.setNoOfWolves(0);
-        cliff3.setNoOfMoose(1);
+        cliff3.setNoOfMoose(0);
         cliff3.setNoOfBear(0);
         cliff3.setSymbol("¦");
         sceneList[Constants.CLIFF3] = cliff3;
