@@ -5,7 +5,12 @@ THIS PAGE ONLY NEEDS THE CORRECT FUNCTIONS IMPLEMENTED
 package survivalist.view;
 
 import survivalist.Survivalist;
+import survivalist.control.BuildingControl;
+import survivalist.control.Constants;
+import survivalist.control.GameControl;
 import survivalist.control.ProgramControl;
+import survivalist.model.Building;
+import survivalist.model.Location;
 
 /**
  *
@@ -36,7 +41,12 @@ public class BuildingView extends View{
                 helpMenu.display();
                 break;
             case "C": // build a cabin
-                
+                //do the buildings already exist? are they predefined? 
+                //create new cabin or building
+                //get location of where you want it to be. *need to make move function.
+                Building building = Survivalist.getCurrentGame().getBuildings()[Constants.CABIN];
+                Location currentLocation = Survivalist.getCurrentGame().getCurrentLocation(); 
+                BuildingControl.addBuildingToLocation(building, currentLocation);
                 break;
             case "L": // build a lean-to
                 // ********INSERT FUNCTION HERE**********
@@ -48,6 +58,7 @@ public class BuildingView extends View{
                 GameMenuView gameMenu = new GameMenuView();
                 gameMenu.display();
                 break;
+                // should we put return here? 
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");
                 break;
