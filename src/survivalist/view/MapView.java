@@ -1,11 +1,8 @@
 /*
-THIS PAGE HAS NOT YET BEEN CUSTOMIZED
+THIS PAGE ONLY NEEDS THE CORRECT FUNTIONS IMPLEMENTED
  */
 
 package survivalist.view;
-
-import survivalist.Survivalist;
-import survivalist.control.ProgramControl;
 
 /**
  *
@@ -25,7 +22,7 @@ public class MapView extends View{
             + "\n"
             + "\n"
             + "\n"
-            + "\n*******Press Q to return to the game menu*******"
+            + "\n*******Press Q to return to previous menu*******"
             + "\n------------------------------------------------");
     }
     
@@ -34,30 +31,12 @@ public class MapView extends View{
     public void doAction(String choice) {
         
         switch (choice) {
-            case "H": // display the help menu
+            case "S": // move the player according to their row/column input
+                // ********INSERT FUNCTION HERE**********
+                break;
+            case "Q": // Exit to previous menu
                 GameMenuView gameMenu = new GameMenuView();
                 gameMenu.display();
-                break;
-            case "E": // display the exploring menu
-                HelpMenuView helpMenu = new HelpMenuView();
-                helpMenu.display();
-                break;
-            case "I": // save the inventory menu
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
-                break;
-            case "C": // display the crafting menu
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
-                break;
-            case "B": // display the building menu
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
-                break;
-            case "M": // display the hunting/gathering menu
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
-                break;
-            case "S": // save the current game to disk
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
-                break;
-            case "Q": // Exit the game
                 return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");

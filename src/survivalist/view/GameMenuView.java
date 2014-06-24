@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+THIS PAGE IS FINISHED
  */
 
 package survivalist.view;
@@ -27,7 +25,7 @@ public class GameMenuView extends View{
             + "\nC - Crafting Menu"
             + "\nB - Building Menu"
             + "\nS - Save game"
-            + "\nQ - Exit"
+            + "\nQ - Exit to previous menu"
             + "\n------------------------------------------------");
     }
     
@@ -63,8 +61,9 @@ public class GameMenuView extends View{
             case "S": // save the current game to disk
                 ProgramControl.saveGame(Survivalist.getCurrentGame());
                 break;
-            case "Q": // Exit the game
-                // ********INSERT FUNCTION HERE**********
+            case "Q": // Exit to previous menu
+                MainMenuView mainMenu = new MainMenuView();
+                mainMenu.display();
                 return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");

@@ -1,11 +1,8 @@
 /*
-THIS PAGE HAS NOT YET BEEN CUSTOMIZED
+THIS PAGE ONLY NEEDS A SMALL TWEAKING TO ALLOW FOR ANY KEY TO BE COUNTED AS THE CORRECT INPUT
  */
 
 package survivalist.view;
-
-import survivalist.Survivalist;
-import survivalist.control.ProgramControl;
 
 /**
  *
@@ -34,30 +31,7 @@ public class LoseGameView extends View{
     public void doAction(String choice) {
         
         switch (choice) {
-            case "H": // display the help menu
-                GameMenuView gameMenu = new GameMenuView();
-                gameMenu.display();
-                break;
-            case "E": // display the exploring menu
-                HelpMenuView helpMenu = new HelpMenuView();
-                helpMenu.display();
-                break;
-            case "I": // save the inventory menu
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
-                break;
-            case "C": // display the crafting menu
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
-                break;
-            case "B": // display the building menu
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
-                break;
-            case "M": // display the hunting/gathering menu
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
-                break;
-            case "S": // save the current game to disk
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
-                break;
-            case "Q": // Exit the game
+            case "Q": // Exit to Start Program View
                 return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");

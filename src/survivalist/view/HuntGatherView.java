@@ -1,11 +1,8 @@
 /*
-THIS PAGE HAS NOT YET BEEN CUSTOMIZED
+THIS PAGE ONLY NEEDS THE CORRECT FUNCTIONS IMPLEMENTED
  */
 
 package survivalist.view;
-
-import survivalist.Survivalist;
-import survivalist.control.ProgramControl;
 
 /**
  *
@@ -44,28 +41,29 @@ public class HuntGatherView extends View{
                 
                 break;
             case "B": // craft a bow
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                // ********INSERT FUNCTION HERE**********
                 break;
             case "A": // craft arrows
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                // ********INSERT FUNCTION HERE**********
                 break;
             case "M": // craft a machete
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                // ********INSERT FUNCTION HERE**********
                 break;
             case "X": // craft an axe
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                // ********INSERT FUNCTION HERE**********
                 break;
             case "T": // craft a hammer
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                // ********INSERT FUNCTION HERE**********
                 break;
             case "F": // craft flint and stone
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                // ********INSERT FUNCTION HERE**********
                 break;
             case "G": // craft a grappling hook
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                // ********INSERT FUNCTION HERE**********
                 break;
             case "Q": // Exit to previous menu
-                ProgramControl.saveGame(Survivalist.getCurrentGame());
+                GameMenuView gameMenu = new GameMenuView();
+                gameMenu.display();
                 break;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");
