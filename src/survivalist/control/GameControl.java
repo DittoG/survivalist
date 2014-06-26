@@ -11,10 +11,7 @@ import survivalist.model.Animal;
 import survivalist.model.Building;
 import survivalist.model.Game;
 import survivalist.model.Item;
-import survivalist.model.Location;
-import survivalist.model.Map;
 import survivalist.model.Npc;
-import survivalist.model.Scene;
 
 /**
  *
