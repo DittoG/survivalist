@@ -1,11 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+THIS PAGE ONLY NEEDS THE CORRECT FUNCTIONS IMPLEMENTED
  */
 package survivalist.view;
 
-import java.util.Scanner;
 import survivalist.Survivalist;
 import survivalist.control.ProgramControl;
 
@@ -18,11 +15,12 @@ public class MainMenuView extends View {
     public MainMenuView() {
         super("\n"
                 + "\n------------------------------------------------"
-                + "\n| Main Menu                                    |"
+                + "\n|                 Main Menu                    |"
                 + "\n------------------------------------------------"
                 + "\nG - Start game"
                 + "\nH - How to Play"
                 + "\nS - Save game"
+                + "\nL - Load game"
                 + "\nQ - Quit"
                 + "\n------------------------------------------------");
     }
@@ -34,7 +32,7 @@ public class MainMenuView extends View {
         switch (choice) {
             case "G": // display the game menu
                 GameMenuView gameMenu = new GameMenuView();
-                gameMenu.displayMenu();
+                gameMenu.display();
                 break;
             case "H": // display the help menu
                 HelpMenuView helpMenu = new HelpMenuView();
@@ -43,7 +41,11 @@ public class MainMenuView extends View {
             case "S": // save the current game to disk
                 ProgramControl.saveGame(Survivalist.getCurrentGame());
                 break;
+            case "L": // Load an existing game from disk
+                // ********INSERT FUNCTION HERE**********
+                break;
             case "Q": // Exit the program
+                // ********INSERT FUNCTION HERE**********
                 return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");

@@ -22,6 +22,7 @@ public class Game implements Serializable {
     private Npc[] npc;
     private Building[] building;
     private Scene[] scene;
+    private Location currentLocation;
 
     public Scene[] getScene() {
         return scene;
@@ -83,12 +84,20 @@ public class Game implements Serializable {
         this.npc = npc;
     }
 
-    public Building[] getBuilding() {
+    public Building[] getBuildings() {
         return building;
     }
 
     public void setBuilding(Building[] building) {
         this.building = building;
+    }
+
+    public Location getCurrentLocation() {
+        return currentLocation;
+    }
+
+    public void setCurrentLocation(Location currentLocation) {
+        this.currentLocation = currentLocation;
     }
     
     

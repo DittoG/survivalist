@@ -1,12 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+THIS PAGE IS FINISHED
  */
 
 package survivalist.view;
 
-import java.util.Scanner;
 import survivalist.Survivalist;
 import survivalist.control.ProgramControl;
 
@@ -14,79 +11,63 @@ import survivalist.control.ProgramControl;
  *
  * @author Madison
  */
-public class GameMenuView {
+public class GameMenuView extends View{
     
-    private final String MENU = "\n"
+    public GameMenuView() {
+        super("\n"
             + "\n------------------------------------------------"
-            + "\n| Main Menu                                    |"
+            + "\n|               Game Menu                      |"
             + "\n------------------------------------------------"
             + "\nH - Get help on how to play the game"
+            + "\nM - Map/Move menu"
             + "\nE - Exploring Menu"
             + "\nI - Inventory"
             + "\nC - Crafting Menu"
             + "\nB - Building Menu"
-            + "\nM - Hunting/Gathering Menu"
             + "\nS - Save game"
-            + "\nQ - Exit"
-            + "\n------------------------------------------------";
-
-    public void displayMenu() {
-        
-        char selection = ' ';
-        do {
-            
-            System.out.println(MENU); // display the main menu
-            
-            String input = this.getInput(); // get the user's selection
-            selection = input.charAt(0); // get first character of string
-            
-            this.doAction(selection); // do action based on selection
-            
-        } while (selection != 'Q'); // a selection is not "Exit"
+            + "\nQ - Exit to previous menu"
+            + "\n------------------------------------------------");
     }
     
-    public void doAction(char choice) {
+    @Override
+    
+    public void doAction(String choice) {
         
         switch (choice) {
-            case 'G': // display the game menu
-                GameMenuView gameMenu = new GameMenuView();
-                gameMenu.displayMenu();
-                break;
-            case 'H': // display the help menu
+            case "H": // display the help menu
                 HelpMenuView helpMenu = new HelpMenuView();
                 helpMenu.display();
                 break;
-            case 'S': // save the current game to disk
+            case "M": // display the map/move menu
+                MapView mapMenu = new MapView();
+                mapMenu.display();
+                break;
+            case "E": // display the exploring menu
+                LocationView locationMenu = new LocationView();
+                locationMenu.display();
+                break;
+            case "I": // save the inventory menu
+                InventoryView inventoryMenu = new InventoryView();
+                inventoryMenu.display();
+                break;
+            case "C": // display the crafting menu
+                CraftingView craftingMenu = new CraftingView();
+                craftingMenu.display();
+                break;
+            case "B": // display the building menu
+                BuildingView buildingMenu = new BuildingView();
+                buildingMenu.display();
+                break;
+            case "S": // save the current game to disk
                 ProgramControl.saveGame(Survivalist.getCurrentGame());
                 break;
-            case 'Q': // Exit the program
+            case "Q": // Exit to previous menu
+                MainMenuView mainMenu = new MainMenuView();
+                mainMenu.display();
                 return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");
                 break;
         }
-    }
-    
-    public String getInput() {
-        boolean valid = false; // indicates if input has been received
-        String input = null;
-        Scanner keyboard = new Scanner(System.in); // keyboard input stream
-        
-        while(!valid) { // while input has not been received
-            
-            // get the input from the keyboard and trim off the blanks
-            input = keyboard.nextLine();
-            input = input.trim();
-            input = input.toUpperCase();
-            
-            if (input.equals("Q")) { // Quitting?
-                return input;
-            }
-            else {
-                valid = true; // signal that a valid input was entered
-            }
-        }
-        
-        return input; // return the input
-    }  
+    } 
 }

@@ -1,19 +1,22 @@
 /*
-THIS PAGE ONLY NEEDS A SMALL TWEAKING TO ALLOW FOR ANY KEY TO BE COUNTED AS THE CORRECT INPUT
+THIS PAGE ONLY NEEDS THE TEXT FILLED OUT
  */
 
 package survivalist.view;
 
+import survivalist.Survivalist;
+import survivalist.control.ProgramControl;
+
 /**
  *
- * @author Madison
+ * @author Jerry
  */
-public class LoseGameView extends View{
+public class HelpCraftView extends View{
     
-    public LoseGameView() {
+    public HelpCraftView() {
         super("\n"
             + "\n------------------------------------------------"
-            + "\n|            x_x You have died x_x             |"
+            + "\n|                 How to Craft                 |"
             + "\n------------------------------------------------"
             + "\n"
             + "\n"
@@ -22,7 +25,7 @@ public class LoseGameView extends View{
             + "\n"
             + "\n"
             + "\n"
-            + "\n****************PRESS ANY KEY*******************"
+            + "\n*******Press Q to return to the help menu*******"
             + "\n------------------------------------------------");
     }
     
@@ -31,7 +34,9 @@ public class LoseGameView extends View{
     public void doAction(String choice) {
         
         switch (choice) {
-            case "Q": // Exit to Start Program View
+            case "Q": // Exit to Help menu
+                HelpMenuView helpMenu = new HelpMenuView();
+                helpMenu.display();
                 return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");

@@ -350,7 +350,7 @@ public class GameControl {
         
         Item berry = new Item("Berry");
         berry.setDescription("A wild berry. Provides fruit to round out your diet!");
-        berry.setType("ingredient");
+        berry.setType("food");
         berry.setPossibleQuantity(50);
         berry.setActualQuantity(0);
         inventoryList[Constants.BERRY] = berry;
@@ -359,7 +359,7 @@ public class GameControl {
         
         Item cookedMeat = new Item("Cooked Meat");
         cookedMeat.setDescription("Cooked meat, ready to eat! Has lots of protein to keep your strength up!");
-        cookedMeat.setType("ingredient");
+        cookedMeat.setType("food");
         cookedMeat.setPossibleQuantity(10);
         cookedMeat.setActualQuantity(0);
         inventoryList[Constants.COOKEDMEAT] = cookedMeat;

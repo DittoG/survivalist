@@ -4,19 +4,16 @@ THIS PAGE ONLY NEEDS THE CORRECT FUNCTIONS IMPLEMENTED
 
 package survivalist.view;
 
-import survivalist.Survivalist;
-import survivalist.control.ProgramControl;
-
 /**
  *
- * @author Madison
+ * @author Jerry
  */
-public class CraftingView extends View{
+public class HuntGatherView extends View{
     
-    public CraftingView() {
+    public HuntGatherView() {
         super("\n"
             + "\n------------------------------------------------"
-            + "\n|               Crafting Menu                  |"
+            + "\n|          Hunting and Gathering Menu          |"
             + "\n------------------------------------------------"
             + "\nH - Get Help on how to use the Crafting Menu"
             + "\nK - Knife"
@@ -41,7 +38,7 @@ public class CraftingView extends View{
                 helpMenu.display();
                 break;
             case "K": // craft a knife
-                // ********INSERT FUNCTION HERE**********
+                
                 break;
             case "B": // craft a bow
                 // ********INSERT FUNCTION HERE**********
@@ -65,7 +62,8 @@ public class CraftingView extends View{
                 // ********INSERT FUNCTION HERE**********
                 break;
             case "Q": // Exit to previous menu
-                // ********INSERT FUNCTION HERE**********
+                GameMenuView gameMenu = new GameMenuView();
+                gameMenu.display();
                 break;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");
