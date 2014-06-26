@@ -87,6 +87,7 @@ public class Building implements Serializable{
     public void setLocation(Location location) {
         this.location = location;
     }
+    
     public String toString() {
         return "Building{" + "name=" + name + ", description=" + description + ", type=" + type + ", width=" + width + ", length=" + length + ", height=" + height + '}';
     }
