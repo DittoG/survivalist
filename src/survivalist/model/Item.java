@@ -21,6 +21,7 @@ public class Item implements Serializable{
     private String type;
     private double possibleQuantity;
     private double actualQuantity;
+    private Item[] requiredResources;
 
     public Item() {
     }
@@ -69,6 +70,14 @@ public class Item implements Serializable{
         this.actualQuantity = actualQuantity;
     }
 
+    public Item[] getRequiredResources() {
+        return requiredResources;
+    }
+
+    public void setRequiredResources(Item[] requiredResources) {
+        this.requiredResources = requiredResources;
+    }
+    
     @Override
     public String toString() {
         return "Item{" + "name=" + name + ", description=" + description + ", type=" + type + ", possibleQuantity=" + possibleQuantity + ", actualQuantity=" + actualQuantity + '}';

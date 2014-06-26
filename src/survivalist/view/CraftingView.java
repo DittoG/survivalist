@@ -5,7 +5,9 @@ THIS PAGE ONLY NEEDS THE CORRECT FUNCTIONS IMPLEMENTED
 package survivalist.view;
 
 import survivalist.Survivalist;
-import survivalist.control.ProgramControl;
+import survivalist.control.Constants;
+import survivalist.control.InventoryControl;
+import survivalist.model.Item;
 
 /**
  *
@@ -18,7 +20,7 @@ public class CraftingView extends View{
             + "\n------------------------------------------------"
             + "\n|               Crafting Menu                  |"
             + "\n------------------------------------------------"
-            + "\nH - Get Help on how to use the Crafting Menu"
+            + "\nH - Get Help on Crafting"
             + "\nK - Knife"
             + "\nB - Bow"
             + "\nA - Arrows"
@@ -37,11 +39,12 @@ public class CraftingView extends View{
         
         switch (choice) {
             case "H": // display the help menu
-                HelpMenuView helpMenu = new HelpMenuView();
-                helpMenu.display();
+                HelpCraftView helpCraftView = new HelpCraftView();
+                helpCraftView.display();
                 break;
             case "K": // craft a knife
-                // ********INSERT FUNCTION HERE**********
+                this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.KNIFE]);
+                        
                 break;
             case "B": // craft a bow
                 // ********INSERT FUNCTION HERE**********
@@ -71,5 +74,36 @@ public class CraftingView extends View{
                 System.out.println("\n*** Invalid Selection *** Try again");
                 break;
         }
-    } 
+    }
+    
+    private void craftItem(Item item) {
+        
+        // get required resources from item
+        
+        Item[] requiredResources = item.getRequiredResources();
+        
+        // check to see if required resources are available
+        
+        boolean adequateResources = InventoryControl.checkAvailableResources(requiredResources);
+        
+        // IF required resources are available
+        
+        if(adequateResources) {
+            double actualQuantity = item.getActualQuantity();
+            actualQuantity++;
+            item.setActualQuantity(actualQuantity);
+            
+               // craft item AND print "item has been crafted"
+            
+            System.out.println("You have crafted a " + item.getName());
+        }
+        
+        // ELSE resources are not available
+            // print "you don't have the required resources"
+        
+        else {
+            System.out.println("You do not have the required resources to craft that.");
+        }
+    }
+    
 }

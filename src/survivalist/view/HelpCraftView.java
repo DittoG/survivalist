@@ -5,7 +5,8 @@ THIS PAGE ONLY NEEDS THE TEXT FILLED OUT
 package survivalist.view;
 
 import survivalist.Survivalist;
-import survivalist.control.ProgramControl;
+import survivalist.control.Constants;
+import survivalist.model.Item;
 
 /**
  *
@@ -18,29 +19,28 @@ public class HelpCraftView extends View{
             + "\n------------------------------------------------"
             + "\n|                 How to Craft                 |"
             + "\n------------------------------------------------"
+            + "\n knife"
             + "\n"
             + "\n"
             + "\n"
             + "\n"
             + "\n"
             + "\n"
-            + "\n"
-            + "\n*******Press Q to return to the help menu*******"
+            + "\n************Return to previous Menu*************"
             + "\n------------------------------------------------");
     }
     
     @Override
     
     public void doAction(String choice) {
-        
-        switch (choice) {
             case "Q": // Exit to Help menu
-                HelpMenuView helpMenu = new HelpMenuView();
-                helpMenu.display();
                 return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");
                 break;
         }
     } 
+
+    
+    }
 }
