@@ -12,6 +12,10 @@ package survivalist.control;
  */
 public class BuildingControl {
     
+    public static void addBuildingToLocation() {
+        
+    }
+    
     public double calcBuildingArea(double length, double width) {
         
         if (length < 7 || length > 20) { //  length value not within the accepted range?

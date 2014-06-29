@@ -4,9 +4,6 @@ THIS PAGE ONLY NEEDS THE CORRECT FUNCTIONS IMPLEMENTED
 
 package survivalist.view;
 
-import survivalist.Survivalist;
-import survivalist.control.ProgramControl;
-
 /**
  *
  * @author Madison
@@ -36,7 +33,7 @@ public class BuildingView extends View{
                 helpMenu.display();
                 break;
             case "C": // build a cabin
-                
+                // ********INSERT FUNCTION HERE**********
                 break;
             case "L": // build a lean-to
                 // ********INSERT FUNCTION HERE**********

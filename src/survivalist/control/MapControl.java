@@ -37,6 +37,7 @@ public class MapControl {
         return map;
     }
     
+    
     private static Scene[] createSceneList() {
         // created array(list) of Scenes
         Scene[] sceneList =

@@ -46,8 +46,6 @@ public class InventoryView extends View{
                 // ********INSERT FUNCTION HERE**********
                 break;
             case "Q": // Exit to game menu
-                GameMenuView gameMenu = new GameMenuView();
-                gameMenu.display();
                 return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");
