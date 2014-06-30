@@ -20,7 +20,7 @@ public class GameMenuView extends View{
             + "\n------------------------------------------------"
             + "\nH - Get help on how to play the game"
             + "\nM - Map/Move menu"
-            + "\nE - Exploring Menu"
+            + "\nE - Hunt and Gather Menu"
             + "\nI - Inventory"
             + "\nC - Crafting Menu"
             + "\nB - Building Menu"

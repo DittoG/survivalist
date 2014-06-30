@@ -11,19 +11,17 @@ package survivalist.view;
 public class HuntGatherView extends View{
     
     public HuntGatherView() {
+        // go to where the location data is saved
+        // check to see if the location has been explored yet
+        // if the player has not yet explored the area, display the option to explore.
+        // if the player has explored the area, display the following options.
         super("\n"
             + "\n------------------------------------------------"
             + "\n|          Hunting and Gathering Menu          |"
             + "\n------------------------------------------------"
             + "\nH - Get Help on Hunting and Gathering"
-            + "\nK - Gather "
-            + "\nB - Bow"
-            + "\nA - Arrows"
-            + "\nM - Machete"
-            + "\nX - Axe"
-            + "\nT - Hammer"
-            + "\nF - Flint and Stone"
-            + "\nG - Grappling Hook"
+            + "\nT - Hunt"
+            + "\nG - Gather"
             + "\nQ - Exit to previous menu"
             + "\n------------------------------------------------");
     }
@@ -34,37 +32,17 @@ public class HuntGatherView extends View{
         
         switch (choice) {
             case "H": // display the help menu
-                HelpMenuView helpMenu = new HelpMenuView();
-                helpMenu.display();
+                HelpHuntGatherView HelpHuntGatherView = new HelpHuntGatherView();
+                HelpHuntGatherView.display();
                 break;
-            case "K": // craft a knife
-                
-                break;
-            case "B": // craft a bow
+            case "T": // hunt
                 // ********INSERT FUNCTION HERE**********
                 break;
-            case "A": // craft arrows
-                // ********INSERT FUNCTION HERE**********
-                break;
-            case "M": // craft a machete
-                // ********INSERT FUNCTION HERE**********
-                break;
-            case "X": // craft an axe
-                // ********INSERT FUNCTION HERE**********
-                break;
-            case "T": // craft a hammer
-                // ********INSERT FUNCTION HERE**********
-                break;
-            case "F": // craft flint and stone
-                // ********INSERT FUNCTION HERE**********
-                break;
-            case "G": // craft a grappling hook
+            case "G": // gather ingredients or food
                 // ********INSERT FUNCTION HERE**********
                 break;
             case "Q": // Exit to previous menu
-                GameMenuView gameMenu = new GameMenuView();
-                gameMenu.display();
-                break;
+                return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");
                 break;

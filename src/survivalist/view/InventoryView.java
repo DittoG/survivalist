@@ -33,12 +33,6 @@ public class InventoryView extends View{
     public void doAction(String choice) {
         
         switch (choice) {
-            case "H": // display the Inventory Help Menu
-                HelpMenuView helpMenu = new HelpMenuView();
-                helpMenu.display();
-                break;
-            case "Q": // Exit to game menu
-                return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");
                 break;

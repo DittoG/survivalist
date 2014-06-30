@@ -1,12 +1,8 @@
 /*
-THIS PAGE ONLY NEEDS THE TEXT FILLED OUT
+THIS PAGE IS FINISHED
  */
 
 package survivalist.view;
-
-import survivalist.Survivalist;
-import survivalist.control.Constants;
-import survivalist.model.Item;
 
 /**
  *
@@ -19,15 +15,14 @@ public class HelpCraftView extends View{
             + "\n------------------------------------------------"
             + "\n|                 How to Craft                 |"
             + "\n------------------------------------------------"
-            + "\n knife"
+            + "\n Certain items cannot be found in the wild,    " 
+            + "\n only made. You can craft these yourself, using" 
+            + "\n the materials that exist in the wilderness.   "
+            + "\n To see which materials you will need to craft "
+            + "\n a certain item, select that item in the menu. "
+            + "\n Happy crafting!"
             + "\n"
-            + "\n"
-            + "\n"
-            + "\n"
-            + "\n"
-            + "\n"
-            + "\n************Return to previous Menu*************"
-            + "\n------------------------------------------------");
+            + "\n******Press Q to return to previous menu*******");
     }
     
     @Override
@@ -40,7 +35,4 @@ public class HelpCraftView extends View{
                 break;
         }
     } 
-
-    
-    }
 }
