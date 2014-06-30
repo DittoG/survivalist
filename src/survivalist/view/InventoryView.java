@@ -4,6 +4,9 @@ THIS PAGE ONLY NEEDS THE CORRECT FUNCTIONS IMPLEMENTED
 
 package survivalist.view;
 
+import survivalist.control.InventoryControl;
+import survivalist.model.Item;
+
 /**
  *
  * @author Madison
@@ -11,6 +14,7 @@ package survivalist.view;
 public class InventoryView extends View{
     
     public InventoryView() {
+        // display sorted list of inventory items and their actualQuantity/possibleQuantity
         super("\n"
                 + "\n------------------------------------------------"
                 + "\n|                  Inventory                   |"
@@ -33,24 +37,24 @@ public class InventoryView extends View{
                 HelpMenuView helpMenu = new HelpMenuView();
                 helpMenu.display();
                 break;
-            case "W": // display weapons
-                // ********INSERT FUNCTION HERE**********
-                break;
-            case "T": // display tools
-                // ********INSERT FUNCTION HERE**********
-                break;
-            case "I": // display ingredients
-                // ********INSERT FUNCTION HERE**********
-                break;
-            case "F": // display food
-                // ********INSERT FUNCTION HERE**********
-                break;
             case "Q": // Exit to game menu
                 return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");
                 break;
         }
+        
+    }
+    
+    public void displayInventoryList() {
+    // get sorted list of inventory items
+    Item[] sortedList = InventoryControl.getSortedList();
+    // go through each item in the list
+        for (Item item : sortedList) {
+            System.out.println(item.getName() + " " + item.getActualQuantity() + "/" + item.getPossibleQuantity());
+        }
+        
+        
         
     }
     

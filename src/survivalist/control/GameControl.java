@@ -11,10 +11,7 @@ import survivalist.model.Animal;
 import survivalist.model.Building;
 import survivalist.model.Game;
 import survivalist.model.Item;
-import survivalist.model.Location;
-import survivalist.model.Map;
 import survivalist.model.Npc;
-import survivalist.model.Scene;
 
 /**
  *
@@ -175,7 +172,6 @@ public class GameControl {
         return buildingList;
     }
     
-    
     private static Item[] createInventoryList() {
         // created array(list) of inventory items
         Item[] inventoryList = 
@@ -187,6 +183,10 @@ public class GameControl {
         Item knife = new Item("Knife");
         knife.setDescription("A hunting knife.");
         knife.setType("weapon");
+        
+        Item[] requiredItems = new Item[3];
+        requiredItems[0] = inventoryList[Constants.BRANCH];
+        
         knife.setPossibleQuantity(1);
         knife.setActualQuantity(0);
         inventoryList[Constants.KNIFE] = knife;
