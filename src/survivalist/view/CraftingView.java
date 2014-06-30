@@ -44,32 +44,30 @@ public class CraftingView extends View{
                 break;
             case "K": // craft a knife
                 this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.KNIFE]);
-                        
                 break;
             case "B": // craft a bow
-                // ********INSERT FUNCTION HERE**********
+                this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.BOW]);
                 break;
             case "A": // craft arrows
-                // ********INSERT FUNCTION HERE**********
+                this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.ARROW]);
                 break;
             case "M": // craft a machete
-                // ********INSERT FUNCTION HERE**********
+                this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.MACHETE]);
                 break;
             case "X": // craft an axe
-                // ********INSERT FUNCTION HERE**********
+                this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.AXE]);
                 break;
             case "T": // craft a hammer
-                // ********INSERT FUNCTION HERE**********
+                this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.HAMMER]);
                 break;
             case "F": // craft flint and stone
-                // ********INSERT FUNCTION HERE**********
+                this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.FLINTANDSTONE]);
                 break;
             case "G": // craft a grappling hook
-                // ********INSERT FUNCTION HERE**********
+                this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.GRAPPLINGHOOK]);
                 break;
             case "Q": // Exit to previous menu
-                // ********INSERT FUNCTION HERE**********
-                break;
+                return;
             default:
                 System.out.println("\n*** Invalid Selection *** Try again");
                 break;

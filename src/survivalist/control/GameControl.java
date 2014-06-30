@@ -183,10 +183,11 @@ public class GameControl {
         Item knife = new Item("Knife");
         knife.setDescription("A hunting knife.");
         knife.setType("weapon");
-        
-        Item[] requiredItems = new Item[3];
-        requiredItems[0] = inventoryList[Constants.BRANCH];
-        
+        Item[] requiredKnifeIngredients = new Item[3];
+        knife.setRequiredResources(requiredKnifeIngredients);
+        requiredKnifeIngredients[0] = inventoryList[Constants.BRANCH];
+        requiredKnifeIngredients[0] = inventoryList[Constants.SHARPROCK];
+        requiredKnifeIngredients[0] = inventoryList[Constants.LEATHERSTRIP];
         knife.setPossibleQuantity(1);
         knife.setActualQuantity(0);
         inventoryList[Constants.KNIFE] = knife;
@@ -196,16 +197,26 @@ public class GameControl {
         Item bow = new Item("Bow");
         bow.setDescription("Used with arrows to take down animals from a distance.");
         bow.setType("weapon");
+        Item[] requiredBowIngredients = new Item[3];
+        bow.setRequiredResources(requiredBowIngredients);
+        requiredBowIngredients[0] = inventoryList[Constants.YEW];
+        requiredBowIngredients[0] = inventoryList[Constants.GUTSTRING];
+        requiredBowIngredients[0] = inventoryList[Constants.LEATHERSTRIP];
         bow.setPossibleQuantity(1);
         bow.setActualQuantity(0);
         inventoryList[Constants.BOW] = bow;
-
+        
         
         // Arrow
         
         Item arrow = new Item("Arrow");
         arrow.setDescription("Arrows can be shot using a bow, to hunt animals from a distance.");
         arrow.setType("weapon");
+        Item[] requiredArrowIngredients = new Item[3];
+        bow.setRequiredResources(requiredArrowIngredients);
+        requiredArrowIngredients[0] = inventoryList[Constants.BRANCH];
+        requiredArrowIngredients[0] = inventoryList[Constants.SHARPROCK];
+        requiredArrowIngredients[0] = inventoryList[Constants.LEATHERSTRIP];
         arrow.setPossibleQuantity(20);
         arrow.setActualQuantity(0);
         inventoryList[Constants.ARROW] = arrow;
@@ -215,6 +226,11 @@ public class GameControl {
         Item machete = new Item("Machete");
         machete.setDescription("A machete can be used to hunt larger animals and is also useful for clearing a path through dense undergrowth.");
         machete.setType("weapon");
+        Item[] requiredMacheteIngredients = new Item[3];
+        bow.setRequiredResources(requiredMacheteIngredients);
+        requiredMacheteIngredients[0] = inventoryList[Constants.BRANCH];
+        requiredMacheteIngredients[0] = inventoryList[Constants.SHARPROCK];
+        requiredMacheteIngredients[0] = inventoryList[Constants.LEATHERSTRIP];
         machete.setPossibleQuantity(1);
         machete.setActualQuantity(0);
         inventoryList[Constants.MACHETE] = machete;
@@ -225,6 +241,11 @@ public class GameControl {
         Item axe = new Item("Axe");
         axe.setDescription("An axe is used for chopping down trees.");
         axe.setType("tool");
+        Item[] requiredAxeIngredients = new Item[3];
+        bow.setRequiredResources(requiredAxeIngredients);
+        requiredAxeIngredients[0] = inventoryList[Constants.BRANCH];
+        requiredAxeIngredients[0] = inventoryList[Constants.SHARPROCK];
+        requiredAxeIngredients[0] = inventoryList[Constants.LEATHERSTRIP];
         axe.setPossibleQuantity(1);
         axe.setActualQuantity(0);
         inventoryList[Constants.AXE] = axe;
@@ -234,6 +255,11 @@ public class GameControl {
         Item hammer = new Item("Hammer");
         hammer.setDescription("A hammer is used to build structures.");
         hammer.setType("tool");
+        Item[] requiredHammerIngredients = new Item[3];
+        bow.setRequiredResources(requiredHammerIngredients);
+        requiredHammerIngredients[0] = inventoryList[Constants.BRANCH];
+        requiredHammerIngredients[0] = inventoryList[Constants.SHARPROCK];
+        requiredHammerIngredients[0] = inventoryList[Constants.LEATHERSTRIP];
         hammer.setPossibleQuantity(1);
         hammer.setActualQuantity(0);
         inventoryList[Constants.HAMMER] = hammer;
@@ -243,6 +269,11 @@ public class GameControl {
         Item flintAndStone = new Item("Flint and Stone");
         flintAndStone.setDescription("Flint and Stone are used to make fires.");
         flintAndStone.setType("tool");
+        Item[] requiredFlintAndStoneIngredients = new Item[3];
+        bow.setRequiredResources(requiredFlintAndStoneIngredients);
+        requiredFlintAndStoneIngredients[0] = inventoryList[Constants.BRANCH];
+        requiredFlintAndStoneIngredients[0] = inventoryList[Constants.SHARPROCK];
+        requiredFlintAndStoneIngredients[0] = inventoryList[Constants.LEATHERSTRIP];
         flintAndStone.setPossibleQuantity(1);
         flintAndStone.setActualQuantity(0);
         inventoryList[Constants.FLINTANDSTONE] = flintAndStone;
@@ -252,6 +283,11 @@ public class GameControl {
         Item grapplingHook = new Item("Grappling Hook");
         grapplingHook.setDescription("A hook attached to a rope, this is used to climb rocks by throwing it up the side of a cliff and climbing it up a string.");
         grapplingHook.setType("tool");
+        Item[] requiredGrapplingHookIngredients = new Item[3];
+        bow.setRequiredResources(requiredGrapplingHookIngredients);
+        requiredGrapplingHookIngredients[0] = inventoryList[Constants.BRANCH];
+        requiredGrapplingHookIngredients[0] = inventoryList[Constants.SHARPROCK];
+        requiredGrapplingHookIngredients[0] = inventoryList[Constants.LEATHERSTRIP];
         grapplingHook.setPossibleQuantity(1);
         grapplingHook.setActualQuantity(0);
         inventoryList[Constants.GRAPPLINGHOOK] = grapplingHook;
@@ -265,6 +301,15 @@ public class GameControl {
         branch.setPossibleQuantity(15);
         branch.setActualQuantity(0);
         inventoryList[Constants.BRANCH] = branch;
+        
+        // Yew Branch
+        
+        Item yew = new Item("Yew Branch");
+        yew.setDescription("A yew branch from a tree, springy enough to use as a bow");
+        yew.setType("ingredient");
+        yew.setPossibleQuantity(2);
+        yew.setActualQuantity(0);
+        inventoryList[Constants.YEW] = yew;
         
         // Flat Rock
         

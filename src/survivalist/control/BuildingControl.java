@@ -14,9 +14,9 @@ import survivalist.model.Location;
  */
 public class BuildingControl {
 
-    public static void addBuildingToLocation(Building building, Location location) {
+    public static void addBuildingToLocation(Building building, Location currentLocation) {
         
-       building.setLocation(location);
+       building.setLocation(currentLocation);
         
     }
 

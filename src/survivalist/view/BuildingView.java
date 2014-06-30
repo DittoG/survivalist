@@ -41,7 +41,6 @@ public class BuildingView extends View{
                 helpMenu.display();
                 break;
             case "C": // build a cabin
-                // ********INSERT FUNCTION HERE**********
                 Building cabin = Survivalist.getCurrentGame().getBuildings()[Constants.CABIN];
                 BuildingControl.addBuildingToLocation(cabin, currentLocation);
                 break;

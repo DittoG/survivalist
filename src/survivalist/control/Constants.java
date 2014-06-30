@@ -37,35 +37,36 @@ public class Constants {
     public final static int STONE = 15;
     public final static int LOG = 16;
     public final static int GUTSTRING = 17;
+    public final static int YEW = 18;
 
     //FOODS********************************************************************************
-    public final static int BERRY = 18;
-    public final static int COOKEDMEAT = 19;
+    public final static int BERRY = 19;
+    public final static int COOKEDMEAT = 20;
 
     //NPCS*********************************************************************************
     public static int NUMBER_OF_NPCS;
 
-    public final static int UNCLEDARWIN = 20;
-    public final static int AVIATORBILL = 21;
-    public final static int RANGERDAN = 22;
+    public final static int UNCLEDARWIN = 21;
+    public final static int AVIATORBILL = 22;
+    public final static int RANGERDAN = 23;
 
     //ANIMALS*******************************************************************************
     public static int NUMBER_OF_ANIMALS;
 
-    public final static int DEER = 23;
-    public final static int ELK = 24;
-    public final static int RABBIT = 25;
-    public final static int RACCOON = 26;
-    public final static int WOLF = 27;
-    public final static int MOOSE = 28;
-    public final static int BEAR = 29;
+    public final static int DEER = 24;
+    public final static int ELK = 25;
+    public final static int RABBIT = 26;
+    public final static int RACCOON = 27;
+    public final static int WOLF = 28;
+    public final static int MOOSE = 29;
+    public final static int BEAR = 30;
 
     //BUILDINGS******************************************************************************
-    public final static int NUMBER_OF_BUILDINGS = 30;
+    public final static int NUMBER_OF_BUILDINGS = 31;
 
-    public final static int CABIN = 31;
-    public final static int TOWER = 32;
-    public final static int LEANTO = 33;
+    public final static int CABIN = 32;
+    public final static int TOWER = 33;
+    public final static int LEANTO = 34;
 
     //MAP INFO*******************************************************************************
     public static int MAP_ROW_COUNT;
@@ -73,25 +74,25 @@ public class Constants {
 
     public static int NUMBER_OF_SCENES;
 
-    public final static int FOREST = 34;
-    public final static int FOREST2 = 35;
-    public final static int FOREST3 = 36;
-    public final static int GRASS = 37;
-    public final static int GRASS2 = 38;
-    public final static int GRASS3 = 39;
-    public final static int CLIFF = 40;
-    public final static int CLIFF2 = 41;
-    public final static int CLIFF3 = 42;
-    public final static int MOUNTAIN = 43;
-    public final static int MOUNTAIN2 = 44;
-    public final static int MOUNTAIN3 = 45;
-    public final static int ROAD = 46;
-    public final static int CRASH_SITE= 47;
-    public final static int STREAM = 48;
-    public final static int STREAM2 = 49;
-    public final static int STREAM3 = 50;
+    public final static int FOREST = 35;
+    public final static int FOREST2 = 36;
+    public final static int FOREST3 = 37;
+    public final static int GRASS = 38;
+    public final static int GRASS2 = 39;
+    public final static int GRASS3 = 40;
+    public final static int CLIFF = 41;
+    public final static int CLIFF2 = 42;
+    public final static int CLIFF3 = 43;
+    public final static int MOUNTAIN = 44;
+    public final static int MOUNTAIN2 = 45;
+    public final static int MOUNTAIN3 = 46;
+    public final static int ROAD = 47;
+    public final static int CRASH_SITE= 48;
+    public final static int STREAM = 49;
+    public final static int STREAM2 = 50;
+    public final static int STREAM3 = 51;
     
     
-    public final static int PLAYER = 51;
+    public final static int PLAYER = 52;
     
 }

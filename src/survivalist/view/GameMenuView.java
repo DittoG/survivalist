@@ -43,8 +43,8 @@ public class GameMenuView extends View{
                 mapMenu.display();
                 break;
             case "E": // display the exploring menu
-                LocationView locationMenu = new LocationView();
-                locationMenu.display();
+                HuntGatherView HuntGatherMenu = new HuntGatherView();
+                HuntGatherMenu.display();
                 break;
             case "I": // save the inventory menu
                 InventoryView inventoryMenu = new InventoryView();
