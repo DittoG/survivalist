@@ -12,6 +12,7 @@ import survivalist.model.Building;
 import survivalist.model.Game;
 import survivalist.model.Item;
 import survivalist.model.Npc;
+import survivalist.model.RequiredItem;
 
 /**
  *
@@ -183,11 +184,11 @@ public class GameControl {
         Item knife = new Item("Knife");
         knife.setDescription("A hunting knife.");
         knife.setType("weapon");
-        Item[] requiredKnifeIngredients = new Item[3];
+        RequiredItem[] requiredKnifeIngredients = new RequiredItem[3];
         knife.setRequiredResources(requiredKnifeIngredients);
-        requiredKnifeIngredients[0] = inventoryList[Constants.BRANCH];
-        requiredKnifeIngredients[0] = inventoryList[Constants.SHARPROCK];
-        requiredKnifeIngredients[0] = inventoryList[Constants.LEATHERSTRIP];
+        requiredKnifeIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
+        requiredKnifeIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
+        requiredKnifeIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
         knife.setPossibleQuantity(1);
         knife.setActualQuantity(0);
         inventoryList[Constants.KNIFE] = knife;
@@ -197,11 +198,11 @@ public class GameControl {
         Item bow = new Item("Bow");
         bow.setDescription("Used with arrows to take down animals from a distance.");
         bow.setType("weapon");
-        Item[] requiredBowIngredients = new Item[3];
+        RequiredItem[] requiredBowIngredients = new RequiredItem[3];
         bow.setRequiredResources(requiredBowIngredients);
-        requiredBowIngredients[0] = inventoryList[Constants.YEW];
-        requiredBowIngredients[0] = inventoryList[Constants.GUTSTRING];
-        requiredBowIngredients[0] = inventoryList[Constants.LEATHERSTRIP];
+        requiredBowIngredients[0] = new RequiredItem(inventoryList[Constants.YEW], 1);
+        requiredBowIngredients[1] = new RequiredItem(inventoryList[Constants.GUTSTRING], 1);
+        requiredBowIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
         bow.setPossibleQuantity(1);
         bow.setActualQuantity(0);
         inventoryList[Constants.BOW] = bow;
@@ -258,7 +259,7 @@ public class GameControl {
         Item[] requiredHammerIngredients = new Item[3];
         bow.setRequiredResources(requiredHammerIngredients);
         requiredHammerIngredients[0] = inventoryList[Constants.BRANCH];
-        requiredHammerIngredients[0] = inventoryList[Constants.SHARPROCK];
+        requiredHammerIngredients[0] = inventoryList[Constants.FLATROCK];
         requiredHammerIngredients[0] = inventoryList[Constants.LEATHERSTRIP];
         hammer.setPossibleQuantity(1);
         hammer.setActualQuantity(0);
