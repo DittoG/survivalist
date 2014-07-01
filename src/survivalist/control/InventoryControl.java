@@ -8,6 +8,7 @@ package survivalist.control;
 
 import survivalist.Survivalist;
 import survivalist.model.Item;
+import survivalist.model.RequiredItem;
 
 /**
  *
@@ -23,7 +24,7 @@ public class InventoryControl {
         return inventoryList;
     }
 
-    public static boolean checkAvailableResources(Item[] requiredResources) {
+    public static boolean checkAvailableResources(RequiredItem[] requiredResources) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

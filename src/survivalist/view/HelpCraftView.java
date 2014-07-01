@@ -28,6 +28,7 @@ public class HelpCraftView extends View{
     @Override
     
     public void doAction(String choice) {
+        switch (choice) {
             case "Q": // Exit to Help menu
                 return;
             default:

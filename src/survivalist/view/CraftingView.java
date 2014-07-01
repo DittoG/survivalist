@@ -8,6 +8,7 @@ import survivalist.Survivalist;
 import survivalist.control.Constants;
 import survivalist.control.InventoryControl;
 import survivalist.model.Item;
+import survivalist.model.RequiredItem;
 
 /**
  *
@@ -76,9 +77,9 @@ public class CraftingView extends View{
     
     private void craftItem(Item item) {
         
-        // get required resources from item
+        // get required resources and quantities from item
         
-        Item[] requiredResources = item.getRequiredResources();
+        RequiredItem[] requiredResources = item.getRequiredResources();
         
         // check to see if required resources are available
         
