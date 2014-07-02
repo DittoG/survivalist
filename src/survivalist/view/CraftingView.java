@@ -94,14 +94,18 @@ public class CraftingView extends View{
             
                // craft item AND print "item has been crafted"
             
-            System.out.println("You have crafted a " + item.getName());
+            System.out.println("You have crafted a(n) " + item.getName());
         }
         
         // ELSE resources are not available
             // print "you don't have the required resources"
         
         else {
-            System.out.println("You do not have the required resources to craft that.");
+            System.out.println("You do not have the required resources.");
+            System.out.println("To craft this item, you need the following");
+            System.out.println("amounts of the listed resources:");
+            System.out.println("Item: " + item.getRequiredResources() + "Quantity: ");
+               
         }
     }
     

@@ -20,6 +20,7 @@ public class InventoryControl {
         Item[] inventoryList = Survivalist.getCurrentGame().getInventory().clone();
         
         //sort list
+        
         //return list
         return inventoryList;
     }
