@@ -26,7 +26,29 @@ public class InventoryControl {
     }
 
     public static boolean checkAvailableResources(RequiredItem[] requiredResources) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        // for each resource
+        for (int i = 0; i < requiredResources.length; i++) {
+            RequiredItem requiredItem = requiredResources[i];
+            // get the required amount
+            double requiredAmount = requiredItem.getRequiredAmount();
+            // get the available amount
+            double availableAmount = requiredItem.getInventoryItem().getActualQuantity();
+            // IF the available amount < required amount
+            if(availableAmount < requiredAmount){
+                // return False
+                return false;
+            }
+        }
+        // return True
+        return true;
+            
+            
+            
+                
+
+        
+        
+        
     }
     
 }

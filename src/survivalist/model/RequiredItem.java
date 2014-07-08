@@ -13,7 +13,7 @@ package survivalist.model;
 public class RequiredItem {
     
     private Item inventoryItem;
-    private int requiredAmount;
+    private double requiredAmount;
 
     public RequiredItem() {
     }
@@ -31,7 +31,7 @@ public class RequiredItem {
         this.inventoryItem = inventoryItem;
     }
 
-    public int getRequiredAmount() {
+    public double getRequiredAmount() {
         return requiredAmount;
     }
 
