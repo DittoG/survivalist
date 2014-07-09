@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist;
 
+import survivalist.frames.StartProgramFrame;
 import survivalist.model.Game;
 import survivalist.model.Player;
 import survivalist.view.StartProgramView;
@@ -15,7 +15,7 @@ import survivalist.view.StartProgramView;
  * @author Madison
  */
 public class Survivalist {
-    
+
     private static Game currentGame = null;
     private static Player player = null;
 
@@ -39,9 +39,23 @@ public class Survivalist {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // create StartProgramView and start the program
-        StartProgramView startProgramView = new StartProgramView();
-        startProgramView.startProgram();
+
+        try {
+            
+           // StartProgramView startView = new StartProgramView();
+            // startView.display();
+            // create StartProgramView and start the program
+            java.awt.EventQueue.invokeLater(
+                    new Runnable() {
+                        public void run() {
+                            StartProgramFrame startProgramFrame = new StartProgramFrame();
+                            startProgramFrame.setVisible(true);
+                        }
+                    }
+            );
+            
+            return;
+        }
     }
-    
+
 }
