@@ -104,7 +104,7 @@ public class CraftingView extends View{
             System.out.println("You do not have the required resources.");
             System.out.println("To craft this item, you need the following");
             System.out.println("amounts of the listed resources:");
-            System.out.println("Item: " + item.getRequiredResources() + "Quantity: ");
+            System.out.println("Item: " + item.getRequiredResources());
                
         }
     }

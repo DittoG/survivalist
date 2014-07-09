@@ -13,14 +13,14 @@ package survivalist.model;
 public class RequiredItem {
     
     private Item inventoryItem;
-    private double requiredAmount;
+    private double requiredQuantity;
 
     public RequiredItem() {
     }
 
-    public RequiredItem(Item inventoryItem, int requiredAmount) {
+    public RequiredItem(Item inventoryItem, double requiredAmount) {
         this.inventoryItem = inventoryItem;
-        this.requiredAmount = requiredAmount;
+        this.requiredQuantity = requiredAmount;
     }
 
     public Item getInventoryItem() {
@@ -32,11 +32,11 @@ public class RequiredItem {
     }
 
     public double getRequiredAmount() {
-        return requiredAmount;
+        return requiredQuantity;
     }
 
-    public void setRequiredAmount(int requiredAmount) {
-        this.requiredAmount = requiredAmount;
+    public void setRequiredAmount(double requiredAmount) {
+        this.requiredQuantity = requiredAmount;
     }
     
     
