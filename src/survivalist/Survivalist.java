@@ -40,22 +40,22 @@ public class Survivalist {
      */
     public static void main(String[] args) {
 
-        try {
+        // try {
             
-           // StartProgramView startView = new StartProgramView();
-            // startView.display();
-            // create StartProgramView and start the program
-            java.awt.EventQueue.invokeLater(
-                    new Runnable() {
-                        public void run() {
-                            StartProgramFrame startProgramFrame = new StartProgramFrame();
-                            startProgramFrame.setVisible(true);
-                        }
-                    }
-            );
+           StartProgramView startView = new StartProgramView();
+           startView.display();
+//           create StartProgramView and start the program
+//           java.awt.EventQueue.invokeLater(
+//                    new Runnable() {
+//                        public void run() {
+//                            StartProgramFrame startProgramFrame = new StartProgramFrame();
+//                            startProgramFrame.setVisible(true);
+//                        }
+//                    }
+//            );
             
             return;
-        }
+        //}
     }
 
 }

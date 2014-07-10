@@ -19,7 +19,7 @@ public class StartProgramView {
     public StartProgramView() {
     }
     
-    public void startProgram() {
+    public void display() {
         
         // Display the banner screen
         this.displayBanner();

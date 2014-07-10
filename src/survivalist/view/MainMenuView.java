@@ -4,6 +4,7 @@ THIS PAGE ONLY NEEDS THE CORRECT FUNCTIONS IMPLEMENTED
 package survivalist.view;
 
 import survivalist.Survivalist;
+import survivalist.control.GameControl;
 import survivalist.control.ProgramControl;
 
 /**
@@ -31,6 +32,7 @@ public class MainMenuView extends View {
 
         switch (choice) {
             case "G": // display the game menu
+                GameControl.startNewGame();
                 GameMenuView gameMenu = new GameMenuView();
                 gameMenu.display();
                 break;

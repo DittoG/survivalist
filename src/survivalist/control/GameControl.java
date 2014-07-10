@@ -178,121 +178,6 @@ public class GameControl {
         Item[] inventoryList = 
                 new Item[Constants.NUMBER_OF_INVENTORY_ITEMS];
         
-        // WEAPON codes*************************************************************************
-        // Knife
-        
-        Item knife = new Item("Knife");
-        knife.setDescription("A hunting knife.");
-        knife.setType("weapon");
-        RequiredItem[] requiredKnifeIngredients = new RequiredItem[3];
-        knife.setRequiredResources(requiredKnifeIngredients);
-        requiredKnifeIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
-        requiredKnifeIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
-        requiredKnifeIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
-        knife.setPossibleQuantity(1);
-        knife.setActualQuantity(0);
-        inventoryList[Constants.KNIFE] = knife;
-        
-        // Bow
-        
-        Item bow = new Item("Bow");
-        bow.setDescription("Used with arrows to take down animals from a distance.");
-        bow.setType("weapon");
-        RequiredItem[] requiredBowIngredients = new RequiredItem[3];
-        bow.setRequiredResources(requiredBowIngredients);
-        requiredBowIngredients[0] = new RequiredItem(inventoryList[Constants.YEW], 1);
-        requiredBowIngredients[1] = new RequiredItem(inventoryList[Constants.GUTSTRING], 1);
-        requiredBowIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
-        bow.setPossibleQuantity(1);
-        bow.setActualQuantity(0);
-        inventoryList[Constants.BOW] = bow;
-        
-        
-        // Arrow
-        
-        Item arrow = new Item("Arrow");
-        arrow.setDescription("Arrows can be shot using a bow, to hunt animals from a distance.");
-        arrow.setType("weapon");
-        RequiredItem[] requiredArrowIngredients = new RequiredItem[3];
-        bow.setRequiredResources(requiredArrowIngredients);
-        requiredArrowIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
-        requiredArrowIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
-        requiredArrowIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
-        arrow.setPossibleQuantity(20);
-        arrow.setActualQuantity(0);
-        inventoryList[Constants.ARROW] = arrow;
-        
-        // Machete
-        
-        Item machete = new Item("Machete");
-        machete.setDescription("A machete can be used to hunt larger animals and is also useful for clearing a path through dense undergrowth.");
-        machete.setType("weapon");
-        RequiredItem[] requiredMacheteIngredients = new RequiredItem[3];
-        bow.setRequiredResources(requiredMacheteIngredients);
-        requiredMacheteIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
-        requiredMacheteIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
-        requiredMacheteIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
-        machete.setPossibleQuantity(1);
-        machete.setActualQuantity(0);
-        inventoryList[Constants.MACHETE] = machete;
-        
-        // TOOL codes*******************************************************************************
-        // Axe
-        
-        Item axe = new Item("Axe");
-        axe.setDescription("An axe is used for chopping down trees.");
-        axe.setType("tool");
-        RequiredItem[] requiredAxeIngredients = new RequiredItem[3];
-        bow.setRequiredResources(requiredAxeIngredients);
-        requiredAxeIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
-        requiredAxeIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
-        requiredAxeIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
-        axe.setPossibleQuantity(1);
-        axe.setActualQuantity(0);
-        inventoryList[Constants.AXE] = axe;
-        
-        // Hammer
-        
-        Item hammer = new Item("Hammer");
-        hammer.setDescription("A hammer is used to build structures.");
-        hammer.setType("tool");
-        RequiredItem[] requiredHammerIngredients = new RequiredItem[3];
-        bow.setRequiredResources(requiredHammerIngredients);
-        requiredHammerIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
-        requiredHammerIngredients[1] = new RequiredItem(inventoryList[Constants.FLATROCK], 1);
-        requiredHammerIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
-        hammer.setPossibleQuantity(1);
-        hammer.setActualQuantity(0);
-        inventoryList[Constants.HAMMER] = hammer;
-        
-        // Flint and Stone
-        
-        Item flintAndStone = new Item("Flint and Stone");
-        flintAndStone.setDescription("Flint and Stone are used to make fires.");
-        flintAndStone.setType("tool");
-        RequiredItem[] requiredFlintAndStoneIngredients = new RequiredItem[3];
-        bow.setRequiredResources(requiredFlintAndStoneIngredients);
-        requiredFlintAndStoneIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
-        requiredFlintAndStoneIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
-        requiredFlintAndStoneIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
-        flintAndStone.setPossibleQuantity(1);
-        flintAndStone.setActualQuantity(0);
-        inventoryList[Constants.FLINTANDSTONE] = flintAndStone;
-        
-        // Hook
-        
-        Item grapplingHook = new Item("Grappling Hook");
-        grapplingHook.setDescription("A hook attached to a rope, this is used to climb rocks by throwing it up the side of a cliff and climbing it up a string.");
-        grapplingHook.setType("tool");
-        RequiredItem[] requiredGrapplingHookIngredients = new RequiredItem[3];
-        bow.setRequiredResources(requiredGrapplingHookIngredients);
-        requiredGrapplingHookIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
-        requiredGrapplingHookIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
-        requiredGrapplingHookIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
-        grapplingHook.setPossibleQuantity(1);
-        grapplingHook.setActualQuantity(0);
-        inventoryList[Constants.GRAPPLINGHOOK] = grapplingHook;
-        
         // INGREDIENT codes********************************************************************************
         // Branch
         
@@ -412,6 +297,121 @@ public class GameControl {
         cookedMeat.setPossibleQuantity(10);
         cookedMeat.setActualQuantity(0);
         inventoryList[Constants.COOKEDMEAT] = cookedMeat;
+        
+        // WEAPON codes*************************************************************************
+        // Knife
+        
+        Item knife = new Item("Knife");
+        knife.setDescription("A hunting knife.");
+        knife.setType("weapon");
+        RequiredItem[] requiredKnifeIngredients = new RequiredItem[3];
+        knife.setRequiredResources(requiredKnifeIngredients);
+        requiredKnifeIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
+        requiredKnifeIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
+        requiredKnifeIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
+        knife.setPossibleQuantity(1);
+        knife.setActualQuantity(0);
+        inventoryList[Constants.KNIFE] = knife;
+        
+        // Bow
+        
+        Item bow = new Item("Bow");
+        bow.setDescription("Used with arrows to take down animals from a distance.");
+        bow.setType("weapon");
+        RequiredItem[] requiredBowIngredients = new RequiredItem[3];
+        bow.setRequiredResources(requiredBowIngredients);
+        requiredBowIngredients[0] = new RequiredItem(inventoryList[Constants.YEW], 1);
+        requiredBowIngredients[1] = new RequiredItem(inventoryList[Constants.GUTSTRING], 1);
+        requiredBowIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
+        bow.setPossibleQuantity(1);
+        bow.setActualQuantity(0);
+        inventoryList[Constants.BOW] = bow;
+        
+        
+        // Arrow
+        
+        Item arrow = new Item("Arrow");
+        arrow.setDescription("Arrows can be shot using a bow, to hunt animals from a distance.");
+        arrow.setType("weapon");
+        RequiredItem[] requiredArrowIngredients = new RequiredItem[3];
+        bow.setRequiredResources(requiredArrowIngredients);
+        requiredArrowIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
+        requiredArrowIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
+        requiredArrowIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
+        arrow.setPossibleQuantity(20);
+        arrow.setActualQuantity(0);
+        inventoryList[Constants.ARROW] = arrow;
+        
+        // Machete
+        
+        Item machete = new Item("Machete");
+        machete.setDescription("A machete can be used to hunt larger animals and is also useful for clearing a path through dense undergrowth.");
+        machete.setType("weapon");
+        RequiredItem[] requiredMacheteIngredients = new RequiredItem[3];
+        bow.setRequiredResources(requiredMacheteIngredients);
+        requiredMacheteIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
+        requiredMacheteIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
+        requiredMacheteIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
+        machete.setPossibleQuantity(1);
+        machete.setActualQuantity(0);
+        inventoryList[Constants.MACHETE] = machete;
+        
+        // TOOL codes*******************************************************************************
+        // Axe
+        
+        Item axe = new Item("Axe");
+        axe.setDescription("An axe is used for chopping down trees.");
+        axe.setType("tool");
+        RequiredItem[] requiredAxeIngredients = new RequiredItem[3];
+        bow.setRequiredResources(requiredAxeIngredients);
+        requiredAxeIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
+        requiredAxeIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
+        requiredAxeIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
+        axe.setPossibleQuantity(1);
+        axe.setActualQuantity(0);
+        inventoryList[Constants.AXE] = axe;
+        
+        // Hammer
+        
+        Item hammer = new Item("Hammer");
+        hammer.setDescription("A hammer is used to build structures.");
+        hammer.setType("tool");
+        RequiredItem[] requiredHammerIngredients = new RequiredItem[3];
+        bow.setRequiredResources(requiredHammerIngredients);
+        requiredHammerIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
+        requiredHammerIngredients[1] = new RequiredItem(inventoryList[Constants.FLATROCK], 1);
+        requiredHammerIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
+        hammer.setPossibleQuantity(1);
+        hammer.setActualQuantity(0);
+        inventoryList[Constants.HAMMER] = hammer;
+        
+        // Flint and Stone
+        
+        Item flintAndStone = new Item("Flint and Stone");
+        flintAndStone.setDescription("Flint and Stone are used to make fires.");
+        flintAndStone.setType("tool");
+        RequiredItem[] requiredFlintAndStoneIngredients = new RequiredItem[3];
+        bow.setRequiredResources(requiredFlintAndStoneIngredients);
+        requiredFlintAndStoneIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
+        requiredFlintAndStoneIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
+        requiredFlintAndStoneIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
+        flintAndStone.setPossibleQuantity(1);
+        flintAndStone.setActualQuantity(0);
+        inventoryList[Constants.FLINTANDSTONE] = flintAndStone;
+        
+        // Hook
+        
+        Item grapplingHook = new Item("Grappling Hook");
+        grapplingHook.setDescription("A hook attached to a rope, this is used to climb rocks by throwing it up the side of a cliff and climbing it up a string.");
+        grapplingHook.setType("tool");
+        RequiredItem[] requiredGrapplingHookIngredients = new RequiredItem[3];
+        bow.setRequiredResources(requiredGrapplingHookIngredients);
+        requiredGrapplingHookIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
+        requiredGrapplingHookIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
+        requiredGrapplingHookIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
+        grapplingHook.setPossibleQuantity(1);
+        grapplingHook.setActualQuantity(0);
+        inventoryList[Constants.GRAPPLINGHOOK] = grapplingHook;
         
         GameControl.game.setInventory(inventoryList);
         return inventoryList;
