@@ -51,15 +51,15 @@ public class Constants {
     public final static int RANGERDAN = 2;
 
     //ANIMALS*******************************************************************************
-    public static int NUMBER_OF_ANIMALS;
+    public static int NUMBER_OF_ANIMALS = 7;
 
-    public final static int DEER = 24;
-    public final static int ELK = 25;
-    public final static int RABBIT = 26;
-    public final static int RACCOON = 27;
-    public final static int WOLF = 28;
-    public final static int MOOSE = 29;
-    public final static int BEAR = 30;
+    public final static int DEER = 0;
+    public final static int ELK = 1;
+    public final static int RABBIT = 2;
+    public final static int RACCOON = 3;
+    public final static int WOLF = 4;
+    public final static int MOOSE = 5;
+    public final static int BEAR = 6;
 
     //BUILDINGS******************************************************************************
     public final static int NUMBER_OF_BUILDINGS = 3;
@@ -69,30 +69,30 @@ public class Constants {
     public final static int LEANTO = 2;
 
     //MAP INFO*******************************************************************************
-    public static int MAP_ROW_COUNT;
-    public static int MAP_COLUMN_COUNT;
+    public static int MAP_ROW_COUNT = 20;
+    public static int MAP_COLUMN_COUNT = 20;
 
-    public static int NUMBER_OF_SCENES;
+    public static int NUMBER_OF_SCENES = 17;
 
-    public final static int FOREST = 35;
-    public final static int FOREST2 = 36;
-    public final static int FOREST3 = 37;
-    public final static int GRASS = 38;
-    public final static int GRASS2 = 39;
-    public final static int GRASS3 = 40;
-    public final static int CLIFF = 41;
-    public final static int CLIFF2 = 42;
-    public final static int CLIFF3 = 43;
-    public final static int MOUNTAIN = 44;
-    public final static int MOUNTAIN2 = 45;
-    public final static int MOUNTAIN3 = 46;
-    public final static int ROAD = 47;
-    public final static int CRASH_SITE= 48;
-    public final static int STREAM = 49;
-    public final static int STREAM2 = 50;
-    public final static int STREAM3 = 51;
+    public final static int FOREST = 0;
+    public final static int FOREST2 = 1;
+    public final static int FOREST3 = 2;
+    public final static int GRASS = 3;
+    public final static int GRASS2 = 4;
+    public final static int GRASS3 = 5;
+    public final static int CLIFF = 6;
+    public final static int CLIFF2 = 7;
+    public final static int CLIFF3 = 8;
+    public final static int MOUNTAIN = 9;
+    public final static int MOUNTAIN2 = 10;
+    public final static int MOUNTAIN3 = 11;
+    public final static int ROAD = 12;
+    public final static int CRASH_SITE= 13;
+    public final static int STREAM = 14;
+    public final static int STREAM2 = 15;
+    public final static int STREAM3 = 16;
     
     
-    public final static int PLAYER = 52;
+    public final static int PLAYER = 0;
     
 }

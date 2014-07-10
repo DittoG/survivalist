@@ -1,7 +1,6 @@
 /*
-THIS PAGE ONLY NEEDS THE CORRECT FUNCTIONS IMPLEMENTED
+ THIS PAGE ONLY NEEDS THE CORRECT FUNCTIONS IMPLEMENTED
  */
-
 package survivalist.view;
 
 import survivalist.Survivalist;
@@ -14,30 +13,30 @@ import survivalist.model.RequiredItem;
  *
  * @author Madison
  */
-public class CraftingView extends View{
-    
+public class CraftingView extends View {
+
     public CraftingView() {
         super("\n"
-            + "\n------------------------------------------------"
-            + "\n|               Crafting Menu                  |"
-            + "\n------------------------------------------------"
-            + "\nH - Get Help on Crafting"
-            + "\nK - Knife"
-            + "\nB - Bow"
-            + "\nA - Arrows"
-            + "\nM - Machete"
-            + "\nX - Axe"
-            + "\nT - Hammer"
-            + "\nF - Flint and Stone"
-            + "\nG - Grappling Hook"
-            + "\nQ - Exit to previous menu"
-            + "\n------------------------------------------------");
+                + "\n------------------------------------------------"
+                + "\n|               Crafting Menu                  |"
+                + "\n------------------------------------------------"
+                + "\nH - Get Help on Crafting"
+                + "\nK - Knife"
+                + "\nB - Bow"
+                + "\nA - Arrows"
+                + "\nM - Machete"
+                + "\nX - Axe"
+                + "\nT - Hammer"
+                + "\nF - Flint and Stone"
+                + "\nG - Grappling Hook"
+                + "\nQ - Exit to previous menu"
+                + "\n------------------------------------------------");
     }
-    
+
     @Override
-    
+
     public void doAction(String choice) {
-        
+
         switch (choice) {
             case "H": // display the help menu
                 HelpCraftView helpCraftView = new HelpCraftView();
@@ -74,39 +73,34 @@ public class CraftingView extends View{
                 break;
         }
     }
-    
+
     private void craftItem(Item item) {
-        
+
         // get required resources and quantities from item
-        
         RequiredItem[] requiredResources = item.getRequiredResources();
-        
+
         // check to see if required resources are available
-        
         boolean adequateResources = InventoryControl.checkAvailableResources(requiredResources);
-        
+
         // IF required resources are available
-        
-        if(adequateResources) {
+        if (adequateResources) {
             double actualQuantity = item.getActualQuantity();
             actualQuantity++;
             item.setActualQuantity(actualQuantity);
-            
+
                // craft item AND print "item has been crafted"
-            
             System.out.println("You have crafted a(n) " + item.getName());
-        }
-        
-        // ELSE resources are not available
-            // print "you don't have the required resources"
-        
+        } // ELSE resources are not available
+        // print "you don't have the required resources"
         else {
-            System.out.println("You do not have the required resources.");
-            System.out.println("To craft this item, you need the following");
-            System.out.println("amounts of the listed resources:");
-            System.out.println("Item: " + item.getRequiredResources());
-               
+            System.out.println("You do not have the required resources."
+                    + "\nTo craft this item, you need the following"
+                    + "\namounts of the listed resources:"
+                    + "\n  ->Item: " + item.getRequiredResources()[0].getInventoryItem().getName() + "  Quantity: " + item.getRequiredResources()[0].getRequiredAmount()
+                    + "\n  ->Item: " + item.getRequiredResources()[1].getInventoryItem().getName() + "  Quantity: " + item.getRequiredResources()[1].getRequiredAmount()
+                    + "\n  ->Item: " + item.getRequiredResources()[2].getInventoryItem().getName() + "  Quantity: " + item.getRequiredResources()[2].getRequiredAmount());
+
         }
     }
-    
+
 }

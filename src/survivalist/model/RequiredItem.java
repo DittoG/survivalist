@@ -38,6 +38,4 @@ public class RequiredItem {
     public void setRequiredAmount(double requiredAmount) {
         this.requiredQuantity = requiredAmount;
     }
-    
-    
 }
