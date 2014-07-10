@@ -334,7 +334,7 @@ public class GameControl {
         arrow.setDescription("Arrows can be shot using a bow, to hunt animals from a distance.");
         arrow.setType("weapon");
         RequiredItem[] requiredArrowIngredients = new RequiredItem[3];
-        bow.setRequiredResources(requiredArrowIngredients);
+        arrow.setRequiredResources(requiredArrowIngredients);
         requiredArrowIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
         requiredArrowIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
         requiredArrowIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
@@ -348,7 +348,7 @@ public class GameControl {
         machete.setDescription("A machete can be used to hunt larger animals and is also useful for clearing a path through dense undergrowth.");
         machete.setType("weapon");
         RequiredItem[] requiredMacheteIngredients = new RequiredItem[3];
-        bow.setRequiredResources(requiredMacheteIngredients);
+        machete.setRequiredResources(requiredMacheteIngredients);
         requiredMacheteIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
         requiredMacheteIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
         requiredMacheteIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
@@ -363,7 +363,7 @@ public class GameControl {
         axe.setDescription("An axe is used for chopping down trees.");
         axe.setType("tool");
         RequiredItem[] requiredAxeIngredients = new RequiredItem[3];
-        bow.setRequiredResources(requiredAxeIngredients);
+        axe.setRequiredResources(requiredAxeIngredients);
         requiredAxeIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
         requiredAxeIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
         requiredAxeIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
@@ -377,7 +377,7 @@ public class GameControl {
         hammer.setDescription("A hammer is used to build structures.");
         hammer.setType("tool");
         RequiredItem[] requiredHammerIngredients = new RequiredItem[3];
-        bow.setRequiredResources(requiredHammerIngredients);
+        hammer.setRequiredResources(requiredHammerIngredients);
         requiredHammerIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
         requiredHammerIngredients[1] = new RequiredItem(inventoryList[Constants.FLATROCK], 1);
         requiredHammerIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
@@ -391,7 +391,7 @@ public class GameControl {
         flintAndStone.setDescription("Flint and Stone are used to make fires.");
         flintAndStone.setType("tool");
         RequiredItem[] requiredFlintAndStoneIngredients = new RequiredItem[3];
-        bow.setRequiredResources(requiredFlintAndStoneIngredients);
+        flintAndStone.setRequiredResources(requiredFlintAndStoneIngredients);
         requiredFlintAndStoneIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
         requiredFlintAndStoneIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
         requiredFlintAndStoneIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
@@ -405,7 +405,7 @@ public class GameControl {
         grapplingHook.setDescription("A hook attached to a rope, this is used to climb rocks by throwing it up the side of a cliff and climbing it up a string.");
         grapplingHook.setType("tool");
         RequiredItem[] requiredGrapplingHookIngredients = new RequiredItem[3];
-        bow.setRequiredResources(requiredGrapplingHookIngredients);
+        grapplingHook.setRequiredResources(requiredGrapplingHookIngredients);
         requiredGrapplingHookIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
         requiredGrapplingHookIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
         requiredGrapplingHookIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);

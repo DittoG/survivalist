@@ -88,19 +88,23 @@ public class CraftingView extends View {
             actualQuantity++;
             item.setActualQuantity(actualQuantity);
 
-               // craft item AND print "item has been crafted"
+            // craft item AND print "item has been crafted"
             System.out.println("You have crafted a(n) " + item.getName());
         } // ELSE resources are not available
         // print "you don't have the required resources"
         else {
             System.out.println("You do not have the required resources."
-                    + "\nTo craft this item, you need the following"
+                    + "\nTo craft a(n) " 
+                    + item.getRequiredResources()[0].getInventoryItem().getName() 
+                    + " , you need the following"
                     + "\namounts of the listed resources:"
-                    + "\n  ->Item: " + item.getRequiredResources()[0].getInventoryItem().getName() + "  Quantity: " + item.getRequiredResources()[0].getRequiredAmount()
-                    + "\n  ->Item: " + item.getRequiredResources()[1].getInventoryItem().getName() + "  Quantity: " + item.getRequiredResources()[1].getRequiredAmount()
-                    + "\n  ->Item: " + item.getRequiredResources()[2].getInventoryItem().getName() + "  Quantity: " + item.getRequiredResources()[2].getRequiredAmount());
-
+                    + "\n  ->Item: " 
+                    + item.getRequiredResources()[0].getInventoryItem().getName() 
+                    + "  Quantity: " + item.getRequiredResources()[0].getRequiredAmount()
+                    + "\n  ->Item: " + item.getRequiredResources()[1].getInventoryItem().getName() 
+                    + "  Quantity: " + item.getRequiredResources()[1].getRequiredAmount()
+                    + "\n  ->Item: " + item.getRequiredResources()[2].getInventoryItem().getName() 
+                    + "  Quantity: " + item.getRequiredResources()[2].getRequiredAmount());
         }
     }
-
 }
