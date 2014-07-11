@@ -7,6 +7,8 @@
 package survivalist.frames;
 
 import javax.swing.JLabel;
+import survivalist.control.GameControl;
+import survivalist.model.Player;
 
 /**
  *
@@ -30,8 +32,34 @@ public class MainMenuFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        jlPlayerName = new javax.swing.JLabel();
+        jlMainMenuBackground = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+
+        jLayeredPane1.setMinimumSize(new java.awt.Dimension(748, 458));
+
+        jlPlayerName.setFont(new java.awt.Font("Showcard Gothic", 0, 16)); // NOI18N
+        jlPlayerName.setForeground(new java.awt.Color(132, 193, 255));
+        jLayeredPane1.add(jlPlayerName);
+        jlPlayerName.setBounds(370, 10, 150, 30);
+
+        jlMainMenuBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/pictures/MainMenuBackground.jpg"))); // NOI18N
+        jlMainMenuBackground.setText("jLabel1");
+        jLayeredPane1.add(jlMainMenuBackground);
+        jlMainMenuBackground.setBounds(0, 0, 750, 460);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 748, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -72,15 +100,20 @@ public class MainMenuFrame extends javax.swing.JFrame {
     }
     
     // Public Getters and Setters
-    public JLabel getJlPlayerName() {
-        return jlPlayerName;
-    }
+    
 
-    public void setJlPlayerName(JLabel jlPlayerName) {
-        this.jlPlayerName = jlPlayerName;
+    public Void setJlPlayerName() {
+        
+        String playerName = survivalist.Survivalist.getPlayer().getName();
+        
+        this.jlPlayerName.setText(playerName);
+        return null;
     }
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JLabel jlMainMenuBackground;
+    private javax.swing.JLabel jlPlayerName;
     // End of variables declaration//GEN-END:variables
 }

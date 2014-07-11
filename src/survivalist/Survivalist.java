@@ -8,7 +8,6 @@ package survivalist;
 import survivalist.frames.StartProgramFrame;
 import survivalist.model.Game;
 import survivalist.model.Player;
-import survivalist.view.StartProgramView;
 
 /**
  *
@@ -17,7 +16,7 @@ import survivalist.view.StartProgramView;
 public class Survivalist {
 
     private static Game currentGame = null;
-    private static Player player = null;
+    private static Player player;
 
     public static Game getCurrentGame() {
         return currentGame;
