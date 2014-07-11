@@ -103,21 +103,25 @@ public class StartProgramFrame extends javax.swing.JFrame {
 
     private void jbStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbStartActionPerformed
         // get name of player entered
-        String playersName = this.jtPlayerName.getText();
+        String playerName = this.jtPlayerName.getText();
         
-        playersName = playersName.trim();
+        playerName = playerName.trim();
         // trim off excess blanks from name
         // if players name < 1 character
-        if (playersName.length() < 1) {
+        if (playerName.length() < 1) {
             JOptionPane.showMessageDialog(this,
                    "The name must be at least one character long",
                     "Invalid Players Name" , JOptionPane.ERROR_MESSAGE);
                     return;
         }
         
+        Player player = ProgramControl.createPlayer(playerName);
+        
         // show the main menu
         MainMenuFrame mainMenuFrame = new MainMenuFrame();
-        mainMenuFrame.setVisible(rootPaneCheckingEnabled);
+        mainMenuFrame.getJlPlayerName().setText("Welcome to the Wild, " + playerName + ".");
+        
+        mainMenuFrame.setVisible(true);
         
         // dispose of the start program frame
         this.dispose();
@@ -182,6 +186,7 @@ public class StartProgramFrame extends javax.swing.JFrame {
     private javax.swing.JTextPane jtPlayerName;
     // End of variables declaration//GEN-END:variables
     
-    Player player = ProgramControl.createPlayer(playerName);
-
+    
+    
+ 
 }

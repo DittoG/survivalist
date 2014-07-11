@@ -34,6 +34,8 @@ public class MainMenuFrame extends javax.swing.JFrame {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
         jlPlayerName = new javax.swing.JLabel();
+        jlMainMenuBanner = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jlMainMenuBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -41,12 +43,19 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jLayeredPane1.setMinimumSize(new java.awt.Dimension(748, 458));
 
         jlPlayerName.setFont(new java.awt.Font("Showcard Gothic", 0, 16)); // NOI18N
-        jlPlayerName.setForeground(new java.awt.Color(132, 193, 255));
         jLayeredPane1.add(jlPlayerName);
-        jlPlayerName.setBounds(370, 10, 150, 30);
+        jlPlayerName.setBounds(240, 10, 260, 30);
+
+        jlMainMenuBanner.setFont(new java.awt.Font("Showcard Gothic", 0, 36)); // NOI18N
+        jlMainMenuBanner.setText("Main Menu");
+        jLayeredPane1.add(jlMainMenuBanner);
+        jlMainMenuBanner.setBounds(100, 60, 270, 40);
+
+        jButton1.setText("jButton1");
+        jLayeredPane1.add(jButton1);
+        jButton1.setBounds(150, 110, 160, 30);
 
         jlMainMenuBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/pictures/MainMenuBackground.jpg"))); // NOI18N
-        jlMainMenuBackground.setText("jLabel1");
         jLayeredPane1.add(jlMainMenuBackground);
         jlMainMenuBackground.setBounds(0, 0, 750, 460);
 
@@ -100,20 +109,20 @@ public class MainMenuFrame extends javax.swing.JFrame {
     }
     
     // Public Getters and Setters
-    
-
-    public Void setJlPlayerName() {
-        
-        String playerName = survivalist.Survivalist.getPlayer().getName();
-        
-        this.jlPlayerName.setText(playerName);
-        return null;
+    public JLabel getJlPlayerName() {
+        return jlPlayerName;
     }
 
+    public void setJlPlayerName(JLabel jlPlayerName) {
+        this.jlPlayerName = jlPlayerName;
+    }
+    
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JLabel jlMainMenuBackground;
+    private javax.swing.JLabel jlMainMenuBanner;
     private javax.swing.JLabel jlPlayerName;
     // End of variables declaration//GEN-END:variables
 }
