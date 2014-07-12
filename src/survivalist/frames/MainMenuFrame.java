@@ -21,6 +21,9 @@ public class MainMenuFrame extends javax.swing.JFrame {
      */
     public MainMenuFrame() {
         initComponents();
+        
+        // center the window relative to the screen
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -35,7 +38,11 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jLayeredPane1 = new javax.swing.JLayeredPane();
         jlPlayerName = new javax.swing.JLabel();
         jlMainMenuBanner = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jbStartGame = new javax.swing.JButton();
+        jbHowToPlay = new javax.swing.JButton();
+        jbSaveGame = new javax.swing.JButton();
+        jbLoadGame = new javax.swing.JButton();
+        jbQuit = new javax.swing.JButton();
         jlMainMenuBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -43,17 +50,55 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jLayeredPane1.setMinimumSize(new java.awt.Dimension(748, 458));
 
         jlPlayerName.setFont(new java.awt.Font("Showcard Gothic", 0, 16)); // NOI18N
+        jlPlayerName.setForeground(new java.awt.Color(255, 51, 51));
         jLayeredPane1.add(jlPlayerName);
-        jlPlayerName.setBounds(240, 10, 260, 30);
+        jlPlayerName.setBounds(220, 130, 460, 30);
 
         jlMainMenuBanner.setFont(new java.awt.Font("Showcard Gothic", 0, 36)); // NOI18N
+        jlMainMenuBanner.setForeground(new java.awt.Color(93, 184, 93));
         jlMainMenuBanner.setText("Main Menu");
         jLayeredPane1.add(jlMainMenuBanner);
-        jlMainMenuBanner.setBounds(100, 60, 270, 40);
+        jlMainMenuBanner.setBounds(220, 150, 270, 40);
 
-        jButton1.setText("jButton1");
-        jLayeredPane1.add(jButton1);
-        jButton1.setBounds(150, 110, 160, 30);
+        jbStartGame.setBackground(new java.awt.Color(43, 72, 130));
+        jbStartGame.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        jbStartGame.setForeground(new java.awt.Color(132, 193, 255));
+        jbStartGame.setText("Start Game");
+        jbStartGame.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbStartGameActionPerformed(evt);
+            }
+        });
+        jLayeredPane1.add(jbStartGame);
+        jbStartGame.setBounds(220, 190, 160, 30);
+
+        jbHowToPlay.setBackground(new java.awt.Color(43, 72, 130));
+        jbHowToPlay.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        jbHowToPlay.setForeground(new java.awt.Color(132, 193, 255));
+        jbHowToPlay.setText("How to Play");
+        jLayeredPane1.add(jbHowToPlay);
+        jbHowToPlay.setBounds(250, 230, 160, 30);
+
+        jbSaveGame.setBackground(new java.awt.Color(43, 72, 130));
+        jbSaveGame.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        jbSaveGame.setForeground(new java.awt.Color(132, 193, 255));
+        jbSaveGame.setText("Save Game");
+        jLayeredPane1.add(jbSaveGame);
+        jbSaveGame.setBounds(280, 270, 160, 30);
+
+        jbLoadGame.setBackground(new java.awt.Color(43, 72, 130));
+        jbLoadGame.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        jbLoadGame.setForeground(new java.awt.Color(132, 193, 255));
+        jbLoadGame.setText("Load Game");
+        jLayeredPane1.add(jbLoadGame);
+        jbLoadGame.setBounds(310, 310, 160, 30);
+
+        jbQuit.setBackground(new java.awt.Color(43, 72, 130));
+        jbQuit.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        jbQuit.setForeground(new java.awt.Color(132, 193, 255));
+        jbQuit.setText("Quit");
+        jLayeredPane1.add(jbQuit);
+        jbQuit.setBounds(340, 350, 160, 30);
 
         jlMainMenuBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/pictures/MainMenuBackground.jpg"))); // NOI18N
         jLayeredPane1.add(jlMainMenuBackground);
@@ -72,6 +117,17 @@ public class MainMenuFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jbStartGameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbStartGameActionPerformed
+        
+        GameControl.startNewGame();
+        
+        GameMenuFrame gameMenuFrame = new GameMenuFrame();
+        gameMenuFrame.setVisible(true);
+        
+        // dispose of this frame
+        this.dispose();
+    }//GEN-LAST:event_jbStartGameActionPerformed
 
     /**
      * @param args the command line arguments
@@ -119,8 +175,12 @@ public class MainMenuFrame extends javax.swing.JFrame {
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JButton jbHowToPlay;
+    private javax.swing.JButton jbLoadGame;
+    private javax.swing.JButton jbQuit;
+    private javax.swing.JButton jbSaveGame;
+    private javax.swing.JButton jbStartGame;
     private javax.swing.JLabel jlMainMenuBackground;
     private javax.swing.JLabel jlMainMenuBanner;
     private javax.swing.JLabel jlPlayerName;

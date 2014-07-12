@@ -17,6 +17,9 @@ public class GameMenuFrame extends javax.swing.JFrame {
      */
     public GameMenuFrame() {
         initComponents();
+        
+        // center the window relative to the screen
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -28,21 +31,129 @@ public class GameMenuFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        jlGameMenuBanner = new javax.swing.JLabel();
+        jbExit = new javax.swing.JButton();
+        jbHowToPlay = new javax.swing.JButton();
+        jbViewMap = new javax.swing.JButton();
+        jbInventory = new javax.swing.JButton();
+        jbHuntGather = new javax.swing.JButton();
+        jbCrafting = new javax.swing.JButton();
+        jbBuilding = new javax.swing.JButton();
+        jbSaveGame = new javax.swing.JButton();
+        jlGameMenuBackground = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setFocusTraversalPolicyProvider(true);
+        setResizable(false);
+
+        jLayeredPane1.setPreferredSize(new java.awt.Dimension(748, 460));
+
+        jlGameMenuBanner.setFont(new java.awt.Font("Showcard Gothic", 0, 36)); // NOI18N
+        jlGameMenuBanner.setForeground(new java.awt.Color(110, 162, 239));
+        jlGameMenuBanner.setText("Game Menu");
+        jLayeredPane1.add(jlGameMenuBanner);
+        jlGameMenuBanner.setBounds(350, 90, 230, 60);
+
+        jbExit.setBackground(new java.awt.Color(43, 72, 130));
+        jbExit.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jbExit.setForeground(new java.awt.Color(132, 193, 255));
+        jbExit.setText("Exit");
+        jLayeredPane1.add(jbExit);
+        jbExit.setBounds(480, 300, 120, 30);
+
+        jbHowToPlay.setBackground(new java.awt.Color(43, 72, 130));
+        jbHowToPlay.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jbHowToPlay.setForeground(new java.awt.Color(132, 193, 255));
+        jbHowToPlay.setText("How to Play");
+        jbHowToPlay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbHowToPlayActionPerformed(evt);
+            }
+        });
+        jLayeredPane1.add(jbHowToPlay);
+        jbHowToPlay.setBounds(320, 150, 120, 30);
+
+        jbViewMap.setBackground(new java.awt.Color(43, 72, 130));
+        jbViewMap.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jbViewMap.setForeground(new java.awt.Color(132, 193, 255));
+        jbViewMap.setText("View Map");
+        jLayeredPane1.add(jbViewMap);
+        jbViewMap.setBounds(480, 150, 120, 30);
+
+        jbInventory.setBackground(new java.awt.Color(43, 72, 130));
+        jbInventory.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jbInventory.setForeground(new java.awt.Color(132, 193, 255));
+        jbInventory.setText("Inventory");
+        jLayeredPane1.add(jbInventory);
+        jbInventory.setBounds(480, 200, 120, 30);
+
+        jbHuntGather.setBackground(new java.awt.Color(43, 72, 130));
+        jbHuntGather.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jbHuntGather.setForeground(new java.awt.Color(132, 193, 255));
+        jbHuntGather.setText("Hunt/Gather");
+        jLayeredPane1.add(jbHuntGather);
+        jbHuntGather.setBounds(320, 200, 120, 30);
+
+        jbCrafting.setBackground(new java.awt.Color(43, 72, 130));
+        jbCrafting.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jbCrafting.setForeground(new java.awt.Color(132, 193, 255));
+        jbCrafting.setText("Crafting");
+        jLayeredPane1.add(jbCrafting);
+        jbCrafting.setBounds(320, 250, 120, 30);
+
+        jbBuilding.setBackground(new java.awt.Color(43, 72, 130));
+        jbBuilding.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jbBuilding.setForeground(new java.awt.Color(132, 193, 255));
+        jbBuilding.setText("Building");
+        jbBuilding.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbBuildingActionPerformed(evt);
+            }
+        });
+        jLayeredPane1.add(jbBuilding);
+        jbBuilding.setBounds(480, 250, 120, 30);
+
+        jbSaveGame.setBackground(new java.awt.Color(43, 72, 130));
+        jbSaveGame.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jbSaveGame.setForeground(new java.awt.Color(132, 193, 255));
+        jbSaveGame.setText("Save Game");
+        jLayeredPane1.add(jbSaveGame);
+        jbSaveGame.setBounds(320, 300, 120, 30);
+
+        jlGameMenuBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/pictures/GameMenuBackground.jpg"))); // NOI18N
+        jlGameMenuBackground.setName(""); // NOI18N
+        jLayeredPane1.add(jlGameMenuBackground);
+        jlGameMenuBackground.setBounds(0, 0, 748, 460);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jbHowToPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbHowToPlayActionPerformed
+        
+        HowToPlayFrame howToPlayFrame = new HowToPlayFrame();
+        howToPlayFrame.setVisible(true);
+        
+        this.dispose();
+        
+    }//GEN-LAST:event_jbHowToPlayActionPerformed
+
+    private void jbBuildingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbBuildingActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbBuildingActionPerformed
 
     /**
      * @param args the command line arguments
@@ -80,5 +191,16 @@ public class GameMenuFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JButton jbBuilding;
+    private javax.swing.JButton jbCrafting;
+    private javax.swing.JButton jbExit;
+    private javax.swing.JButton jbHowToPlay;
+    private javax.swing.JButton jbHuntGather;
+    private javax.swing.JButton jbInventory;
+    private javax.swing.JButton jbSaveGame;
+    private javax.swing.JButton jbViewMap;
+    private javax.swing.JLabel jlGameMenuBackground;
+    private javax.swing.JLabel jlGameMenuBanner;
     // End of variables declaration//GEN-END:variables
 }

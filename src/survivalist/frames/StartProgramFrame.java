@@ -23,6 +23,9 @@ public class StartProgramFrame extends javax.swing.JFrame {
      */
     public StartProgramFrame() {
         initComponents();
+        
+        // center the window relative to the screen
+        setLocationRelativeTo(null);
     }
     public static String playerName;
 
@@ -45,9 +48,13 @@ public class StartProgramFrame extends javax.swing.JFrame {
         jlStartProgramBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jLayeredPane1.setFocusCycleRoot(true);
 
+        jbQuit.setBackground(new java.awt.Color(43, 72, 130));
+        jbQuit.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jbQuit.setForeground(new java.awt.Color(132, 193, 255));
         jbQuit.setText("Quit");
         jbQuit.setMaximumSize(new java.awt.Dimension(57, 23));
         jbQuit.setMinimumSize(new java.awt.Dimension(57, 23));
@@ -74,6 +81,9 @@ public class StartProgramFrame extends javax.swing.JFrame {
         jLayeredPane1.add(jlEnterYourName);
         jlEnterYourName.setBounds(490, 300, 150, 20);
 
+        jbStart.setBackground(new java.awt.Color(43, 72, 130));
+        jbStart.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jbStart.setForeground(new java.awt.Color(132, 193, 255));
         jbStart.setText("Start");
         jbStart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
