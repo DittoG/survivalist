@@ -1,18 +1,17 @@
-
 package survivalist.model;
 
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Player implements Serializable{
-    
+public class Player implements Serializable {
+
     //class instance variables
     private String name;
     private double bestTime;
 
     public Player() {
     }
-    
+
     public String getName() {
         return name;
     }
@@ -59,6 +58,5 @@ public class Player implements Serializable{
         }
         return true;
     }
-    
-    
+
 }

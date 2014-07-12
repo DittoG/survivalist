@@ -1,7 +1,6 @@
 /*
-THIS PAGE ONLY NEEDS THE CORRECT FUNCTIONS IMPLEMENTED
+ THIS PAGE ONLY NEEDS THE CORRECT FUNCTIONS IMPLEMENTED
  */
-
 package survivalist.view;
 
 import survivalist.Survivalist;
@@ -14,27 +13,27 @@ import survivalist.model.Location;
  *
  * @author Madison
  */
-public class BuildingView extends View{
-    
+public class BuildingView extends View {
+
     public BuildingView() {
         super("\n"
-            + "\n------------------------------------------------"
-            + "\n|                Building Menu                 |"
-            + "\n------------------------------------------------"
-            + "\nH - Get help on how to build"
-            + "\nC - Cabin"
-            + "\nL - Lean-to"
-            + "\nT - Tower"
-            + "\nQ - Exit to previous menu"
-            + "\n------------------------------------------------");
+                + "\n------------------------------------------------"
+                + "\n|                Building Menu                 |"
+                + "\n------------------------------------------------"
+                + "\nH - Get help on how to build"
+                + "\nC - Cabin"
+                + "\nL - Lean-to"
+                + "\nT - Tower"
+                + "\nQ - Exit to previous menu"
+                + "\n------------------------------------------------");
     }
-    
+
     @Override
-    
+
     public void doAction(String choice) {
-        
-        Location currentLocation = Survivalist.getCurrentGame().getCurrentLocation(); 
-        
+
+        Location currentLocation = Survivalist.getCurrentGame().getCurrentLocation();
+
         switch (choice) {
             case "H": // display the help menu
                 HelpMenuView helpMenu = new HelpMenuView();
@@ -60,5 +59,5 @@ public class BuildingView extends View{
                 System.out.println("\n*** Invalid Selection *** Try again");
                 break;
         }
-    } 
+    }
 }

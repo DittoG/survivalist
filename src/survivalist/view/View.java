@@ -14,16 +14,16 @@ import java.util.Scanner;
 public abstract class View implements ViewInterface {
 
     private String promptMessage;
-    
-    public View(String promptMessage){
+
+    public View(String promptMessage) {
         this.promptMessage = promptMessage;
     }
 
     @Override
     public void display() {
-        
+
         String value;
-        
+
         do {
             System.out.println(this.promptMessage); // display the main menu
             value = this.getInput(); // get the user's selection

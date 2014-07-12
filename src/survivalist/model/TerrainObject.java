@@ -1,13 +1,10 @@
-
-
 package survivalist.model;
 
 import java.io.Serializable;
 import java.util.Objects;
 
-
 public class TerrainObject implements Serializable {
-    
+
     //class instance variables
     private double explored;
     private String type;
@@ -100,6 +97,5 @@ public class TerrainObject implements Serializable {
         }
         return true;
     }
-    
-    
+
 }

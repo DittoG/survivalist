@@ -1,7 +1,6 @@
 /*
-THIS PAGE IS FINISHED
+ THIS PAGE IS FINISHED
  */
-
 package survivalist.view;
 
 import java.util.Scanner;
@@ -11,7 +10,7 @@ import java.util.Scanner;
  * @author Jerry
  */
 public class HelpGoalView {
-    
+
     private final String GOALVIEW = "\n"
             + "\n* You are a college student going to visit     *"
             + "\n* your uncle in western Canada. He is flying   *"
@@ -39,25 +38,25 @@ public class HelpGoalView {
             + "\n*                                              *"
             + "\n*     Good luck! You're going to need it!      *"
             + "\n*                                              *"
-            + "\n*******Press Q to return to the help menu*******";    
-    
+            + "\n*******Press Q to return to the help menu*******";
+
     public void displayGameGoalView() {
-        
+
         char selection = ' ';
         do {
-            
+
             System.out.println(GOALVIEW); // display the main menu
-            
+
             String input = this.getInput(); // get the user's selection
             selection = input.charAt(0); // get first character of string
-            
+
             this.doAction(selection); // do action based on selection
-            
+
         } while (selection != 'Q'); // a selection is not "Exit"
     }
 
     public void doAction(char choice) {
-        
+
         switch (choice) {
             case 'Q': // display the help menu
                 HelpMenuView helpMenu = new HelpMenuView();
@@ -72,22 +71,21 @@ public class HelpGoalView {
         boolean valid = false; // indicates if input has been received
         String input = null;
         Scanner keyboard = new Scanner(System.in); // keyboard input stream
-        
-        while(!valid) { // while input has not been received
-            
+
+        while (!valid) { // while input has not been received
+
             // get the input from the keyboard and trim off the blanks
             input = keyboard.nextLine();
             input = input.trim();
             input = input.toUpperCase();
-            
+
             if (input.equals("Q")) { // Returning to previous menu?
                 return input;
-            }
-            else {
+            } else {
                 valid = true; // signal that a valid input was entered
             }
         }
-        
+
         return input; // return the input
     }
 }

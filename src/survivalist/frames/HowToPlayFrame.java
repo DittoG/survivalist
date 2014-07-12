@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.frames;
+
+import java.awt.event.KeyEvent;
 
 /**
  *
@@ -17,7 +18,7 @@ public class HowToPlayFrame extends javax.swing.JFrame {
      */
     public HowToPlayFrame() {
         initComponents();
-        
+
         // center the window relative to the screen
         setLocationRelativeTo(null);
     }
@@ -33,6 +34,7 @@ public class HowToPlayFrame extends javax.swing.JFrame {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
         jlHowToPlayBanner = new javax.swing.JLabel();
+        jbExit = new javax.swing.JButton();
         jlHowToPlayBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -46,7 +48,25 @@ public class HowToPlayFrame extends javax.swing.JFrame {
         jlHowToPlayBanner.setText("How to play");
         jlHowToPlayBanner.setToolTipText("");
         jLayeredPane1.add(jlHowToPlayBanner);
-        jlHowToPlayBanner.setBounds(250, 50, 340, 50);
+        jlHowToPlayBanner.setBounds(250, 20, 340, 50);
+
+        jbExit.setBackground(new java.awt.Color(43, 72, 130));
+        jbExit.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jbExit.setForeground(new java.awt.Color(132, 193, 255));
+        jbExit.setText("<html><a style='text-decoration:underline'>E</a>xit</html>");
+        jbExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbExitActionPerformed(evt);
+            }
+        });
+        jbExit.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jbExitKeyPressed(evt);
+            }
+        });
+        jLayeredPane1.add(jbExit);
+        jbExit.setBounds(620, 420, 120, 30);
 
         jlHowToPlayBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/pictures/HowToPlayBackground.jpg"))); // NOI18N
         jLayeredPane1.add(jlHowToPlayBackground);
@@ -65,6 +85,23 @@ public class HowToPlayFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jbExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbExitActionPerformed
+
+        MainMenuFrame mainMenuFrame = new MainMenuFrame();
+        mainMenuFrame.setVisible(true);
+
+        this.dispose();
+
+    }//GEN-LAST:event_jbExitActionPerformed
+
+    private void jbExitKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jbExitKeyPressed
+
+        if (evt.getKeyCode() == KeyEvent.VK_E) {
+            jbExitActionPerformed(null);
+        }
+
+    }//GEN-LAST:event_jbExitKeyPressed
 
     /**
      * @param args the command line arguments
@@ -103,6 +140,7 @@ public class HowToPlayFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JButton jbExit;
     private javax.swing.JLabel jlHowToPlayBackground;
     private javax.swing.JLabel jlHowToPlayBanner;
     // End of variables declaration//GEN-END:variables

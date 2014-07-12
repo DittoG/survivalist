@@ -1,33 +1,32 @@
 /*
-THIS PAGE HAS BEEN FINISHED
+ THIS PAGE HAS BEEN FINISHED
  */
-
 package survivalist.view;
 
 /**
  *
  * @author Madison
  */
-public class HelpMenuView extends View{
-  
+public class HelpMenuView extends View {
+
     public HelpMenuView() {
 
-            super("\n"
-            + "\n------------------------------------------------"
-            + "\n|                 How to Play                  |"
-            + "\n------------------------------------------------"
-            + "\nG - What is the goal of the game?"
-            + "\nM - How to move"
-            + "\nH - How to hunt and gather ingredients"
-            + "\nC - How to craft"
-            + "\nQ - Return to previous menu"
-            + "\n------------------------------------------------");
+        super("\n"
+                + "\n------------------------------------------------"
+                + "\n|                 How to Play                  |"
+                + "\n------------------------------------------------"
+                + "\nG - What is the goal of the game?"
+                + "\nM - How to move"
+                + "\nH - How to hunt and gather ingredients"
+                + "\nC - How to craft"
+                + "\nQ - Return to previous menu"
+                + "\n------------------------------------------------");
     }
-    
+
     @Override
-    
+
     public void doAction(String choice) {
-        
+
         switch (choice) {
             case "G": // display the game goal screen
                 HelpGoalView goalView = new HelpGoalView();
@@ -52,5 +51,5 @@ public class HelpMenuView extends View{
                 System.out.println("\n*** Invalid Selection *** Try again");
                 break;
         }
-    }    
+    }
 }

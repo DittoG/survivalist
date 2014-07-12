@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.model;
 
 import java.io.Serializable;
@@ -13,8 +12,8 @@ import java.util.Objects;
  *
  * @author Madison
  */
-public class Building implements Serializable{
-    
+public class Building implements Serializable {
+
     //class instance variables
     private String name;
     private String description;
@@ -26,11 +25,11 @@ public class Building implements Serializable{
 
     public Building() {
     }
-    
+
     public Building(String name) {
         this.name = name;
     }
-    
+
     public String getName() {
         return name;
     }
@@ -79,7 +78,6 @@ public class Building implements Serializable{
         this.height = height;
     }
 
-
     public Location getLocation() {
         return location;
     }
@@ -87,7 +85,7 @@ public class Building implements Serializable{
     public void setLocation(Location location) {
         this.location = location;
     }
-    
+
     public String toString() {
         return "Building{" + "name=" + name + ", description=" + description + ", type=" + type + ", width=" + width + ", length=" + length + ", height=" + height + '}';
     }
@@ -133,6 +131,5 @@ public class Building implements Serializable{
         }
         return true;
     }
-    
-    
+
 }

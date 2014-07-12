@@ -87,12 +87,11 @@ public class Constants {
     public final static int MOUNTAIN2 = 10;
     public final static int MOUNTAIN3 = 11;
     public final static int ROAD = 12;
-    public final static int CRASH_SITE= 13;
+    public final static int CRASH_SITE = 13;
     public final static int STREAM = 14;
     public final static int STREAM2 = 15;
     public final static int STREAM3 = 16;
-    
-    
+
     public final static int PLAYER = 0;
-    
+
 }

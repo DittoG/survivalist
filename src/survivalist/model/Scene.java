@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.model;
 
 import java.io.Serializable;
@@ -14,14 +13,14 @@ import java.util.Objects;
  * @author Madison
  */
 public class Scene implements Serializable {
-    
+
     // define symbol variable
     private String symbol;
-    
+
     // class instance variables
     private String name;
     private String description;
-    
+
     // item instance variables
     private int noOfBranches;
     private int noOfFlatRocks;
@@ -30,7 +29,7 @@ public class Scene implements Serializable {
     private int noOfStone;
     private int noOfLogs;
     private int NoOfBerries;
-    
+
     // animal instance variables
     private int noOfDeer;
     private int noOfElk;
@@ -39,7 +38,7 @@ public class Scene implements Serializable {
     private int noOfWolves;
     private int noOfMoose;
     private int noOfBear;
-    
+
     // building instance variables
     private int noOfCabins;
     private int noOfTowers;
@@ -47,7 +46,7 @@ public class Scene implements Serializable {
 
     public Scene() {
     }
-    
+
     public Scene(String name) {
         this.name = name;
     }
@@ -307,7 +306,7 @@ public class Scene implements Serializable {
         if (this.symbol != other.symbol) {
             return false;
         }
-        
+
         return true;
     }
 
@@ -315,7 +314,5 @@ public class Scene implements Serializable {
     public String toString() {
         return "Scene{" + "name=" + name + ", description=" + description + ", noOfBranches=" + noOfBranches + ", noOfFlatRocks=" + noOfFlatRocks + ", noOfSharpRocks=" + noOfSharpRocks + ", noOfFlint=" + noOfFlint + ", noOfStone=" + noOfStone + ", noOfLogs=" + noOfLogs + ", NoOfBerries=" + NoOfBerries + ", noOfDeer=" + noOfDeer + ", noOfElk=" + noOfElk + ", noOfRabbits=" + noOfRabbits + ", noOfRaccoons=" + noOfRaccoons + ", noOfWolves=" + noOfWolves + ", noOfMoose=" + noOfMoose + ", noOfBear=" + noOfBear + ", noOfCabins=" + noOfCabins + ", noOfTowers=" + noOfTowers + ", noOfLeanTos=" + noOfLeanTos + ", symbol=" + symbol + '}';
     }
-    
-    
-    
+
 }

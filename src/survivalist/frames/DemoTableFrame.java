@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.frames;
 
 /**
@@ -35,7 +34,6 @@ public class DemoTableFrame extends javax.swing.JFrame {
 //        
 //        Table
 //    }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

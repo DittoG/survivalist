@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.model;
 
 /**
@@ -11,7 +10,7 @@ package survivalist.model;
  * @author Madison
  */
 public class RequiredItem {
-    
+
     private Item inventoryItem;
     private double requiredQuantity;
 

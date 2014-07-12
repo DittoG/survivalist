@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.model;
 
 import java.io.Serializable;
 
-
 public class Location implements Serializable {
-    
+
     //class instance variables
     private double row;
     private double column;
@@ -35,7 +33,7 @@ public class Location implements Serializable {
     public void setDisplayed(boolean displayed) {
         this.displayed = displayed;
     }
-    
+
     public void setRow(double row) {
         this.row = row;
     }
@@ -125,5 +123,5 @@ public class Location implements Serializable {
     public String toString() {
         return "Location{" + "row=" + row + ", column=" + column + ", visited=" + visited + ", scene=" + scene + ", npc=" + npc + ", animal=" + animal + ", building=" + building + '}';
     }
-    
+
 }

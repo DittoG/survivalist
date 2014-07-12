@@ -6,6 +6,8 @@
 
 package survivalist.frames;
 
+import java.awt.event.KeyEvent;
+
 /**
  *
  * @author Madison
@@ -17,7 +19,7 @@ public class GameMenuFrame extends javax.swing.JFrame {
      */
     public GameMenuFrame() {
         initComponents();
-        
+
         // center the window relative to the screen
         setLocationRelativeTo(null);
     }
@@ -58,17 +60,29 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jbExit.setBackground(new java.awt.Color(43, 72, 130));
         jbExit.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbExit.setForeground(new java.awt.Color(132, 193, 255));
-        jbExit.setText("Exit");
+        jbExit.setText("<html><a style='text-decoration:underline'>E</a>xit</html>");
+        jbExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbExitActionPerformed(evt);
+            }
+        });
         jLayeredPane1.add(jbExit);
         jbExit.setBounds(480, 300, 120, 30);
 
         jbHowToPlay.setBackground(new java.awt.Color(43, 72, 130));
         jbHowToPlay.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbHowToPlay.setForeground(new java.awt.Color(132, 193, 255));
-        jbHowToPlay.setText("How to Play");
+        jbHowToPlay.setText("<html><a style='text-decoration:underline'>H</a>ow to Play</html>");
+        jbHowToPlay.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbHowToPlay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbHowToPlayActionPerformed(evt);
+            }
+        });
+        jbHowToPlay.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jbHowToPlayKeyPressed(evt);
             }
         });
         jLayeredPane1.add(jbHowToPlay);
@@ -77,35 +91,40 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jbViewMap.setBackground(new java.awt.Color(43, 72, 130));
         jbViewMap.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbViewMap.setForeground(new java.awt.Color(132, 193, 255));
-        jbViewMap.setText("View Map");
+        jbViewMap.setText("<html><a style='text-decoration:underline'>V</a>iew Map</html>");
+        jbViewMap.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLayeredPane1.add(jbViewMap);
         jbViewMap.setBounds(480, 150, 120, 30);
 
         jbInventory.setBackground(new java.awt.Color(43, 72, 130));
         jbInventory.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbInventory.setForeground(new java.awt.Color(132, 193, 255));
-        jbInventory.setText("Inventory");
+        jbInventory.setText("<html><a style='text-decoration:underline'>I</a>nventory</html>");
+        jbInventory.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLayeredPane1.add(jbInventory);
         jbInventory.setBounds(480, 200, 120, 30);
 
         jbHuntGather.setBackground(new java.awt.Color(43, 72, 130));
         jbHuntGather.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbHuntGather.setForeground(new java.awt.Color(132, 193, 255));
-        jbHuntGather.setText("Hunt/Gather");
+        jbHuntGather.setText("<html>Hunt/<a style='text-decoration:underline'>G</a>ather</html>");
+        jbHuntGather.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLayeredPane1.add(jbHuntGather);
         jbHuntGather.setBounds(320, 200, 120, 30);
 
         jbCrafting.setBackground(new java.awt.Color(43, 72, 130));
         jbCrafting.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbCrafting.setForeground(new java.awt.Color(132, 193, 255));
-        jbCrafting.setText("Crafting");
+        jbCrafting.setText("<html><a style='text-decoration:underline'>C</a>rafting</html>");
+        jbCrafting.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLayeredPane1.add(jbCrafting);
         jbCrafting.setBounds(320, 250, 120, 30);
 
         jbBuilding.setBackground(new java.awt.Color(43, 72, 130));
         jbBuilding.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbBuilding.setForeground(new java.awt.Color(132, 193, 255));
-        jbBuilding.setText("Building");
+        jbBuilding.setText("<html><a style='text-decoration:underline'>B</a>uilding</html>");
+        jbBuilding.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbBuilding.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbBuildingActionPerformed(evt);
@@ -117,7 +136,8 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jbSaveGame.setBackground(new java.awt.Color(43, 72, 130));
         jbSaveGame.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbSaveGame.setForeground(new java.awt.Color(132, 193, 255));
-        jbSaveGame.setText("Save Game");
+        jbSaveGame.setText("<html><a style='text-decoration:underline'>S</a>ave Game</html>");
+        jbSaveGame.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLayeredPane1.add(jbSaveGame);
         jbSaveGame.setBounds(320, 300, 120, 30);
 
@@ -150,10 +170,29 @@ public class GameMenuFrame extends javax.swing.JFrame {
         this.dispose();
         
     }//GEN-LAST:event_jbHowToPlayActionPerformed
-
+    
     private void jbBuildingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbBuildingActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jbBuildingActionPerformed
+    
+    private void jbHowToPlayKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jbHowToPlayKeyPressed
+        
+        if (evt.getKeyCode() == KeyEvent.VK_H) {
+            jbHowToPlayActionPerformed(null);
+        } else if (evt.getKeyCode() == KeyEvent.VK_E) {
+            jbExitActionPerformed(null);
+        }
+        
+    }//GEN-LAST:event_jbHowToPlayKeyPressed
+    
+    private void jbExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbExitActionPerformed
+        
+        MainMenuFrame mainMenuFrame = new MainMenuFrame();
+        mainMenuFrame.setVisible(true);
+        
+        this.dispose();
+        
+    }//GEN-LAST:event_jbExitActionPerformed
 
     /**
      * @param args the command line arguments

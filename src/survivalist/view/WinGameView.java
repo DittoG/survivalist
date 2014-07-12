@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.view;
 
 /**
@@ -11,5 +10,5 @@ package survivalist.view;
  * @author Madison
  */
 public class WinGameView {
-    
+
 }

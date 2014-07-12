@@ -1,7 +1,6 @@
 /*
-THIS PAGE IS FINISHED
+ THIS PAGE IS FINISHED
  */
-
 package survivalist.view;
 
 import survivalist.Survivalist;
@@ -14,28 +13,28 @@ import survivalist.model.Scene;
  *
  * @author Madison
  */
-public class GameMenuView extends View{
-    
+public class GameMenuView extends View {
+
     public GameMenuView() {
         super("\n"
-            + "\n------------------------------------------------"
-            + "\n|               Game Menu                      |"
-            + "\n------------------------------------------------"
-            + "\nH - Get help on how to play the game"
-            + "\nM - Map/Move menu"
-            + "\nE - Hunt and Gather Menu"
-            + "\nI - Inventory"
-            + "\nC - Crafting Menu"
-            + "\nB - Building Menu"
-            + "\nS - Save game"
-            + "\nQ - Exit to previous menu"
-            + "\n------------------------------------------------");
+                + "\n------------------------------------------------"
+                + "\n|               Game Menu                      |"
+                + "\n------------------------------------------------"
+                + "\nH - Get help on how to play the game"
+                + "\nM - Map/Move menu"
+                + "\nE - Hunt and Gather Menu"
+                + "\nI - Inventory"
+                + "\nC - Crafting Menu"
+                + "\nB - Building Menu"
+                + "\nS - Save game"
+                + "\nQ - Exit to previous menu"
+                + "\n------------------------------------------------");
     }
-    
+
     @Override
-    
+
     public void doAction(String choice) {
-        
+
         switch (choice) {
             case "H": // display the help menu
                 HelpMenuView helpMenu = new HelpMenuView();
@@ -72,7 +71,7 @@ public class GameMenuView extends View{
                 break;
         }
     }
-    
+
 //    public static String displayMap(Map map, Scene[] scenes) {
 //        Location[][] locations = map.getLocations();
 //        //get the symbols from the scene assigned to each location

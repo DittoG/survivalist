@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.frames;
 
+import java.awt.event.KeyEvent;
 import javax.swing.JLabel;
 import survivalist.control.GameControl;
 import survivalist.model.Player;
@@ -21,7 +21,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
      */
     public MainMenuFrame() {
         initComponents();
-        
+
         // center the window relative to the screen
         setLocationRelativeTo(null);
     }
@@ -63,10 +63,16 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jbStartGame.setBackground(new java.awt.Color(43, 72, 130));
         jbStartGame.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
         jbStartGame.setForeground(new java.awt.Color(132, 193, 255));
-        jbStartGame.setText("Start Game");
+        jbStartGame.setText("<html><a style='text-decoration:underline'>S</a>tart Game</html>");
+        jbStartGame.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbStartGame.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbStartGameActionPerformed(evt);
+            }
+        });
+        jbStartGame.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jbStartGameKeyPressed(evt);
             }
         });
         jLayeredPane1.add(jbStartGame);
@@ -75,28 +81,42 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jbHowToPlay.setBackground(new java.awt.Color(43, 72, 130));
         jbHowToPlay.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
         jbHowToPlay.setForeground(new java.awt.Color(132, 193, 255));
-        jbHowToPlay.setText("How to Play");
+        jbHowToPlay.setText("<html><a style='text-decoration:underline'>H</a>ow to Play</html>");
+        jbHowToPlay.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbHowToPlay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbHowToPlayActionPerformed(evt);
+            }
+        });
         jLayeredPane1.add(jbHowToPlay);
         jbHowToPlay.setBounds(250, 230, 160, 30);
 
         jbSaveGame.setBackground(new java.awt.Color(43, 72, 130));
         jbSaveGame.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
         jbSaveGame.setForeground(new java.awt.Color(132, 193, 255));
-        jbSaveGame.setText("Save Game");
+        jbSaveGame.setText("<html><a style='text-decoration:underline'>S</a>ave Game</html>");
+        jbSaveGame.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLayeredPane1.add(jbSaveGame);
         jbSaveGame.setBounds(280, 270, 160, 30);
 
         jbLoadGame.setBackground(new java.awt.Color(43, 72, 130));
         jbLoadGame.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
         jbLoadGame.setForeground(new java.awt.Color(132, 193, 255));
-        jbLoadGame.setText("Load Game");
+        jbLoadGame.setText("<html><a style='text-decoration:underline'>L</a>oad Game</html>");
+        jbLoadGame.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLayeredPane1.add(jbLoadGame);
         jbLoadGame.setBounds(310, 310, 160, 30);
 
         jbQuit.setBackground(new java.awt.Color(43, 72, 130));
         jbQuit.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
         jbQuit.setForeground(new java.awt.Color(132, 193, 255));
-        jbQuit.setText("Quit");
+        jbQuit.setText("<html><a style='text-decoration:underline'>Q</a>uit</html>");
+        jbQuit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbQuit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbQuitActionPerformed(evt);
+            }
+        });
         jLayeredPane1.add(jbQuit);
         jbQuit.setBounds(340, 350, 160, 30);
 
@@ -119,15 +139,43 @@ public class MainMenuFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbStartGameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbStartGameActionPerformed
-        
+
         GameControl.startNewGame();
-        
+
         GameMenuFrame gameMenuFrame = new GameMenuFrame();
         gameMenuFrame.setVisible(true);
-        
+
         // dispose of this frame
         this.dispose();
     }//GEN-LAST:event_jbStartGameActionPerformed
+
+    private void jbStartGameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jbStartGameKeyPressed
+
+        if (evt.getKeyCode() == KeyEvent.VK_S) {
+            jbStartGameActionPerformed(null);
+        } else if (evt.getKeyCode() == KeyEvent.VK_H) {
+            jbHowToPlayActionPerformed(null);
+        } else if (evt.getKeyCode() == KeyEvent.VK_Q) {
+            jbQuitActionPerformed(null);
+        }
+
+    }//GEN-LAST:event_jbStartGameKeyPressed
+
+    private void jbHowToPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbHowToPlayActionPerformed
+
+        HowToPlayFrame howToPlayFrame = new HowToPlayFrame();
+        howToPlayFrame.setVisible(true);
+
+        this.dispose();
+    }//GEN-LAST:event_jbHowToPlayActionPerformed
+
+    private void jbQuitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbQuitActionPerformed
+
+        StartProgramFrame startProgramFrame = new StartProgramFrame();
+        startProgramFrame.setVisible(true);
+
+        this.dispose();
+    }//GEN-LAST:event_jbQuitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -163,7 +211,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
             }
         });
     }
-    
+
     // Public Getters and Setters
     public JLabel getJlPlayerName() {
         return jlPlayerName;
@@ -172,8 +220,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
     public void setJlPlayerName(JLabel jlPlayerName) {
         this.jlPlayerName = jlPlayerName;
     }
-    
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JButton jbHowToPlay;

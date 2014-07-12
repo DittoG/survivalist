@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.model;
 
 import java.io.Serializable;
@@ -13,8 +12,8 @@ import java.util.Objects;
  *
  * @author Madison
  */
-public class Animal implements Serializable{
-    
+public class Animal implements Serializable {
+
     private String name;
     private String description;
     private String type;
@@ -23,11 +22,11 @@ public class Animal implements Serializable{
 
     public Animal() {
     }
-    
+
     public Animal(String name) {
         this.name = name;
     }
-    
+
     public String getName() {
         return name;
     }
@@ -110,6 +109,5 @@ public class Animal implements Serializable{
         }
         return true;
     }
-    
-    
+
 }

@@ -1,5 +1,5 @@
 /*
-THIS PAGE ONLY NEEDS THE CORRECT FUNCTIONS IMPLEMENTED
+ THIS PAGE ONLY NEEDS THE CORRECT FUNCTIONS IMPLEMENTED
  */
 package survivalist.view;
 
@@ -25,9 +25,9 @@ public class MainMenuView extends View {
                 + "\nQ - Quit"
                 + "\n------------------------------------------------");
     }
-    
+
     @Override
-    
+
     public void doAction(String choice) {
 
         switch (choice) {

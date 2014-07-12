@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.control;
 
 import survivalist.Survivalist;
@@ -18,9 +17,8 @@ public class InventoryControl {
 
     public static Item[] getSortedList() {
         Item[] inventoryList = Survivalist.getCurrentGame().getInventory().clone();
-        
+
         //sort list
-        
         //return list
         return inventoryList;
     }
@@ -34,21 +32,14 @@ public class InventoryControl {
             // get the available amount
             double availableAmount = requiredItem.getInventoryItem().getActualQuantity();
             // IF the available amount < required amount
-            if(availableAmount < requiredAmount){
+            if (availableAmount < requiredAmount) {
                 // return False
                 return false;
             }
         }
         // return True
         return true;
-            
-            
-            
-                
 
-        
-        
-        
     }
-    
+
 }
