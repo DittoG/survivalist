@@ -55,6 +55,9 @@ public class HowToPlayFrame extends javax.swing.JFrame {
         jbExit.setForeground(new java.awt.Color(132, 193, 255));
         jbExit.setText("<html><a style='text-decoration:underline'>E</a>xit</html>");
         jbExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbExit.setFocusPainted(false);
+        jbExit.setMinimumSize(new java.awt.Dimension(127, 27));
+        jbExit.setPreferredSize(new java.awt.Dimension(127, 27));
         jbExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbExitActionPerformed(evt);
@@ -66,7 +69,7 @@ public class HowToPlayFrame extends javax.swing.JFrame {
             }
         });
         jLayeredPane1.add(jbExit);
-        jbExit.setBounds(620, 420, 120, 30);
+        jbExit.setBounds(580, 420, 160, 30);
 
         jlHowToPlayBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/pictures/HowToPlayBackground.jpg"))); // NOI18N
         jLayeredPane1.add(jlHowToPlayBackground);

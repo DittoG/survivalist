@@ -44,7 +44,7 @@ public class StartProgramFrame extends javax.swing.JFrame {
         jtPlayerName = new javax.swing.JTextPane();
         jlEnterYourName = new javax.swing.JLabel();
         jbStart = new javax.swing.JButton();
-        jlStartProgramBackground = new javax.swing.JLabel();
+        jlStartProgramBackgroundImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -54,8 +54,9 @@ public class StartProgramFrame extends javax.swing.JFrame {
         jbQuit.setBackground(new java.awt.Color(43, 72, 130));
         jbQuit.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbQuit.setForeground(new java.awt.Color(132, 193, 255));
-        jbQuit.setText("Quit");
+        jbQuit.setText("Exit");
         jbQuit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbQuit.setFocusPainted(false);
         jbQuit.setMaximumSize(new java.awt.Dimension(57, 23));
         jbQuit.setMinimumSize(new java.awt.Dimension(57, 23));
         jbQuit.setPreferredSize(new java.awt.Dimension(57, 23));
@@ -65,10 +66,9 @@ public class StartProgramFrame extends javax.swing.JFrame {
             }
         });
         jLayeredPane1.add(jbQuit);
-        jbQuit.setBounds(590, 360, 70, 23);
+        jbQuit.setBounds(620, 370, 100, 30);
 
-        jtPlayerName.setFont(new java.awt.Font("Showcard Gothic", 0, 10)); // NOI18N
-        jtPlayerName.setText("");
+        jtPlayerName.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
         jtPlayerName.setMinimumSize(new java.awt.Dimension(6, 21));
         jtPlayerName.setPreferredSize(new java.awt.Dimension(6, 21));
         jtPlayerName.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -79,30 +79,31 @@ public class StartProgramFrame extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jtPlayerName);
 
         jLayeredPane1.add(jScrollPane1);
-        jScrollPane1.setBounds(490, 327, 170, 23);
+        jScrollPane1.setBounds(490, 330, 230, 30);
 
-        jlEnterYourName.setFont(new java.awt.Font("Showcard Gothic", 0, 16)); // NOI18N
+        jlEnterYourName.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
         jlEnterYourName.setForeground(new java.awt.Color(132, 193, 255));
         jlEnterYourName.setText("Enter Your Name");
         jLayeredPane1.add(jlEnterYourName);
-        jlEnterYourName.setBounds(490, 300, 150, 20);
+        jlEnterYourName.setBounds(490, 300, 230, 30);
 
         jbStart.setBackground(new java.awt.Color(43, 72, 130));
         jbStart.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbStart.setForeground(new java.awt.Color(132, 193, 255));
         jbStart.setText("Start");
         jbStart.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbStart.setFocusPainted(false);
         jbStart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbStartActionPerformed(evt);
             }
         });
         jLayeredPane1.add(jbStart);
-        jbStart.setBounds(490, 360, 70, 23);
+        jbStart.setBounds(490, 370, 100, 30);
 
-        jlStartProgramBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/pictures/angry-bear-standing.jpg"))); // NOI18N
-        jLayeredPane1.add(jlStartProgramBackground);
-        jlStartProgramBackground.setBounds(0, 0, 750, 460);
+        jlStartProgramBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/pictures/angry-bear-standing.jpg"))); // NOI18N
+        jLayeredPane1.add(jlStartProgramBackgroundImage);
+        jlStartProgramBackgroundImage.setBounds(0, 0, 750, 460);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -146,7 +147,7 @@ public class StartProgramFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jbStartActionPerformed
 
     private void jbQuitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbQuitActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
     }//GEN-LAST:event_jbQuitActionPerformed
 
     private void jtPlayerNameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtPlayerNameKeyPressed
@@ -208,7 +209,7 @@ public class StartProgramFrame extends javax.swing.JFrame {
     private javax.swing.JButton jbQuit;
     private javax.swing.JButton jbStart;
     private javax.swing.JLabel jlEnterYourName;
-    private javax.swing.JLabel jlStartProgramBackground;
+    private javax.swing.JLabel jlStartProgramBackgroundImage;
     private javax.swing.JTextPane jtPlayerName;
     // End of variables declaration//GEN-END:variables
 

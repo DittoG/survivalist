@@ -43,7 +43,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jbSaveGame = new javax.swing.JButton();
         jbLoadGame = new javax.swing.JButton();
         jbQuit = new javax.swing.JButton();
-        jlMainMenuBackground = new javax.swing.JLabel();
+        jlMainMenuBackgroundImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -65,6 +65,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jbStartGame.setForeground(new java.awt.Color(132, 193, 255));
         jbStartGame.setText("<html>Start <a style='text-decoration:underline'>G</a>ame</html>");
         jbStartGame.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbStartGame.setFocusPainted(false);
         jbStartGame.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbStartGameActionPerformed(evt);
@@ -83,46 +84,50 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jbHowToPlay.setForeground(new java.awt.Color(132, 193, 255));
         jbHowToPlay.setText("<html><a style='text-decoration:underline'>H</a>ow to Play</html>");
         jbHowToPlay.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbHowToPlay.setFocusPainted(false);
         jbHowToPlay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbHowToPlayActionPerformed(evt);
             }
         });
         jLayeredPane1.add(jbHowToPlay);
-        jbHowToPlay.setBounds(250, 230, 160, 30);
+        jbHowToPlay.setBounds(580, 380, 160, 30);
 
         jbSaveGame.setBackground(new java.awt.Color(43, 72, 130));
         jbSaveGame.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
         jbSaveGame.setForeground(new java.awt.Color(132, 193, 255));
         jbSaveGame.setText("<html><a style='text-decoration:underline'>S</a>ave Game</html>");
         jbSaveGame.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbSaveGame.setFocusPainted(false);
         jLayeredPane1.add(jbSaveGame);
-        jbSaveGame.setBounds(280, 270, 160, 30);
+        jbSaveGame.setBounds(250, 230, 160, 30);
 
         jbLoadGame.setBackground(new java.awt.Color(43, 72, 130));
         jbLoadGame.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
         jbLoadGame.setForeground(new java.awt.Color(132, 193, 255));
         jbLoadGame.setText("<html><a style='text-decoration:underline'>L</a>oad Game</html>");
         jbLoadGame.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbLoadGame.setFocusPainted(false);
         jLayeredPane1.add(jbLoadGame);
-        jbLoadGame.setBounds(310, 310, 160, 30);
+        jbLoadGame.setBounds(280, 270, 160, 30);
 
         jbQuit.setBackground(new java.awt.Color(43, 72, 130));
         jbQuit.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
         jbQuit.setForeground(new java.awt.Color(132, 193, 255));
-        jbQuit.setText("<html><a style='text-decoration:underline'>Q</a>uit</html>");
+        jbQuit.setText("<html><a style='text-decoration:underline'>E</a>xit</html>");
         jbQuit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbQuit.setFocusPainted(false);
         jbQuit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbQuitActionPerformed(evt);
             }
         });
         jLayeredPane1.add(jbQuit);
-        jbQuit.setBounds(340, 350, 160, 30);
+        jbQuit.setBounds(580, 420, 160, 30);
 
-        jlMainMenuBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/pictures/MainMenuBackground.jpg"))); // NOI18N
-        jLayeredPane1.add(jlMainMenuBackground);
-        jlMainMenuBackground.setBounds(0, 0, 750, 460);
+        jlMainMenuBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/pictures/MainMenuBackground.jpg"))); // NOI18N
+        jLayeredPane1.add(jlMainMenuBackgroundImage);
+        jlMainMenuBackgroundImage.setBounds(0, 0, 750, 460);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -155,7 +160,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
             jbStartGameActionPerformed(null);
         } else if (evt.getKeyCode() == KeyEvent.VK_H) {
             jbHowToPlayActionPerformed(null);
-        } else if (evt.getKeyCode() == KeyEvent.VK_Q) {
+        } else if (evt.getKeyCode() == KeyEvent.VK_E) {
             jbQuitActionPerformed(null);
         }
 
@@ -228,7 +233,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
     private javax.swing.JButton jbQuit;
     private javax.swing.JButton jbSaveGame;
     private javax.swing.JButton jbStartGame;
-    private javax.swing.JLabel jlMainMenuBackground;
+    private javax.swing.JLabel jlMainMenuBackgroundImage;
     private javax.swing.JLabel jlMainMenuBanner;
     private javax.swing.JLabel jlPlayerName;
     // End of variables declaration//GEN-END:variables
