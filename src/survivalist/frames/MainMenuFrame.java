@@ -63,7 +63,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jbStartGame.setBackground(new java.awt.Color(43, 72, 130));
         jbStartGame.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
         jbStartGame.setForeground(new java.awt.Color(132, 193, 255));
-        jbStartGame.setText("<html><a style='text-decoration:underline'>S</a>tart Game</html>");
+        jbStartGame.setText("<html>Start <a style='text-decoration:underline'>G</a>ame</html>");
         jbStartGame.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbStartGame.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,7 +151,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
 
     private void jbStartGameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jbStartGameKeyPressed
 
-        if (evt.getKeyCode() == KeyEvent.VK_S) {
+        if (evt.getKeyCode() == KeyEvent.VK_G) {
             jbStartGameActionPerformed(null);
         } else if (evt.getKeyCode() == KeyEvent.VK_H) {
             jbHowToPlayActionPerformed(null);

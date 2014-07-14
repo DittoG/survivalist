@@ -86,7 +86,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="c1" red="84" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;a style=&apos;text-decoration:underline&apos;&gt;S&lt;/a&gt;tart Game&lt;/html&gt;"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;Start &lt;a style=&apos;text-decoration:underline&apos;&gt;G&lt;/a&gt;ame&lt;/html&gt;"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
