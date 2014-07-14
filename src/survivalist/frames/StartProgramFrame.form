@@ -153,7 +153,7 @@
         <Component class="javax.swing.JLabel" name="jlStartProgramBackgroundImage">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/survivalist/pictures/angry-bear-standing.jpg"/>
+              <Image iconType="3" name="/survivalist/images/startProgramBackgroundImage.jpg"/>
             </Property>
           </Properties>
           <Constraints>

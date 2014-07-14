@@ -270,7 +270,7 @@
         <Component class="javax.swing.JLabel" name="jlGameMenuBackgroundImage">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/survivalist/pictures/GameMenuBackground.jpg"/>
+              <Image iconType="3" name="/survivalist/images/gameMenuBackgroundImage.jpg"/>
             </Property>
             <Property name="name" type="java.lang.String" value="" noResource="true"/>
           </Properties>

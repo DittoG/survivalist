@@ -159,7 +159,7 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jLayeredPane1.add(jbSaveGame);
         jbSaveGame.setBounds(470, 230, 160, 30);
 
-        jlGameMenuBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/pictures/GameMenuBackground.jpg"))); // NOI18N
+        jlGameMenuBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/gameMenuBackgroundImage.jpg"))); // NOI18N
         jlGameMenuBackgroundImage.setName(""); // NOI18N
         jLayeredPane1.add(jlGameMenuBackgroundImage);
         jlGameMenuBackgroundImage.setBounds(0, 0, 748, 460);

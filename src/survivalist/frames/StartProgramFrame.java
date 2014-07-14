@@ -5,7 +5,7 @@
  */
 package survivalist.frames;
 
-import com.sun.glass.events.KeyEvent;
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 import javax.swing.JTextPane;
 import survivalist.control.GameControl;
@@ -23,12 +23,12 @@ public class StartProgramFrame extends javax.swing.JFrame {
      */
     public StartProgramFrame() {
         initComponents();
-
+        
         // center the window relative to the screen
         setLocationRelativeTo(null);
     }
     public static String playerName;
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -101,7 +101,7 @@ public class StartProgramFrame extends javax.swing.JFrame {
         jLayeredPane1.add(jbStart);
         jbStart.setBounds(490, 370, 100, 30);
 
-        jlStartProgramBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/pictures/angry-bear-standing.jpg"))); // NOI18N
+        jlStartProgramBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/startProgramBackgroundImage.jpg"))); // NOI18N
         jLayeredPane1.add(jlStartProgramBackgroundImage);
         jlStartProgramBackgroundImage.setBounds(0, 0, 750, 460);
 

@@ -55,7 +55,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jlPlayerName.setBounds(220, 130, 460, 30);
 
         jlMainMenuBanner.setFont(new java.awt.Font("Showcard Gothic", 0, 36)); // NOI18N
-        jlMainMenuBanner.setForeground(new java.awt.Color(93, 184, 93));
+        jlMainMenuBanner.setForeground(new java.awt.Color(48, 171, 48));
         jlMainMenuBanner.setText("Main Menu");
         jLayeredPane1.add(jlMainMenuBanner);
         jlMainMenuBanner.setBounds(220, 150, 270, 40);
@@ -125,7 +125,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jLayeredPane1.add(jbQuit);
         jbQuit.setBounds(580, 420, 160, 30);
 
-        jlMainMenuBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/pictures/MainMenuBackground.jpg"))); // NOI18N
+        jlMainMenuBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mainMenuBackgroundImage.jpg"))); // NOI18N
         jLayeredPane1.add(jlMainMenuBackgroundImage);
         jlMainMenuBackgroundImage.setBounds(0, 0, 750, 460);
 

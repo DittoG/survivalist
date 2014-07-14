@@ -358,11 +358,10 @@ public class GameControl {
         Item flintAndStone = new Item("Flint and Stone");
         flintAndStone.setDescription("Flint and Stone are used to make fires.");
         flintAndStone.setType("tool");
-        RequiredItem[] requiredFlintAndStoneIngredients = new RequiredItem[3];
+        RequiredItem[] requiredFlintAndStoneIngredients = new RequiredItem[2];
         flintAndStone.setRequiredResources(requiredFlintAndStoneIngredients);
-        requiredFlintAndStoneIngredients[0] = new RequiredItem(inventoryList[Constants.BRANCH], 1);
-        requiredFlintAndStoneIngredients[1] = new RequiredItem(inventoryList[Constants.SHARPROCK], 1);
-        requiredFlintAndStoneIngredients[2] = new RequiredItem(inventoryList[Constants.LEATHERSTRIP], 1);
+        requiredFlintAndStoneIngredients[0] = new RequiredItem(inventoryList[Constants.FLINT], 1);
+        requiredFlintAndStoneIngredients[1] = new RequiredItem(inventoryList[Constants.STONE], 1);
         flintAndStone.setPossibleQuantity(1);
         flintAndStone.setActualQuantity(0);
         inventoryList[Constants.FLINTANDSTONE] = flintAndStone;

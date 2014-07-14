@@ -7,6 +7,12 @@
 package survivalist.frames;
 
 import java.awt.event.KeyEvent;
+import javax.swing.JOptionPane;
+import survivalist.Survivalist;
+import survivalist.control.Constants;
+import survivalist.control.InventoryControl;
+import survivalist.model.Item;
+import survivalist.model.RequiredItem;
 
 /**
  *
@@ -50,7 +56,7 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLayeredPane1.setDoubleBuffered(true);
-        jLayeredPane1.setPreferredSize(new java.awt.Dimension(748, 460));
+        jLayeredPane1.setPreferredSize(new java.awt.Dimension(760, 458));
 
         jlCraftingMenuBanner.setFont(new java.awt.Font("Showcard Gothic", 0, 36)); // NOI18N
         jlCraftingMenuBanner.setForeground(new java.awt.Color(36, 97, 36));
@@ -73,7 +79,7 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
             }
         });
         jLayeredPane1.add(jbExit);
-        jbExit.setBounds(580, 420, 160, 30);
+        jbExit.setBounds(590, 420, 160, 30);
 
         jbHowToPlay.setBackground(new java.awt.Color(43, 72, 130));
         jbHowToPlay.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
@@ -87,7 +93,7 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
             }
         });
         jLayeredPane1.add(jbHowToPlay);
-        jbHowToPlay.setBounds(580, 380, 160, 30);
+        jbHowToPlay.setBounds(590, 380, 160, 30);
 
         jbKnife.setBackground(new java.awt.Color(43, 72, 130));
         jbKnife.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
@@ -154,7 +160,6 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jbAxe.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbAxe.setForeground(new java.awt.Color(132, 193, 255));
         jbAxe.setText("<html>A<a style='text-decoration:underline'>x</a>e</html>");
-        jbAxe.setActionCommand("<html>A<a style='text-decoration:underline'>x</a>e</html>");
         jbAxe.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbAxe.setFocusPainted(false);
         jbAxe.addActionListener(new java.awt.event.ActionListener() {
@@ -208,15 +213,20 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jLayeredPane1.add(jbGrapplingHook);
         jbGrapplingHook.setBounds(390, 210, 160, 30);
 
-        jlCraftingMenuBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/pictures/craftingBackgroundImage.jpg"))); // NOI18N
+        jlCraftingMenuBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/craftingMenuBackgroundImage.jpg"))); // NOI18N
+        jlCraftingMenuBackgroundImage.setMaximumSize(new java.awt.Dimension(760, 458));
+        jlCraftingMenuBackgroundImage.setMinimumSize(new java.awt.Dimension(760, 458));
+        jlCraftingMenuBackgroundImage.setPreferredSize(new java.awt.Dimension(760, 458));
         jLayeredPane1.add(jlCraftingMenuBackgroundImage);
-        jlCraftingMenuBackgroundImage.setBounds(0, 0, 748, 460);
+        jlCraftingMenuBackgroundImage.setBounds(0, 0, 760, 458);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -229,7 +239,7 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
     private void jbExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbExitActionPerformed
 
         GameMenuFrame gameMenuFrame = new GameMenuFrame();
-        gameMenuFrame.setVisible(true);;
+        gameMenuFrame.setVisible(true);
 
         this.dispose();
     }//GEN-LAST:event_jbExitActionPerformed
@@ -246,7 +256,7 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         
         // Key Binding Code
         if (evt.getKeyCode() == KeyEvent.VK_K) {
-            jbKnifeKeyPressed(evt);
+            jbKnifeActionPerformed(null);
         } else if (evt.getKeyCode() == KeyEvent.VK_H) {
             jbHowToPlayActionPerformed(null);
         } else if (evt.getKeyCode() == KeyEvent.VK_E) {
@@ -269,35 +279,35 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jbKnifeKeyPressed
 
     private void jbBowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbBowActionPerformed
-        // TODO add your handling code here:
+        this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.BOW]);
     }//GEN-LAST:event_jbBowActionPerformed
 
     private void jbArrowsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbArrowsActionPerformed
-        // TODO add your handling code here:
+        this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.ARROW]);
     }//GEN-LAST:event_jbArrowsActionPerformed
 
     private void jbMacheteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbMacheteActionPerformed
-        // TODO add your handling code here:
+        this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.MACHETE]);
     }//GEN-LAST:event_jbMacheteActionPerformed
 
     private void jbAxeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbAxeActionPerformed
-        // TODO add your handling code here:
+        this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.AXE]);
     }//GEN-LAST:event_jbAxeActionPerformed
 
     private void jbHammerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbHammerActionPerformed
-        // TODO add your handling code here:
+        this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.HAMMER]);
     }//GEN-LAST:event_jbHammerActionPerformed
 
     private void jbFlintAndStoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbFlintAndStoneActionPerformed
-        // TODO add your handling code here:
+        this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.FLINTANDSTONE]);
     }//GEN-LAST:event_jbFlintAndStoneActionPerformed
 
     private void jbGrapplingHookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbGrapplingHookActionPerformed
-        // TODO add your handling code here:
+        this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.GRAPPLINGHOOK]);
     }//GEN-LAST:event_jbGrapplingHookActionPerformed
 
     private void jbKnifeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbKnifeActionPerformed
-        // TODO add your handling code here:
+        this.craftItem(Survivalist.getCurrentGame().getInventory()[Constants.KNIFE]);
     }//GEN-LAST:event_jbKnifeActionPerformed
 
     /**
@@ -333,6 +343,53 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
                 new CraftingMenuFrame().setVisible(true);
             }
         });
+    }
+    
+    private void craftItem(Item item) {
+
+        // get required resources and quantities from item
+        RequiredItem[] requiredResources = item.getRequiredResources();
+
+        // check to see if required resources are available
+        boolean adequateResources = InventoryControl.checkAvailableResources(requiredResources);
+
+        // IF required resources are available
+        if (adequateResources) {
+            double actualQuantity = item.getActualQuantity();
+            actualQuantity++;
+            item.setActualQuantity(actualQuantity);
+
+            // craft item AND print "item has been crafted"
+            JOptionPane.showMessageDialog(null, "You have crafted a(n) " + item.getName() + ".");
+        } // ELSE resources are not available
+        // print "you don't have the required resources"
+        else {
+            if (item.getName() != "Flint and Stone") {
+                JOptionPane.showMessageDialog(null, "You do not have the required resources."
+                    + "\nTo craft a(n) "
+                    + item.getName()
+                    + " , you need the following"
+                    + "\namounts of the listed resources:"
+                    + "\n  ->Item: "
+                    + item.getRequiredResources()[0].getInventoryItem().getName()
+                    + "  Quantity: " + item.getRequiredResources()[0].getRequiredAmount()
+                    + "\n  ->Item: " + item.getRequiredResources()[1].getInventoryItem().getName()
+                    + "  Quantity: " + item.getRequiredResources()[1].getRequiredAmount()
+                    + "\n  ->Item: " + item.getRequiredResources()[2].getInventoryItem().getName()
+                    + "  Quantity: " + item.getRequiredResources()[2].getRequiredAmount());
+            } else if (item.getName() == "Flint and Stone") {
+                JOptionPane.showMessageDialog(null, "You do not have the required resources."
+                    + "\nTo craft a(n) "
+                    + item.getName()
+                    + " , you need the following"
+                    + "\namounts of the listed resources:"
+                    + "\n  ->Item: "
+                    + item.getRequiredResources()[0].getInventoryItem().getName()
+                    + "  Quantity: " + item.getRequiredResources()[0].getRequiredAmount()
+                    + "\n  ->Item: " + item.getRequiredResources()[1].getInventoryItem().getName()
+                    + "  Quantity: " + item.getRequiredResources()[1].getRequiredAmount());
+            }
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
