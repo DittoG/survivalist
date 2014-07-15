@@ -69,6 +69,7 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jbExit.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbExit.setForeground(new java.awt.Color(132, 193, 255));
         jbExit.setText("<html><a style='text-decoration:underline'>E</a>xit</html>");
+        jbExit.setToolTipText("Exit to the previous Menu");
         jbExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbExit.setFocusPainted(false);
         jbExit.setMinimumSize(new java.awt.Dimension(127, 27));
@@ -84,7 +85,8 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jbHowToPlay.setBackground(new java.awt.Color(43, 72, 130));
         jbHowToPlay.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbHowToPlay.setForeground(new java.awt.Color(132, 193, 255));
-        jbHowToPlay.setText("<html><a style='text-decoration:underline'>H</a>ow to Play</html>");
+        jbHowToPlay.setText("<html><a style='text-decoration:underline'>H</a>ow to craft</html>");
+        jbHowToPlay.setToolTipText("Get help on how to craft");
         jbHowToPlay.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbHowToPlay.setFocusPainted(false);
         jbHowToPlay.addActionListener(new java.awt.event.ActionListener() {
@@ -134,6 +136,9 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jbArrows.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbArrows.setForeground(new java.awt.Color(132, 193, 255));
         jbArrows.setText("<html><a style='text-decoration:underline'>A</a>rrows</html>");
+        jbArrows.setToolTipText(Survivalist.getCurrentGame().getInventory()[Constants.ARROW].getDescription()
+
+        );
         jbArrows.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbArrows.setFocusPainted(false);
         jbArrows.addActionListener(new java.awt.event.ActionListener() {
@@ -162,6 +167,9 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jbAxe.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbAxe.setForeground(new java.awt.Color(132, 193, 255));
         jbAxe.setText("<html>A<a style='text-decoration:underline'>x</a>e</html>");
+        jbAxe.setToolTipText(survivalist.Survivalist.getCurrentGame().getInventory()[Constants.AXE].getDescription()
+
+        );
         jbAxe.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbAxe.setFocusPainted(false);
         jbAxe.addActionListener(new java.awt.event.ActionListener() {
@@ -190,7 +198,9 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jbFlintAndStone.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbFlintAndStone.setForeground(new java.awt.Color(132, 193, 255));
         jbFlintAndStone.setText("<html><a style='text-decoration:underline'>F</a>lint and Stone</html>");
-        jbFlintAndStone.setToolTipText("");
+        jbFlintAndStone.setToolTipText(survivalist.Survivalist.getCurrentGame().getInventory()[Constants.FLINTANDSTONE].getDescription()
+
+        );
         jbFlintAndStone.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbFlintAndStone.setFocusPainted(false);
         jbFlintAndStone.addActionListener(new java.awt.event.ActionListener() {

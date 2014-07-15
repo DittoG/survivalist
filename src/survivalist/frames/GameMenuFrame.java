@@ -76,7 +76,7 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jbHowToPlay.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbHowToPlay.setForeground(new java.awt.Color(132, 193, 255));
         jbHowToPlay.setText("<html><a style='text-decoration:underline'>H</a>ow to Play</html>");
-        jbHowToPlay.setToolTipText("How to play the game");
+        jbHowToPlay.setToolTipText("Learn how to play the game");
         jbHowToPlay.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbHowToPlay.setFocusPainted(false);
         jbHowToPlay.addActionListener(new java.awt.event.ActionListener() {
@@ -90,7 +90,7 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jbViewMap.setBackground(new java.awt.Color(43, 72, 130));
         jbViewMap.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbViewMap.setForeground(new java.awt.Color(132, 193, 255));
-        jbViewMap.setText("<html><a style='text-decoration:underline'>V</a>iew Map</html>");
+        jbViewMap.setText("<html><a style='text-decoration:underline'>V</a>iew Map/Travel</html>");
         jbViewMap.setToolTipText("View the map or travel");
         jbViewMap.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbViewMap.setFocusPainted(false);

@@ -134,7 +134,7 @@ public class GameControl {
         // Building codes*************************************************************************************
         // Cabin
         Building cabin = new Building("Cabin");
-        cabin.setDescription("A sturdy shelter.");
+        cabin.setDescription("A sturdy shelter made of logs.");
         cabin.setType("permanent");
         cabin.setLength(0);
         cabin.setWidth(0);
@@ -143,7 +143,7 @@ public class GameControl {
 
         // Tower
         Building tower = new Building("Tower");
-        tower.setDescription("A tall, solid structure that will reveal the surrounding area for miles.");
+        tower.setDescription("A tall structure that reveals the surrounding area");
         tower.setType("permanent");
         tower.setLength(0);
         tower.setWidth(0);
@@ -152,7 +152,7 @@ public class GameControl {
 
         // Lean-to
         Building leanTo = new Building("Lean-to");
-        leanTo.setDescription("A small makeshift shelter that provides protection for a night.");
+        leanTo.setDescription("A makeshift shelter that provides protection for a night.");
         leanTo.setType("temporary");
         leanTo.setLength(0);
         leanTo.setWidth(0);

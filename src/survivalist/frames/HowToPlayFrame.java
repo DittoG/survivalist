@@ -41,9 +41,9 @@ public class HowToPlayFrame extends javax.swing.JFrame {
         jbExit = new javax.swing.JButton();
         jbHowToHuntAndGather = new javax.swing.JButton();
         jbHowToCraft = new javax.swing.JButton();
-        jbHowToUseTheMap = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jbHowToUseTheMap = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jlHowToPlayBackground = new javax.swing.JLabel();
 
@@ -101,6 +101,7 @@ public class HowToPlayFrame extends javax.swing.JFrame {
         jbHowToHuntAndGather.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbHowToHuntAndGather.setForeground(new java.awt.Color(132, 193, 255));
         jbHowToHuntAndGather.setText("How to hunt and gather");
+        jbHowToHuntAndGather.setToolTipText("Learn how to hunt and gather");
         jbHowToHuntAndGather.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbHowToHuntAndGather.setFocusPainted(false);
         jbHowToHuntAndGather.setMinimumSize(new java.awt.Dimension(127, 27));
@@ -117,6 +118,7 @@ public class HowToPlayFrame extends javax.swing.JFrame {
         jbHowToCraft.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbHowToCraft.setForeground(new java.awt.Color(132, 193, 255));
         jbHowToCraft.setText("How to Craft");
+        jbHowToCraft.setToolTipText("Learn how to craft items");
         jbHowToCraft.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbHowToCraft.setFocusPainted(false);
         jbHowToCraft.setMinimumSize(new java.awt.Dimension(127, 27));
@@ -128,22 +130,6 @@ public class HowToPlayFrame extends javax.swing.JFrame {
         });
         jLayeredPane1.add(jbHowToCraft);
         jbHowToCraft.setBounds(500, 380, 240, 30);
-
-        jbHowToUseTheMap.setBackground(new java.awt.Color(43, 72, 130));
-        jbHowToUseTheMap.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
-        jbHowToUseTheMap.setForeground(new java.awt.Color(132, 193, 255));
-        jbHowToUseTheMap.setText("How to use the map");
-        jbHowToUseTheMap.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jbHowToUseTheMap.setFocusPainted(false);
-        jbHowToUseTheMap.setMinimumSize(new java.awt.Dimension(127, 27));
-        jbHowToUseTheMap.setPreferredSize(new java.awt.Dimension(127, 27));
-        jbHowToUseTheMap.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbHowToUseTheMapActionPerformed(evt);
-            }
-        });
-        jLayeredPane1.add(jbHowToUseTheMap);
-        jbHowToUseTheMap.setBounds(500, 300, 240, 30);
 
         jScrollPane1.setOpaque(false);
 
@@ -160,6 +146,22 @@ public class HowToPlayFrame extends javax.swing.JFrame {
 
         jLayeredPane1.add(jScrollPane1);
         jScrollPane1.setBounds(10, 70, 720, 180);
+
+        jbHowToUseTheMap.setBackground(new java.awt.Color(43, 72, 130));
+        jbHowToUseTheMap.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
+        jbHowToUseTheMap.setForeground(new java.awt.Color(132, 193, 255));
+        jbHowToUseTheMap.setText("How to use the map");
+        jbHowToUseTheMap.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbHowToUseTheMap.setFocusPainted(false);
+        jbHowToUseTheMap.setMinimumSize(new java.awt.Dimension(127, 27));
+        jbHowToUseTheMap.setPreferredSize(new java.awt.Dimension(127, 27));
+        jbHowToUseTheMap.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbHowToUseTheMapActionPerformed(evt);
+            }
+        });
+        jLayeredPane1.add(jbHowToUseTheMap);
+        jbHowToUseTheMap.setBounds(500, 300, 240, 30);
 
         jLabel1.setFont(new java.awt.Font("Showcard Gothic", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(132, 193, 255));

@@ -77,6 +77,7 @@
               <Color blue="ff" green="c1" red="84" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;a style=&apos;text-decoration:underline&apos;&gt;E&lt;/a&gt;xit&lt;/html&gt;"/>
+            <Property name="toolTipText" type="java.lang.String" value="Exit to the previous Menu"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
@@ -108,7 +109,8 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="c1" red="84" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;a style=&apos;text-decoration:underline&apos;&gt;H&lt;/a&gt;ow to Play&lt;/html&gt;"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;a style=&apos;text-decoration:underline&apos;&gt;H&lt;/a&gt;ow to craft&lt;/html&gt;"/>
+            <Property name="toolTipText" type="java.lang.String" value="Get help on how to craft"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
@@ -191,6 +193,9 @@
               <Color blue="ff" green="c1" red="84" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;a style=&apos;text-decoration:underline&apos;&gt;A&lt;/a&gt;rrows&lt;/html&gt;"/>
+            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="Survivalist.getCurrentGame().getInventory()[Constants.ARROW].getDescription()&#xd;&#xa;&#xd;&#xa;" type="code"/>
+            </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
@@ -243,6 +248,9 @@
               <Color blue="ff" green="c1" red="84" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt;A&lt;a style=&apos;text-decoration:underline&apos;&gt;x&lt;/a&gt;e&lt;/html&gt;"/>
+            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="survivalist.Survivalist.getCurrentGame().getInventory()[Constants.AXE].getDescription()&#xd;&#xa;&#xd;&#xa;" type="code"/>
+            </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
@@ -295,7 +303,9 @@
               <Color blue="ff" green="c1" red="84" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;a style=&apos;text-decoration:underline&apos;&gt;F&lt;/a&gt;lint and Stone&lt;/html&gt;"/>
-            <Property name="toolTipText" type="java.lang.String" value=""/>
+            <Property name="toolTipText" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="survivalist.Survivalist.getCurrentGame().getInventory()[Constants.FLINTANDSTONE].getDescription()&#xd;&#xa;&#xd;&#xa;" type="code"/>
+            </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>

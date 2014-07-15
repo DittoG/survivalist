@@ -119,7 +119,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jbQuit.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
         jbQuit.setForeground(new java.awt.Color(132, 193, 255));
         jbQuit.setText("<html><a style='text-decoration:underline'>E</a>xit</html>");
-        jbQuit.setToolTipText("Exit the main menu");
+        jbQuit.setToolTipText("Exit to the Start Program Menu");
         jbQuit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbQuit.setFocusPainted(false);
         jbQuit.addActionListener(new java.awt.event.ActionListener() {
@@ -175,7 +175,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
 
         HowToPlayFrame howToPlayFrame = new HowToPlayFrame();
         howToPlayFrame.setVisible(true);
-
+        
         this.dispose();
     }//GEN-LAST:event_jbHowToPlayActionPerformed
 
