@@ -55,6 +55,7 @@ public class StartProgramFrame extends javax.swing.JFrame {
         jbQuit.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbQuit.setForeground(new java.awt.Color(132, 193, 255));
         jbQuit.setText("Exit");
+        jbQuit.setToolTipText("Exit the program");
         jbQuit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbQuit.setFocusPainted(false);
         jbQuit.setMaximumSize(new java.awt.Dimension(57, 23));
@@ -69,6 +70,7 @@ public class StartProgramFrame extends javax.swing.JFrame {
         jbQuit.setBounds(620, 370, 100, 30);
 
         jtPlayerName.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        jtPlayerName.setToolTipText("Enter your name here");
         jtPlayerName.setMinimumSize(new java.awt.Dimension(6, 21));
         jtPlayerName.setPreferredSize(new java.awt.Dimension(6, 21));
         jtPlayerName.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -91,6 +93,7 @@ public class StartProgramFrame extends javax.swing.JFrame {
         jbStart.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbStart.setForeground(new java.awt.Color(132, 193, 255));
         jbStart.setText("Start");
+        jbStart.setToolTipText("Start the program");
         jbStart.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbStart.setFocusPainted(false);
         jbStart.addActionListener(new java.awt.event.ActionListener() {

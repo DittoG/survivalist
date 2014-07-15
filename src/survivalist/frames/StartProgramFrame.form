@@ -55,6 +55,7 @@
               <Color blue="ff" green="c1" red="84" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Exit"/>
+            <Property name="toolTipText" type="java.lang.String" value="Exit the program"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
@@ -95,6 +96,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Showcard Gothic" size="14" style="0"/>
                 </Property>
+                <Property name="toolTipText" type="java.lang.String" value="Enter your name here"/>
                 <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[6, 21]"/>
                 </Property>
@@ -136,6 +138,7 @@
               <Color blue="ff" green="c1" red="84" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Start"/>
+            <Property name="toolTipText" type="java.lang.String" value="Start the program"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>

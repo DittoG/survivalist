@@ -87,6 +87,7 @@
               <Color blue="ff" green="c1" red="84" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt;Start &lt;a style=&apos;text-decoration:underline&apos;&gt;G&lt;/a&gt;ame&lt;/html&gt;"/>
+            <Property name="toolTipText" type="java.lang.String" value="Start a new game"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
@@ -114,6 +115,7 @@
               <Color blue="ff" green="c1" red="84" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;a style=&apos;text-decoration:underline&apos;&gt;H&lt;/a&gt;ow to Play&lt;/html&gt;"/>
+            <Property name="toolTipText" type="java.lang.String" value="How to play the game"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
@@ -140,6 +142,7 @@
               <Color blue="ff" green="c1" red="84" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;a style=&apos;text-decoration:underline&apos;&gt;S&lt;/a&gt;ave Game&lt;/html&gt;"/>
+            <Property name="toolTipText" type="java.lang.String" value="Save your current game"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
@@ -163,6 +166,7 @@
               <Color blue="ff" green="c1" red="84" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;a style=&apos;text-decoration:underline&apos;&gt;L&lt;/a&gt;oad Game&lt;/html&gt;"/>
+            <Property name="toolTipText" type="java.lang.String" value="Load an existing game"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
@@ -186,6 +190,7 @@
               <Color blue="ff" green="c1" red="84" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;a style=&apos;text-decoration:underline&apos;&gt;E&lt;/a&gt;xit&lt;/html&gt;"/>
+            <Property name="toolTipText" type="java.lang.String" value="Exit the main menu"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>

@@ -61,6 +61,7 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jbExit.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbExit.setForeground(new java.awt.Color(132, 193, 255));
         jbExit.setText("<html><a style='text-decoration:underline'>E</a>xit</html>");
+        jbExit.setToolTipText("Exit to the main menu");
         jbExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbExit.setFocusPainted(false);
         jbExit.addActionListener(new java.awt.event.ActionListener() {
@@ -75,6 +76,7 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jbHowToPlay.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbHowToPlay.setForeground(new java.awt.Color(132, 193, 255));
         jbHowToPlay.setText("<html><a style='text-decoration:underline'>H</a>ow to Play</html>");
+        jbHowToPlay.setToolTipText("How to play the game");
         jbHowToPlay.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbHowToPlay.setFocusPainted(false);
         jbHowToPlay.addActionListener(new java.awt.event.ActionListener() {
@@ -89,6 +91,7 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jbViewMap.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbViewMap.setForeground(new java.awt.Color(132, 193, 255));
         jbViewMap.setText("<html><a style='text-decoration:underline'>V</a>iew Map</html>");
+        jbViewMap.setToolTipText("View the map or travel");
         jbViewMap.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbViewMap.setFocusPainted(false);
         jLayeredPane1.add(jbViewMap);
@@ -98,6 +101,7 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jbInventory.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbInventory.setForeground(new java.awt.Color(132, 193, 255));
         jbInventory.setText("<html><a style='text-decoration:underline'>I</a>nventory</html>");
+        jbInventory.setToolTipText("View your inventory");
         jbInventory.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbInventory.setFocusPainted(false);
         jbInventory.addActionListener(new java.awt.event.ActionListener() {
@@ -112,6 +116,7 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jbHuntGather.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbHuntGather.setForeground(new java.awt.Color(132, 193, 255));
         jbHuntGather.setText("<html>Hunt/<a style='text-decoration:underline'>G</a>ather</html>");
+        jbHuntGather.setToolTipText("Hunt and gather food and materials");
         jbHuntGather.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbHuntGather.setFocusPainted(false);
         jbHuntGather.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -126,6 +131,7 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jbCrafting.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbCrafting.setForeground(new java.awt.Color(132, 193, 255));
         jbCrafting.setText("<html><a style='text-decoration:underline'>C</a>rafting</html>");
+        jbCrafting.setToolTipText("Craft useful items");
         jbCrafting.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbCrafting.setFocusPainted(false);
         jbCrafting.addActionListener(new java.awt.event.ActionListener() {
@@ -140,6 +146,7 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jbBuilding.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbBuilding.setForeground(new java.awt.Color(132, 193, 255));
         jbBuilding.setText("<html><a style='text-decoration:underline'>B</a>uilding</html>");
+        jbBuilding.setToolTipText("Build a structure");
         jbBuilding.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbBuilding.setFocusPainted(false);
         jbBuilding.addActionListener(new java.awt.event.ActionListener() {
@@ -154,6 +161,7 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jbSaveGame.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbSaveGame.setForeground(new java.awt.Color(132, 193, 255));
         jbSaveGame.setText("<html><a style='text-decoration:underline'>S</a>ave Game</html>");
+        jbSaveGame.setToolTipText("Save your current game");
         jbSaveGame.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbSaveGame.setFocusPainted(false);
         jLayeredPane1.add(jbSaveGame);

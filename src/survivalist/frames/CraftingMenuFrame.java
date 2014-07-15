@@ -99,6 +99,8 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jbKnife.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbKnife.setForeground(new java.awt.Color(132, 193, 255));
         jbKnife.setText("<html><a style='text-decoration:underline'>K</a>nife</html>");
+        jbKnife.setToolTipText(Survivalist.getCurrentGame().getInventory()[Constants.KNIFE].getDescription()
+        );
         jbKnife.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbKnife.setFocusPainted(false);
         jbKnife.addActionListener(new java.awt.event.ActionListener() {
@@ -214,9 +216,6 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jbGrapplingHook.setBounds(390, 210, 160, 30);
 
         jlCraftingMenuBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/craftingMenuBackgroundImage.jpg"))); // NOI18N
-        jlCraftingMenuBackgroundImage.setMaximumSize(new java.awt.Dimension(760, 458));
-        jlCraftingMenuBackgroundImage.setMinimumSize(new java.awt.Dimension(760, 458));
-        jlCraftingMenuBackgroundImage.setPreferredSize(new java.awt.Dimension(760, 458));
         jLayeredPane1.add(jlCraftingMenuBackgroundImage);
         jlCraftingMenuBackgroundImage.setBounds(0, 0, 760, 458);
 
