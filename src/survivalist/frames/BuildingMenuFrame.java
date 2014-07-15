@@ -7,6 +7,7 @@
 package survivalist.frames;
 
 import java.awt.event.KeyEvent;
+import survivalist.control.Constants;
 
 /**
  *
@@ -77,6 +78,7 @@ public class BuildingMenuFrame extends javax.swing.JFrame {
         jbCabin.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbCabin.setForeground(new java.awt.Color(132, 193, 255));
         jbCabin.setText("<html><a style='text-decoration:underline'>C</a>abin</html>");
+        jbCabin.setToolTipText(survivalist.Survivalist.getCurrentGame().getBuildings()[Constants.CABIN].getDescription());
         jbCabin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbCabin.setFocusPainted(false);
         jbCabin.addActionListener(new java.awt.event.ActionListener() {
@@ -96,6 +98,7 @@ public class BuildingMenuFrame extends javax.swing.JFrame {
         jbLeanTo.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbLeanTo.setForeground(new java.awt.Color(132, 193, 255));
         jbLeanTo.setText("<html><a style='text-decoration:underline'>L</a>ean-to</html>");
+        jbLeanTo.setToolTipText(survivalist.Survivalist.getCurrentGame().getBuildings()[Constants.LEANTO].getDescription());
         jbLeanTo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbLeanTo.setFocusPainted(false);
         jbLeanTo.addActionListener(new java.awt.event.ActionListener() {
@@ -110,6 +113,7 @@ public class BuildingMenuFrame extends javax.swing.JFrame {
         jbTower.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbTower.setForeground(new java.awt.Color(132, 193, 255));
         jbTower.setText("<html><a style='text-decoration:underline'>T</a>ower</html>");
+        jbTower.setToolTipText(survivalist.Survivalist.getCurrentGame().getBuildings()[Constants.TOWER].getDescription());
         jbTower.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbTower.setFocusPainted(false);
         jbTower.addActionListener(new java.awt.event.ActionListener() {
