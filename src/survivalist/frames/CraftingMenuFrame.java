@@ -122,6 +122,9 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jbBow.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbBow.setForeground(new java.awt.Color(132, 193, 255));
         jbBow.setText("<html><a style='text-decoration:underline'>B</a>ow</html>");
+        jbBow.setToolTipText(Survivalist.getCurrentGame().getInventory()[Constants.BOW].getDescription()
+
+        );
         jbBow.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbBow.setFocusPainted(false);
         jbBow.addActionListener(new java.awt.event.ActionListener() {
@@ -153,6 +156,9 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jbMachete.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbMachete.setForeground(new java.awt.Color(132, 193, 255));
         jbMachete.setText("<html><a style='text-decoration:underline'>M</a>achete</html>");
+        jbMachete.setToolTipText(Survivalist.getCurrentGame().getInventory()[Constants.MACHETE].getDescription()
+
+        );
         jbMachete.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbMachete.setFocusPainted(false);
         jbMachete.addActionListener(new java.awt.event.ActionListener() {
@@ -184,6 +190,9 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jbHammer.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbHammer.setForeground(new java.awt.Color(132, 193, 255));
         jbHammer.setText("<html>Hamme<a style='text-decoration:underline'>r</a></html>");
+        jbHammer.setToolTipText(Survivalist.getCurrentGame().getInventory()[Constants.HAMMER].getDescription()
+
+        );
         jbHammer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbHammer.setFocusPainted(false);
         jbHammer.addActionListener(new java.awt.event.ActionListener() {
@@ -215,6 +224,9 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jbGrapplingHook.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbGrapplingHook.setForeground(new java.awt.Color(132, 193, 255));
         jbGrapplingHook.setText("<html><a style='text-decoration:underline'>G</a>rappling Hook</html>");
+        jbGrapplingHook.setToolTipText(Survivalist.getCurrentGame().getInventory()[Constants.GRAPPLINGHOOK].getDescription()
+
+        );
         jbGrapplingHook.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbGrapplingHook.setFocusPainted(false);
         jbGrapplingHook.addActionListener(new java.awt.event.ActionListener() {
