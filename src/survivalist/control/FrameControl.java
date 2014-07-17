@@ -12,8 +12,6 @@ package survivalist.control;
 public class FrameControl {
 
     public static void saveJframe() {
-        
-        
 
     }
 

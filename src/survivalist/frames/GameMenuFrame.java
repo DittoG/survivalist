@@ -252,12 +252,12 @@ public class GameMenuFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jbInventoryActionPerformed
 
     private void jbViewMapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbViewMapActionPerformed
-        
+
         MapMoveFrame mapMoveFrame = new MapMoveFrame();
         mapMoveFrame.setVisible(true);
-        
+
         this.dispose();
-        
+
     }//GEN-LAST:event_jbViewMapActionPerformed
 
     /**
