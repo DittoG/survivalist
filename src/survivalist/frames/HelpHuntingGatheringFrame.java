@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.frames;
 
 import java.awt.event.KeyEvent;
@@ -19,7 +18,7 @@ public class HelpHuntingGatheringFrame extends javax.swing.JFrame {
      */
     public HelpHuntingGatheringFrame() {
         initComponents();
-        
+
         setLocationRelativeTo(null);
     }
 
@@ -35,11 +34,14 @@ public class HelpHuntingGatheringFrame extends javax.swing.JFrame {
         jLayeredPane1 = new javax.swing.JLayeredPane();
         jlCraftingMenuBanner = new javax.swing.JLabel();
         jbExit = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jlHuntingGatheringBackgroundImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(748, 458));
+        setMinimumSize(new java.awt.Dimension(748, 458));
 
-        jLayeredPane1.setMinimumSize(new java.awt.Dimension(760, 458));
+        jLayeredPane1.setMaximumSize(new java.awt.Dimension(748, 458));
+        jLayeredPane1.setMinimumSize(new java.awt.Dimension(748, 458));
 
         jlCraftingMenuBanner.setFont(new java.awt.Font("Showcard Gothic", 0, 36)); // NOI18N
         jlCraftingMenuBanner.setForeground(new java.awt.Color(48, 171, 48));
@@ -69,15 +71,15 @@ public class HelpHuntingGatheringFrame extends javax.swing.JFrame {
         jLayeredPane1.add(jbExit);
         jbExit.setBounds(580, 420, 160, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/huntingBackgroundImage.jpg"))); // NOI18N
-        jLayeredPane1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 760, 458);
+        jlHuntingGatheringBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/huntingBackgroundImage.jpg"))); // NOI18N
+        jLayeredPane1.add(jlHuntingGatheringBackgroundImage);
+        jlHuntingGatheringBackgroundImage.setBounds(0, 0, 750, 458);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 748, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -138,9 +140,9 @@ public class HelpHuntingGatheringFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JButton jbExit;
     private javax.swing.JLabel jlCraftingMenuBanner;
+    private javax.swing.JLabel jlHuntingGatheringBackgroundImage;
     // End of variables declaration//GEN-END:variables
 }

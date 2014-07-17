@@ -282,7 +282,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JLabel" name="jlHowToPlayBackground">
+        <Component class="javax.swing.JLabel" name="jlHowToPlayBackgroundImage">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/survivalist/images/howToPlayBackgroundImage.jpg"/>

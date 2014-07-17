@@ -23,12 +23,12 @@ public class StartProgramFrame extends javax.swing.JFrame {
      */
     public StartProgramFrame() {
         initComponents();
-        
+
         // center the window relative to the screen
         setLocationRelativeTo(null);
     }
     public static String playerName;
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -138,15 +138,17 @@ public class StartProgramFrame extends javax.swing.JFrame {
         }
 
         Player player = ProgramControl.createPlayer(playerName);
-
-        // show the main menu
-        MainMenuFrame mainMenuFrame = new MainMenuFrame();
-        mainMenuFrame.getJlPlayerName().setText("Welcome to the Wild, " + playerName + ".");
-
-        mainMenuFrame.setVisible(true);
-
-        // dispose of the start program frame
+        
+        // close this frame temporarily
+         MainMenuFrame mainMenuFrame = new MainMenuFrame();
+         mainMenuFrame.setVisible(true);
+        
+        // save the frame to be opened later
         this.dispose();
+        
+        // show the main menu
+       
+        mainMenuFrame.getJlPlayerName().setText("Welcome to the Wild, " + playerName + ".");
     }//GEN-LAST:event_jbStartActionPerformed
 
     private void jbQuitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbQuitActionPerformed

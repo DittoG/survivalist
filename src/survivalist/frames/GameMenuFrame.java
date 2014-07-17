@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.frames;
 
 import java.awt.event.KeyEvent;
@@ -49,6 +48,8 @@ public class GameMenuFrame extends javax.swing.JFrame {
         setFocusTraversalPolicyProvider(true);
         setResizable(false);
 
+        jLayeredPane1.setMaximumSize(new java.awt.Dimension(760, 458));
+        jLayeredPane1.setMinimumSize(new java.awt.Dimension(760, 458));
         jLayeredPane1.setPreferredSize(new java.awt.Dimension(748, 460));
 
         jlGameMenuBanner.setFont(new java.awt.Font("Showcard Gothic", 0, 36)); // NOI18N
@@ -94,6 +95,11 @@ public class GameMenuFrame extends javax.swing.JFrame {
         jbViewMap.setToolTipText("View the map or travel");
         jbViewMap.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbViewMap.setFocusPainted(false);
+        jbViewMap.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbViewMapActionPerformed(evt);
+            }
+        });
         jLayeredPane1.add(jbViewMap);
         jbViewMap.setBounds(470, 150, 160, 30);
 
@@ -189,32 +195,32 @@ public class GameMenuFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbHowToPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbHowToPlayActionPerformed
-        
+
         HowToPlayFrame howToPlayFrame = new HowToPlayFrame();
         howToPlayFrame.setVisible(true);
-        
+
         this.dispose();
-        
+
     }//GEN-LAST:event_jbHowToPlayActionPerformed
-    
+
     private void jbBuildingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbBuildingActionPerformed
         BuildingMenuFrame buildingMenuFrame = new BuildingMenuFrame();
         buildingMenuFrame.setVisible(true);
-        
+
         this.dispose();
     }//GEN-LAST:event_jbBuildingActionPerformed
-        
+
     private void jbExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbExitActionPerformed
-        
+
         MainMenuFrame mainMenuFrame = new MainMenuFrame();
         mainMenuFrame.setVisible(true);
-        
+
         this.dispose();
-        
+
     }//GEN-LAST:event_jbExitActionPerformed
 
     private void jbHuntGatherKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jbHuntGatherKeyPressed
-        
+
         if (evt.getKeyCode() == KeyEvent.VK_H) {
             jbHowToPlayActionPerformed(null);
         } else if (evt.getKeyCode() == KeyEvent.VK_E) {
@@ -225,23 +231,34 @@ public class GameMenuFrame extends javax.swing.JFrame {
             jbInventoryActionPerformed(null);
         } else if (evt.getKeyCode() == KeyEvent.VK_B) {
             jbBuildingActionPerformed(null);
+        } else if (evt.getKeyCode() == KeyEvent.VK_V) {
+            jbViewMapActionPerformed(null);
         }
     }//GEN-LAST:event_jbHuntGatherKeyPressed
 
     private void jbCraftingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCraftingActionPerformed
-        
+
         CraftingMenuFrame craftingMenuFrame = new CraftingMenuFrame();
         craftingMenuFrame.setVisible(true);
-        
+
         this.dispose();
     }//GEN-LAST:event_jbCraftingActionPerformed
 
     private void jbInventoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbInventoryActionPerformed
         InventoryFrame inventoryFrame = new InventoryFrame();
         inventoryFrame.setVisible(true);
-        
+
         this.dispose();
     }//GEN-LAST:event_jbInventoryActionPerformed
+
+    private void jbViewMapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbViewMapActionPerformed
+        
+        MapMoveFrame mapMoveFrame = new MapMoveFrame();
+        mapMoveFrame.setVisible(true);
+        
+        this.dispose();
+        
+    }//GEN-LAST:event_jbViewMapActionPerformed
 
     /**
      * @param args the command line arguments

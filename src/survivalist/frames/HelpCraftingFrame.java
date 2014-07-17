@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.frames;
 
 import java.awt.event.KeyEvent;
@@ -19,7 +18,7 @@ public class HelpCraftingFrame extends javax.swing.JFrame {
      */
     public HelpCraftingFrame() {
         initComponents();
-        
+
         setLocationRelativeTo(null);
     }
 
@@ -38,8 +37,11 @@ public class HelpCraftingFrame extends javax.swing.JFrame {
         jlHelpCraftingBackgroundImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(748, 458));
+        setMinimumSize(new java.awt.Dimension(748, 458));
 
-        jLayeredPane2.setMinimumSize(new java.awt.Dimension(760, 458));
+        jLayeredPane2.setMaximumSize(new java.awt.Dimension(748, 458));
+        jLayeredPane2.setMinimumSize(new java.awt.Dimension(748, 458));
 
         jlCraftingMenuBanner.setFont(new java.awt.Font("Showcard Gothic", 0, 36)); // NOI18N
         jlCraftingMenuBanner.setForeground(new java.awt.Color(36, 97, 36));
@@ -70,14 +72,17 @@ public class HelpCraftingFrame extends javax.swing.JFrame {
         jbExit.setBounds(580, 420, 160, 30);
 
         jlHelpCraftingBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/craftingMenuBackgroundImage.jpg"))); // NOI18N
+        jlHelpCraftingBackgroundImage.setMaximumSize(new java.awt.Dimension(748, 458));
+        jlHelpCraftingBackgroundImage.setMinimumSize(new java.awt.Dimension(748, 458));
+        jlHelpCraftingBackgroundImage.setPreferredSize(new java.awt.Dimension(748, 458));
         jLayeredPane2.add(jlHelpCraftingBackgroundImage);
-        jlHelpCraftingBackgroundImage.setBounds(0, 0, 760, 458);
+        jlHelpCraftingBackgroundImage.setBounds(0, 0, 748, 458);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLayeredPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 748, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

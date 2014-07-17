@@ -368,7 +368,7 @@ public class GameControl {
 
         // Hook
         Item grapplingHook = new Item("Grappling Hook");
-        grapplingHook.setDescription("A hook attached to a rope, this is used to climb rocks by throwing it up the side of a cliff and climbing it up a string.");
+        grapplingHook.setDescription("A hook and rope used to climb steep cliffs");
         grapplingHook.setType("tool");
         RequiredItem[] requiredGrapplingHookIngredients = new RequiredItem[3];
         grapplingHook.setRequiredResources(requiredGrapplingHookIngredients);

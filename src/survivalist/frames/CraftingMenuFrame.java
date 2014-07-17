@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.frames;
 
 import java.awt.event.KeyEvent;
@@ -25,7 +24,7 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
      */
     public CraftingMenuFrame() {
         initComponents();
-        
+
         // center the window relative to the screen
         setLocationRelativeTo(null);
     }
@@ -54,9 +53,13 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jlCraftingMenuBackgroundImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(748, 458));
+        setMinimumSize(new java.awt.Dimension(748, 458));
+        setPreferredSize(new java.awt.Dimension(748, 458));
 
         jLayeredPane1.setDoubleBuffered(true);
-        jLayeredPane1.setPreferredSize(new java.awt.Dimension(760, 458));
+        jLayeredPane1.setMaximumSize(new java.awt.Dimension(748, 458));
+        jLayeredPane1.setMinimumSize(new java.awt.Dimension(748, 458));
 
         jlCraftingMenuBanner.setFont(new java.awt.Font("Showcard Gothic", 0, 36)); // NOI18N
         jlCraftingMenuBanner.setForeground(new java.awt.Color(36, 97, 36));
@@ -80,7 +83,7 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
             }
         });
         jLayeredPane1.add(jbExit);
-        jbExit.setBounds(590, 420, 160, 30);
+        jbExit.setBounds(580, 420, 160, 30);
 
         jbHowToPlay.setBackground(new java.awt.Color(43, 72, 130));
         jbHowToPlay.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
@@ -95,7 +98,7 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
             }
         });
         jLayeredPane1.add(jbHowToPlay);
-        jbHowToPlay.setBounds(590, 380, 160, 30);
+        jbHowToPlay.setBounds(580, 380, 160, 30);
 
         jbKnife.setBackground(new java.awt.Color(43, 72, 130));
         jbKnife.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
@@ -238,6 +241,9 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         jbGrapplingHook.setBounds(390, 210, 160, 30);
 
         jlCraftingMenuBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/craftingMenuBackgroundImage.jpg"))); // NOI18N
+        jlCraftingMenuBackgroundImage.setMaximumSize(new java.awt.Dimension(748, 458));
+        jlCraftingMenuBackgroundImage.setMinimumSize(new java.awt.Dimension(748, 458));
+        jlCraftingMenuBackgroundImage.setPreferredSize(new java.awt.Dimension(748, 458));
         jLayeredPane1.add(jlCraftingMenuBackgroundImage);
         jlCraftingMenuBackgroundImage.setBounds(0, 0, 760, 458);
 
@@ -246,12 +252,12 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 748, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 458, Short.MAX_VALUE)
         );
 
         pack();
@@ -274,7 +280,7 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jbHowToPlayActionPerformed
 
     private void jbKnifeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jbKnifeKeyPressed
-        
+
         // Key Binding Code
         if (evt.getKeyCode() == KeyEvent.VK_K) {
             jbKnifeActionPerformed(null);
@@ -365,7 +371,7 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
             }
         });
     }
-    
+
     private void craftItem(Item item) {
 
         // get required resources and quantities from item
@@ -387,28 +393,28 @@ public class CraftingMenuFrame extends javax.swing.JFrame {
         else {
             if (item.getName() != "Flint and Stone") {
                 JOptionPane.showMessageDialog(null, "You do not have the required resources."
-                    + "\nTo craft a(n) "
-                    + item.getName()
-                    + " , you need the following"
-                    + "\namounts of the listed resources:"
-                    + "\n  ->Item: "
-                    + item.getRequiredResources()[0].getInventoryItem().getName()
-                    + "  Quantity: " + item.getRequiredResources()[0].getRequiredAmount()
-                    + "\n  ->Item: " + item.getRequiredResources()[1].getInventoryItem().getName()
-                    + "  Quantity: " + item.getRequiredResources()[1].getRequiredAmount()
-                    + "\n  ->Item: " + item.getRequiredResources()[2].getInventoryItem().getName()
-                    + "  Quantity: " + item.getRequiredResources()[2].getRequiredAmount());
+                        + "\nTo craft a(n) "
+                        + item.getName()
+                        + " , you need the following"
+                        + "\namounts of the listed resources:"
+                        + "\n  ->Item: "
+                        + item.getRequiredResources()[0].getInventoryItem().getName()
+                        + "  Quantity: " + item.getRequiredResources()[0].getRequiredAmount()
+                        + "\n  ->Item: " + item.getRequiredResources()[1].getInventoryItem().getName()
+                        + "  Quantity: " + item.getRequiredResources()[1].getRequiredAmount()
+                        + "\n  ->Item: " + item.getRequiredResources()[2].getInventoryItem().getName()
+                        + "  Quantity: " + item.getRequiredResources()[2].getRequiredAmount());
             } else if (item.getName() == "Flint and Stone") {
                 JOptionPane.showMessageDialog(null, "You do not have the required resources."
-                    + "\nTo craft a(n) "
-                    + item.getName()
-                    + " , you need the following"
-                    + "\namounts of the listed resources:"
-                    + "\n  ->Item: "
-                    + item.getRequiredResources()[0].getInventoryItem().getName()
-                    + "  Quantity: " + item.getRequiredResources()[0].getRequiredAmount()
-                    + "\n  ->Item: " + item.getRequiredResources()[1].getInventoryItem().getName()
-                    + "  Quantity: " + item.getRequiredResources()[1].getRequiredAmount());
+                        + "\nTo craft a(n) "
+                        + item.getName()
+                        + " , you need the following"
+                        + "\namounts of the listed resources:"
+                        + "\n  ->Item: "
+                        + item.getRequiredResources()[0].getInventoryItem().getName()
+                        + "  Quantity: " + item.getRequiredResources()[0].getRequiredAmount()
+                        + "\n  ->Item: " + item.getRequiredResources()[1].getInventoryItem().getName()
+                        + "  Quantity: " + item.getRequiredResources()[1].getRequiredAmount());
             }
         }
     }

@@ -18,10 +18,10 @@ public class HowToPlayFrame extends javax.swing.JFrame {
      */
     public HowToPlayFrame() {
         initComponents();
-        
+
         // set focus on button
         jbGoal.requestFocus();
-        
+
         // center the window relative to the screen
         setLocationRelativeTo(null);
     }
@@ -45,7 +45,7 @@ public class HowToPlayFrame extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         jbHowToUseTheMap = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jlHowToPlayBackground = new javax.swing.JLabel();
+        jlHowToPlayBackgroundImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -169,9 +169,9 @@ public class HowToPlayFrame extends javax.swing.JFrame {
         jLayeredPane1.add(jLabel1);
         jLabel1.setBounds(220, 280, 140, 30);
 
-        jlHowToPlayBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/howToPlayBackgroundImage.jpg"))); // NOI18N
-        jLayeredPane1.add(jlHowToPlayBackground);
-        jlHowToPlayBackground.setBounds(0, 0, 748, 460);
+        jlHowToPlayBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/howToPlayBackgroundImage.jpg"))); // NOI18N
+        jLayeredPane1.add(jlHowToPlayBackgroundImage);
+        jlHowToPlayBackgroundImage.setBounds(0, 0, 748, 460);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -208,25 +208,25 @@ public class HowToPlayFrame extends javax.swing.JFrame {
         } else if (evt.getKeyCode() == KeyEvent.VK_E) {
             jbExitActionPerformed(null);
         }
-            
+
     }//GEN-LAST:event_jbGoalKeyPressed
 
     private void jbHowToCraftActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbHowToCraftActionPerformed
-        
+
         HelpCraftingFrame helpCraftingFrame = new HelpCraftingFrame();
         helpCraftingFrame.setVisible(true);
-        
+
         this.dispose();
-        
+
     }//GEN-LAST:event_jbHowToCraftActionPerformed
 
     private void jbHowToHuntAndGatherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbHowToHuntAndGatherActionPerformed
-        
+
         HelpHuntingGatheringFrame helpHuntingGatheringFrame = new HelpHuntingGatheringFrame();
         helpHuntingGatheringFrame.setVisible(true);
-        
+
         this.dispose();
-        
+
     }//GEN-LAST:event_jbHowToHuntAndGatherActionPerformed
 
     private void jbGoalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbGoalActionPerformed
@@ -282,7 +282,7 @@ public class HowToPlayFrame extends javax.swing.JFrame {
     private javax.swing.JButton jbHowToCraft;
     private javax.swing.JButton jbHowToHuntAndGather;
     private javax.swing.JButton jbHowToUseTheMap;
-    private javax.swing.JLabel jlHowToPlayBackground;
+    private javax.swing.JLabel jlHowToPlayBackgroundImage;
     private javax.swing.JLabel jlHowToPlayBanner;
     // End of variables declaration//GEN-END:variables
 }

@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.frames;
 
 import java.awt.event.KeyEvent;
@@ -20,7 +19,7 @@ public class BuildingMenuFrame extends javax.swing.JFrame {
      */
     public BuildingMenuFrame() {
         initComponents();
-        
+
         setLocationRelativeTo(null);
     }
 
@@ -43,13 +42,18 @@ public class BuildingMenuFrame extends javax.swing.JFrame {
         jlBuildingMenuBackgroundImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(748, 458));
+        setMinimumSize(new java.awt.Dimension(748, 458));
 
-        jLayeredPane1.setPreferredSize(new java.awt.Dimension(760, 458));
+        jLayeredPane1.setFocusTraversalPolicyProvider(true);
+        jLayeredPane1.setMaximumSize(new java.awt.Dimension(748, 458));
+        jLayeredPane1.setMinimumSize(new java.awt.Dimension(748, 458));
 
         jbExit.setBackground(new java.awt.Color(43, 72, 130));
         jbExit.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbExit.setForeground(new java.awt.Color(132, 193, 255));
         jbExit.setText("<html><a style='text-decoration:underline'>E</a>xit</html>");
+        jbExit.setToolTipText("Exit to previous menu");
         jbExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbExit.setFocusPainted(false);
         jbExit.addActionListener(new java.awt.event.ActionListener() {
@@ -63,7 +67,8 @@ public class BuildingMenuFrame extends javax.swing.JFrame {
         jbHowToPlay.setBackground(new java.awt.Color(43, 72, 130));
         jbHowToPlay.setFont(new java.awt.Font("Showcard Gothic", 0, 12)); // NOI18N
         jbHowToPlay.setForeground(new java.awt.Color(132, 193, 255));
-        jbHowToPlay.setText("<html><a style='text-decoration:underline'>H</a>ow to Play</html>");
+        jbHowToPlay.setText("<html><a style='text-decoration:underline'>H</a>ow to Build</html>");
+        jbHowToPlay.setToolTipText("Learn how to build");
         jbHowToPlay.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbHowToPlay.setFocusPainted(false);
         jbHowToPlay.addActionListener(new java.awt.event.ActionListener() {
@@ -132,21 +137,22 @@ public class BuildingMenuFrame extends javax.swing.JFrame {
         jlBuildingMenuBanner.setBounds(230, 0, 290, 50);
 
         jlBuildingMenuBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/buildingMenuBackgroundImage.JPG"))); // NOI18N
+        jlBuildingMenuBackgroundImage.setMaximumSize(new java.awt.Dimension(748, 458));
+        jlBuildingMenuBackgroundImage.setMinimumSize(new java.awt.Dimension(748, 458));
+        jlBuildingMenuBackgroundImage.setPreferredSize(new java.awt.Dimension(748, 458));
         jLayeredPane1.add(jlBuildingMenuBackgroundImage);
-        jlBuildingMenuBackgroundImage.setBounds(0, 0, 760, 458);
+        jlBuildingMenuBackgroundImage.setBounds(0, 0, 748, 458);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 748, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 458, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 

@@ -42,7 +42,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jbHowToPlay = new javax.swing.JButton();
         jbSaveGame = new javax.swing.JButton();
         jbLoadGame = new javax.swing.JButton();
-        jbQuit = new javax.swing.JButton();
+        jbExit = new javax.swing.JButton();
         jlMainMenuBackgroundImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -115,20 +115,20 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jLayeredPane1.add(jbLoadGame);
         jbLoadGame.setBounds(280, 270, 160, 30);
 
-        jbQuit.setBackground(new java.awt.Color(43, 72, 130));
-        jbQuit.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
-        jbQuit.setForeground(new java.awt.Color(132, 193, 255));
-        jbQuit.setText("<html><a style='text-decoration:underline'>E</a>xit</html>");
-        jbQuit.setToolTipText("Exit to the Start Program Menu");
-        jbQuit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jbQuit.setFocusPainted(false);
-        jbQuit.addActionListener(new java.awt.event.ActionListener() {
+        jbExit.setBackground(new java.awt.Color(43, 72, 130));
+        jbExit.setFont(new java.awt.Font("Showcard Gothic", 0, 14)); // NOI18N
+        jbExit.setForeground(new java.awt.Color(132, 193, 255));
+        jbExit.setText("<html><a style='text-decoration:underline'>E</a>xit</html>");
+        jbExit.setToolTipText("Exit to the Start Program Menu");
+        jbExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jbExit.setFocusPainted(false);
+        jbExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbQuitActionPerformed(evt);
+                jbExitActionPerformed(evt);
             }
         });
-        jLayeredPane1.add(jbQuit);
-        jbQuit.setBounds(580, 420, 160, 30);
+        jLayeredPane1.add(jbExit);
+        jbExit.setBounds(580, 420, 160, 30);
 
         jlMainMenuBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mainMenuBackgroundImage.jpg"))); // NOI18N
         jLayeredPane1.add(jlMainMenuBackgroundImage);
@@ -138,7 +138,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 748, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 748, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -166,7 +166,7 @@ public class MainMenuFrame extends javax.swing.JFrame {
         } else if (evt.getKeyCode() == KeyEvent.VK_H) {
             jbHowToPlayActionPerformed(null);
         } else if (evt.getKeyCode() == KeyEvent.VK_E) {
-            jbQuitActionPerformed(null);
+            jbExitActionPerformed(null);
         }
 
     }//GEN-LAST:event_jbStartGameKeyPressed
@@ -175,17 +175,17 @@ public class MainMenuFrame extends javax.swing.JFrame {
 
         HowToPlayFrame howToPlayFrame = new HowToPlayFrame();
         howToPlayFrame.setVisible(true);
-        
+
         this.dispose();
     }//GEN-LAST:event_jbHowToPlayActionPerformed
 
-    private void jbQuitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbQuitActionPerformed
+    private void jbExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbExitActionPerformed
 
         StartProgramFrame startProgramFrame = new StartProgramFrame();
         startProgramFrame.setVisible(true);
 
         this.dispose();
-    }//GEN-LAST:event_jbQuitActionPerformed
+    }//GEN-LAST:event_jbExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -233,9 +233,9 @@ public class MainMenuFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JButton jbExit;
     private javax.swing.JButton jbHowToPlay;
     private javax.swing.JButton jbLoadGame;
-    private javax.swing.JButton jbQuit;
     private javax.swing.JButton jbSaveGame;
     private javax.swing.JButton jbStartGame;
     private javax.swing.JLabel jlMainMenuBackgroundImage;

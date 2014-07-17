@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package survivalist.frames;
 
 import java.awt.event.KeyEvent;
@@ -19,7 +18,7 @@ public class InventoryFrame extends javax.swing.JFrame {
      */
     public InventoryFrame() {
         initComponents();
-        
+
         setLocationRelativeTo(null);
     }
 
@@ -45,11 +44,14 @@ public class InventoryFrame extends javax.swing.JFrame {
         jlItem9 = new javax.swing.JLabel();
         jbExit = new javax.swing.JButton();
         jbHowToPlay = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jlInventoryBackgroundImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(748, 458));
+        setMinimumSize(new java.awt.Dimension(748, 458));
 
-        jLayeredPane1.setPreferredSize(new java.awt.Dimension(760, 458));
+        jLayeredPane1.setMaximumSize(new java.awt.Dimension(748, 458));
+        jLayeredPane1.setMinimumSize(new java.awt.Dimension(748, 458));
 
         jlInventorygMenuBanner.setFont(new java.awt.Font("Showcard Gothic", 0, 36)); // NOI18N
         jlInventorygMenuBanner.setForeground(new java.awt.Color(93, 184, 93));
@@ -145,23 +147,21 @@ public class InventoryFrame extends javax.swing.JFrame {
         jLayeredPane1.add(jbHowToPlay);
         jbHowToPlay.setBounds(580, 380, 160, 30);
 
-        jLabel1.setForeground(new java.awt.Color(132, 193, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/inventoryBackgroundImage.jpg"))); // NOI18N
-        jLayeredPane1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 760, 458);
+        jlInventoryBackgroundImage.setForeground(new java.awt.Color(132, 193, 255));
+        jlInventoryBackgroundImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/inventoryBackgroundImage.jpg"))); // NOI18N
+        jLayeredPane1.add(jlInventoryBackgroundImage);
+        jlInventoryBackgroundImage.setBounds(0, 0, 750, 458);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 748, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 458, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -228,10 +228,10 @@ public class InventoryFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JButton jbExit;
     private javax.swing.JButton jbHowToPlay;
+    private javax.swing.JLabel jlInventoryBackgroundImage;
     private javax.swing.JLabel jlInventorygMenuBanner;
     private javax.swing.JLabel jlItem1;
     private javax.swing.JLabel jlItem2;
