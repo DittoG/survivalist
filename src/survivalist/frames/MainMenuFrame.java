@@ -122,6 +122,9 @@ public class MainMenuFrame extends javax.swing.JFrame {
         jbExit.setToolTipText("Exit to the Start Program Menu");
         jbExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jbExit.setFocusPainted(false);
+        jbExit.setMaximumSize(new java.awt.Dimension(160, 30));
+        jbExit.setMinimumSize(new java.awt.Dimension(160, 30));
+        jbExit.setPreferredSize(new java.awt.Dimension(160, 30));
         jbExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbExitActionPerformed(evt);
