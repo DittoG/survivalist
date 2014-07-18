@@ -31,7 +31,6 @@ public class MapMoveFrame extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        jlForest = new javax.swing.JLabel();
         jlForest1 = new javax.swing.JLabel();
         jlForest2 = new javax.swing.JLabel();
         jlForest3 = new javax.swing.JLabel();
@@ -432,28 +431,13 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlWater38 = new javax.swing.JLabel();
         jlWater39 = new javax.swing.JLabel();
         jlMapBanner = new javax.swing.JLabel();
+        jlWater40 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setMaximumSize(new java.awt.Dimension(748, 458));
         setMinimumSize(new java.awt.Dimension(748, 458));
         getContentPane().setLayout(new java.awt.GridBagLayout());
-
-        jlForest.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
-        jlForest.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jlForest.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                d(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                eExited(evt);
-            }
-        });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 12;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        getContentPane().add(jlForest, gridBagConstraints);
 
         jlForest1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
         jlForest1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -466,7 +450,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(17, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(17, 48, 0, 0);
         getContentPane().add(jlForest1, gridBagConstraints);
 
         jlForest2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
@@ -494,7 +478,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlForest3, gridBagConstraints);
 
         jlForest4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
@@ -613,7 +597,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlForest12, gridBagConstraints);
 
         jlForest13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
@@ -1046,7 +1030,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 18;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlForest45, gridBagConstraints);
 
         jlForest46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
@@ -1086,7 +1070,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 19;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlForest48, gridBagConstraints);
 
         jlForest49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
@@ -1113,7 +1097,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 17;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlForest50, gridBagConstraints);
 
         jlForest51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
@@ -1156,7 +1140,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 19;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlForest53, gridBagConstraints);
 
         jlForest54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
@@ -1567,7 +1551,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater, gridBagConstraints);
 
         jlForest81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
@@ -2866,7 +2850,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlForest164, gridBagConstraints);
 
         jlForest165.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
@@ -2900,7 +2884,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(17, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(17, 0, 0, 49);
         getContentPane().add(jlForest166, gridBagConstraints);
 
         jlForest167.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
@@ -3172,7 +3156,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 4;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlRoad, gridBagConstraints);
 
         jlRoad2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
@@ -3186,7 +3170,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 6;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlRoad2, gridBagConstraints);
 
         jlRoad3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
@@ -3200,7 +3184,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 7;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlRoad3, gridBagConstraints);
 
         jlRoad4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
@@ -3214,7 +3198,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 8;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlRoad4, gridBagConstraints);
 
         jlRoad5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
@@ -3228,7 +3212,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 9;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlRoad5, gridBagConstraints);
 
         jlRoad6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
@@ -3242,7 +3226,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 12;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlRoad6, gridBagConstraints);
 
         jlRoad7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
@@ -3256,7 +3240,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 13;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlRoad7, gridBagConstraints);
 
         jlRoad8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
@@ -3270,7 +3254,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 11;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlRoad8, gridBagConstraints);
 
         jlRoad9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
@@ -3284,7 +3268,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlRoad9, gridBagConstraints);
 
         jlRoad10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
@@ -3298,7 +3282,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 14;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlRoad10, gridBagConstraints);
 
         jlRoad1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
@@ -3312,7 +3296,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 5;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlRoad1, gridBagConstraints);
 
         jlRoad11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon1.png"))); // NOI18N
@@ -3326,7 +3310,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 15;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlRoad11, gridBagConstraints);
 
         jlGrass.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"))); // NOI18N
@@ -3535,7 +3519,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 16;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlGrass15, gridBagConstraints);
 
         jlGrass16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"))); // NOI18N
@@ -3822,7 +3806,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 34, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 48, 0, 0);
         getContentPane().add(jlGrass37, gridBagConstraints);
 
         jlGrass38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"))); // NOI18N
@@ -5631,7 +5615,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 16;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater6, gridBagConstraints);
 
         jlWater7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -5658,7 +5642,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 9;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater8, gridBagConstraints);
 
         jlWater9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -5685,7 +5669,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 10;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater10, gridBagConstraints);
 
         jlWater11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -5725,7 +5709,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 11;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater13, gridBagConstraints);
 
         jlWater14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -5739,7 +5723,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 12;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater14, gridBagConstraints);
 
         jlWater15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -5766,7 +5750,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 13;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater16, gridBagConstraints);
 
         jlWater17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -5793,7 +5777,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 14;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater18, gridBagConstraints);
 
         jlWater19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -5807,7 +5791,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater19, gridBagConstraints);
 
         jlWater20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -5834,7 +5818,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 15;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater21, gridBagConstraints);
 
         jlWater22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -5861,7 +5845,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 7;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater23, gridBagConstraints);
 
         jlWater24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -5875,7 +5859,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 6;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater24, gridBagConstraints);
 
         jlWater25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -5889,7 +5873,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 5;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater25, gridBagConstraints);
 
         jlWater26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -5903,7 +5887,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 4;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater26, gridBagConstraints);
 
         jlWater27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -5917,7 +5901,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 8;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater27, gridBagConstraints);
 
         jlWater28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -5981,7 +5965,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 12;
-        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridy = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         getContentPane().add(jlWater32, gridBagConstraints);
 
@@ -6061,7 +6045,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 17;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater38, gridBagConstraints);
 
         jlWater39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
@@ -6075,7 +6059,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.gridx = 19;
         gridBagConstraints.gridy = 18;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 34);
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 49);
         getContentPane().add(jlWater39, gridBagConstraints);
 
         jlMapBanner.setFont(new java.awt.Font("Showcard Gothic", 0, 18)); // NOI18N
@@ -6089,6 +6073,19 @@ public class MapMoveFrame extends javax.swing.JFrame {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(0, 5, 18, 0);
         getContentPane().add(jlMapBanner, gridBagConstraints);
+
+        jlWater40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"))); // NOI18N
+        jlWater40.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlWater40.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlWater40jlGrass28MouseEntered(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 12;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        getContentPane().add(jlWater40, gridBagConstraints);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -6888,6 +6885,10 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlForest109.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
     }//GEN-LAST:event_jlForest109MouseExited
 
+    private void jlWater40jlGrass28MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater40jlGrass28MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jlWater40jlGrass28MouseEntered
+
     /**
      * @param args the command line arguments
      */
@@ -6923,7 +6924,6 @@ public class MapMoveFrame extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jlForest;
     private javax.swing.JLabel jlForest1;
     private javax.swing.JLabel jlForest10;
     private javax.swing.JLabel jlForest100;
@@ -7319,6 +7319,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jlWater38;
     private javax.swing.JLabel jlWater39;
     private javax.swing.JLabel jlWater4;
+    private javax.swing.JLabel jlWater40;
     private javax.swing.JLabel jlWater5;
     private javax.swing.JLabel jlWater6;
     private javax.swing.JLabel jlWater7;
