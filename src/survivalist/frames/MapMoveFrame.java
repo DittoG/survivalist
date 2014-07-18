@@ -6,13 +6,21 @@
 package survivalist.frames;
 
 import javax.accessibility.AccessibleRole;
+import javax.swing.ImageIcon;
 
 /**
  *
  * @author Madison
  */
 public class MapMoveFrame extends javax.swing.JFrame {
-
+    ImageIcon mountainRollOverIcon  = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png"));
+    ImageIcon mountainIcon = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"));
+    ImageIcon pineTreeRolloverIcon  = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif"));
+    ImageIcon pineTreeIcon = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"));
+    ImageIcon grassRollOverIcon = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png"));
+    ImageIcon grassIcon = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"));
+    ImageIcon waterRolloverIcon = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png"));
+    ImageIcon waterIcon = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"));
     /**
      * Creates new form MapMoveFrame
      */
@@ -4543,6 +4551,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain15MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain15MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 7;
@@ -4623,6 +4639,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain21MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain21MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 7;
@@ -4647,6 +4671,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain24.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain24MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain24MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 7;
@@ -4672,11 +4704,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlMountain26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain26.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlMountain26.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlMountain26MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlMountain26MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain26MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4687,6 +4719,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain27.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain27MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain27MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 6;
@@ -4695,6 +4735,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain28.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain28MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain28MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 6;
@@ -4703,6 +4751,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain29.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain29MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain29MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 6;
@@ -4712,11 +4768,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlMountain30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain30.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlMountain30.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlMountain30MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlMountain30MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain30MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4727,6 +4783,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain31.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain31.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain31MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain31MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 8;
@@ -4743,6 +4807,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain33.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain33.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain33MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain33MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 5;
@@ -4751,6 +4823,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain34.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain34.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain34MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain34MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 5;
@@ -4760,11 +4840,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlMountain35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain35.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlMountain35.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlMountain35MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlMountain35MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain35MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4776,11 +4856,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlMountain36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain36.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlMountain36.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlMountain36MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlMountain36MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain36MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4792,11 +4872,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlMountain37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain37.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlMountain37.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlMountain37MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlMountain37MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain37MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4903,6 +4983,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain45.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain45.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain45MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain45MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 8;
@@ -4911,6 +4999,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain46.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain46.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain46MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain46MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 8;
@@ -4935,6 +5031,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain48.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain48.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain48MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain48MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 9;
@@ -4943,6 +5047,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain49.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain49.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain49MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain49MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 9;
@@ -4999,6 +5111,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain53.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain53.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain53MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain53MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 9;
@@ -5007,6 +5127,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain54.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain54.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain54MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain54MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 10;
@@ -5015,6 +5143,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain55.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain55.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain55MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain55MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 10;
@@ -5023,6 +5159,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain56.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain56.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain56MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain56MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 10;
@@ -5031,6 +5175,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain57.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain57.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain57MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain57MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 11;
@@ -5039,6 +5191,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain58.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain58.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain58MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain58MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 11;
@@ -5047,6 +5207,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain59.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain59.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain59MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain59MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 11;
@@ -5055,6 +5223,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain60.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain60.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain60MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain60MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 12;
@@ -5063,6 +5239,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain61.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain61.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain61MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain61MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 12;
@@ -5071,6 +5255,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain62.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain62.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain62MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain62MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 12;
@@ -6244,1371 +6436,1371 @@ public class MapMoveFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     private void jlForest166MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest166MouseEntered
-        jlForest166.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest166.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest166MouseEntered
 
     private void jlForest166MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest166MouseExited
-        jlForest166.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest166.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest166MouseExited
 
     private void jlGrass28MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass28MouseEntered
-        jlGrass28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass28.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass28MouseEntered
 
     private void jlForest164MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest164MouseEntered
-        jlForest164.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest164.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest164MouseEntered
 
     private void jlForest164MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest164MouseExited
-        jlForest164.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest164.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest164MouseExited
 
     private void jlForest178MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest178MouseEntered
-        jlForest178.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest178.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest178MouseEntered
 
     private void jlForest178MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest178MouseExited
-        jlForest178.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest178.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest178MouseExited
 
     private void jlForest39MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest39MouseEntered
-        jlForest39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest39.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest39MouseEntered
 
     private void jlForest39MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest39MouseExited
-        jlForest39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest39.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest39MouseExited
 
     private void jlForest169MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest169MouseEntered
-        jlForest169.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest169.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest169MouseEntered
 
     private void jlForest169MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest169MouseExited
-        jlForest169.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest169.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest169MouseExited
 
     private void jlForest176MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest176MouseEntered
-        jlForest176.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest176.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest176MouseEntered
 
     private void jlForest176MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest176MouseExited
-        jlForest176.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest176.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest176MouseExited
 
     private void jlForest168MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest168MouseEntered
-        jlForest168.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest168.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest168MouseEntered
 
     private void jlForest168MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest168MouseExited
-        jlForest168.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest168.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest168MouseExited
 
     private void jlForest156MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest156MouseEntered
-        jlForest156.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest156.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest156MouseEntered
 
     private void jlForest156MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest156MouseExited
-        jlForest156.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest156.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest156MouseExited
 
     private void jlForest159MouseEntered1(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest159MouseEntered1
-        jlForest159.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest159.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest159MouseEntered1
 
     private void jlForest159MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest159MouseExited
-        jlForest159.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest159.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest159MouseExited
 
     private void jlForest155MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest155MouseEntered
-        jlForest155.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest155.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest155MouseEntered
 
     private void jlForest155MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest155MouseExited
-        jlForest155.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest155.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest155MouseExited
 
     private void jlForest163MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest163MouseEntered
-        jlForest163.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest163.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest163MouseEntered
 
     private void jlForest163MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest163MouseExited
-        jlForest163.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest163.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest163MouseExited
 
     private void jlForest175MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest175MouseEntered
-        jlForest175.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest175.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest175MouseEntered
 
     private void jlForest175MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest175MouseExited
-        jlForest175.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest175.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest175MouseExited
 
     private void jlForest180MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest180MouseEntered
-        jlForest180.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest180.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest180MouseEntered
 
     private void jlForest180MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest180MouseExited
-        jlForest180.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest180.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest180MouseExited
 
     private void jlForest62MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest62MouseEntered
-        jlForest62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest62.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest62MouseEntered
 
     private void jlForest62MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest62MouseExited
-        jlForest62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest62.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest62MouseExited
 
     private void jlForest170MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest170MouseEntered
-        jlForest170.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest170.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest170MouseEntered
 
     private void jlForest170MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest170MouseExited
-        jlForest170.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest170.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest170MouseExited
 
     private void jlForest154MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest154MouseEntered
-        jlForest154.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest154.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest154MouseEntered
 
     private void jlForest154MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest154MouseExited
-        jlForest154.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest154.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest154MouseExited
 
     private void jlForest165MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest165MouseEntered
-        jlForest165.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest165.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest165MouseEntered
 
     private void jlForest165MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest165MouseExited
-        jlForest165.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest165.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest165MouseExited
 
     private void jlForest179MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest179MouseEntered
-        jlForest179.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest179.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest179MouseEntered
 
     private void jlForest179MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest179MouseExited
-        jlForest179.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest179.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest179MouseExited
 
     private void jlForest177MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest177MouseEntered
-        jlForest177.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest177.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest177MouseEntered
 
     private void jlForest177MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest177MouseExited
-        jlForest177.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest177.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest177MouseExited
 
     private void jlForest181MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest181MouseEntered
-        jlForest181.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest181.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest181MouseEntered
 
     private void jlForest181MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest181MouseExited
-        jlForest181.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest181.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest181MouseExited
 
     private void jlForest182MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest182MouseEntered
-        jlForest182.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest182.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest182MouseEntered
 
     private void jlForest182MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest182MouseExited
-        jlForest182.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest182.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest182MouseExited
 
     private void jlForest183MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest183MouseEntered
-        jlForest183.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest183.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest183MouseEntered
 
     private void jlForest183MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest183MouseExited
-        jlForest183.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest183.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest183MouseExited
 
     private void jlForest153MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest153MouseEntered
-        jlForest153.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest153.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest153MouseEntered
 
     private void jlForest153MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest153MouseExited
-        jlForest153.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest153.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest153MouseExited
 
     private void jlForest104MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest104MouseEntered
-        jlForest104.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest104.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest104MouseEntered
 
     private void jlForest104MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest104MouseExited
-        jlForest104.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest104.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest104MouseExited
 
     private void jlForest103MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest103MouseEntered
-        jlForest103.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest103.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest103MouseEntered
 
     private void jlForest103MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest103MouseExited
-        jlForest103.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest103.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest103MouseExited
 
     private void jlForest102MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest102MouseEntered
-        jlForest102.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest102.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest102MouseEntered
 
     private void jlForest102MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest102MouseExited
-        jlForest102.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest102.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest102MouseExited
 
     private void jlForest138MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest138MouseEntered
-        jlForest138.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest138.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest138MouseEntered
 
     private void jlForest138MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest138MouseExited
-        jlForest138.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest138.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest138MouseExited
 
     private void jlForest171MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest171MouseEntered
-        jlForest171.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest171.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest171MouseEntered
 
     private void jlForest171MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest171MouseExited
-        jlForest171.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest171.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest171MouseExited
 
     private void jlForest167MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest167MouseEntered
-        jlForest167.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest167.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest167MouseEntered
 
     private void jlForest167MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest167MouseExited
-        jlForest167.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest167.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest167MouseExited
 
     private void jlForest157MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest157MouseEntered
-        jlForest157.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest157.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest157MouseEntered
 
     private void jlForest157MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest157MouseExited
-        jlForest157.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest157.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest157MouseExited
 
     private void jlForest158MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest158MouseEntered
-        jlForest158.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest158.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest158MouseEntered
 
     private void jlForest158MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest158MouseExited
-        jlForest158.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest158.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest158MouseExited
 
     private void jlForest63MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest63MouseEntered
-        jlForest63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest63.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest63MouseEntered
 
     private void jlForest63MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest63MouseExited
-        jlForest63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest63.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest63MouseExited
 
     private void jlForest152MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest152MouseEntered
-        jlForest152.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest152.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest152MouseEntered
 
     private void jlForest152MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest152MouseExited
-        jlForest152.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest152.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest152MouseExited
 
     private void jlForest107MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest107MouseEntered
-        jlForest107.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest107.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest107MouseEntered
 
     private void jlForest107MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest107MouseExited
-        jlForest107.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest107.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest107MouseExited
 
     private void jlForest101MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest101MouseEntered
-        jlForest101.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest101.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest101MouseEntered
 
     private void jlForest101MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest101MouseExited
-        jlForest101.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest101.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest101MouseExited
 
     private void jlForest174MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest174MouseEntered
-        jlForest174.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest174.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest174MouseEntered
 
     private void jlForest174MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest174MouseExited
-        jlForest174.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest174.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest174MouseExited
 
     private void jlForest172MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest172MouseEntered
-        jlForest172.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest172.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest172MouseEntered
 
     private void jlForest172MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest172MouseExited
-        jlForest172.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest172.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest172MouseExited
 
     private void jlForest99MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest99MouseEntered
-        jlForest99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest99.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest99MouseEntered
 
     private void jlForest99MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest99MouseExited
-        jlForest99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest99.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest99MouseExited
 
     private void jlForest100MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest100MouseEntered
-        jlForest100.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest100.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest100MouseEntered
 
     private void jlForest100MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest100MouseExited
-        jlForest100.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest100.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest100MouseExited
 
     private void jlForest160MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest160MouseEntered
-        jlForest160.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest160.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest160MouseEntered
 
     private void jlForest160MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest160MouseExited
-        jlForest160.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest160.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest160MouseExited
 
     private void jlForest97MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest97MouseEntered
-        jlForest97.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest97.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest97MouseEntered
 
     private void jlForest97MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest97MouseExited
-        jlForest97.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest97.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest97MouseExited
 
     private void jlForest118MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest118MouseEntered
-        jlForest118.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest118.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest118MouseEntered
 
     private void jlForest118MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest118MouseExited
-        jlForest118.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest118.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest118MouseExited
 
     private void jlForest121MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest121MouseEntered
-        jlForest121.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest121.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest121MouseEntered
 
     private void jlForest121MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest121MouseExited
-        jlForest121.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest121.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest121MouseExited
 
     private void jlForest96MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest96MouseEntered
-        jlForest96.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest96.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest96MouseEntered
 
     private void jlForest96MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest96MouseExited
-        jlForest96.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest96.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest96MouseExited
 
     private void jlForest98MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest98MouseEntered
-        jlForest98.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest98.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest98MouseEntered
 
     private void jlForest98MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest98MouseExited
-        jlForest98.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest98.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest98MouseExited
 
     private void jlForest94MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest94MouseEntered
-        jlForest94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest94.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest94MouseEntered
 
     private void jlForest94MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest94MouseExited
-        jlForest94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest94.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest94MouseExited
 
     private void jlForest93MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest93MouseEntered
-        jlForest93.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest93.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest93MouseEntered
 
     private void jlForest93MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest93MouseExited
-        jlForest93.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest93.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest93MouseExited
 
     private void jlForest95MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest95MouseEntered
-        jlForest95.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest95.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest95MouseEntered
 
     private void jlForest95MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest95MouseExited
-        jlForest95.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest95.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest95MouseExited
 
     private void jlForest88MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest88MouseEntered
-        jlForest88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest88.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest88MouseEntered
 
     private void jlForest88MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest88MouseExited
-        jlForest88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest88.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest88MouseExited
 
     private void jlForest120MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest120MouseEntered
-        jlForest120.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest120.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest120MouseEntered
 
     private void jlForest120MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest120MouseExited
-        jlForest120.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest120.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest120MouseExited
 
     private void jlForest119MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest119MouseEntered
-        jlForest119.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest119.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest119MouseEntered
 
     private void jlForest119MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest119MouseExited
-        jlForest119.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest119.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest119MouseExited
 
     private void jlForest116MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest116MouseEntered
-        jlForest116.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest116.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest116MouseEntered
 
     private void jlForest116MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest116MouseExited
-        jlForest116.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest116.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest116MouseExited
 
     private void jlForest117MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest117MouseEntered
-        jlForest117.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest117.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest117MouseEntered
 
     private void jlForest117MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest117MouseExited
-        jlForest117.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest117.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest117MouseExited
 
     private void jlForest110MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest110MouseEntered
-        jlForest110.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest110.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest110MouseEntered
 
     private void jlForest110MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest110MouseExited
-        jlForest110.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest110.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest110MouseExited
 
     private void jlForest114MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest114MouseEntered
-        jlForest114.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest114.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest114MouseEntered
 
     private void jlForest114MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest114MouseExited
-        jlForest114.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest114.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest114MouseExited
 
     private void jlForest115MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest115MouseEntered
-        jlForest115.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest115.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest115MouseEntered
 
     private void jlForest115MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest115MouseExited
-        jlForest115.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest115.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest115MouseExited
 
     private void jlForest151MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest151MouseEntered
-        jlForest151.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest151.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest151MouseEntered
 
     private void jlForest151MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest151MouseExited
-        jlForest151.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest151.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest151MouseExited
 
     private void jlForest150MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest150MouseEntered
-        jlForest150.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest150.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest150MouseEntered
 
     private void jlForest150MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest150MouseExited
-        jlForest150.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest150.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest150MouseExited
 
     private void jlForest148MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest148MouseEntered
-        jlForest148.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest148.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest148MouseEntered
 
     private void jlForest148MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest148MouseExited
-        jlForest148.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest148.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest148MouseExited
 
     private void jlForest149MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest149MouseEntered
-        jlForest149.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest149.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest149MouseEntered
 
     private void jlForest149MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest149MouseExited
-        jlForest149.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest149.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest149MouseExited
 
     private void jlForest147MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest147MouseEntered
-        jlForest147.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest147.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest147MouseEntered
 
     private void jlForest147MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest147MouseExited
-        jlForest147.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest147.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest147MouseExited
 
     private void jlForest144MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest144MouseEntered
-        jlForest144.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest144.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest144MouseEntered
 
     private void jlForest144MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest144MouseExited
-        jlForest144.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest144.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest144MouseExited
 
     private void jlForest146MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest146MouseEntered
-        jlForest146.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest146.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest146MouseEntered
 
     private void jlForest146MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest146MouseExited
-        jlForest146.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest146.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest146MouseExited
 
     private void jlForest142MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest142MouseEntered
-        jlForest142.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest142.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest142MouseEntered
 
     private void jlForest142MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest142MouseExited
-        jlForest142.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest142.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest142MouseExited
 
     private void jlForest113MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest113MouseEntered
-        jlForest113.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest113.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest113MouseEntered
 
     private void jlForest113MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest113MouseExited
-        jlForest113.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest113.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest113MouseExited
 
     private void jlForest112MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest112MouseEntered
-        jlForest112.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest112.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest112MouseEntered
 
     private void jlForest112MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest112MouseExited
-        jlForest112.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest112.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest112MouseExited
 
     private void jlForest111MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest111MouseEntered
-        jlForest111.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest111.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest111MouseEntered
 
     private void jlForest111MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest111MouseExited
-        jlForest111.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest111.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest111MouseExited
 
     private void jlForest143MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest143MouseEntered
-        jlForest143.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest143.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest143MouseEntered
 
     private void jlForest143MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest143MouseExited
-        jlForest143.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest143.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest143MouseExited
 
     private void jlForest140MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest140MouseEntered
-        jlForest140.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest140.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest140MouseEntered
 
     private void jlForest140MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest140MouseExited
-        jlForest140.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest140.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest140MouseExited
 
     private void jlForest122MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest122MouseEntered
-        jlForest122.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest122.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest122MouseEntered
 
     private void jlForest122MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest122MouseExited
-        jlForest122.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest122.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest122MouseExited
 
     private void jlForest105MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest105MouseEntered
-        jlForest105.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest105.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest105MouseEntered
 
     private void jlForest105MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest105MouseExited
-        jlForest105.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest105.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest105MouseExited
 
     private void jlForest108MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest108MouseEntered
-        jlForest108.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest108.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest108MouseEntered
 
     private void jlForest108MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest108MouseExited
-        jlForest108.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest108.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest108MouseExited
 
     private void jlForest134MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest134MouseEntered
-        jlForest134.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest134.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest134MouseEntered
 
     private void jlForest134MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest134MouseExited
-        jlForest134.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest134.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest134MouseExited
 
     private void jlForest132MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest132MouseEntered
-        jlForest132.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest132.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest132MouseEntered
 
     private void jlForest132MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest132MouseExited
-        jlForest132.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest132.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest132MouseExited
 
     private void jlForest106MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest106MouseEntered
-        jlForest106.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest106.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest106MouseEntered
 
     private void jlForest106MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest106MouseExited
-        jlForest106.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest106.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest106MouseExited
 
     private void jlForest136MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest136MouseEntered
-        jlForest136.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest136.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest136MouseEntered
 
     private void jlForest136MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest136MouseExited
-        jlForest136.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest136.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest136MouseExited
 
     private void jlForest123MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest123MouseEntered
-        jlForest123.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest123.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest123MouseEntered
 
     private void jlForest123MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest123MouseExited
-        jlForest123.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest123.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest123MouseExited
 
     private void jlForest131MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest131MouseEntered
-        jlForest131.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest131.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest131MouseEntered
 
     private void jlForest131MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest131MouseExited
-        jlForest131.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest131.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest131MouseExited
 
     private void jlForest129MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest129MouseEntered
-        jlForest129.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest129.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest129MouseEntered
 
     private void jlForest129MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest129MouseExited
-        jlForest129.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest129.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest129MouseExited
 
     private void jlForest56MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest56MouseEntered
-        jlForest56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest56.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest56MouseEntered
 
     private void jlForest56MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest56MouseExited
-        jlForest56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest56.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest56MouseExited
 
     private void jlForest137MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest137MouseEntered
-        jlForest137.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest137.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest137MouseEntered
 
     private void jlForest137MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest137MouseExited
-        jlForest137.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest137.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest137MouseExited
 
     private void jlForest133MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest133MouseEntered
-        jlForest133.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest133.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest133MouseEntered
 
     private void jlForest133MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest133MouseExited
-        jlForest133.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest133.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest133MouseExited
 
     private void jlForest130MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest130MouseEntered
-        jlForest130.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest130.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest130MouseEntered
 
     private void jlForest130MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest130MouseExited
-        jlForest130.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest130.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest130MouseExited
 
     private void jlForest128MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest128MouseEntered
-        jlForest128.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest128.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest128MouseEntered
 
     private void jlForest128MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest128MouseExited
-        jlForest128.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest128.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest128MouseExited
 
     private void jlForest57MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest57MouseEntered
-        jlForest57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest57.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest57MouseEntered
 
     private void jlForest57MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest57MouseExited
-        jlForest57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest57.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest57MouseExited
 
     private void jlForest124MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest124MouseEntered
-        jlForest124.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest124.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest124MouseEntered
 
     private void jlForest124MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest124MouseExited
-        jlForest124.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest124.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest124MouseExited
 
     private void jlForest126MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest126MouseEntered
-        jlForest126.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest126.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest126MouseEntered
 
     private void jlForest126MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest126MouseExited
-        jlForest126.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest126.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest126MouseExited
 
     private void jlForest127MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest127MouseEntered
-        jlForest127.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest127.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest127MouseEntered
 
     private void jlForest127MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest127MouseExited
-        jlForest127.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest127.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest127MouseExited
 
     private void jlForest58MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest58MouseEntered
-        jlForest58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest58.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest58MouseEntered
 
     private void jlForest58MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest58MouseExited
-        jlForest58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest58.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest58MouseExited
 
     private void jlForest125MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest125MouseEntered
-        jlForest125.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest125.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest125MouseEntered
 
     private void jlForest125MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest125MouseExited
-        jlForest125.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest125.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest125MouseExited
 
     private void jlForest59MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest59MouseEntered
-        jlForest59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest59.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest59MouseEntered
 
     private void jlForest59MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest59MouseExited
-        jlForest59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest59.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest59MouseExited
 
     private void jlForest60MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest60MouseEntered
-        jlForest60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest60.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest60MouseEntered
 
     private void jlForest60MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest60MouseExited
-        jlForest60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest60.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest60MouseExited
 
     private void jlForest53MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest53MouseEntered
-        jlForest53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest53.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest53MouseEntered
 
     private void jlForest53MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest53MouseExited
-        jlForest53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest53.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest53MouseExited
 
     private void jlForest141MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest141MouseEntered
-        jlForest141.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest141.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest141MouseEntered
 
     private void jlForest141MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest141MouseExited
-        jlForest141.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest141.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest141MouseExited
 
     private void jlForest145MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest145MouseEntered
-        jlForest145.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest145.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest145MouseEntered
 
     private void jlForest145MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest145MouseExited
-        jlForest145.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest145.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest145MouseExited
 
     private void jlForest139MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest139MouseEntered
-        jlForest139.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest139.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest139MouseEntered
 
     private void jlForest139MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest139MouseExited
-        jlForest139.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest139.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest139MouseExited
 
     private void jlForest135MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest135MouseEntered
-        jlForest135.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest135.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest135MouseEntered
 
     private void jlForest135MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest135MouseExited
-        jlForest135.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest135.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest135MouseExited
 
     private void jlForest109MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest109MouseEntered
-        jlForest109.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest109.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest109MouseEntered
 
     private void jlForest109MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest109MouseExited
-        jlForest109.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest109.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest109MouseExited
 
     private void jlForest65MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest65MouseEntered
-        jlForest65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest65.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest65MouseEntered
 
     private void jlForest65MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest65MouseExited
-        jlForest65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest65.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest65MouseExited
 
     private void jlForest91MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest91MouseEntered
-        jlForest91.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest91.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest91MouseEntered
 
     private void jlForest91MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest91MouseExited
-        jlForest91.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest91.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest91MouseExited
 
     private void jlForest90MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest90MouseEntered
-        jlForest90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest90.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest90MouseEntered
 
     private void jlForest90MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest90MouseExited
-        jlForest90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest90.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest90MouseExited
 
     private void jlForest89MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest89MouseEntered
-        jlForest89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest89.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest89MouseEntered
 
     private void jlForest89MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest89MouseExited
-        jlForest89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest89.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest89MouseExited
 
     private void jlForest83MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest83MouseEntered
-        jlForest83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest83.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest83MouseEntered
 
     private void jlForest83MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest83MouseExited
-        jlForest83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest83.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest83MouseExited
 
     private void jlForest66MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest66MouseEntered
-        jlForest66.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest66.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest66MouseEntered
 
     private void jlForest66MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest66MouseExited
-        jlForest66.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest66.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest66MouseExited
 
     private void jlForest84MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest84MouseEntered
-        jlForest84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest84.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest84MouseEntered
 
     private void jlForest84MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest84MouseExited
-        jlForest84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest84.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest84MouseExited
 
     private void jlForest81MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest81MouseEntered
-        jlForest81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest81.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest81MouseEntered
 
     private void jlForest81MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest81MouseExited
-        jlForest81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest81.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest81MouseExited
 
     private void jlForest82MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest82MouseEntered
-        jlForest82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest82.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest82MouseEntered
 
     private void jlForest82MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest82MouseExited
-        jlForest82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest82.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest82MouseExited
 
     private void jlForest85MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest85MouseEntered
-        jlForest85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest85.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest85MouseEntered
 
     private void jlForest85MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest85MouseExited
-        jlForest85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest85.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest85MouseExited
 
     private void jlForest76MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest76MouseEntered
-        jlForest76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest76.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest76MouseEntered
 
     private void jlForest76MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest76MouseExited
-        jlForest76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest76.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest76MouseExited
 
     private void jlForest86MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest86MouseEntered
-        jlForest86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest86.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest86MouseEntered
 
     private void jlForest86MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest86MouseExited
-        jlForest86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest86.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest86MouseExited
 
     private void jlForest92MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest92MouseEntered
-        jlForest92.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest92.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest92MouseEntered
 
     private void jlForest92MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest92MouseExited
-        jlForest92.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest92.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest92MouseExited
 
     private void jlForest87MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest87MouseEntered
-        jlForest87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest87.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest87MouseEntered
 
     private void jlForest87MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest87MouseExited
-        jlForest87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest87.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest87MouseExited
 
     private void jlForest78MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest78MouseEntered
-        jlForest78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest78.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest78MouseEntered
 
     private void jlForest78MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest78MouseExited
-        jlForest78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest78.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest78MouseExited
 
     private void jlForest72MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest72MouseEntered
-        jlForest72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest72.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest72MouseEntered
 
     private void jlForest72MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest72MouseExited
-        jlForest72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest72.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest72MouseExited
 
     private void jlForest75MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest75MouseEntered
-        jlForest75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest75.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest75MouseEntered
 
     private void jlForest75MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest75MouseExited
-        jlForest75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest75.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest75MouseExited
 
     private void jlForest77MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest77MouseEntered
-        jlForest77.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest77.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest77MouseEntered
 
     private void jlForest77MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest77MouseExited
-        jlForest77.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest77.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest77MouseExited
 
     private void jlForest67MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest67MouseEntered
-        jlForest67.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest67.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest67MouseEntered
 
     private void jlForest67MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest67MouseExited
-        jlForest67.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest67.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest67MouseExited
 
     private void jlForest73MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest73MouseEntered
-        jlForest73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest73.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest73MouseEntered
 
     private void jlForest73MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest73MouseExited
-        jlForest73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest73.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest73MouseExited
 
     private void jlForest71MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest71MouseEntered
-        jlForest71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest71.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest71MouseEntered
 
     private void jlForest71MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest71MouseExited
-        jlForest71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest71.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest71MouseExited
 
     private void jlForest68MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest68MouseEntered
-        jlForest68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest68.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest68MouseEntered
 
     private void jlForest68MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest68MouseExited
-        jlForest68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest68.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest68MouseExited
 
     private void jlForest70MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest70MouseEntered
-        jlForest70.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest70.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest70MouseEntered
 
     private void jlForest70MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest70MouseExited
-        jlForest70.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest70.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest70MouseExited
 
     private void jlForest69MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest69MouseEntered
-        jlForest69.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest69.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest69MouseEntered
 
     private void jlForest69MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest69MouseExited
-        jlForest69.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest69.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest69MouseExited
 
     private void jlForest79MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest79MouseEntered
-        jlForest79.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest79.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest79MouseEntered
 
     private void jlForest79MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest79MouseExited
-        jlForest79.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest79.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest79MouseExited
 
     private void jlForest74MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest74MouseEntered
-        jlForest74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest74.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest74MouseEntered
 
     private void jlForest74MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest74MouseExited
-        jlForest74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest74.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest74MouseExited
 
     private void jlForest55MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest55MouseEntered
-        jlForest55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest55.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest55MouseEntered
 
     private void jlForest55MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest55MouseExited
-        jlForest55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest55.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest55MouseExited
 
     private void jlForest54MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest54MouseEntered
-        jlForest54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest54.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest54MouseEntered
 
     private void jlForest54MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest54MouseExited
-        jlForest54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest54.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest54MouseExited
 
     private void jlGrass4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass4MouseExited
-        jlGrass4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass4.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass4MouseExited
 
     private void jlGrass28MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass28MouseExited
-        jlGrass28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass28.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass28MouseExited
 
     private void jlGrass4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass4MouseEntered
-        jlGrass4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass4.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass4MouseEntered
 
     private void jlGrass3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass3MouseEntered
-        jlGrass3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass3.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass3MouseEntered
 
     private void jlGrass3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass3MouseExited
-        jlGrass3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass3.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass3MouseExited
 
     private void jlGrass2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass2MouseEntered
-        jlGrass2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass2.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass2MouseEntered
 
     private void jlGrass2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass2MouseExited
-        jlGrass2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass2.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass2MouseExited
 
     private void jlGrass5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass5MouseEntered
-        jlGrass5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass5.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass5MouseEntered
 
     private void jlGrass5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass5MouseExited
-        jlGrass5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass5.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass5MouseExited
 
     private void jlGrass6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass6MouseEntered
-        jlGrass6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass6.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass6MouseEntered
 
     private void jlGrass6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass6MouseExited
-        jlGrass6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass6.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass6MouseExited
 
     private void jlGrass8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass8MouseEntered
-        jlGrass8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass8.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass8MouseEntered
 
     private void jlGrass8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass8MouseExited
-        jlGrass8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass8.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass8MouseExited
 
     private void jlGrass7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass7MouseEntered
-        jlGrass7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass7.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass7MouseEntered
 
     private void jlGrass7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass7MouseExited
-        jlGrass7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass7.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass7MouseExited
 
     private void jlGrass10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass10MouseEntered
-        jlGrass10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass10.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass10MouseEntered
 
     private void jlGrass10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass10MouseExited
-        jlGrass10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass10.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass10MouseExited
 
     private void jlGrass11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass11MouseEntered
-        jlGrass11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass11.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass11MouseEntered
 
     private void jlGrass11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass11MouseExited
-        jlGrass11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass11.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass11MouseExited
 
     private void jlGrass9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass9MouseEntered
-        jlGrass9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass9.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass9MouseEntered
 
     private void jlGrass9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass9MouseExited
-        jlGrass9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass9.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass9MouseExited
 
     private void jlGrass14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass14MouseEntered
-        jlGrass14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass14.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass14MouseEntered
 
     private void jlGrass14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass14MouseExited
-        jlGrass14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass14.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass14MouseExited
 
     private void jlGrass18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass18MouseEntered
-        jlGrass18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass18.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass18MouseEntered
 
     private void jlGrass18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass18MouseExited
-        jlGrass18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass18.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass18MouseExited
 
     private void jlGrass17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass17MouseEntered
-        jlGrass17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass17.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass17MouseEntered
 
     private void jlGrass17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass17MouseExited
-        jlGrass17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass17.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass17MouseExited
 
     private void jlGrass16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass16MouseEntered
-        jlGrass16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass16.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass16MouseEntered
 
     private void jlGrass12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass12MouseExited
-        jlGrass12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass12.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass12MouseExited
 
     private void jlGrass13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass13MouseEntered
-        jlGrass13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass13.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass13MouseEntered
 
     private void jlGrass13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass13MouseExited
-        jlGrass13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass13.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass13MouseExited
 
     private void jlGrass34MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass34MouseEntered
-        jlGrass34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass34.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass34MouseEntered
 
     private void jlGrass34MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass34MouseExited
-        jlGrass34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass34.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass34MouseExited
 
     private void jlGrass33MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass33MouseEntered
-        jlGrass33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass33.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass33MouseEntered
 
     private void jlGrass33MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass33MouseExited
-        jlGrass33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass33.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass33MouseExited
 
     private void jlGrass32MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass32MouseEntered
-        jlGrass32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass32.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass32MouseEntered
 
     private void jlGrass19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass19MouseExited
-        jlGrass19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass19.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass19MouseExited
 
     private void jlGrass1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass1MouseEntered
-        jlGrass1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass1.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass1MouseEntered
 
     private void jlGrass1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass1MouseExited
-        jlGrass1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass1.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass1MouseExited
 
     private void jlGrass36MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass36MouseEntered
-        jlGrass36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass36.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass36MouseEntered
 
     private void jlGrass36MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass36MouseExited
-        jlGrass36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass36.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass36MouseExited
 
     private void jlGrass35MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass35MouseEntered
-        jlGrass35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass35.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass35MouseEntered
 
     private void jlGrass35MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass35MouseExited
-        jlGrass35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass35.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass35MouseExited
 
     private void jlGrass20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass20MouseEntered
-        jlGrass20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass20.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass20MouseEntered
 
     private void jlGrass20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass20MouseExited
-        jlGrass20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass20.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass20MouseExited
 
     private void jlGrass43MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass43MouseEntered
-        jlGrass43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass43.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass43MouseEntered
 
     private void jlGrass43MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass43MouseExited
-        jlGrass43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass43.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass43MouseExited
 
     private void jlGrassMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrassMouseEntered
-        jlGrass.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrassMouseEntered
 
     private void jlGrassMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrassMouseExited
-        jlGrass.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrassMouseExited
 
     private void jlGrass22MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass22MouseEntered
-        jlGrass22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass22.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass22MouseEntered
 
     private void jlGrass22MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass22MouseExited
-        jlGrass22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass22.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass22MouseExited
 
     private void jlGrass21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass21MouseEntered
-        jlGrass21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass21.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass21MouseEntered
 
     private void jlGrass21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass21MouseExited
-        jlGrass21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass21.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass21MouseExited
 
     private void jlGrass39MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass39MouseEntered
-        jlGrass39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass39.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass39MouseEntered
 
     private void jlGrass40MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass40MouseEntered
-        jlGrass40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass40.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass40MouseEntered
 
     private void jlGrass39MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass39MouseExited
-        jlGrass39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass39.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass39MouseExited
 
     private void jlGrass40MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass40MouseExited
-        jlGrass40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass40.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass40MouseExited
 
     private void jlGrass41MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass41MouseEntered
-        jlGrass41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass41.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass41MouseEntered
 
     private void jlGrass41MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass41MouseExited
-        jlGrass41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass41.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass41MouseExited
 
     private void jlGrass23MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass23MouseEntered
-        jlGrass23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass23.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass23MouseEntered
 
     private void jlGrass23MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass23MouseExited
-        jlGrass23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass23.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass23MouseExited
 
     private void jlGrass16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass16MouseExited
-        jlGrass16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass16.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass16MouseExited
 
     private void jlGrass32MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass32MouseExited
-        jlGrass32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass32.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass32MouseExited
 
     private void jlGrass12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass12MouseEntered
-        jlGrass12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass12.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass12MouseEntered
 
     private void jlGrass19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass19MouseEntered
-        jlGrass19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass19.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass19MouseEntered
 
     private void jlGrass42MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass42MouseEntered
-        jlGrass42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass42.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass42MouseEntered
 
     private void jlGrass42MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass42MouseExited
-        jlGrass42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass42.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass42MouseExited
 
     private void jlGrass44MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass44MouseEntered
-        jlGrass44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass44.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass44MouseEntered
 
     private void jlGrass44MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass44MouseExited
-        jlGrass44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass44.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass44MouseExited
 
     private void jlGrass24MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass24MouseEntered
-        jlGrass24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass24.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass24MouseEntered
 
     private void jlGrass24MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass24MouseExited
-        jlGrass24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass24.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass24MouseExited
 
     private void jlGrass45MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass45MouseEntered
-        jlGrass45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass45.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass45MouseEntered
 
     private void jlGrass45MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass45MouseExited
-        jlGrass45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass45.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass45MouseExited
 
     private void jlGrass46MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass46MouseEntered
-        jlGrass46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass46.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass46MouseEntered
 
     private void jlGrass46MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass46MouseExited
-        jlGrass46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass46.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass46MouseExited
 
     private void jlGrass25MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass25MouseEntered
-        jlGrass25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass25.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass25MouseEntered
 
     private void jlGrass25MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass25MouseExited
-        jlGrass25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass25.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass25MouseExited
 
     private void jlGrass48MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass48MouseEntered
-        jlGrass48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass48.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass48MouseEntered
 
     private void jlGrass48MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass48MouseExited
-        jlGrass48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass48.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass48MouseExited
 
     private void jlGrass27MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass27MouseEntered
-        jlGrass27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass27.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass27MouseEntered
 
     private void jlGrass27MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass27MouseExited
-        jlGrass27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass27.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass27MouseExited
 
     private void jlGrass30MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass30MouseEntered
-        jlGrass30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass30.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass30MouseEntered
 
     private void jlGrass30MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass30MouseExited
-        jlGrass30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass30.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass30MouseExited
 
     private void jlGrass26MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass26MouseEntered
-        jlGrass26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass26.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass26MouseEntered
 
     private void jlGrass26MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass26MouseExited
-        jlGrass26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass26.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass26MouseExited
 
     private void jlGrass29MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass29MouseEntered
-        jlGrass29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass29.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass29MouseEntered
 
     private void jlGrass29MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass29MouseExited
-        jlGrass29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass29.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass29MouseExited
 
     private void jlGrass31MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass31MouseEntered
-        jlGrass31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grassRollover.png")));
+        jlGrass31.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass31MouseEntered
 
     private void jlGrass31MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass31MouseExited
-        jlGrass31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png")));
+        jlGrass31.setIcon(grassIcon);
     }//GEN-LAST:event_jlGrass31MouseExited
 
     private void jbExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbExitActionPerformed
@@ -7620,1020 +7812,1204 @@ public class MapMoveFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jbExitActionPerformed
         
     private void jlWater39MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater39MouseEntered
-        jlWater39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater39.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater39MouseEntered
 
     private void jlWater39MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater39MouseExited
-        jlWater39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater39.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater39MouseExited
 
     private void jlWater38MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater38MouseEntered
-        jlWater38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater38.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater38MouseEntered
 
     private void jlWater38MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater38MouseExited
-        jlWater38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater38.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater38MouseExited
 
     private void jlWater6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater6MouseEntered
-        jlWater6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater6.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater6MouseEntered
 
     private void jlWater6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater6MouseExited
-        jlWater6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater6.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater6MouseExited
 
     private void jlWater21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater21MouseEntered
-        jlWater21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater21.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater21MouseEntered
 
     private void jlWater21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater21MouseExited
-        jlWater21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater21.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater21MouseExited
 
     private void jlWater20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater20MouseEntered
-        jlWater20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater20.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater20MouseEntered
 
     private void jlWater20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater20MouseExited
-        jlWater20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater20.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater20MouseExited
 
     private void jlWater18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater18MouseEntered
-        jlWater18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater18.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater18MouseEntered
 
     private void jlWater18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater18MouseExited
-        jlWater18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater18.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater18MouseExited
 
     private void jlWater17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater17MouseEntered
-        jlWater17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater17.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater17MouseEntered
 
     private void jlWater17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater17MouseExited
-        jlWater17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater17.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater17MouseExited
 
     private void jlWater16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater16MouseEntered
-        jlWater16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater16.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater16MouseEntered
 
     private void jlWater16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater16MouseExited
-        jlWater16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater16.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater16MouseExited
 
     private void jlWater15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater15MouseEntered
-        jlWater15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater15.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater15MouseEntered
 
     private void jlWater15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater15MouseExited
-        jlWater15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater15.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater15MouseExited
 
     private void jlWater11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater11MouseEntered
-        jlWater11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater11.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater11MouseEntered
 
     private void jlWater11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater11MouseExited
-        jlWater11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater11.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater11MouseExited
 
     private void jlWater14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater14MouseEntered
-        jlWater14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater14.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater14MouseEntered
 
     private void jlWater14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater14MouseExited
-        jlWater14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater14.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater14MouseExited
 
     private void jlWater12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater12MouseEntered
-        jlWater12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater12.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater12MouseEntered
 
     private void jlWater12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater12MouseExited
-        jlWater12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater12.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater12MouseExited
 
     private void jlWater13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater13MouseEntered
-        jlWater13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater13.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater13MouseEntered
 
     private void jlWater13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater13MouseExited
-        jlWater13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater13.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater13MouseExited
 
     private void jlWater9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater9MouseEntered
-        jlWater9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater9.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater9MouseEntered
 
     private void jlWater9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater9MouseExited
-        jlWater9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater9.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater9MouseExited
 
     private void jlWater10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater10MouseEntered
-        jlWater10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater10.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater10MouseEntered
 
     private void jlWater10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater10MouseExited
-        jlWater10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater10.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater10MouseExited
 
     private void jlWater7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater7MouseEntered
-        jlWater7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater7.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater7MouseEntered
 
     private void jlWater7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater7MouseExited
-        jlWater7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater7.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater7MouseExited
 
     private void jlWater8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater8MouseEntered
-        jlWater8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater8.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater8MouseEntered
 
     private void jlWater8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater8MouseExited
-        jlWater8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater8.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater8MouseExited
 
     private void jlWater27MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater27MouseEntered
-        jlWater27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater27.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater27MouseEntered
 
     private void jlWater27MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater27MouseExited
-        jlWater27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater27.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater27MouseExited
 
     private void jlWater23MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater23MouseEntered
-        jlWater23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater23.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater23MouseEntered
 
     private void jlWater23MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater23MouseExited
-        jlWater23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater23.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater23MouseExited
 
     private void jlWater24MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater24MouseEntered
-        jlWater24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater24.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater24MouseEntered
 
     private void jlWater24MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater24MouseExited
-        jlWater24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater24.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater24MouseExited
 
     private void jlWater25MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater25MouseEntered
-        jlWater25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater25.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater25MouseEntered
 
     private void jlWater25MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater25MouseExited
-        jlWater25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater25.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater25MouseExited
 
     private void jlWater26MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater26MouseEntered
-        jlWater26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater26.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater26MouseEntered
 
     private void jlWater26MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater26MouseExited
-        jlWater26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater26.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater26MouseExited
 
     private void jlWater19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater19MouseEntered
-        jlWater19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater19.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater19MouseEntered
 
     private void jlWater19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater19MouseExited
-        jlWater19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater19.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater19MouseExited
 
     private void jlWaterMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWaterMouseExited
-        jlWater.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater.setIcon(waterIcon);
     }//GEN-LAST:event_jlWaterMouseExited
 
     private void jlWaterMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWaterMouseEntered
-        jlWater.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWaterMouseEntered
 
     private void jlWater31MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater31MouseEntered
-        jlWater31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater31.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater31MouseEntered
 
     private void jlWater31MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater31MouseExited
-        jlWater31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater31.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater31MouseExited
 
     private void jlWater29MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater29MouseExited
-        jlWater29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater29.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater29MouseExited
 
     private void jlWater29MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater29MouseEntered
-        jlWater29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater29.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater29MouseEntered
 
     private void jlWater1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater1MouseEntered
-        jlWater1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater1.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater1MouseEntered
 
     private void jlWater1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater1MouseExited
-        jlWater1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater1.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater1MouseExited
 
     private void jlWater2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater2MouseEntered
-        jlWater2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater2.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater2MouseEntered
 
     private void jlWater2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater2MouseExited
-        jlWater2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater2.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater2MouseExited
 
     private void jlWater3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater3MouseEntered
-        jlWater3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater3.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater3MouseEntered
 
     private void jlWater3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater3MouseExited
-        jlWater3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater3.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater3MouseExited
 
     private void jlWater4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater4MouseEntered
-        jlWater4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater4.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater4MouseEntered
 
     private void jlWater4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater4MouseExited
-        jlWater4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater4.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater4MouseExited
 
     private void jlWater5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater5MouseEntered
-        jlWater5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater5.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater5MouseEntered
 
     private void jlWater5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater5MouseExited
-        jlWater5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater5.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater5MouseExited
 
     private void jlWater22MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater22MouseEntered
-        jlWater22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater22.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater22MouseEntered
 
     private void jlWater22MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater22MouseExited
-        jlWater22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater22.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater22MouseExited
 
     private void jlWater28MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater28MouseEntered
-        jlWater28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater28.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater28MouseEntered
 
     private void jlWater28MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater28MouseExited
-        jlWater28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater28.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater28MouseExited
 
     private void jlWater36MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater36MouseEntered
-        jlWater36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater36.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater36MouseEntered
 
     private void jlWater36MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater36MouseExited
-        jlWater36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater36.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater36MouseExited
 
     private void jlWater37MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater37MouseEntered
-        jlWater37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater37.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater37MouseEntered
 
     private void jlWater37MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater37MouseExited
-        jlWater37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater37.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater37MouseExited
 
     private void jlWater35MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater35MouseEntered
-        jlWater35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater35.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater35MouseEntered
 
     private void jlWater35MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater35MouseExited
-        jlWater35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater35.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater35MouseExited
 
     private void jlWater34MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater34MouseEntered
-        jlWater34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater34.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater34MouseEntered
 
     private void jlWater34MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater34MouseExited
-        jlWater34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater34.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater34MouseExited
 
     private void jlWater30MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater30MouseEntered
-        jlWater30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater30.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater30MouseEntered
 
     private void jlWater30MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater30MouseExited
-        jlWater30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater30.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater30MouseExited
 
     private void jlWater33MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater33MouseEntered
-        jlWater33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater33.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater33MouseEntered
 
     private void jlWater33MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater33MouseExited
-        jlWater33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater33.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater33MouseExited
 
     private void jlWater40MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater40MouseEntered
-        jlWater40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater40.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater40MouseEntered
 
     private void jlWater40MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater40MouseExited
-        jlWater40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater40.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater40MouseExited
 
     private void jlWater32MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater32MouseEntered
-        jlWater32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png")));
+        jlWater32.setIcon(waterRolloverIcon);
     }//GEN-LAST:event_jlWater32MouseEntered
 
     private void jlWater32MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlWater32MouseExited
-        jlWater32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png")));
+        jlWater32.setIcon(waterIcon);
     }//GEN-LAST:event_jlWater32MouseExited
 
     private void jlMountain112MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain112MouseEntered
-        jlMountain112.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain112.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain112MouseEntered
 
     private void jlMountain112MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain112MouseExited
-        jlMountain112.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain112.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain112MouseExited
 
     private void jlMountain111MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain111MouseEntered
-        jlMountain111.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain111.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain111MouseEntered
 
     private void jlMountain111MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain111MouseExited
-        jlMountain111.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain111.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain111MouseExited
 
     private void jlMountain10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain10MouseEntered
-        jlMountain10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain10.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain10MouseEntered
 
     private void jlMountain10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain10MouseExited
-        jlMountain10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain10.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain10MouseExited
 
     private void jlMountain20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain20MouseEntered
-        jlMountain20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain20.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain20MouseEntered
 
     private void jlMountain20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain20MouseExited
-        jlMountain20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain20.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain20MouseExited
 
     private void jlMountain110MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain110MouseEntered
-        jlMountain110.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain110.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain110MouseEntered
 
     private void jlMountain110MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain110MouseExited
-        jlMountain110.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain110.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain110MouseExited
 
     private void jlMountain109MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain109MouseEntered
-        jlMountain109.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain109.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain109MouseEntered
 
     private void jlMountain109MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain109MouseExited
-        jlMountain109.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain109.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain109MouseExited
 
     private void jlMountain113MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain113MouseEntered
-        jlMountain113.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain113.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain113MouseEntered
 
     private void jlMountain113MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain113MouseExited
-        jlMountain113.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain113.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain113MouseExited
 
     private void jlMountain17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain17MouseEntered
-        jlMountain17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain17.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain17MouseEntered
 
     private void jlMountain17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain17MouseExited
-        jlMountain17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain17.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain17MouseExited
 
     private void jlMountain51MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain51MouseEntered
-        jlMountain51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain51.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain51MouseEntered
 
     private void jlMountain51MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain51MouseExited
-        jlMountain51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain51.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain51MouseExited
 
     private void jlMountain44MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain44MouseEntered
-        jlMountain44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain44.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain44MouseEntered
 
     private void jlMountain44MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain44MouseExited
-        jlMountain44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain44.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain44MouseExited
 
     private void jlMountain108MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain108MouseEntered
-        jlMountain108.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain108.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain108MouseEntered
 
     private void jlMountain108MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain108MouseExited
-        jlMountain108.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain108.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain108MouseExited
 
     private void jlMountain7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain7MouseEntered
-        jlMountain7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain7.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain7MouseEntered
 
     private void jlMountain7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain7MouseExited
-        jlMountain7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain7.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain7MouseExited
 
     private void jlMountain16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain16MouseEntered
-        jlMountain16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain16.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain16MouseEntered
 
     private void jlMountain16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain16MouseExited
-        jlMountain16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain16.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain16MouseExited
 
     private void jlMountain50MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain50MouseEntered
-        jlMountain50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain50.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain50MouseEntered
 
     private void jlMountain50MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain50MouseExited
-        jlMountain50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain50.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain50MouseExited
 
     private void jlMountain43MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain43MouseEntered
-        jlMountain43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain43.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain43MouseEntered
 
     private void jlMountain43MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain43MouseExited
-        jlMountain43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain43.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain43MouseExited
 
     private void jlMountain38MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain38MouseEntered
-        jlMountain38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain38.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain38MouseEntered
 
     private void jlMountain38MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain38MouseExited
-        jlMountain38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain38.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain38MouseExited
 
     private void jlMountain107MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain107MouseEntered
-        jlMountain107.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain107.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain107MouseEntered
 
     private void jlMountain107MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain107MouseExited
-        jlMountain107.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain107.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain107MouseExited
 
     private void jlMountain6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain6MouseEntered
-        jlMountain6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain6.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain6MouseEntered
 
     private void jlMountain6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain6MouseExited
-        jlMountain6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain6.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain6MouseExited
 
     private void jlMountainMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountainMouseEntered
-        jlMountain.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountainMouseEntered
 
     private void jlMountainMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountainMouseExited
-        jlMountain.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountainMouseExited
 
     private void jlMountain25MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain25MouseEntered
-        jlMountain25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain25.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain25MouseEntered
 
     private void jlMountain25MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain25MouseExited
-        jlMountain25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain25.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain25MouseExited
 
     private void jlMountain42MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain42MouseEntered
-        jlMountain42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain42.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain42MouseEntered
 
     private void jlMountain42MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain42MouseExited
-        jlMountain42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain42.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain42MouseExited
 
     private void jlMountain37MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain37MouseEntered
-        jlMountain37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain37.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain37MouseEntered
 
     private void jlMountain37MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain37MouseExited
-        jlMountain37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain37.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain37MouseExited
 
     private void jlMountain36MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain36MouseEntered
-        jlMountain36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain36.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain36MouseEntered
 
     private void jlMountain36MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain36MouseExited
-        jlMountain36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain36.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain36MouseExited
 
     private void jlMountain106MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain106MouseEntered
-        jlMountain106.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain106.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain106MouseEntered
 
     private void jlMountain106MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain106MouseExited
-        jlMountain106.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain106.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain106MouseExited
 
     private void jlMountain5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain5MouseEntered
-        jlMountain5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain5.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain5MouseEntered
 
     private void jlMountain5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain5MouseExited
-        jlMountain5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain5.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain5MouseExited
 
     private void jlMountain14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain14MouseEntered
-        jlMountain14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain14.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain14MouseEntered
 
     private void jlMountain14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain14MouseExited
-        jlMountain14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain14.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain14MouseExited
 
     private void jlMountain47MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain47MouseEntered
-        jlMountain47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain47.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain47MouseEntered
 
     private void jlMountain47MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain47MouseExited
-        jlMountain47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain47.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain47MouseExited
 
     private void jlMountain41MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain41MouseEntered
-        jlMountain41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain41.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain41MouseEntered
 
     private void jlMountain41MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain41MouseExited
-        jlMountain41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain41.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain41MouseExited
 
     private void jlMountain35MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain35MouseEntered
-        jlMountain35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain35.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain35MouseEntered
 
     private void jlMountain35MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain35MouseExited
-        jlMountain35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain35.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain35MouseExited
 
     private void jlMountain30MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain30MouseEntered
-        jlMountain30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain30.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain30MouseEntered
 
     private void jlMountain30MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain30MouseExited
-        jlMountain30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain30.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain30MouseExited
 
     private void jlMountain26MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain26MouseEntered
-        jlMountain26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain26.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain26MouseEntered
 
     private void jlMountain26MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain26MouseExited
-        jlMountain26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain26.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain26MouseExited
 
     private void jlMountain8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain8MouseEntered
-        jlMountain8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain8.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain8MouseEntered
 
     private void jlMountain8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain8MouseExited
-        jlMountain8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain8.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain8MouseExited
 
     private void jlMountain18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain18MouseEntered
-        jlMountain18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain18.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain18MouseEntered
 
     private void jlMountain18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain18MouseExited
-        jlMountain18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain18.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain18MouseExited
 
     private void jlMountain52MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain52MouseEntered
-        jlMountain52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountainRollover.png")));
+        jlMountain52.setIcon(mountainRollOverIcon);
     }//GEN-LAST:event_jlMountain52MouseEntered
 
     private void jlMountain52MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain52MouseExited
-        jlMountain52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png")));
+        jlMountain52.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain52MouseExited
 
     private void jlForest1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest1MouseEntered
-        jlForest1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest1.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest1MouseEntered
 
     private void jlForest1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest1MouseExited
-        jlForest1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest1.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest1MouseExited
 
     private void jlForest2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest2MouseEntered
-        jlForest2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest2.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest2MouseEntered
 
     private void jlForest2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest2MouseExited
-        jlForest2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest2.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest2MouseExited
 
     private void jlForest8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest8MouseEntered
-        jlForest8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest8.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest8MouseEntered
 
     private void jlForest8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest8MouseExited
-        jlForest8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest8.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest8MouseExited
 
     private void jlForest7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest7MouseEntered
-        jlForest7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest7.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest7MouseEntered
 
     private void jlForest7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest7MouseExited
-        jlForest7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest7.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest7MouseExited
 
     private void jlForest5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest5MouseEntered
-        jlForest5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest5.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest5MouseEntered
 
     private void jlForest5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest5MouseExited
-        jlForest5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest5.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest5MouseExited
 
     private void jlForest3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest3MouseEntered
-        jlForest3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest3.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest3MouseEntered
 
     private void jlForest3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest3MouseExited
-        jlForest3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest3.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest3MouseExited
 
     private void jlForest12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest12MouseEntered
-        jlForest12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest12.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest12MouseEntered
 
     private void jlForest12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest12MouseExited
-        jlForest12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest12.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest12MouseExited
 
     private void jlForest9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest9MouseEntered
-        jlForest9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest9.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest9MouseEntered
 
     private void jlForest9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest9MouseExited
-        jlForest9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest9.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest9MouseExited
 
     private void jlForest10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest10MouseEntered
-        jlForest10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest10.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest10MouseEntered
 
     private void jlForest10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest10MouseExited
-        jlForest10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest10.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest10MouseExited
 
     private void jlForest11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest11MouseEntered
-        jlForest11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest11.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest11MouseEntered
 
     private void jlForest11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest11MouseExited
-        jlForest11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest11.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest11MouseExited
 
     private void jlForest20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest20MouseEntered
-        jlForest20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest20.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest20MouseEntered
 
     private void jlForest20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest20MouseExited
-        jlForest20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest20.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest20MouseExited
 
     private void jlForest13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest13MouseEntered
-        jlForest13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest13.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest13MouseEntered
 
     private void jlForest13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest13MouseExited
-        jlForest13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest13.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest13MouseExited
 
     private void jlForest61MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest61MouseEntered
-        jlForest61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest61.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest61MouseEntered
 
     private void jlForest61MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest61MouseExited
-        jlForest61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest61.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest61MouseExited
 
     private void jlForest19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest19MouseEntered
-        jlForest19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest19.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest19MouseEntered
 
     private void jlForest19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest19MouseExited
-        jlForest19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest19.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest19MouseExited
 
     private void jlForest15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest15MouseEntered
-        jlForest15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest15.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest15MouseEntered
 
     private void jlForest15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest15MouseExited
-        jlForest15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest15.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest15MouseExited
 
     private void jlForest16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest16MouseEntered
-        jlForest16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest16.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest16MouseEntered
 
     private void jlForest16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest16MouseExited
-        jlForest16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest16.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest16MouseExited
 
     private void jlForest21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest21MouseEntered
-        jlForest21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest21.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest21MouseEntered
 
     private void jlForest21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest21MouseExited
-        jlForest21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest21.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest21MouseExited
 
     private void jlForest18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest18MouseEntered
-        jlForest18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest18.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest18MouseEntered
 
     private void jlForest18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest18MouseExited
-        jlForest18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest18.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest18MouseExited
 
     private void jlForest17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest17MouseEntered
-        jlForest17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest17.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest17MouseEntered
 
     private void jlForest17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest17MouseExited
-        jlForest17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest17.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest17MouseExited
 
     private void jlForest23MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest23MouseEntered
-        jlForest23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest23.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest23MouseEntered
 
     private void jlForest23MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest23MouseExited
-        jlForest23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest23.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest23MouseExited
 
     private void jlForest24MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest24MouseEntered
-        jlForest24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest24.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest24MouseEntered
 
     private void jlForest24MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest24MouseExited
-        jlForest24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest24.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest24MouseExited
 
     private void jlForest25MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest25MouseEntered
-        jlForest25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest25.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest25MouseEntered
 
     private void jlForest25MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest25MouseExited
-        jlForest25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest25.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest25MouseExited
 
     private void jlForest22MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest22MouseEntered
-        jlForest22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest22.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest22MouseEntered
 
     private void jlForest22MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest22MouseExited
-        jlForest22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest22.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest22MouseExited
 
     private void jlForest26MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest26MouseEntered
-        jlForest26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest26.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest26MouseEntered
 
     private void jlForest26MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest26MouseExited
-        jlForest26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest26.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest26MouseExited
 
     private void jlForest27MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest27MouseEntered
-        jlForest27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest27.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest27MouseEntered
 
     private void jlForest27MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest27MouseExited
-        jlForest27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest27.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest27MouseExited
 
     private void jlForest28MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest28MouseEntered
-        jlForest28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest28.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest28MouseEntered
 
     private void jlForest28MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest28MouseExited
-        jlForest28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest28.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest28MouseExited
 
     private void jlForest29MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest29MouseEntered
-        jlForest29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest29.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest29MouseEntered
 
     private void jlForest29MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest29MouseExited
-        jlForest29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest29.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest29MouseExited
 
     private void jlForest30MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest30MouseEntered
-        jlForest30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest30.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest30MouseEntered
 
     private void jlForest30MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest30MouseExited
-        jlForest30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest30.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest30MouseExited
 
     private void jlForest31MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest31MouseEntered
-        jlForest31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest31.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest31MouseEntered
 
     private void jlForest31MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest31MouseExited
-        jlForest31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest31.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest31MouseExited
 
     private void jlForest33MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest33MouseEntered
-        jlForest33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest33.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest33MouseEntered
 
     private void jlForest33MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest33MouseExited
-        jlForest33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest33.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest33MouseExited
 
     private void jlForest34MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest34MouseEntered
-        jlForest34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest34.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest34MouseEntered
 
     private void jlForest34MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest34MouseExited
-        jlForest34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest34.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest34MouseExited
 
     private void jlForest32MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest32MouseEntered
-        jlForest32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest32.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest32MouseEntered
 
     private void jlForest32MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest32MouseExited
-        jlForest32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest32.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest32MouseExited
 
     private void jlForest35MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest35MouseEntered
-        jlForest35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest35.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest35MouseEntered
 
     private void jlForest35MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest35MouseExited
-        jlForest35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest35.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest35MouseExited
 
     private void jlForest51MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest51MouseEntered
-        jlForest51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest51.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest51MouseEntered
 
     private void jlForest51MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest51MouseExited
-        jlForest51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest51.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest51MouseExited
 
     private void jlForest4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest4MouseEntered
-        jlForest4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest4.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest4MouseEntered
 
     private void jlForest4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest4MouseExited
-        jlForest4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest4.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest4MouseExited
 
     private void jlForest6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest6MouseEntered
-        jlForest6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest6.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest6MouseEntered
 
     private void jlForest6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest6MouseExited
-        jlForest6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest6.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest6MouseExited
 
     private void jlForest37MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest37MouseEntered
-        jlForest37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest37.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest37MouseEntered
 
     private void jlForest37MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest37MouseExited
-        jlForest37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest37.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest37MouseExited
 
     private void jlForest36MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest36MouseEntered
-        jlForest36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest36.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest36MouseEntered
 
     private void jlForest36MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest36MouseExited
-        jlForest36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest36.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest36MouseExited
 
     private void jlForest52MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest52MouseEntered
-        jlForest52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest52.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest52MouseEntered
 
     private void jlForest52MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest52MouseExited
-        jlForest52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest52.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest52MouseExited
 
     private void jlForest38MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest38MouseEntered
-        jlForest38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest38.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest38MouseEntered
 
     private void jlForest38MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest38MouseExited
-        jlForest38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest38.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest38MouseExited
 
     private void jlForest14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest14MouseEntered
-        jlForest14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest14.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest14MouseEntered
 
     private void jlForest14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest14MouseExited
-        jlForest14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest14.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest14MouseExited
 
     private void jlForest42MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest42MouseEntered
-        jlForest42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest42.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest42MouseEntered
 
     private void jlForest42MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest42MouseExited
-        jlForest42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest42.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest42MouseExited
 
     private void jlForest40MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest40MouseEntered
-        jlForest40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest40.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest40MouseEntered
 
     private void jlForest40MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest40MouseExited
-        jlForest40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest40.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest40MouseExited
 
     private void jlForest41MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest41MouseEntered
-        jlForest41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest41.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest41MouseEntered
 
     private void jlForest41MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest41MouseExited
-        jlForest41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest41.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest41MouseExited
 
     private void jlForest44MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest44MouseEntered
-        jlForest44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest44.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest44MouseEntered
 
     private void jlForest44MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest44MouseExited
-        jlForest44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest44.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest44MouseExited
 
     private void jlForest43MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest43MouseEntered
-        jlForest43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest43.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest43MouseEntered
 
     private void jlForest43MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest43MouseExited
-        jlForest43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest43.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest43MouseExited
 
     private void jlForest50MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest50MouseEntered
-        jlForest50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest50.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest50MouseEntered
 
     private void jlForest50MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest50MouseExited
-        jlForest50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest50.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest50MouseExited
 
     private void jlForest45MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest45MouseEntered
-        jlForest45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest45.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest45MouseEntered
 
     private void jlForest45MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest45MouseExited
-        jlForest45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest45.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest45MouseExited
 
     private void jlForest46MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest46MouseEntered
-        jlForest46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest46.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest46MouseEntered
 
     private void jlForest46MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest46MouseExited
-        jlForest46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest46.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest46MouseExited
 
     private void jlForest47MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest47MouseEntered
-        jlForest47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest47.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest47MouseEntered
 
     private void jlForest47MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest47MouseExited
-        jlForest47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest47.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest47MouseExited
 
     private void jlForest49MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest49MouseEntered
-        jlForest49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest49.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest49MouseEntered
 
     private void jlForest49MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest49MouseExited
-        jlForest49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest49.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest49MouseExited
 
     private void jlForest48MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest48MouseEntered
-        jlForest48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTreeRollover.gif")));
+        jlForest48.setIcon(pineTreeRolloverIcon);
     }//GEN-LAST:event_jlForest48MouseEntered
 
     private void jlForest48MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest48MouseExited
-        jlForest48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif")));
+        jlForest48.setIcon(pineTreeIcon);
     }//GEN-LAST:event_jlForest48MouseExited
+
+    private void jlMountain34MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain34MouseEntered
+        jlMountain34.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain34MouseEntered
+
+    private void jlMountain34MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain34MouseExited
+        jlMountain34.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain34MouseExited
+
+    private void jlMountain33MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain33MouseEntered
+        jlMountain33.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain33MouseEntered
+
+    private void jlMountain33MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain33MouseExited
+        jlMountain33.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain33MouseExited
+
+    private void jlMountain27MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain27MouseEntered
+        jlMountain27.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain27MouseEntered
+
+    private void jlMountain27MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain27MouseExited
+        jlMountain27.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain27MouseExited
+
+    private void jlMountain28MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain28MouseEntered
+        jlMountain28.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain28MouseEntered
+
+    private void jlMountain28MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain28MouseExited
+        jlMountain28.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain28MouseExited
+
+    private void jlMountain29MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain29MouseEntered
+        jlMountain29.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain29MouseEntered
+
+    private void jlMountain29MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain29MouseExited
+        jlMountain29.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain29MouseExited
+
+    private void jlMountain24MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain24MouseEntered
+        jlMountain24.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain24MouseEntered
+
+    private void jlMountain24MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain24MouseExited
+        jlMountain24.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain24MouseExited
+
+    private void jlMountain21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain21MouseEntered
+        jlMountain21.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain21MouseEntered
+
+    private void jlMountain21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain21MouseExited
+        jlMountain21.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain21MouseExited
+
+    private void jlMountain15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain15MouseEntered
+        jlMountain15.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain15MouseEntered
+
+    private void jlMountain15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain15MouseExited
+        jlMountain15.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain15MouseExited
+
+    private void jlMountain31MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain31MouseEntered
+        jlMountain31.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain31MouseEntered
+
+    private void jlMountain31MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain31MouseExited
+        jlMountain31.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain31MouseExited
+
+    private void jlMountain45MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain45MouseEntered
+        jlMountain45.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain45MouseEntered
+
+    private void jlMountain45MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain45MouseExited
+        jlMountain45.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain45MouseExited
+
+    private void jlMountain46MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain46MouseEntered
+        jlMountain46.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain46MouseEntered
+
+    private void jlMountain46MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain46MouseExited
+        jlMountain46.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain46MouseExited
+
+    private void jlMountain53MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain53MouseEntered
+        jlMountain53.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain53MouseEntered
+
+    private void jlMountain53MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain53MouseExited
+        jlMountain53.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain53MouseExited
+
+    private void jlMountain49MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain49MouseEntered
+        jlMountain49.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain49MouseEntered
+
+    private void jlMountain49MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain49MouseExited
+        jlMountain49.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain49MouseExited
+
+    private void jlMountain48MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain48MouseEntered
+        jlMountain48.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain48MouseEntered
+
+    private void jlMountain48MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain48MouseExited
+        jlMountain48.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain48MouseExited
+
+    private void jlMountain54MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain54MouseEntered
+        jlMountain54.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain54MouseEntered
+
+    private void jlMountain54MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain54MouseExited
+        jlMountain54.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain54MouseExited
+
+    private void jlMountain55MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain55MouseEntered
+        jlMountain55.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain55MouseEntered
+
+    private void jlMountain55MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain55MouseExited
+        jlMountain55.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain55MouseExited
+
+    private void jlMountain56MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain56MouseEntered
+        jlMountain56.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain56MouseEntered
+
+    private void jlMountain56MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain56MouseExited
+        jlMountain56.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain56MouseExited
+
+    private void jlMountain57MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain57MouseEntered
+        jlMountain57.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain57MouseEntered
+
+    private void jlMountain57MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain57MouseExited
+        jlMountain57.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain57MouseExited
+
+    private void jlMountain58MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain58MouseEntered
+        jlMountain58.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain58MouseEntered
+
+    private void jlMountain58MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain58MouseExited
+        jlMountain58.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain58MouseExited
+
+    private void jlMountain59MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain59MouseEntered
+        jlMountain59.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain59MouseEntered
+
+    private void jlMountain59MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain59MouseExited
+        jlMountain59.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain59MouseExited
+
+    private void jlMountain62MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain62MouseEntered
+        jlMountain62.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain62MouseEntered
+
+    private void jlMountain62MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain62MouseExited
+        jlMountain62.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain62MouseExited
+
+    private void jlMountain61MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain61MouseEntered
+        jlMountain61.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain61MouseEntered
+
+    private void jlMountain61MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain61MouseExited
+        jlMountain61.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain61MouseExited
+
+    private void jlMountain60MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain60MouseEntered
+        jlMountain60.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain60MouseEntered
+
+    private void jlMountain60MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain60MouseExited
+        jlMountain60.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain60MouseExited
 
     /**
      * @param args the command line arguments
