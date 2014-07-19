@@ -5,12 +5,14 @@
  */
 package survivalist.control;
 
+import javax.swing.JLabel;
+import survivalist.Survivalist;
+import survivalist.frames.MapMoveFrame;
 import survivalist.model.Location;
 import survivalist.model.Map;
 import survivalist.model.Npc;
 import survivalist.model.Player;
 import survivalist.model.Scene;
-import survivalist.Survivalist;
 
 /**
  *
@@ -44,6 +46,7 @@ public class MapControl {
         // Forest
         Scene forest = new Scene("Forest");
         forest.setDescription("A forest of trees");
+        forest.setType("forest");
         forest.setNoOfBerries(14);
         forest.setNoOfBranches(13);
         forest.setNoOfFlatRocks(4);
@@ -67,6 +70,7 @@ public class MapControl {
         // Forest 2
         Scene forest2 = new Scene("Forest 2");
         forest2.setDescription("A forest of trees");
+        forest2.setType("forest");
         forest2.setNoOfBerries(20);
         forest2.setNoOfBranches(1);
         forest2.setNoOfFlatRocks(3);
@@ -90,6 +94,7 @@ public class MapControl {
         // Forest 3
         Scene forest3 = new Scene("Forest 3");
         forest3.setDescription("A forest of trees");
+        forest3.setType("forest");
         forest3.setNoOfBerries(10);
         forest3.setNoOfBranches(15);
         forest3.setNoOfFlatRocks(5);
@@ -113,6 +118,7 @@ public class MapControl {
         // Stream
         Scene stream = new Scene("Stream");
         stream.setDescription("A small stream");
+        stream.setType("stream");
         stream.setNoOfBerries(0);
         stream.setNoOfBranches(0);
         stream.setNoOfFlatRocks(2);
@@ -136,6 +142,7 @@ public class MapControl {
         // Stream 2
         Scene stream2 = new Scene("Stream 2");
         stream2.setDescription("A small stream");
+        stream2.setType("stream");
         stream2.setNoOfBerries(0);
         stream2.setNoOfBranches(0);
         stream2.setNoOfFlatRocks(2);
@@ -158,30 +165,32 @@ public class MapControl {
 
         // Stream 3
         Scene stream3 = new Scene("Stream");
-        stream.setDescription("A small stream");
-        stream.setNoOfBerries(0);
-        stream.setNoOfBranches(0);
-        stream.setNoOfFlatRocks(3);
-        stream.setNoOfSharpRocks(2);
-        stream.setNoOfLogs(0);
-        stream.setNoOfFlint(0);
-        stream.setNoOfStone(1);
-        stream.setNoOfCabins(0);
-        stream.setNoOfLeanTos(0);
-        stream.setNoOfTowers(0);
-        stream.setNoOfDeer(0);
-        stream.setNoOfElk(0);
-        stream.setNoOfRabbits(0);
-        stream.setNoOfRaccoons(0);
-        stream.setNoOfWolves(0);
-        stream.setNoOfMoose(0);
-        stream.setNoOfBear(0);
-        stream.setSymbol("≈");
+        stream3.setDescription("A small stream");
+        stream3.setType("stream");
+        stream3.setNoOfBerries(0);
+        stream3.setNoOfBranches(0);
+        stream3.setNoOfFlatRocks(3);
+        stream3.setNoOfSharpRocks(2);
+        stream3.setNoOfLogs(0);
+        stream3.setNoOfFlint(0);
+        stream3.setNoOfStone(1);
+        stream3.setNoOfCabins(0);
+        stream3.setNoOfLeanTos(0);
+        stream3.setNoOfTowers(0);
+        stream3.setNoOfDeer(0);
+        stream3.setNoOfElk(0);
+        stream3.setNoOfRabbits(0);
+        stream3.setNoOfRaccoons(0);
+        stream3.setNoOfWolves(0);
+        stream3.setNoOfMoose(0);
+        stream3.setNoOfBear(0);
+        stream3.setSymbol("≈");
         sceneList[Constants.STREAM3] = stream3;
 
         // Grass
         Scene grass = new Scene("Grass");
         grass.setDescription("A patch of land covered in grass");
+        grass.setType("grass");
         grass.setNoOfBerries(0);
         grass.setNoOfBranches(0);
         grass.setNoOfFlatRocks(1);
@@ -205,6 +214,7 @@ public class MapControl {
         // Grass2
         Scene grass2 = new Scene("Grass 2");
         grass2.setDescription("A patch of land covered in grass");
+        grass2.setType("grass");
         grass2.setNoOfBerries(0);
         grass2.setNoOfBranches(0);
         grass2.setNoOfFlatRocks(3);
@@ -228,6 +238,7 @@ public class MapControl {
         // Grass3
         Scene grass3 = new Scene("Grass 3");
         grass3.setDescription("A patch of land covered in grass");
+        grass3.setType("grass");
         grass3.setNoOfBerries(0);
         grass3.setNoOfBranches(0);
         grass3.setNoOfFlatRocks(5);
@@ -251,6 +262,7 @@ public class MapControl {
         // Cliff
         Scene cliff = new Scene("Cliff");
         cliff.setDescription("An impassable rocky cliff");
+        cliff.setType("cliff");
         cliff.setNoOfBerries(0);
         cliff.setNoOfBranches(0);
         cliff.setNoOfFlatRocks(2);
@@ -274,6 +286,7 @@ public class MapControl {
         // Cliff 2
         Scene cliff2 = new Scene("Cliff 2");
         cliff2.setDescription("An impassable rocky cliff");
+        cliff2.setType("cliff");
         cliff2.setNoOfBerries(0);
         cliff2.setNoOfBranches(0);
         cliff2.setNoOfFlatRocks(6);
@@ -297,6 +310,7 @@ public class MapControl {
         // Cliff 3
         Scene cliff3 = new Scene("Cliff 3");
         cliff3.setDescription("An impassable rocky cliff");
+        cliff3.setType("cliff");
         cliff3.setNoOfBerries(0);
         cliff3.setNoOfBranches(0);
         cliff3.setNoOfFlatRocks(6);
@@ -319,7 +333,8 @@ public class MapControl {
 
         // Mountiain
         Scene mountain = new Scene("Mountain");
-        mountain.setDescription("A small stream");
+        mountain.setDescription("Larger than a hill");
+        mountain.setType("mountain");
         mountain.setNoOfBerries(75);
         mountain.setNoOfBranches(5);
         mountain.setNoOfFlatRocks(2);
@@ -342,7 +357,8 @@ public class MapControl {
 
         // Mountiain 2
         Scene mountain2 = new Scene("Mountain 2");
-        mountain2.setDescription("A small stream");
+        mountain2.setDescription("Larger than a hill");
+        mountain2.setType("mountain");
         mountain2.setNoOfBerries(55);
         mountain2.setNoOfBranches(9);
         mountain2.setNoOfFlatRocks(6);
@@ -365,7 +381,8 @@ public class MapControl {
 
         // Mountiain 3
         Scene mountain3 = new Scene("Mountain 3");
-        mountain3.setDescription("A small stream");
+        mountain3.setDescription("Larger than a hill");
+        mountain3.setType("mountain");
         mountain3.setNoOfBerries(15);
         mountain3.setNoOfBranches(8);
         mountain3.setNoOfFlatRocks(3);
@@ -389,6 +406,7 @@ public class MapControl {
         // Road
         Scene road = new Scene("Road");
         road.setDescription("A man-made road");
+        road.setType("road");
         road.setNoOfBerries(0);
         road.setNoOfBranches(0);
         road.setNoOfFlatRocks(0);
@@ -412,6 +430,7 @@ public class MapControl {
         // Crash Site
         Scene crashSite = new Scene("Crash Site");
         crashSite.setDescription("The crash site");
+        crashSite.setType("crash site");
         crashSite.setNoOfBerries(0);
         crashSite.setNoOfBranches(0);
         crashSite.setNoOfFlatRocks(0);
@@ -879,6 +898,8 @@ public class MapControl {
         locations[19][19].setScene(scenes[Constants.FOREST3]);
     }
 
+    
+
     static void moveToLocation(Player player, Npc[] npcList) {
 
         Npc aviatorBill = npcList[Constants.AVIATORBILL];
@@ -894,10 +915,57 @@ public class MapControl {
     }
 
     private static void moveToLocation(Npc npcList, int column, int row) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    private static void moveToLocation(Player player, int column, int row) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public static void moveToLocation(Player player, int column, int row) {
+        // get the location of the player (X coordinate)
+        player.getLocation().getColumn();
+        // get the location of the player (Y coordinate)
+        player.getLocation().getRow();
+        // get the location to which you wish to move
+        // passed in with the parameters, isn't it?
+
+        // IF the location has been visited
+        if (survivalist.Survivalist.getCurrentGame().getMap().getLocations()[column][row].isVisited()) {
+
+            // move the player to that location
+            player.getLocation().setColumn(column);
+            player.getLocation().setRow(row);
+
+            // let the player know he has traveled to the location
+            System.out.println("You have traveled to the location.");
+
+            // ELSE IF the location has not been visited
+        } else if (!survivalist.Survivalist.getCurrentGame().getMap().getLocations()[column][row].isVisited()
+                
+                // AND the destination is 1 square away
+                && player.getLocation().getColumn() - column <= 1 || column - player.getLocation().getColumn() <= 1
+                || player.getLocation().getRow() - row <= 1 || row - player.getLocation().getRow() <= 1) {
+            
+            // move the playeer to the location
+            player.getLocation().setColumn(column);
+            player.getLocation().setRow(row);
+            
+            // let the player know he has traveled to the location
+            System.out.println("You have traveled to the location.");
+            
+            // ELSE IF the location has not been visited
+        } else if (!survivalist.Survivalist.getCurrentGame().getMap().getLocations()[column][row].isVisited()
+                
+                // AND the location is more than 1 square away
+                && player.getLocation().getColumn() - column > 1 || column - player.getLocation().getColumn() > 1
+                || player.getLocation().getRow() - row > 1 || row - player.getLocation().getRow() > 1) {
+            
+            // tell the player he must get closer to move to that area.
+            System.out.println("You must explore closer to that area before you can travel there.");
+        }
+        
+        // IF
+                // the location is of the type cliff AND the player doesn't have a grappling hook in the inventory
+                // return "You need a grappling hook to climb that area"
+            // ELSE 
+                // move the player to the location
+                // return "You have moved to the new location"
     }
 }

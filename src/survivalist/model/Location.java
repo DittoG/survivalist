@@ -6,6 +6,7 @@
 package survivalist.model;
 
 import java.io.Serializable;
+import javax.swing.JLabel;
 
 public class Location implements Serializable {
 
@@ -18,6 +19,7 @@ public class Location implements Serializable {
     private Npc[] npc;
     private Animal[] animal;
     private Building[] building;
+    private JLabel mapLabel;
 
     public Location() {
     }
@@ -86,6 +88,14 @@ public class Location implements Serializable {
         this.building = building;
     }
 
+    public JLabel getMapLabel() {
+        return mapLabel;
+    }
+
+    public void setMapLabel(JLabel mapLabel) {
+        this.mapLabel = mapLabel;
+    }
+    
     @Override
     public int hashCode() {
         int hash = 5;
@@ -121,7 +131,7 @@ public class Location implements Serializable {
 
     @Override
     public String toString() {
-        return "Location{" + "row=" + row + ", column=" + column + ", visited=" + visited + ", scene=" + scene + ", npc=" + npc + ", animal=" + animal + ", building=" + building + '}';
+        return "Location{" + "row=" + row + ", column=" + column + ", visited=" + visited + "scene=" + scene + ", npc=" + npc + ", animal=" + animal + ", building=" + building + '}';
     }
 
 }

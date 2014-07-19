@@ -20,6 +20,7 @@ public class Scene implements Serializable {
     // class instance variables
     private String name;
     private String description;
+    private String type;
 
     // item instance variables
     private int noOfBranches;
@@ -211,11 +212,20 @@ public class Scene implements Serializable {
         this.symbol = symbol;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     @Override
     public int hashCode() {
         int hash = 7;
         hash = 11 * hash + Objects.hashCode(this.name);
         hash = 11 * hash + Objects.hashCode(this.description);
+        hash = 11 * hash + Objects.hashCode(this.type);
         hash = 11 * hash + this.noOfBranches;
         hash = 11 * hash + this.noOfFlatRocks;
         hash = 11 * hash + this.noOfSharpRocks;
@@ -250,6 +260,9 @@ public class Scene implements Serializable {
             return false;
         }
         if (!Objects.equals(this.description, other.description)) {
+            return false;
+        }
+        if (!Objects.equals(this.type, other.type)) {
             return false;
         }
         if (this.noOfBranches != other.noOfBranches) {

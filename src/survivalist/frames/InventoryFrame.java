@@ -47,7 +47,6 @@ public class InventoryFrame extends javax.swing.JFrame {
         jlInventoryBackgroundImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(748, 458));
         setMinimumSize(new java.awt.Dimension(748, 458));
 
         jLayeredPane1.setMaximumSize(new java.awt.Dimension(748, 458));

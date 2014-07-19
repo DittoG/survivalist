@@ -139,14 +139,14 @@ public class StartProgramFrame extends javax.swing.JFrame {
 
         Player player = ProgramControl.createPlayer(playerName);
 
-        // close this frame temporarily
+        // show the main menu frame
         MainMenuFrame mainMenuFrame = new MainMenuFrame();
         mainMenuFrame.setVisible(true);
 
-        // save the frame to be opened later
+        // dispose of this frame
         this.dispose();
 
-        // show the main menu
+        // show personalized message on the next frame
         mainMenuFrame.getJlPlayerName().setText("Welcome to the Wild, " + playerName + ".");
     }//GEN-LAST:event_jbStartActionPerformed
 
