@@ -8,6 +8,7 @@ public class Player implements Serializable {
     //class instance variables
     private String name;
     private double bestTime;
+    private Location currentLocation;
 
     public Player() {
     }
@@ -28,16 +29,20 @@ public class Player implements Serializable {
         this.bestTime = bestTime;
     }
 
-    @Override
-    public String toString() {
-        return "Player{" + "name=" + name + ", bestTime=" + bestTime + '}';
+    public Location getLocation() {
+        return currentLocation;
+    }
+
+    public void setLocation(Location location) {
+        this.currentLocation = location;
     }
 
     @Override
     public int hashCode() {
-        int hash = 5;
-        hash = 67 * hash + Objects.hashCode(this.name);
-        hash = 67 * hash + (int) (Double.doubleToLongBits(this.bestTime) ^ (Double.doubleToLongBits(this.bestTime) >>> 32));
+        int hash = 7;
+        hash = 97 * hash + Objects.hashCode(this.name);
+        hash = 97 * hash + (int) (Double.doubleToLongBits(this.bestTime) ^ (Double.doubleToLongBits(this.bestTime) >>> 32));
+        hash = 97 * hash + Objects.hashCode(this.currentLocation);
         return hash;
     }
 
@@ -56,7 +61,15 @@ public class Player implements Serializable {
         if (Double.doubleToLongBits(this.bestTime) != Double.doubleToLongBits(other.bestTime)) {
             return false;
         }
+        if (!Objects.equals(this.currentLocation, other.currentLocation)) {
+            return false;
+        }
         return true;
     }
 
+    @Override
+    public String toString() {
+        return "Player{" + "name=" + name + ", bestTime=" + bestTime + ", location=" + currentLocation + '}';
+    }
+    
 }

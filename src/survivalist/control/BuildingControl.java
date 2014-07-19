@@ -17,7 +17,7 @@ public class BuildingControl {
     public static void addBuildingToLocation(Building building, Location currentLocation) {
 
         building.setLocation(currentLocation);
-
+         
     }
 
     public double calcBuildingArea(double length, double width) {

@@ -7,6 +7,10 @@ package survivalist.frames;
 
 import javax.accessibility.AccessibleRole;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import survivalist.model.Location;
+import survivalist.model.Map;
 
 /**
  *
@@ -444,9 +448,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setMaximumSize(new java.awt.Dimension(748, 500));
         setMinimumSize(new java.awt.Dimension(748, 500));
-        setPreferredSize(new java.awt.Dimension(748, 500));
         getContentPane().setLayout(new java.awt.GridBagLayout());
 
         jlForest1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
@@ -9199,6 +9201,3233 @@ public class MapMoveFrame extends javax.swing.JFrame {
             }
         });
     }
+    
+    public static void assignLabelToLocations(Map map) {
+        // get all locations
+        Location[][] locations = map.getLocations();
+        
+        // First Row
+        locations[0][0].setMapLabel(MapMoveFrame.getJlForest48());
+    }
+
+    public JButton getJbExit() {
+        return jbExit;
+    }
+
+    public void setJbExit(JButton jbExit) {
+        this.jbExit = jbExit;
+    }
+
+    public JLabel getJlForest1() {
+        return jlForest1;
+    }
+
+    public void setJlForest1(JLabel jlForest1) {
+        this.jlForest1 = jlForest1;
+    }
+
+    public JLabel getJlForest10() {
+        return jlForest10;
+    }
+
+    public void setJlForest10(JLabel jlForest10) {
+        this.jlForest10 = jlForest10;
+    }
+
+    public JLabel getJlForest100() {
+        return jlForest100;
+    }
+
+    public void setJlForest100(JLabel jlForest100) {
+        this.jlForest100 = jlForest100;
+    }
+
+    public JLabel getJlForest101() {
+        return jlForest101;
+    }
+
+    public void setJlForest101(JLabel jlForest101) {
+        this.jlForest101 = jlForest101;
+    }
+
+    public JLabel getJlForest102() {
+        return jlForest102;
+    }
+
+    public void setJlForest102(JLabel jlForest102) {
+        this.jlForest102 = jlForest102;
+    }
+
+    public JLabel getJlForest103() {
+        return jlForest103;
+    }
+
+    public void setJlForest103(JLabel jlForest103) {
+        this.jlForest103 = jlForest103;
+    }
+
+    public JLabel getJlForest104() {
+        return jlForest104;
+    }
+
+    public void setJlForest104(JLabel jlForest104) {
+        this.jlForest104 = jlForest104;
+    }
+
+    public JLabel getJlForest105() {
+        return jlForest105;
+    }
+
+    public void setJlForest105(JLabel jlForest105) {
+        this.jlForest105 = jlForest105;
+    }
+
+    public JLabel getJlForest106() {
+        return jlForest106;
+    }
+
+    public void setJlForest106(JLabel jlForest106) {
+        this.jlForest106 = jlForest106;
+    }
+
+    public JLabel getJlForest107() {
+        return jlForest107;
+    }
+
+    public void setJlForest107(JLabel jlForest107) {
+        this.jlForest107 = jlForest107;
+    }
+
+    public JLabel getJlForest108() {
+        return jlForest108;
+    }
+
+    public void setJlForest108(JLabel jlForest108) {
+        this.jlForest108 = jlForest108;
+    }
+
+    public JLabel getJlForest109() {
+        return jlForest109;
+    }
+
+    public void setJlForest109(JLabel jlForest109) {
+        this.jlForest109 = jlForest109;
+    }
+
+    public JLabel getJlForest11() {
+        return jlForest11;
+    }
+
+    public void setJlForest11(JLabel jlForest11) {
+        this.jlForest11 = jlForest11;
+    }
+
+    public JLabel getJlForest110() {
+        return jlForest110;
+    }
+
+    public void setJlForest110(JLabel jlForest110) {
+        this.jlForest110 = jlForest110;
+    }
+
+    public JLabel getJlForest111() {
+        return jlForest111;
+    }
+
+    public void setJlForest111(JLabel jlForest111) {
+        this.jlForest111 = jlForest111;
+    }
+
+    public JLabel getJlForest112() {
+        return jlForest112;
+    }
+
+    public void setJlForest112(JLabel jlForest112) {
+        this.jlForest112 = jlForest112;
+    }
+
+    public JLabel getJlForest113() {
+        return jlForest113;
+    }
+
+    public void setJlForest113(JLabel jlForest113) {
+        this.jlForest113 = jlForest113;
+    }
+
+    public JLabel getJlForest114() {
+        return jlForest114;
+    }
+
+    public void setJlForest114(JLabel jlForest114) {
+        this.jlForest114 = jlForest114;
+    }
+
+    public JLabel getJlForest115() {
+        return jlForest115;
+    }
+
+    public void setJlForest115(JLabel jlForest115) {
+        this.jlForest115 = jlForest115;
+    }
+
+    public JLabel getJlForest116() {
+        return jlForest116;
+    }
+
+    public void setJlForest116(JLabel jlForest116) {
+        this.jlForest116 = jlForest116;
+    }
+
+    public JLabel getJlForest117() {
+        return jlForest117;
+    }
+
+    public void setJlForest117(JLabel jlForest117) {
+        this.jlForest117 = jlForest117;
+    }
+
+    public JLabel getJlForest118() {
+        return jlForest118;
+    }
+
+    public void setJlForest118(JLabel jlForest118) {
+        this.jlForest118 = jlForest118;
+    }
+
+    public JLabel getJlForest119() {
+        return jlForest119;
+    }
+
+    public void setJlForest119(JLabel jlForest119) {
+        this.jlForest119 = jlForest119;
+    }
+
+    public JLabel getJlForest12() {
+        return jlForest12;
+    }
+
+    public void setJlForest12(JLabel jlForest12) {
+        this.jlForest12 = jlForest12;
+    }
+
+    public JLabel getJlForest120() {
+        return jlForest120;
+    }
+
+    public void setJlForest120(JLabel jlForest120) {
+        this.jlForest120 = jlForest120;
+    }
+
+    public JLabel getJlForest121() {
+        return jlForest121;
+    }
+
+    public void setJlForest121(JLabel jlForest121) {
+        this.jlForest121 = jlForest121;
+    }
+
+    public JLabel getJlForest122() {
+        return jlForest122;
+    }
+
+    public void setJlForest122(JLabel jlForest122) {
+        this.jlForest122 = jlForest122;
+    }
+
+    public JLabel getJlForest123() {
+        return jlForest123;
+    }
+
+    public void setJlForest123(JLabel jlForest123) {
+        this.jlForest123 = jlForest123;
+    }
+
+    public JLabel getJlForest124() {
+        return jlForest124;
+    }
+
+    public void setJlForest124(JLabel jlForest124) {
+        this.jlForest124 = jlForest124;
+    }
+
+    public JLabel getJlForest125() {
+        return jlForest125;
+    }
+
+    public void setJlForest125(JLabel jlForest125) {
+        this.jlForest125 = jlForest125;
+    }
+
+    public JLabel getJlForest126() {
+        return jlForest126;
+    }
+
+    public void setJlForest126(JLabel jlForest126) {
+        this.jlForest126 = jlForest126;
+    }
+
+    public JLabel getJlForest127() {
+        return jlForest127;
+    }
+
+    public void setJlForest127(JLabel jlForest127) {
+        this.jlForest127 = jlForest127;
+    }
+
+    public JLabel getJlForest128() {
+        return jlForest128;
+    }
+
+    public void setJlForest128(JLabel jlForest128) {
+        this.jlForest128 = jlForest128;
+    }
+
+    public JLabel getJlForest129() {
+        return jlForest129;
+    }
+
+    public void setJlForest129(JLabel jlForest129) {
+        this.jlForest129 = jlForest129;
+    }
+
+    public JLabel getJlForest13() {
+        return jlForest13;
+    }
+
+    public void setJlForest13(JLabel jlForest13) {
+        this.jlForest13 = jlForest13;
+    }
+
+    public JLabel getJlForest130() {
+        return jlForest130;
+    }
+
+    public void setJlForest130(JLabel jlForest130) {
+        this.jlForest130 = jlForest130;
+    }
+
+    public JLabel getJlForest131() {
+        return jlForest131;
+    }
+
+    public void setJlForest131(JLabel jlForest131) {
+        this.jlForest131 = jlForest131;
+    }
+
+    public JLabel getJlForest132() {
+        return jlForest132;
+    }
+
+    public void setJlForest132(JLabel jlForest132) {
+        this.jlForest132 = jlForest132;
+    }
+
+    public JLabel getJlForest133() {
+        return jlForest133;
+    }
+
+    public void setJlForest133(JLabel jlForest133) {
+        this.jlForest133 = jlForest133;
+    }
+
+    public JLabel getJlForest134() {
+        return jlForest134;
+    }
+
+    public void setJlForest134(JLabel jlForest134) {
+        this.jlForest134 = jlForest134;
+    }
+
+    public JLabel getJlForest135() {
+        return jlForest135;
+    }
+
+    public void setJlForest135(JLabel jlForest135) {
+        this.jlForest135 = jlForest135;
+    }
+
+    public JLabel getJlForest136() {
+        return jlForest136;
+    }
+
+    public void setJlForest136(JLabel jlForest136) {
+        this.jlForest136 = jlForest136;
+    }
+
+    public JLabel getJlForest137() {
+        return jlForest137;
+    }
+
+    public void setJlForest137(JLabel jlForest137) {
+        this.jlForest137 = jlForest137;
+    }
+
+    public JLabel getJlForest138() {
+        return jlForest138;
+    }
+
+    public void setJlForest138(JLabel jlForest138) {
+        this.jlForest138 = jlForest138;
+    }
+
+    public JLabel getJlForest139() {
+        return jlForest139;
+    }
+
+    public void setJlForest139(JLabel jlForest139) {
+        this.jlForest139 = jlForest139;
+    }
+
+    public JLabel getJlForest14() {
+        return jlForest14;
+    }
+
+    public void setJlForest14(JLabel jlForest14) {
+        this.jlForest14 = jlForest14;
+    }
+
+    public JLabel getJlForest140() {
+        return jlForest140;
+    }
+
+    public void setJlForest140(JLabel jlForest140) {
+        this.jlForest140 = jlForest140;
+    }
+
+    public JLabel getJlForest141() {
+        return jlForest141;
+    }
+
+    public void setJlForest141(JLabel jlForest141) {
+        this.jlForest141 = jlForest141;
+    }
+
+    public JLabel getJlForest142() {
+        return jlForest142;
+    }
+
+    public void setJlForest142(JLabel jlForest142) {
+        this.jlForest142 = jlForest142;
+    }
+
+    public JLabel getJlForest143() {
+        return jlForest143;
+    }
+
+    public void setJlForest143(JLabel jlForest143) {
+        this.jlForest143 = jlForest143;
+    }
+
+    public JLabel getJlForest144() {
+        return jlForest144;
+    }
+
+    public void setJlForest144(JLabel jlForest144) {
+        this.jlForest144 = jlForest144;
+    }
+
+    public JLabel getJlForest145() {
+        return jlForest145;
+    }
+
+    public void setJlForest145(JLabel jlForest145) {
+        this.jlForest145 = jlForest145;
+    }
+
+    public JLabel getJlForest146() {
+        return jlForest146;
+    }
+
+    public void setJlForest146(JLabel jlForest146) {
+        this.jlForest146 = jlForest146;
+    }
+
+    public JLabel getJlForest147() {
+        return jlForest147;
+    }
+
+    public void setJlForest147(JLabel jlForest147) {
+        this.jlForest147 = jlForest147;
+    }
+
+    public JLabel getJlForest148() {
+        return jlForest148;
+    }
+
+    public void setJlForest148(JLabel jlForest148) {
+        this.jlForest148 = jlForest148;
+    }
+
+    public JLabel getJlForest149() {
+        return jlForest149;
+    }
+
+    public void setJlForest149(JLabel jlForest149) {
+        this.jlForest149 = jlForest149;
+    }
+
+    public JLabel getJlForest15() {
+        return jlForest15;
+    }
+
+    public void setJlForest15(JLabel jlForest15) {
+        this.jlForest15 = jlForest15;
+    }
+
+    public JLabel getJlForest150() {
+        return jlForest150;
+    }
+
+    public void setJlForest150(JLabel jlForest150) {
+        this.jlForest150 = jlForest150;
+    }
+
+    public JLabel getJlForest151() {
+        return jlForest151;
+    }
+
+    public void setJlForest151(JLabel jlForest151) {
+        this.jlForest151 = jlForest151;
+    }
+
+    public JLabel getJlForest152() {
+        return jlForest152;
+    }
+
+    public void setJlForest152(JLabel jlForest152) {
+        this.jlForest152 = jlForest152;
+    }
+
+    public JLabel getJlForest153() {
+        return jlForest153;
+    }
+
+    public void setJlForest153(JLabel jlForest153) {
+        this.jlForest153 = jlForest153;
+    }
+
+    public JLabel getJlForest154() {
+        return jlForest154;
+    }
+
+    public void setJlForest154(JLabel jlForest154) {
+        this.jlForest154 = jlForest154;
+    }
+
+    public JLabel getJlForest155() {
+        return jlForest155;
+    }
+
+    public void setJlForest155(JLabel jlForest155) {
+        this.jlForest155 = jlForest155;
+    }
+
+    public JLabel getJlForest156() {
+        return jlForest156;
+    }
+
+    public void setJlForest156(JLabel jlForest156) {
+        this.jlForest156 = jlForest156;
+    }
+
+    public JLabel getJlForest157() {
+        return jlForest157;
+    }
+
+    public void setJlForest157(JLabel jlForest157) {
+        this.jlForest157 = jlForest157;
+    }
+
+    public JLabel getJlForest158() {
+        return jlForest158;
+    }
+
+    public void setJlForest158(JLabel jlForest158) {
+        this.jlForest158 = jlForest158;
+    }
+
+    public JLabel getJlForest159() {
+        return jlForest159;
+    }
+
+    public void setJlForest159(JLabel jlForest159) {
+        this.jlForest159 = jlForest159;
+    }
+
+    public JLabel getJlForest16() {
+        return jlForest16;
+    }
+
+    public void setJlForest16(JLabel jlForest16) {
+        this.jlForest16 = jlForest16;
+    }
+
+    public JLabel getJlForest160() {
+        return jlForest160;
+    }
+
+    public void setJlForest160(JLabel jlForest160) {
+        this.jlForest160 = jlForest160;
+    }
+
+    public JLabel getJlForest163() {
+        return jlForest163;
+    }
+
+    public void setJlForest163(JLabel jlForest163) {
+        this.jlForest163 = jlForest163;
+    }
+
+    public JLabel getJlForest164() {
+        return jlForest164;
+    }
+
+    public void setJlForest164(JLabel jlForest164) {
+        this.jlForest164 = jlForest164;
+    }
+
+    public JLabel getJlForest165() {
+        return jlForest165;
+    }
+
+    public void setJlForest165(JLabel jlForest165) {
+        this.jlForest165 = jlForest165;
+    }
+
+    public JLabel getJlForest166() {
+        return jlForest166;
+    }
+
+    public void setJlForest166(JLabel jlForest166) {
+        this.jlForest166 = jlForest166;
+    }
+
+    public JLabel getJlForest167() {
+        return jlForest167;
+    }
+
+    public void setJlForest167(JLabel jlForest167) {
+        this.jlForest167 = jlForest167;
+    }
+
+    public JLabel getJlForest168() {
+        return jlForest168;
+    }
+
+    public void setJlForest168(JLabel jlForest168) {
+        this.jlForest168 = jlForest168;
+    }
+
+    public JLabel getJlForest169() {
+        return jlForest169;
+    }
+
+    public void setJlForest169(JLabel jlForest169) {
+        this.jlForest169 = jlForest169;
+    }
+
+    public JLabel getJlForest17() {
+        return jlForest17;
+    }
+
+    public void setJlForest17(JLabel jlForest17) {
+        this.jlForest17 = jlForest17;
+    }
+
+    public JLabel getJlForest170() {
+        return jlForest170;
+    }
+
+    public void setJlForest170(JLabel jlForest170) {
+        this.jlForest170 = jlForest170;
+    }
+
+    public JLabel getJlForest171() {
+        return jlForest171;
+    }
+
+    public void setJlForest171(JLabel jlForest171) {
+        this.jlForest171 = jlForest171;
+    }
+
+    public JLabel getJlForest172() {
+        return jlForest172;
+    }
+
+    public void setJlForest172(JLabel jlForest172) {
+        this.jlForest172 = jlForest172;
+    }
+
+    public JLabel getJlForest174() {
+        return jlForest174;
+    }
+
+    public void setJlForest174(JLabel jlForest174) {
+        this.jlForest174 = jlForest174;
+    }
+
+    public JLabel getJlForest175() {
+        return jlForest175;
+    }
+
+    public void setJlForest175(JLabel jlForest175) {
+        this.jlForest175 = jlForest175;
+    }
+
+    public JLabel getJlForest176() {
+        return jlForest176;
+    }
+
+    public void setJlForest176(JLabel jlForest176) {
+        this.jlForest176 = jlForest176;
+    }
+
+    public JLabel getJlForest177() {
+        return jlForest177;
+    }
+
+    public void setJlForest177(JLabel jlForest177) {
+        this.jlForest177 = jlForest177;
+    }
+
+    public JLabel getJlForest178() {
+        return jlForest178;
+    }
+
+    public void setJlForest178(JLabel jlForest178) {
+        this.jlForest178 = jlForest178;
+    }
+
+    public JLabel getJlForest179() {
+        return jlForest179;
+    }
+
+    public void setJlForest179(JLabel jlForest179) {
+        this.jlForest179 = jlForest179;
+    }
+
+    public JLabel getJlForest18() {
+        return jlForest18;
+    }
+
+    public void setJlForest18(JLabel jlForest18) {
+        this.jlForest18 = jlForest18;
+    }
+
+    public JLabel getJlForest180() {
+        return jlForest180;
+    }
+
+    public void setJlForest180(JLabel jlForest180) {
+        this.jlForest180 = jlForest180;
+    }
+
+    public JLabel getJlForest181() {
+        return jlForest181;
+    }
+
+    public void setJlForest181(JLabel jlForest181) {
+        this.jlForest181 = jlForest181;
+    }
+
+    public JLabel getJlForest182() {
+        return jlForest182;
+    }
+
+    public void setJlForest182(JLabel jlForest182) {
+        this.jlForest182 = jlForest182;
+    }
+
+    public JLabel getJlForest183() {
+        return jlForest183;
+    }
+
+    public void setJlForest183(JLabel jlForest183) {
+        this.jlForest183 = jlForest183;
+    }
+
+    public JLabel getJlForest19() {
+        return jlForest19;
+    }
+
+    public void setJlForest19(JLabel jlForest19) {
+        this.jlForest19 = jlForest19;
+    }
+
+    public JLabel getJlForest2() {
+        return jlForest2;
+    }
+
+    public void setJlForest2(JLabel jlForest2) {
+        this.jlForest2 = jlForest2;
+    }
+
+    public JLabel getJlForest20() {
+        return jlForest20;
+    }
+
+    public void setJlForest20(JLabel jlForest20) {
+        this.jlForest20 = jlForest20;
+    }
+
+    public JLabel getJlForest21() {
+        return jlForest21;
+    }
+
+    public void setJlForest21(JLabel jlForest21) {
+        this.jlForest21 = jlForest21;
+    }
+
+    public JLabel getJlForest22() {
+        return jlForest22;
+    }
+
+    public void setJlForest22(JLabel jlForest22) {
+        this.jlForest22 = jlForest22;
+    }
+
+    public JLabel getJlForest23() {
+        return jlForest23;
+    }
+
+    public void setJlForest23(JLabel jlForest23) {
+        this.jlForest23 = jlForest23;
+    }
+
+    public JLabel getJlForest24() {
+        return jlForest24;
+    }
+
+    public void setJlForest24(JLabel jlForest24) {
+        this.jlForest24 = jlForest24;
+    }
+
+    public JLabel getJlForest25() {
+        return jlForest25;
+    }
+
+    public void setJlForest25(JLabel jlForest25) {
+        this.jlForest25 = jlForest25;
+    }
+
+    public JLabel getJlForest26() {
+        return jlForest26;
+    }
+
+    public void setJlForest26(JLabel jlForest26) {
+        this.jlForest26 = jlForest26;
+    }
+
+    public JLabel getJlForest27() {
+        return jlForest27;
+    }
+
+    public void setJlForest27(JLabel jlForest27) {
+        this.jlForest27 = jlForest27;
+    }
+
+    public JLabel getJlForest28() {
+        return jlForest28;
+    }
+
+    public void setJlForest28(JLabel jlForest28) {
+        this.jlForest28 = jlForest28;
+    }
+
+    public JLabel getJlForest29() {
+        return jlForest29;
+    }
+
+    public void setJlForest29(JLabel jlForest29) {
+        this.jlForest29 = jlForest29;
+    }
+
+    public JLabel getJlForest3() {
+        return jlForest3;
+    }
+
+    public void setJlForest3(JLabel jlForest3) {
+        this.jlForest3 = jlForest3;
+    }
+
+    public JLabel getJlForest30() {
+        return jlForest30;
+    }
+
+    public void setJlForest30(JLabel jlForest30) {
+        this.jlForest30 = jlForest30;
+    }
+
+    public JLabel getJlForest31() {
+        return jlForest31;
+    }
+
+    public void setJlForest31(JLabel jlForest31) {
+        this.jlForest31 = jlForest31;
+    }
+
+    public JLabel getJlForest32() {
+        return jlForest32;
+    }
+
+    public void setJlForest32(JLabel jlForest32) {
+        this.jlForest32 = jlForest32;
+    }
+
+    public JLabel getJlForest33() {
+        return jlForest33;
+    }
+
+    public void setJlForest33(JLabel jlForest33) {
+        this.jlForest33 = jlForest33;
+    }
+
+    public JLabel getJlForest34() {
+        return jlForest34;
+    }
+
+    public void setJlForest34(JLabel jlForest34) {
+        this.jlForest34 = jlForest34;
+    }
+
+    public JLabel getJlForest35() {
+        return jlForest35;
+    }
+
+    public void setJlForest35(JLabel jlForest35) {
+        this.jlForest35 = jlForest35;
+    }
+
+    public JLabel getJlForest36() {
+        return jlForest36;
+    }
+
+    public void setJlForest36(JLabel jlForest36) {
+        this.jlForest36 = jlForest36;
+    }
+
+    public JLabel getJlForest37() {
+        return jlForest37;
+    }
+
+    public void setJlForest37(JLabel jlForest37) {
+        this.jlForest37 = jlForest37;
+    }
+
+    public JLabel getJlForest38() {
+        return jlForest38;
+    }
+
+    public void setJlForest38(JLabel jlForest38) {
+        this.jlForest38 = jlForest38;
+    }
+
+    public JLabel getJlForest39() {
+        return jlForest39;
+    }
+
+    public void setJlForest39(JLabel jlForest39) {
+        this.jlForest39 = jlForest39;
+    }
+
+    public JLabel getJlForest4() {
+        return jlForest4;
+    }
+
+    public void setJlForest4(JLabel jlForest4) {
+        this.jlForest4 = jlForest4;
+    }
+
+    public JLabel getJlForest40() {
+        return jlForest40;
+    }
+
+    public void setJlForest40(JLabel jlForest40) {
+        this.jlForest40 = jlForest40;
+    }
+
+    public JLabel getJlForest41() {
+        return jlForest41;
+    }
+
+    public void setJlForest41(JLabel jlForest41) {
+        this.jlForest41 = jlForest41;
+    }
+
+    public JLabel getJlForest42() {
+        return jlForest42;
+    }
+
+    public void setJlForest42(JLabel jlForest42) {
+        this.jlForest42 = jlForest42;
+    }
+
+    public JLabel getJlForest43() {
+        return jlForest43;
+    }
+
+    public void setJlForest43(JLabel jlForest43) {
+        this.jlForest43 = jlForest43;
+    }
+
+    public JLabel getJlForest44() {
+        return jlForest44;
+    }
+
+    public void setJlForest44(JLabel jlForest44) {
+        this.jlForest44 = jlForest44;
+    }
+
+    public JLabel getJlForest45() {
+        return jlForest45;
+    }
+
+    public void setJlForest45(JLabel jlForest45) {
+        this.jlForest45 = jlForest45;
+    }
+
+    public JLabel getJlForest46() {
+        return jlForest46;
+    }
+
+    public void setJlForest46(JLabel jlForest46) {
+        this.jlForest46 = jlForest46;
+    }
+
+    public JLabel getJlForest47() {
+        return jlForest47;
+    }
+
+    public void setJlForest47(JLabel jlForest47) {
+        this.jlForest47 = jlForest47;
+    }
+
+    public JLabel getJlForest48() {
+        return jlForest48;
+    }
+
+    public void setJlForest48(JLabel jlForest48) {
+        this.jlForest48 = jlForest48;
+    }
+
+    public JLabel getJlForest49() {
+        return jlForest49;
+    }
+
+    public void setJlForest49(JLabel jlForest49) {
+        this.jlForest49 = jlForest49;
+    }
+
+    public JLabel getJlForest5() {
+        return jlForest5;
+    }
+
+    public void setJlForest5(JLabel jlForest5) {
+        this.jlForest5 = jlForest5;
+    }
+
+    public JLabel getJlForest50() {
+        return jlForest50;
+    }
+
+    public void setJlForest50(JLabel jlForest50) {
+        this.jlForest50 = jlForest50;
+    }
+
+    public JLabel getJlForest51() {
+        return jlForest51;
+    }
+
+    public void setJlForest51(JLabel jlForest51) {
+        this.jlForest51 = jlForest51;
+    }
+
+    public JLabel getJlForest52() {
+        return jlForest52;
+    }
+
+    public void setJlForest52(JLabel jlForest52) {
+        this.jlForest52 = jlForest52;
+    }
+
+    public JLabel getJlForest53() {
+        return jlForest53;
+    }
+
+    public void setJlForest53(JLabel jlForest53) {
+        this.jlForest53 = jlForest53;
+    }
+
+    public JLabel getJlForest54() {
+        return jlForest54;
+    }
+
+    public void setJlForest54(JLabel jlForest54) {
+        this.jlForest54 = jlForest54;
+    }
+
+    public JLabel getJlForest55() {
+        return jlForest55;
+    }
+
+    public void setJlForest55(JLabel jlForest55) {
+        this.jlForest55 = jlForest55;
+    }
+
+    public JLabel getJlForest56() {
+        return jlForest56;
+    }
+
+    public void setJlForest56(JLabel jlForest56) {
+        this.jlForest56 = jlForest56;
+    }
+
+    public JLabel getJlForest57() {
+        return jlForest57;
+    }
+
+    public void setJlForest57(JLabel jlForest57) {
+        this.jlForest57 = jlForest57;
+    }
+
+    public JLabel getJlForest58() {
+        return jlForest58;
+    }
+
+    public void setJlForest58(JLabel jlForest58) {
+        this.jlForest58 = jlForest58;
+    }
+
+    public JLabel getJlForest59() {
+        return jlForest59;
+    }
+
+    public void setJlForest59(JLabel jlForest59) {
+        this.jlForest59 = jlForest59;
+    }
+
+    public JLabel getJlForest6() {
+        return jlForest6;
+    }
+
+    public void setJlForest6(JLabel jlForest6) {
+        this.jlForest6 = jlForest6;
+    }
+
+    public JLabel getJlForest60() {
+        return jlForest60;
+    }
+
+    public void setJlForest60(JLabel jlForest60) {
+        this.jlForest60 = jlForest60;
+    }
+
+    public JLabel getJlForest61() {
+        return jlForest61;
+    }
+
+    public void setJlForest61(JLabel jlForest61) {
+        this.jlForest61 = jlForest61;
+    }
+
+    public JLabel getJlForest62() {
+        return jlForest62;
+    }
+
+    public void setJlForest62(JLabel jlForest62) {
+        this.jlForest62 = jlForest62;
+    }
+
+    public JLabel getJlForest63() {
+        return jlForest63;
+    }
+
+    public void setJlForest63(JLabel jlForest63) {
+        this.jlForest63 = jlForest63;
+    }
+
+    public JLabel getJlForest65() {
+        return jlForest65;
+    }
+
+    public void setJlForest65(JLabel jlForest65) {
+        this.jlForest65 = jlForest65;
+    }
+
+    public JLabel getJlForest66() {
+        return jlForest66;
+    }
+
+    public void setJlForest66(JLabel jlForest66) {
+        this.jlForest66 = jlForest66;
+    }
+
+    public JLabel getJlForest67() {
+        return jlForest67;
+    }
+
+    public void setJlForest67(JLabel jlForest67) {
+        this.jlForest67 = jlForest67;
+    }
+
+    public JLabel getJlForest68() {
+        return jlForest68;
+    }
+
+    public void setJlForest68(JLabel jlForest68) {
+        this.jlForest68 = jlForest68;
+    }
+
+    public JLabel getJlForest69() {
+        return jlForest69;
+    }
+
+    public void setJlForest69(JLabel jlForest69) {
+        this.jlForest69 = jlForest69;
+    }
+
+    public JLabel getJlForest7() {
+        return jlForest7;
+    }
+
+    public void setJlForest7(JLabel jlForest7) {
+        this.jlForest7 = jlForest7;
+    }
+
+    public JLabel getJlForest70() {
+        return jlForest70;
+    }
+
+    public void setJlForest70(JLabel jlForest70) {
+        this.jlForest70 = jlForest70;
+    }
+
+    public JLabel getJlForest71() {
+        return jlForest71;
+    }
+
+    public void setJlForest71(JLabel jlForest71) {
+        this.jlForest71 = jlForest71;
+    }
+
+    public JLabel getJlForest72() {
+        return jlForest72;
+    }
+
+    public void setJlForest72(JLabel jlForest72) {
+        this.jlForest72 = jlForest72;
+    }
+
+    public JLabel getJlForest73() {
+        return jlForest73;
+    }
+
+    public void setJlForest73(JLabel jlForest73) {
+        this.jlForest73 = jlForest73;
+    }
+
+    public JLabel getJlForest74() {
+        return jlForest74;
+    }
+
+    public void setJlForest74(JLabel jlForest74) {
+        this.jlForest74 = jlForest74;
+    }
+
+    public JLabel getJlForest75() {
+        return jlForest75;
+    }
+
+    public void setJlForest75(JLabel jlForest75) {
+        this.jlForest75 = jlForest75;
+    }
+
+    public JLabel getJlForest76() {
+        return jlForest76;
+    }
+
+    public void setJlForest76(JLabel jlForest76) {
+        this.jlForest76 = jlForest76;
+    }
+
+    public JLabel getJlForest77() {
+        return jlForest77;
+    }
+
+    public void setJlForest77(JLabel jlForest77) {
+        this.jlForest77 = jlForest77;
+    }
+
+    public JLabel getJlForest78() {
+        return jlForest78;
+    }
+
+    public void setJlForest78(JLabel jlForest78) {
+        this.jlForest78 = jlForest78;
+    }
+
+    public JLabel getJlForest79() {
+        return jlForest79;
+    }
+
+    public void setJlForest79(JLabel jlForest79) {
+        this.jlForest79 = jlForest79;
+    }
+
+    public JLabel getJlForest8() {
+        return jlForest8;
+    }
+
+    public void setJlForest8(JLabel jlForest8) {
+        this.jlForest8 = jlForest8;
+    }
+
+    public JLabel getJlForest81() {
+        return jlForest81;
+    }
+
+    public void setJlForest81(JLabel jlForest81) {
+        this.jlForest81 = jlForest81;
+    }
+
+    public JLabel getJlForest82() {
+        return jlForest82;
+    }
+
+    public void setJlForest82(JLabel jlForest82) {
+        this.jlForest82 = jlForest82;
+    }
+
+    public JLabel getJlForest83() {
+        return jlForest83;
+    }
+
+    public void setJlForest83(JLabel jlForest83) {
+        this.jlForest83 = jlForest83;
+    }
+
+    public JLabel getJlForest84() {
+        return jlForest84;
+    }
+
+    public void setJlForest84(JLabel jlForest84) {
+        this.jlForest84 = jlForest84;
+    }
+
+    public JLabel getJlForest85() {
+        return jlForest85;
+    }
+
+    public void setJlForest85(JLabel jlForest85) {
+        this.jlForest85 = jlForest85;
+    }
+
+    public JLabel getJlForest86() {
+        return jlForest86;
+    }
+
+    public void setJlForest86(JLabel jlForest86) {
+        this.jlForest86 = jlForest86;
+    }
+
+    public JLabel getJlForest87() {
+        return jlForest87;
+    }
+
+    public void setJlForest87(JLabel jlForest87) {
+        this.jlForest87 = jlForest87;
+    }
+
+    public JLabel getJlForest88() {
+        return jlForest88;
+    }
+
+    public void setJlForest88(JLabel jlForest88) {
+        this.jlForest88 = jlForest88;
+    }
+
+    public JLabel getJlForest89() {
+        return jlForest89;
+    }
+
+    public void setJlForest89(JLabel jlForest89) {
+        this.jlForest89 = jlForest89;
+    }
+
+    public JLabel getJlForest9() {
+        return jlForest9;
+    }
+
+    public void setJlForest9(JLabel jlForest9) {
+        this.jlForest9 = jlForest9;
+    }
+
+    public JLabel getJlForest90() {
+        return jlForest90;
+    }
+
+    public void setJlForest90(JLabel jlForest90) {
+        this.jlForest90 = jlForest90;
+    }
+
+    public JLabel getJlForest91() {
+        return jlForest91;
+    }
+
+    public void setJlForest91(JLabel jlForest91) {
+        this.jlForest91 = jlForest91;
+    }
+
+    public JLabel getJlForest92() {
+        return jlForest92;
+    }
+
+    public void setJlForest92(JLabel jlForest92) {
+        this.jlForest92 = jlForest92;
+    }
+
+    public JLabel getJlForest93() {
+        return jlForest93;
+    }
+
+    public void setJlForest93(JLabel jlForest93) {
+        this.jlForest93 = jlForest93;
+    }
+
+    public JLabel getJlForest94() {
+        return jlForest94;
+    }
+
+    public void setJlForest94(JLabel jlForest94) {
+        this.jlForest94 = jlForest94;
+    }
+
+    public JLabel getJlForest95() {
+        return jlForest95;
+    }
+
+    public void setJlForest95(JLabel jlForest95) {
+        this.jlForest95 = jlForest95;
+    }
+
+    public JLabel getJlForest96() {
+        return jlForest96;
+    }
+
+    public void setJlForest96(JLabel jlForest96) {
+        this.jlForest96 = jlForest96;
+    }
+
+    public JLabel getJlForest97() {
+        return jlForest97;
+    }
+
+    public void setJlForest97(JLabel jlForest97) {
+        this.jlForest97 = jlForest97;
+    }
+
+    public JLabel getJlForest98() {
+        return jlForest98;
+    }
+
+    public void setJlForest98(JLabel jlForest98) {
+        this.jlForest98 = jlForest98;
+    }
+
+    public JLabel getJlForest99() {
+        return jlForest99;
+    }
+
+    public void setJlForest99(JLabel jlForest99) {
+        this.jlForest99 = jlForest99;
+    }
+
+    public JLabel getJlGrass() {
+        return jlGrass;
+    }
+
+    public void setJlGrass(JLabel jlGrass) {
+        this.jlGrass = jlGrass;
+    }
+
+    public JLabel getJlGrass1() {
+        return jlGrass1;
+    }
+
+    public void setJlGrass1(JLabel jlGrass1) {
+        this.jlGrass1 = jlGrass1;
+    }
+
+    public JLabel getJlGrass10() {
+        return jlGrass10;
+    }
+
+    public void setJlGrass10(JLabel jlGrass10) {
+        this.jlGrass10 = jlGrass10;
+    }
+
+    public JLabel getJlGrass11() {
+        return jlGrass11;
+    }
+
+    public void setJlGrass11(JLabel jlGrass11) {
+        this.jlGrass11 = jlGrass11;
+    }
+
+    public JLabel getJlGrass12() {
+        return jlGrass12;
+    }
+
+    public void setJlGrass12(JLabel jlGrass12) {
+        this.jlGrass12 = jlGrass12;
+    }
+
+    public JLabel getJlGrass13() {
+        return jlGrass13;
+    }
+
+    public void setJlGrass13(JLabel jlGrass13) {
+        this.jlGrass13 = jlGrass13;
+    }
+
+    public JLabel getJlGrass14() {
+        return jlGrass14;
+    }
+
+    public void setJlGrass14(JLabel jlGrass14) {
+        this.jlGrass14 = jlGrass14;
+    }
+
+    public JLabel getJlGrass15() {
+        return jlGrass15;
+    }
+
+    public void setJlGrass15(JLabel jlGrass15) {
+        this.jlGrass15 = jlGrass15;
+    }
+
+    public JLabel getJlGrass16() {
+        return jlGrass16;
+    }
+
+    public void setJlGrass16(JLabel jlGrass16) {
+        this.jlGrass16 = jlGrass16;
+    }
+
+    public JLabel getJlGrass17() {
+        return jlGrass17;
+    }
+
+    public void setJlGrass17(JLabel jlGrass17) {
+        this.jlGrass17 = jlGrass17;
+    }
+
+    public JLabel getJlGrass18() {
+        return jlGrass18;
+    }
+
+    public void setJlGrass18(JLabel jlGrass18) {
+        this.jlGrass18 = jlGrass18;
+    }
+
+    public JLabel getJlGrass19() {
+        return jlGrass19;
+    }
+
+    public void setJlGrass19(JLabel jlGrass19) {
+        this.jlGrass19 = jlGrass19;
+    }
+
+    public JLabel getJlGrass2() {
+        return jlGrass2;
+    }
+
+    public void setJlGrass2(JLabel jlGrass2) {
+        this.jlGrass2 = jlGrass2;
+    }
+
+    public JLabel getJlGrass20() {
+        return jlGrass20;
+    }
+
+    public void setJlGrass20(JLabel jlGrass20) {
+        this.jlGrass20 = jlGrass20;
+    }
+
+    public JLabel getJlGrass21() {
+        return jlGrass21;
+    }
+
+    public void setJlGrass21(JLabel jlGrass21) {
+        this.jlGrass21 = jlGrass21;
+    }
+
+    public JLabel getJlGrass22() {
+        return jlGrass22;
+    }
+
+    public void setJlGrass22(JLabel jlGrass22) {
+        this.jlGrass22 = jlGrass22;
+    }
+
+    public JLabel getJlGrass23() {
+        return jlGrass23;
+    }
+
+    public void setJlGrass23(JLabel jlGrass23) {
+        this.jlGrass23 = jlGrass23;
+    }
+
+    public JLabel getJlGrass24() {
+        return jlGrass24;
+    }
+
+    public void setJlGrass24(JLabel jlGrass24) {
+        this.jlGrass24 = jlGrass24;
+    }
+
+    public JLabel getJlGrass25() {
+        return jlGrass25;
+    }
+
+    public void setJlGrass25(JLabel jlGrass25) {
+        this.jlGrass25 = jlGrass25;
+    }
+
+    public JLabel getJlGrass26() {
+        return jlGrass26;
+    }
+
+    public void setJlGrass26(JLabel jlGrass26) {
+        this.jlGrass26 = jlGrass26;
+    }
+
+    public JLabel getJlGrass27() {
+        return jlGrass27;
+    }
+
+    public void setJlGrass27(JLabel jlGrass27) {
+        this.jlGrass27 = jlGrass27;
+    }
+
+    public JLabel getJlGrass28() {
+        return jlGrass28;
+    }
+
+    public void setJlGrass28(JLabel jlGrass28) {
+        this.jlGrass28 = jlGrass28;
+    }
+
+    public JLabel getJlGrass29() {
+        return jlGrass29;
+    }
+
+    public void setJlGrass29(JLabel jlGrass29) {
+        this.jlGrass29 = jlGrass29;
+    }
+
+    public JLabel getJlGrass3() {
+        return jlGrass3;
+    }
+
+    public void setJlGrass3(JLabel jlGrass3) {
+        this.jlGrass3 = jlGrass3;
+    }
+
+    public JLabel getJlGrass30() {
+        return jlGrass30;
+    }
+
+    public void setJlGrass30(JLabel jlGrass30) {
+        this.jlGrass30 = jlGrass30;
+    }
+
+    public JLabel getJlGrass31() {
+        return jlGrass31;
+    }
+
+    public void setJlGrass31(JLabel jlGrass31) {
+        this.jlGrass31 = jlGrass31;
+    }
+
+    public JLabel getJlGrass32() {
+        return jlGrass32;
+    }
+
+    public void setJlGrass32(JLabel jlGrass32) {
+        this.jlGrass32 = jlGrass32;
+    }
+
+    public JLabel getJlGrass33() {
+        return jlGrass33;
+    }
+
+    public void setJlGrass33(JLabel jlGrass33) {
+        this.jlGrass33 = jlGrass33;
+    }
+
+    public JLabel getJlGrass34() {
+        return jlGrass34;
+    }
+
+    public void setJlGrass34(JLabel jlGrass34) {
+        this.jlGrass34 = jlGrass34;
+    }
+
+    public JLabel getJlGrass35() {
+        return jlGrass35;
+    }
+
+    public void setJlGrass35(JLabel jlGrass35) {
+        this.jlGrass35 = jlGrass35;
+    }
+
+    public JLabel getJlGrass36() {
+        return jlGrass36;
+    }
+
+    public void setJlGrass36(JLabel jlGrass36) {
+        this.jlGrass36 = jlGrass36;
+    }
+
+    public JLabel getJlGrass37() {
+        return jlGrass37;
+    }
+
+    public void setJlGrass37(JLabel jlGrass37) {
+        this.jlGrass37 = jlGrass37;
+    }
+
+    public JLabel getJlGrass38() {
+        return jlGrass38;
+    }
+
+    public void setJlGrass38(JLabel jlGrass38) {
+        this.jlGrass38 = jlGrass38;
+    }
+
+    public JLabel getJlGrass39() {
+        return jlGrass39;
+    }
+
+    public void setJlGrass39(JLabel jlGrass39) {
+        this.jlGrass39 = jlGrass39;
+    }
+
+    public JLabel getJlGrass4() {
+        return jlGrass4;
+    }
+
+    public void setJlGrass4(JLabel jlGrass4) {
+        this.jlGrass4 = jlGrass4;
+    }
+
+    public JLabel getJlGrass40() {
+        return jlGrass40;
+    }
+
+    public void setJlGrass40(JLabel jlGrass40) {
+        this.jlGrass40 = jlGrass40;
+    }
+
+    public JLabel getJlGrass41() {
+        return jlGrass41;
+    }
+
+    public void setJlGrass41(JLabel jlGrass41) {
+        this.jlGrass41 = jlGrass41;
+    }
+
+    public JLabel getJlGrass42() {
+        return jlGrass42;
+    }
+
+    public void setJlGrass42(JLabel jlGrass42) {
+        this.jlGrass42 = jlGrass42;
+    }
+
+    public JLabel getJlGrass43() {
+        return jlGrass43;
+    }
+
+    public void setJlGrass43(JLabel jlGrass43) {
+        this.jlGrass43 = jlGrass43;
+    }
+
+    public JLabel getJlGrass44() {
+        return jlGrass44;
+    }
+
+    public void setJlGrass44(JLabel jlGrass44) {
+        this.jlGrass44 = jlGrass44;
+    }
+
+    public JLabel getJlGrass45() {
+        return jlGrass45;
+    }
+
+    public void setJlGrass45(JLabel jlGrass45) {
+        this.jlGrass45 = jlGrass45;
+    }
+
+    public JLabel getJlGrass46() {
+        return jlGrass46;
+    }
+
+    public void setJlGrass46(JLabel jlGrass46) {
+        this.jlGrass46 = jlGrass46;
+    }
+
+    public JLabel getJlGrass47() {
+        return jlGrass47;
+    }
+
+    public void setJlGrass47(JLabel jlGrass47) {
+        this.jlGrass47 = jlGrass47;
+    }
+
+    public JLabel getJlGrass48() {
+        return jlGrass48;
+    }
+
+    public void setJlGrass48(JLabel jlGrass48) {
+        this.jlGrass48 = jlGrass48;
+    }
+
+    public JLabel getJlGrass49() {
+        return jlGrass49;
+    }
+
+    public void setJlGrass49(JLabel jlGrass49) {
+        this.jlGrass49 = jlGrass49;
+    }
+
+    public JLabel getJlGrass5() {
+        return jlGrass5;
+    }
+
+    public void setJlGrass5(JLabel jlGrass5) {
+        this.jlGrass5 = jlGrass5;
+    }
+
+    public JLabel getJlGrass50() {
+        return jlGrass50;
+    }
+
+    public void setJlGrass50(JLabel jlGrass50) {
+        this.jlGrass50 = jlGrass50;
+    }
+
+    public JLabel getJlGrass51() {
+        return jlGrass51;
+    }
+
+    public void setJlGrass51(JLabel jlGrass51) {
+        this.jlGrass51 = jlGrass51;
+    }
+
+    public JLabel getJlGrass52() {
+        return jlGrass52;
+    }
+
+    public void setJlGrass52(JLabel jlGrass52) {
+        this.jlGrass52 = jlGrass52;
+    }
+
+    public JLabel getJlGrass53() {
+        return jlGrass53;
+    }
+
+    public void setJlGrass53(JLabel jlGrass53) {
+        this.jlGrass53 = jlGrass53;
+    }
+
+    public JLabel getJlGrass54() {
+        return jlGrass54;
+    }
+
+    public void setJlGrass54(JLabel jlGrass54) {
+        this.jlGrass54 = jlGrass54;
+    }
+
+    public JLabel getJlGrass55() {
+        return jlGrass55;
+    }
+
+    public void setJlGrass55(JLabel jlGrass55) {
+        this.jlGrass55 = jlGrass55;
+    }
+
+    public JLabel getJlGrass56() {
+        return jlGrass56;
+    }
+
+    public void setJlGrass56(JLabel jlGrass56) {
+        this.jlGrass56 = jlGrass56;
+    }
+
+    public JLabel getJlGrass57() {
+        return jlGrass57;
+    }
+
+    public void setJlGrass57(JLabel jlGrass57) {
+        this.jlGrass57 = jlGrass57;
+    }
+
+    public JLabel getJlGrass6() {
+        return jlGrass6;
+    }
+
+    public void setJlGrass6(JLabel jlGrass6) {
+        this.jlGrass6 = jlGrass6;
+    }
+
+    public JLabel getJlGrass7() {
+        return jlGrass7;
+    }
+
+    public void setJlGrass7(JLabel jlGrass7) {
+        this.jlGrass7 = jlGrass7;
+    }
+
+    public JLabel getJlGrass8() {
+        return jlGrass8;
+    }
+
+    public void setJlGrass8(JLabel jlGrass8) {
+        this.jlGrass8 = jlGrass8;
+    }
+
+    public JLabel getJlGrass9() {
+        return jlGrass9;
+    }
+
+    public void setJlGrass9(JLabel jlGrass9) {
+        this.jlGrass9 = jlGrass9;
+    }
+
+    public JLabel getJlMapBanner() {
+        return jlMapBanner;
+    }
+
+    public void setJlMapBanner(JLabel jlMapBanner) {
+        this.jlMapBanner = jlMapBanner;
+    }
+
+    public JLabel getJlMountain() {
+        return jlMountain;
+    }
+
+    public void setJlMountain(JLabel jlMountain) {
+        this.jlMountain = jlMountain;
+    }
+
+    public JLabel getJlMountain1() {
+        return jlMountain1;
+    }
+
+    public void setJlMountain1(JLabel jlMountain1) {
+        this.jlMountain1 = jlMountain1;
+    }
+
+    public JLabel getJlMountain10() {
+        return jlMountain10;
+    }
+
+    public void setJlMountain10(JLabel jlMountain10) {
+        this.jlMountain10 = jlMountain10;
+    }
+
+    public JLabel getJlMountain100() {
+        return jlMountain100;
+    }
+
+    public void setJlMountain100(JLabel jlMountain100) {
+        this.jlMountain100 = jlMountain100;
+    }
+
+    public JLabel getJlMountain101() {
+        return jlMountain101;
+    }
+
+    public void setJlMountain101(JLabel jlMountain101) {
+        this.jlMountain101 = jlMountain101;
+    }
+
+    public JLabel getJlMountain102() {
+        return jlMountain102;
+    }
+
+    public void setJlMountain102(JLabel jlMountain102) {
+        this.jlMountain102 = jlMountain102;
+    }
+
+    public JLabel getJlMountain103() {
+        return jlMountain103;
+    }
+
+    public void setJlMountain103(JLabel jlMountain103) {
+        this.jlMountain103 = jlMountain103;
+    }
+
+    public JLabel getJlMountain104() {
+        return jlMountain104;
+    }
+
+    public void setJlMountain104(JLabel jlMountain104) {
+        this.jlMountain104 = jlMountain104;
+    }
+
+    public JLabel getJlMountain105() {
+        return jlMountain105;
+    }
+
+    public void setJlMountain105(JLabel jlMountain105) {
+        this.jlMountain105 = jlMountain105;
+    }
+
+    public JLabel getJlMountain106() {
+        return jlMountain106;
+    }
+
+    public void setJlMountain106(JLabel jlMountain106) {
+        this.jlMountain106 = jlMountain106;
+    }
+
+    public JLabel getJlMountain107() {
+        return jlMountain107;
+    }
+
+    public void setJlMountain107(JLabel jlMountain107) {
+        this.jlMountain107 = jlMountain107;
+    }
+
+    public JLabel getJlMountain108() {
+        return jlMountain108;
+    }
+
+    public void setJlMountain108(JLabel jlMountain108) {
+        this.jlMountain108 = jlMountain108;
+    }
+
+    public JLabel getJlMountain109() {
+        return jlMountain109;
+    }
+
+    public void setJlMountain109(JLabel jlMountain109) {
+        this.jlMountain109 = jlMountain109;
+    }
+
+    public JLabel getJlMountain11() {
+        return jlMountain11;
+    }
+
+    public void setJlMountain11(JLabel jlMountain11) {
+        this.jlMountain11 = jlMountain11;
+    }
+
+    public JLabel getJlMountain110() {
+        return jlMountain110;
+    }
+
+    public void setJlMountain110(JLabel jlMountain110) {
+        this.jlMountain110 = jlMountain110;
+    }
+
+    public JLabel getJlMountain111() {
+        return jlMountain111;
+    }
+
+    public void setJlMountain111(JLabel jlMountain111) {
+        this.jlMountain111 = jlMountain111;
+    }
+
+    public JLabel getJlMountain112() {
+        return jlMountain112;
+    }
+
+    public void setJlMountain112(JLabel jlMountain112) {
+        this.jlMountain112 = jlMountain112;
+    }
+
+    public JLabel getJlMountain113() {
+        return jlMountain113;
+    }
+
+    public void setJlMountain113(JLabel jlMountain113) {
+        this.jlMountain113 = jlMountain113;
+    }
+
+    public JLabel getJlMountain12() {
+        return jlMountain12;
+    }
+
+    public void setJlMountain12(JLabel jlMountain12) {
+        this.jlMountain12 = jlMountain12;
+    }
+
+    public JLabel getJlMountain13() {
+        return jlMountain13;
+    }
+
+    public void setJlMountain13(JLabel jlMountain13) {
+        this.jlMountain13 = jlMountain13;
+    }
+
+    public JLabel getJlMountain14() {
+        return jlMountain14;
+    }
+
+    public void setJlMountain14(JLabel jlMountain14) {
+        this.jlMountain14 = jlMountain14;
+    }
+
+    public JLabel getJlMountain15() {
+        return jlMountain15;
+    }
+
+    public void setJlMountain15(JLabel jlMountain15) {
+        this.jlMountain15 = jlMountain15;
+    }
+
+    public JLabel getJlMountain16() {
+        return jlMountain16;
+    }
+
+    public void setJlMountain16(JLabel jlMountain16) {
+        this.jlMountain16 = jlMountain16;
+    }
+
+    public JLabel getJlMountain17() {
+        return jlMountain17;
+    }
+
+    public void setJlMountain17(JLabel jlMountain17) {
+        this.jlMountain17 = jlMountain17;
+    }
+
+    public JLabel getJlMountain18() {
+        return jlMountain18;
+    }
+
+    public void setJlMountain18(JLabel jlMountain18) {
+        this.jlMountain18 = jlMountain18;
+    }
+
+    public JLabel getJlMountain19() {
+        return jlMountain19;
+    }
+
+    public void setJlMountain19(JLabel jlMountain19) {
+        this.jlMountain19 = jlMountain19;
+    }
+
+    public JLabel getJlMountain2() {
+        return jlMountain2;
+    }
+
+    public void setJlMountain2(JLabel jlMountain2) {
+        this.jlMountain2 = jlMountain2;
+    }
+
+    public JLabel getJlMountain20() {
+        return jlMountain20;
+    }
+
+    public void setJlMountain20(JLabel jlMountain20) {
+        this.jlMountain20 = jlMountain20;
+    }
+
+    public JLabel getJlMountain21() {
+        return jlMountain21;
+    }
+
+    public void setJlMountain21(JLabel jlMountain21) {
+        this.jlMountain21 = jlMountain21;
+    }
+
+    public JLabel getJlMountain22() {
+        return jlMountain22;
+    }
+
+    public void setJlMountain22(JLabel jlMountain22) {
+        this.jlMountain22 = jlMountain22;
+    }
+
+    public JLabel getJlMountain23() {
+        return jlMountain23;
+    }
+
+    public void setJlMountain23(JLabel jlMountain23) {
+        this.jlMountain23 = jlMountain23;
+    }
+
+    public JLabel getJlMountain24() {
+        return jlMountain24;
+    }
+
+    public void setJlMountain24(JLabel jlMountain24) {
+        this.jlMountain24 = jlMountain24;
+    }
+
+    public JLabel getJlMountain25() {
+        return jlMountain25;
+    }
+
+    public void setJlMountain25(JLabel jlMountain25) {
+        this.jlMountain25 = jlMountain25;
+    }
+
+    public JLabel getJlMountain26() {
+        return jlMountain26;
+    }
+
+    public void setJlMountain26(JLabel jlMountain26) {
+        this.jlMountain26 = jlMountain26;
+    }
+
+    public JLabel getJlMountain27() {
+        return jlMountain27;
+    }
+
+    public void setJlMountain27(JLabel jlMountain27) {
+        this.jlMountain27 = jlMountain27;
+    }
+
+    public JLabel getJlMountain28() {
+        return jlMountain28;
+    }
+
+    public void setJlMountain28(JLabel jlMountain28) {
+        this.jlMountain28 = jlMountain28;
+    }
+
+    public JLabel getJlMountain29() {
+        return jlMountain29;
+    }
+
+    public void setJlMountain29(JLabel jlMountain29) {
+        this.jlMountain29 = jlMountain29;
+    }
+
+    public JLabel getJlMountain3() {
+        return jlMountain3;
+    }
+
+    public void setJlMountain3(JLabel jlMountain3) {
+        this.jlMountain3 = jlMountain3;
+    }
+
+    public JLabel getJlMountain30() {
+        return jlMountain30;
+    }
+
+    public void setJlMountain30(JLabel jlMountain30) {
+        this.jlMountain30 = jlMountain30;
+    }
+
+    public JLabel getJlMountain31() {
+        return jlMountain31;
+    }
+
+    public void setJlMountain31(JLabel jlMountain31) {
+        this.jlMountain31 = jlMountain31;
+    }
+
+    public JLabel getJlMountain32() {
+        return jlMountain32;
+    }
+
+    public void setJlMountain32(JLabel jlMountain32) {
+        this.jlMountain32 = jlMountain32;
+    }
+
+    public JLabel getJlMountain33() {
+        return jlMountain33;
+    }
+
+    public void setJlMountain33(JLabel jlMountain33) {
+        this.jlMountain33 = jlMountain33;
+    }
+
+    public JLabel getJlMountain34() {
+        return jlMountain34;
+    }
+
+    public void setJlMountain34(JLabel jlMountain34) {
+        this.jlMountain34 = jlMountain34;
+    }
+
+    public JLabel getJlMountain35() {
+        return jlMountain35;
+    }
+
+    public void setJlMountain35(JLabel jlMountain35) {
+        this.jlMountain35 = jlMountain35;
+    }
+
+    public JLabel getJlMountain36() {
+        return jlMountain36;
+    }
+
+    public void setJlMountain36(JLabel jlMountain36) {
+        this.jlMountain36 = jlMountain36;
+    }
+
+    public JLabel getJlMountain37() {
+        return jlMountain37;
+    }
+
+    public void setJlMountain37(JLabel jlMountain37) {
+        this.jlMountain37 = jlMountain37;
+    }
+
+    public JLabel getJlMountain38() {
+        return jlMountain38;
+    }
+
+    public void setJlMountain38(JLabel jlMountain38) {
+        this.jlMountain38 = jlMountain38;
+    }
+
+    public JLabel getJlMountain39() {
+        return jlMountain39;
+    }
+
+    public void setJlMountain39(JLabel jlMountain39) {
+        this.jlMountain39 = jlMountain39;
+    }
+
+    public JLabel getJlMountain4() {
+        return jlMountain4;
+    }
+
+    public void setJlMountain4(JLabel jlMountain4) {
+        this.jlMountain4 = jlMountain4;
+    }
+
+    public JLabel getJlMountain40() {
+        return jlMountain40;
+    }
+
+    public void setJlMountain40(JLabel jlMountain40) {
+        this.jlMountain40 = jlMountain40;
+    }
+
+    public JLabel getJlMountain41() {
+        return jlMountain41;
+    }
+
+    public void setJlMountain41(JLabel jlMountain41) {
+        this.jlMountain41 = jlMountain41;
+    }
+
+    public JLabel getJlMountain42() {
+        return jlMountain42;
+    }
+
+    public void setJlMountain42(JLabel jlMountain42) {
+        this.jlMountain42 = jlMountain42;
+    }
+
+    public JLabel getJlMountain43() {
+        return jlMountain43;
+    }
+
+    public void setJlMountain43(JLabel jlMountain43) {
+        this.jlMountain43 = jlMountain43;
+    }
+
+    public JLabel getJlMountain44() {
+        return jlMountain44;
+    }
+
+    public void setJlMountain44(JLabel jlMountain44) {
+        this.jlMountain44 = jlMountain44;
+    }
+
+    public JLabel getJlMountain45() {
+        return jlMountain45;
+    }
+
+    public void setJlMountain45(JLabel jlMountain45) {
+        this.jlMountain45 = jlMountain45;
+    }
+
+    public JLabel getJlMountain46() {
+        return jlMountain46;
+    }
+
+    public void setJlMountain46(JLabel jlMountain46) {
+        this.jlMountain46 = jlMountain46;
+    }
+
+    public JLabel getJlMountain47() {
+        return jlMountain47;
+    }
+
+    public void setJlMountain47(JLabel jlMountain47) {
+        this.jlMountain47 = jlMountain47;
+    }
+
+    public JLabel getJlMountain48() {
+        return jlMountain48;
+    }
+
+    public void setJlMountain48(JLabel jlMountain48) {
+        this.jlMountain48 = jlMountain48;
+    }
+
+    public JLabel getJlMountain49() {
+        return jlMountain49;
+    }
+
+    public void setJlMountain49(JLabel jlMountain49) {
+        this.jlMountain49 = jlMountain49;
+    }
+
+    public JLabel getJlMountain5() {
+        return jlMountain5;
+    }
+
+    public void setJlMountain5(JLabel jlMountain5) {
+        this.jlMountain5 = jlMountain5;
+    }
+
+    public JLabel getJlMountain50() {
+        return jlMountain50;
+    }
+
+    public void setJlMountain50(JLabel jlMountain50) {
+        this.jlMountain50 = jlMountain50;
+    }
+
+    public JLabel getJlMountain51() {
+        return jlMountain51;
+    }
+
+    public void setJlMountain51(JLabel jlMountain51) {
+        this.jlMountain51 = jlMountain51;
+    }
+
+    public JLabel getJlMountain52() {
+        return jlMountain52;
+    }
+
+    public void setJlMountain52(JLabel jlMountain52) {
+        this.jlMountain52 = jlMountain52;
+    }
+
+    public JLabel getJlMountain53() {
+        return jlMountain53;
+    }
+
+    public void setJlMountain53(JLabel jlMountain53) {
+        this.jlMountain53 = jlMountain53;
+    }
+
+    public JLabel getJlMountain54() {
+        return jlMountain54;
+    }
+
+    public void setJlMountain54(JLabel jlMountain54) {
+        this.jlMountain54 = jlMountain54;
+    }
+
+    public JLabel getJlMountain55() {
+        return jlMountain55;
+    }
+
+    public void setJlMountain55(JLabel jlMountain55) {
+        this.jlMountain55 = jlMountain55;
+    }
+
+    public JLabel getJlMountain56() {
+        return jlMountain56;
+    }
+
+    public void setJlMountain56(JLabel jlMountain56) {
+        this.jlMountain56 = jlMountain56;
+    }
+
+    public JLabel getJlMountain57() {
+        return jlMountain57;
+    }
+
+    public void setJlMountain57(JLabel jlMountain57) {
+        this.jlMountain57 = jlMountain57;
+    }
+
+    public JLabel getJlMountain58() {
+        return jlMountain58;
+    }
+
+    public void setJlMountain58(JLabel jlMountain58) {
+        this.jlMountain58 = jlMountain58;
+    }
+
+    public JLabel getJlMountain59() {
+        return jlMountain59;
+    }
+
+    public void setJlMountain59(JLabel jlMountain59) {
+        this.jlMountain59 = jlMountain59;
+    }
+
+    public JLabel getJlMountain6() {
+        return jlMountain6;
+    }
+
+    public void setJlMountain6(JLabel jlMountain6) {
+        this.jlMountain6 = jlMountain6;
+    }
+
+    public JLabel getJlMountain60() {
+        return jlMountain60;
+    }
+
+    public void setJlMountain60(JLabel jlMountain60) {
+        this.jlMountain60 = jlMountain60;
+    }
+
+    public JLabel getJlMountain61() {
+        return jlMountain61;
+    }
+
+    public void setJlMountain61(JLabel jlMountain61) {
+        this.jlMountain61 = jlMountain61;
+    }
+
+    public JLabel getJlMountain62() {
+        return jlMountain62;
+    }
+
+    public void setJlMountain62(JLabel jlMountain62) {
+        this.jlMountain62 = jlMountain62;
+    }
+
+    public JLabel getJlMountain63() {
+        return jlMountain63;
+    }
+
+    public void setJlMountain63(JLabel jlMountain63) {
+        this.jlMountain63 = jlMountain63;
+    }
+
+    public JLabel getJlMountain64() {
+        return jlMountain64;
+    }
+
+    public void setJlMountain64(JLabel jlMountain64) {
+        this.jlMountain64 = jlMountain64;
+    }
+
+    public JLabel getJlMountain65() {
+        return jlMountain65;
+    }
+
+    public void setJlMountain65(JLabel jlMountain65) {
+        this.jlMountain65 = jlMountain65;
+    }
+
+    public JLabel getJlMountain66() {
+        return jlMountain66;
+    }
+
+    public void setJlMountain66(JLabel jlMountain66) {
+        this.jlMountain66 = jlMountain66;
+    }
+
+    public JLabel getJlMountain67() {
+        return jlMountain67;
+    }
+
+    public void setJlMountain67(JLabel jlMountain67) {
+        this.jlMountain67 = jlMountain67;
+    }
+
+    public JLabel getJlMountain68() {
+        return jlMountain68;
+    }
+
+    public void setJlMountain68(JLabel jlMountain68) {
+        this.jlMountain68 = jlMountain68;
+    }
+
+    public JLabel getJlMountain69() {
+        return jlMountain69;
+    }
+
+    public void setJlMountain69(JLabel jlMountain69) {
+        this.jlMountain69 = jlMountain69;
+    }
+
+    public JLabel getJlMountain7() {
+        return jlMountain7;
+    }
+
+    public void setJlMountain7(JLabel jlMountain7) {
+        this.jlMountain7 = jlMountain7;
+    }
+
+    public JLabel getJlMountain70() {
+        return jlMountain70;
+    }
+
+    public void setJlMountain70(JLabel jlMountain70) {
+        this.jlMountain70 = jlMountain70;
+    }
+
+    public JLabel getJlMountain71() {
+        return jlMountain71;
+    }
+
+    public void setJlMountain71(JLabel jlMountain71) {
+        this.jlMountain71 = jlMountain71;
+    }
+
+    public JLabel getJlMountain72() {
+        return jlMountain72;
+    }
+
+    public void setJlMountain72(JLabel jlMountain72) {
+        this.jlMountain72 = jlMountain72;
+    }
+
+    public JLabel getJlMountain73() {
+        return jlMountain73;
+    }
+
+    public void setJlMountain73(JLabel jlMountain73) {
+        this.jlMountain73 = jlMountain73;
+    }
+
+    public JLabel getJlMountain74() {
+        return jlMountain74;
+    }
+
+    public void setJlMountain74(JLabel jlMountain74) {
+        this.jlMountain74 = jlMountain74;
+    }
+
+    public JLabel getJlMountain75() {
+        return jlMountain75;
+    }
+
+    public void setJlMountain75(JLabel jlMountain75) {
+        this.jlMountain75 = jlMountain75;
+    }
+
+    public JLabel getJlMountain79() {
+        return jlMountain79;
+    }
+
+    public void setJlMountain79(JLabel jlMountain79) {
+        this.jlMountain79 = jlMountain79;
+    }
+
+    public JLabel getJlMountain8() {
+        return jlMountain8;
+    }
+
+    public void setJlMountain8(JLabel jlMountain8) {
+        this.jlMountain8 = jlMountain8;
+    }
+
+    public JLabel getJlMountain80() {
+        return jlMountain80;
+    }
+
+    public void setJlMountain80(JLabel jlMountain80) {
+        this.jlMountain80 = jlMountain80;
+    }
+
+    public JLabel getJlMountain81() {
+        return jlMountain81;
+    }
+
+    public void setJlMountain81(JLabel jlMountain81) {
+        this.jlMountain81 = jlMountain81;
+    }
+
+    public JLabel getJlMountain82() {
+        return jlMountain82;
+    }
+
+    public void setJlMountain82(JLabel jlMountain82) {
+        this.jlMountain82 = jlMountain82;
+    }
+
+    public JLabel getJlMountain83() {
+        return jlMountain83;
+    }
+
+    public void setJlMountain83(JLabel jlMountain83) {
+        this.jlMountain83 = jlMountain83;
+    }
+
+    public JLabel getJlMountain84() {
+        return jlMountain84;
+    }
+
+    public void setJlMountain84(JLabel jlMountain84) {
+        this.jlMountain84 = jlMountain84;
+    }
+
+    public JLabel getJlMountain85() {
+        return jlMountain85;
+    }
+
+    public void setJlMountain85(JLabel jlMountain85) {
+        this.jlMountain85 = jlMountain85;
+    }
+
+    public JLabel getJlMountain86() {
+        return jlMountain86;
+    }
+
+    public void setJlMountain86(JLabel jlMountain86) {
+        this.jlMountain86 = jlMountain86;
+    }
+
+    public JLabel getJlMountain87() {
+        return jlMountain87;
+    }
+
+    public void setJlMountain87(JLabel jlMountain87) {
+        this.jlMountain87 = jlMountain87;
+    }
+
+    public JLabel getJlMountain88() {
+        return jlMountain88;
+    }
+
+    public void setJlMountain88(JLabel jlMountain88) {
+        this.jlMountain88 = jlMountain88;
+    }
+
+    public JLabel getJlMountain89() {
+        return jlMountain89;
+    }
+
+    public void setJlMountain89(JLabel jlMountain89) {
+        this.jlMountain89 = jlMountain89;
+    }
+
+    public JLabel getJlMountain9() {
+        return jlMountain9;
+    }
+
+    public void setJlMountain9(JLabel jlMountain9) {
+        this.jlMountain9 = jlMountain9;
+    }
+
+    public JLabel getJlMountain90() {
+        return jlMountain90;
+    }
+
+    public void setJlMountain90(JLabel jlMountain90) {
+        this.jlMountain90 = jlMountain90;
+    }
+
+    public JLabel getJlMountain91() {
+        return jlMountain91;
+    }
+
+    public void setJlMountain91(JLabel jlMountain91) {
+        this.jlMountain91 = jlMountain91;
+    }
+
+    public JLabel getJlMountain92() {
+        return jlMountain92;
+    }
+
+    public void setJlMountain92(JLabel jlMountain92) {
+        this.jlMountain92 = jlMountain92;
+    }
+
+    public JLabel getJlMountain93() {
+        return jlMountain93;
+    }
+
+    public void setJlMountain93(JLabel jlMountain93) {
+        this.jlMountain93 = jlMountain93;
+    }
+
+    public JLabel getJlMountain94() {
+        return jlMountain94;
+    }
+
+    public void setJlMountain94(JLabel jlMountain94) {
+        this.jlMountain94 = jlMountain94;
+    }
+
+    public JLabel getJlMountain95() {
+        return jlMountain95;
+    }
+
+    public void setJlMountain95(JLabel jlMountain95) {
+        this.jlMountain95 = jlMountain95;
+    }
+
+    public JLabel getJlMountain96() {
+        return jlMountain96;
+    }
+
+    public void setJlMountain96(JLabel jlMountain96) {
+        this.jlMountain96 = jlMountain96;
+    }
+
+    public JLabel getJlMountain97() {
+        return jlMountain97;
+    }
+
+    public void setJlMountain97(JLabel jlMountain97) {
+        this.jlMountain97 = jlMountain97;
+    }
+
+    public JLabel getJlMountain98() {
+        return jlMountain98;
+    }
+
+    public void setJlMountain98(JLabel jlMountain98) {
+        this.jlMountain98 = jlMountain98;
+    }
+
+    public JLabel getJlMountain99() {
+        return jlMountain99;
+    }
+
+    public void setJlMountain99(JLabel jlMountain99) {
+        this.jlMountain99 = jlMountain99;
+    }
+
+    public JLabel getJlRoad() {
+        return jlRoad;
+    }
+
+    public void setJlRoad(JLabel jlRoad) {
+        this.jlRoad = jlRoad;
+    }
+
+    public JLabel getJlRoad1() {
+        return jlRoad1;
+    }
+
+    public void setJlRoad1(JLabel jlRoad1) {
+        this.jlRoad1 = jlRoad1;
+    }
+
+    public JLabel getJlRoad10() {
+        return jlRoad10;
+    }
+
+    public void setJlRoad10(JLabel jlRoad10) {
+        this.jlRoad10 = jlRoad10;
+    }
+
+    public JLabel getJlRoad11() {
+        return jlRoad11;
+    }
+
+    public void setJlRoad11(JLabel jlRoad11) {
+        this.jlRoad11 = jlRoad11;
+    }
+
+    public JLabel getJlRoad2() {
+        return jlRoad2;
+    }
+
+    public void setJlRoad2(JLabel jlRoad2) {
+        this.jlRoad2 = jlRoad2;
+    }
+
+    public JLabel getJlRoad3() {
+        return jlRoad3;
+    }
+
+    public void setJlRoad3(JLabel jlRoad3) {
+        this.jlRoad3 = jlRoad3;
+    }
+
+    public JLabel getJlRoad4() {
+        return jlRoad4;
+    }
+
+    public void setJlRoad4(JLabel jlRoad4) {
+        this.jlRoad4 = jlRoad4;
+    }
+
+    public JLabel getJlRoad5() {
+        return jlRoad5;
+    }
+
+    public void setJlRoad5(JLabel jlRoad5) {
+        this.jlRoad5 = jlRoad5;
+    }
+
+    public JLabel getJlRoad6() {
+        return jlRoad6;
+    }
+
+    public void setJlRoad6(JLabel jlRoad6) {
+        this.jlRoad6 = jlRoad6;
+    }
+
+    public JLabel getJlRoad7() {
+        return jlRoad7;
+    }
+
+    public void setJlRoad7(JLabel jlRoad7) {
+        this.jlRoad7 = jlRoad7;
+    }
+
+    public JLabel getJlRoad8() {
+        return jlRoad8;
+    }
+
+    public void setJlRoad8(JLabel jlRoad8) {
+        this.jlRoad8 = jlRoad8;
+    }
+
+    public JLabel getJlRoad9() {
+        return jlRoad9;
+    }
+
+    public void setJlRoad9(JLabel jlRoad9) {
+        this.jlRoad9 = jlRoad9;
+    }
+
+    public JLabel getJlWater() {
+        return jlWater;
+    }
+
+    public void setJlWater(JLabel jlWater) {
+        this.jlWater = jlWater;
+    }
+
+    public JLabel getJlWater1() {
+        return jlWater1;
+    }
+
+    public void setJlWater1(JLabel jlWater1) {
+        this.jlWater1 = jlWater1;
+    }
+
+    public JLabel getJlWater10() {
+        return jlWater10;
+    }
+
+    public void setJlWater10(JLabel jlWater10) {
+        this.jlWater10 = jlWater10;
+    }
+
+    public JLabel getJlWater11() {
+        return jlWater11;
+    }
+
+    public void setJlWater11(JLabel jlWater11) {
+        this.jlWater11 = jlWater11;
+    }
+
+    public JLabel getJlWater12() {
+        return jlWater12;
+    }
+
+    public void setJlWater12(JLabel jlWater12) {
+        this.jlWater12 = jlWater12;
+    }
+
+    public JLabel getJlWater13() {
+        return jlWater13;
+    }
+
+    public void setJlWater13(JLabel jlWater13) {
+        this.jlWater13 = jlWater13;
+    }
+
+    public JLabel getJlWater14() {
+        return jlWater14;
+    }
+
+    public void setJlWater14(JLabel jlWater14) {
+        this.jlWater14 = jlWater14;
+    }
+
+    public JLabel getJlWater15() {
+        return jlWater15;
+    }
+
+    public void setJlWater15(JLabel jlWater15) {
+        this.jlWater15 = jlWater15;
+    }
+
+    public JLabel getJlWater16() {
+        return jlWater16;
+    }
+
+    public void setJlWater16(JLabel jlWater16) {
+        this.jlWater16 = jlWater16;
+    }
+
+    public JLabel getJlWater17() {
+        return jlWater17;
+    }
+
+    public void setJlWater17(JLabel jlWater17) {
+        this.jlWater17 = jlWater17;
+    }
+
+    public JLabel getJlWater18() {
+        return jlWater18;
+    }
+
+    public void setJlWater18(JLabel jlWater18) {
+        this.jlWater18 = jlWater18;
+    }
+
+    public JLabel getJlWater19() {
+        return jlWater19;
+    }
+
+    public void setJlWater19(JLabel jlWater19) {
+        this.jlWater19 = jlWater19;
+    }
+
+    public JLabel getJlWater2() {
+        return jlWater2;
+    }
+
+    public void setJlWater2(JLabel jlWater2) {
+        this.jlWater2 = jlWater2;
+    }
+
+    public JLabel getJlWater20() {
+        return jlWater20;
+    }
+
+    public void setJlWater20(JLabel jlWater20) {
+        this.jlWater20 = jlWater20;
+    }
+
+    public JLabel getJlWater21() {
+        return jlWater21;
+    }
+
+    public void setJlWater21(JLabel jlWater21) {
+        this.jlWater21 = jlWater21;
+    }
+
+    public JLabel getJlWater22() {
+        return jlWater22;
+    }
+
+    public void setJlWater22(JLabel jlWater22) {
+        this.jlWater22 = jlWater22;
+    }
+
+    public JLabel getJlWater23() {
+        return jlWater23;
+    }
+
+    public void setJlWater23(JLabel jlWater23) {
+        this.jlWater23 = jlWater23;
+    }
+
+    public JLabel getJlWater24() {
+        return jlWater24;
+    }
+
+    public void setJlWater24(JLabel jlWater24) {
+        this.jlWater24 = jlWater24;
+    }
+
+    public JLabel getJlWater25() {
+        return jlWater25;
+    }
+
+    public void setJlWater25(JLabel jlWater25) {
+        this.jlWater25 = jlWater25;
+    }
+
+    public JLabel getJlWater26() {
+        return jlWater26;
+    }
+
+    public void setJlWater26(JLabel jlWater26) {
+        this.jlWater26 = jlWater26;
+    }
+
+    public JLabel getJlWater27() {
+        return jlWater27;
+    }
+
+    public void setJlWater27(JLabel jlWater27) {
+        this.jlWater27 = jlWater27;
+    }
+
+    public JLabel getJlWater28() {
+        return jlWater28;
+    }
+
+    public void setJlWater28(JLabel jlWater28) {
+        this.jlWater28 = jlWater28;
+    }
+
+    public JLabel getJlWater29() {
+        return jlWater29;
+    }
+
+    public void setJlWater29(JLabel jlWater29) {
+        this.jlWater29 = jlWater29;
+    }
+
+    public JLabel getJlWater3() {
+        return jlWater3;
+    }
+
+    public void setJlWater3(JLabel jlWater3) {
+        this.jlWater3 = jlWater3;
+    }
+
+    public JLabel getJlWater30() {
+        return jlWater30;
+    }
+
+    public void setJlWater30(JLabel jlWater30) {
+        this.jlWater30 = jlWater30;
+    }
+
+    public JLabel getJlWater31() {
+        return jlWater31;
+    }
+
+    public void setJlWater31(JLabel jlWater31) {
+        this.jlWater31 = jlWater31;
+    }
+
+    public JLabel getJlWater32() {
+        return jlWater32;
+    }
+
+    public void setJlWater32(JLabel jlWater32) {
+        this.jlWater32 = jlWater32;
+    }
+
+    public JLabel getJlWater33() {
+        return jlWater33;
+    }
+
+    public void setJlWater33(JLabel jlWater33) {
+        this.jlWater33 = jlWater33;
+    }
+
+    public JLabel getJlWater34() {
+        return jlWater34;
+    }
+
+    public void setJlWater34(JLabel jlWater34) {
+        this.jlWater34 = jlWater34;
+    }
+
+    public JLabel getJlWater35() {
+        return jlWater35;
+    }
+
+    public void setJlWater35(JLabel jlWater35) {
+        this.jlWater35 = jlWater35;
+    }
+
+    public JLabel getJlWater36() {
+        return jlWater36;
+    }
+
+    public void setJlWater36(JLabel jlWater36) {
+        this.jlWater36 = jlWater36;
+    }
+
+    public JLabel getJlWater37() {
+        return jlWater37;
+    }
+
+    public void setJlWater37(JLabel jlWater37) {
+        this.jlWater37 = jlWater37;
+    }
+
+    public JLabel getJlWater38() {
+        return jlWater38;
+    }
+
+    public void setJlWater38(JLabel jlWater38) {
+        this.jlWater38 = jlWater38;
+    }
+
+    public JLabel getJlWater39() {
+        return jlWater39;
+    }
+
+    public void setJlWater39(JLabel jlWater39) {
+        this.jlWater39 = jlWater39;
+    }
+
+    public JLabel getJlWater4() {
+        return jlWater4;
+    }
+
+    public void setJlWater4(JLabel jlWater4) {
+        this.jlWater4 = jlWater4;
+    }
+
+    public JLabel getJlWater40() {
+        return jlWater40;
+    }
+
+    public void setJlWater40(JLabel jlWater40) {
+        this.jlWater40 = jlWater40;
+    }
+
+    public JLabel getJlWater5() {
+        return jlWater5;
+    }
+
+    public void setJlWater5(JLabel jlWater5) {
+        this.jlWater5 = jlWater5;
+    }
+
+    public JLabel getJlWater6() {
+        return jlWater6;
+    }
+
+    public void setJlWater6(JLabel jlWater6) {
+        this.jlWater6 = jlWater6;
+    }
+
+    public JLabel getJlWater7() {
+        return jlWater7;
+    }
+
+    public void setJlWater7(JLabel jlWater7) {
+        this.jlWater7 = jlWater7;
+    }
+
+    public JLabel getJlWater8() {
+        return jlWater8;
+    }
+
+    public void setJlWater8(JLabel jlWater8) {
+        this.jlWater8 = jlWater8;
+    }
+
+    public JLabel getJlWater9() {
+        return jlWater9;
+    }
+
+    public void setJlWater9(JLabel jlWater9) {
+        this.jlWater9 = jlWater9;
+    }
+    
+    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jbExit;
     private javax.swing.JLabel jlForest1;
