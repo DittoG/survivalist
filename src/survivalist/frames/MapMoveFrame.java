@@ -9,6 +9,7 @@ import javax.accessibility.AccessibleRole;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import survivalist.control.MapControl;
 import survivalist.model.Location;
 import survivalist.model.Map;
 
@@ -891,11 +892,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlForest28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
         jlForest28.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlForest28.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jlForest28MouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jlForest28MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlForest28MouseExited(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -923,11 +924,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlForest30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
         jlForest30.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlForest30.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jlForest30MouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jlForest30MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlForest30MouseExited(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -1212,11 +1213,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlForest48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
         jlForest48.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlForest48.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jlForest48MouseExited(evt);
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jlForest48MouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jlForest48MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlForest48MouseExited(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -9167,6 +9171,10 @@ public class MapMoveFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jlRoadMouseExited
 
+    private void jlForest48MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest48MouseClicked
+        MapControl.moveToLocation(survivalist.Survivalist.getCurrentGame().getPlayer(), 0, 0);
+    }//GEN-LAST:event_jlForest48MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -9202,14 +9210,8 @@ public class MapMoveFrame extends javax.swing.JFrame {
         });
     }
     
-    public static void assignLabelToLocations(Map map) {
-        // get all locations
-        Location[][] locations = map.getLocations();
-        
-        // First Row
-        // locations[0][0].setMapLabel(MapMoveFrame.getJlForest48());
-    }
-
+    // PUBLIC GETTERS AND SETTERS
+    
     public JButton getJbExit() {
         return jbExit;
     }

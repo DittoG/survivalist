@@ -5,13 +5,14 @@
  */
 package survivalist.control;
 
+import javax.swing.JLabel;
+import survivalist.Survivalist;
+import survivalist.frames.MapMoveFrame;
 import survivalist.model.Location;
 import survivalist.model.Map;
 import survivalist.model.Npc;
 import survivalist.model.Player;
 import survivalist.model.Scene;
-import survivalist.Survivalist;
-import survivalist.frames.MapMoveFrame;
 
 /**
  *
@@ -896,14 +897,73 @@ public class MapControl {
         locations[18][19].setScene(scenes[Constants.FOREST3]);
         locations[19][19].setScene(scenes[Constants.FOREST3]);
     }
-    
+
     public static void assignLableToLocations(Map map, javax.swing.JLabel jLabel) {
         // get all locations
         Location[][] locations = map.getLocations();
-        
+
+        JLabel jlforest48 = new MapMoveFrame().getJlForest48();
+        locations[0][0].setMapLabel(jlforest48);
+
+        JLabel jlforest49 = new MapMoveFrame().getJlForest49();
+        locations[1][0].setMapLabel(jlforest49);
+
+        JLabel jlMountain1 = new MapMoveFrame().getJlMountain1();
+        locations[2][0].setMapLabel(jlMountain1);
+
+        JLabel jlMountain63 = new MapMoveFrame().getJlMountain63();
+        locations[3][0].setMapLabel(jlMountain63);
+
+        JLabel jlMountain70 = new MapMoveFrame().getJlMountain70();
+        locations[4][0].setMapLabel(jlMountain70);
+
+        JLabel jlMountain71 = new MapMoveFrame().getJlMountain71();
+        locations[5][0].setMapLabel(jlMountain71);
+
+        JLabel jlMountain72 = new MapMoveFrame().getJlMountain72();
+        locations[6][0].setMapLabel(jlMountain72);
+
+        JLabel jlMountain73 = new MapMoveFrame().getJlMountain73();
+        locations[7][0].setMapLabel(jlMountain73);
+
+        JLabel jlMountain74 = new MapMoveFrame().getJlMountain74();
+        locations[8][0].setMapLabel(jlMountain74);
+
+        JLabel jlMountain75 = new MapMoveFrame().getJlMountain75();
+        locations[9][0].setMapLabel(jlMountain75);
+
+        JLabel jlMountain9 = new MapMoveFrame().getJlMountain9();
+        locations[10][0].setMapLabel(jlMountain9);
+
+        JLabel jlforest54 = new MapMoveFrame().getJlForest54();
+        locations[11][0].setMapLabel(jlforest54);
+
+        JLabel jlforest55 = new MapMoveFrame().getJlForest55();
+        locations[12][0].setMapLabel(jlforest55);
+
+        JLabel jlWater31 = new MapMoveFrame().getJlWater31();
+        locations[13][0].setMapLabel(jlWater31);
+
+        JLabel jlforest56 = new MapMoveFrame().getJlForest56();
+        locations[12][0].setMapLabel(jlforest56);
+
+        JLabel jlforest57 = new MapMoveFrame().getJlForest57();
+        locations[12][0].setMapLabel(jlforest57);
+
+        JLabel jlforest58 = new MapMoveFrame().getJlForest58();
+        locations[12][0].setMapLabel(jlforest58);
+
+        JLabel jlforest59 = new MapMoveFrame().getJlForest59();
+        locations[12][0].setMapLabel(jlforest59);
+
+        JLabel jlforest60 = new MapMoveFrame().getJlForest60();
+        locations[12][0].setMapLabel(jlforest60);
+
+        JLabel jlforest53 = new MapMoveFrame().getJlForest53();
+        locations[12][0].setMapLabel(jlforest53);
+
         // First Row
-       // locations[0][0].setMapLabel(MapMoveFrame.getJlForest48());
-        
+        // locations[0][0].setMapLabel(MapMoveFrame.getJlForest48());
     }
 
     static void moveToLocation(Player player, Npc[] npcList) {
@@ -924,21 +984,54 @@ public class MapControl {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    private static void moveToLocation(Player player, int column, int row) {
+    public static void moveToLocation(Player player, int column, int row) {
         // get the location of the player (X coordinate)
         player.getLocation().getColumn();
         // get the location of the player (Y coordinate)
         player.getLocation().getRow();
         // get the location to which you wish to move
+        // passed in with the parameters, isn't it?
+
+        // IF the location has been visited
+        if (survivalist.Survivalist.getCurrentGame().getMap().getLocations()[column][row].isVisited()) {
+
+            // move the player to that location
+            player.getLocation().setColumn(column);
+            player.getLocation().setRow(row);
+
+            // let the player know he has traveled to the location
+            System.out.println("You have traveled to the location.");
+
+            // ELSE IF the location has not been visited
+        } else if (!survivalist.Survivalist.getCurrentGame().getMap().getLocations()[column][row].isVisited()
+                
+                // AND the destination is 1 square away
+                && player.getLocation().getColumn() - column <= 1 || column - player.getLocation().getColumn() <= 1
+                || player.getLocation().getRow() - row <= 1 || row - player.getLocation().getRow() <= 1) {
+            
+            // move the playeer to the location
+            player.getLocation().setColumn(column);
+            player.getLocation().setRow(row);
+            
+            // let the player know he has traveled to the location
+            System.out.println("You have traveled to the location.");
+            
+            // ELSE IF the location has not been visited
+        } else if (!survivalist.Survivalist.getCurrentGame().getMap().getLocations()[column][row].isVisited()
+                
+                // AND the location is more than 1 square away
+                && player.getLocation().getColumn() - column > 1 || column - player.getLocation().getColumn() > 1
+                || player.getLocation().getRow() - row > 1 || row - player.getLocation().getRow() > 1) {
+            
+            // tell the player he must get closer to move to that area.
+            System.out.println("You must explore closer to that area before you can travel there.");
+        }
         
         // IF
-            // the location has not yet been visited AND is more than 1 square away
-                // return "You have not yet explored that area"
-        // ELSE IF
-            // the location is of the type cliff AND the player doesn't have a grappling hook in the inventory
+                // the location is of the type cliff AND the player doesn't have a grappling hook in the inventory
                 // return "You need a grappling hook to climb that area"
-        // ELSE 
-            // move the player to the location
-            // return "You have moved to the new location"
+            // ELSE 
+                // move the player to the location
+                // return "You have moved to the new location"
     }
 }
