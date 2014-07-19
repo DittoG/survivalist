@@ -9207,7 +9207,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
         Location[][] locations = map.getLocations();
         
         // First Row
-        locations[0][0].setMapLabel(MapMoveFrame.getJlForest48());
+        // locations[0][0].setMapLabel(MapMoveFrame.getJlForest48());
     }
 
     public JButton getJbExit() {
