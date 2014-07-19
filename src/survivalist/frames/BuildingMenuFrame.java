@@ -197,7 +197,7 @@ public class BuildingMenuFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jbLeanToActionPerformed
 
     private void jbTowerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbTowerActionPerformed
-        // TODO add your handling code here:
+        System.out.println("Tower function implemented");
     }//GEN-LAST:event_jbTowerActionPerformed
 
     private void jbCabinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCabinActionPerformed
