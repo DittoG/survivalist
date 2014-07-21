@@ -20,9 +20,6 @@ import survivalist.model.RequiredItem;
 public class GameControl {
 
     private static Game game;
-    private static Building building;
-    private static Animal animal;
-    private static Item inventory;
 
     public static void startNewGame() {
 
@@ -50,9 +47,12 @@ public class GameControl {
         // create list of buildings
         Building[] buildingList = GameControl.createBuildingList();
         GameControl.game.setBuilding(buildingList);
+
+        // set the map
+        MapControl.createMap();
         
         // set the starting location of the player
-        MapControl.setStartLocation(survivalist.Survivalist.getCurrentGame().getPlayer(), npcList);
+        MapControl.setLocation(survivalist.Survivalist.getCurrentGame().getPlayer(), npcList);
 
     }
 

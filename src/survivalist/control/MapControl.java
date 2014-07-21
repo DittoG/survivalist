@@ -6,7 +6,6 @@
 package survivalist.control;
 
 import javax.swing.JLabel;
-import survivalist.Survivalist;
 import survivalist.frames.MapMoveFrame;
 import survivalist.model.Location;
 import survivalist.model.Map;
@@ -23,6 +22,9 @@ public class MapControl {
     public static Map createMap() {
         // create the map
         Map map = new Map(20, 20);
+        
+        // save the map to the game
+        survivalist.Survivalist.getCurrentGame().setMap(map);
 
         // create the scenes for the game
         Scene[] scenes = createSceneList();
@@ -31,7 +33,7 @@ public class MapControl {
         assignScenesToLocations(map, scenes);
 
         // move actors to starting location
-        setStartLocation(survivalist.Survivalist.getCurrentGame().getPlayer(), survivalist.Survivalist.getCurrentGame().getNpc());
+        setLocation(survivalist.Survivalist.getCurrentGame().getPlayer(), survivalist.Survivalist.getCurrentGame().getNpc());
 
         // display map
         return map;
@@ -964,48 +966,38 @@ public class MapControl {
         // First Row
         // locations[0][0].setMapLabel(MapMoveFrame.getJlForest48());
     }
-    static void moveToLocation(Player player, Npc[] npcList) {
 
-    static void setStartLocation(Player player, Npc[] npcList) {
+    static void setLocation(Player player, Npc[] npcList) {
 
         Npc aviatorBill = npcList[Constants.AVIATORBILL];
-        MapControl.setStartLocation(aviatorBill, 18, 9);
+        MapControl.setLocation(aviatorBill, 18, 9);
 
         Npc uncleDarwin = npcList[Constants.UNCLEDARWIN];
-        MapControl.setStartLocation(uncleDarwin, 18, 8);
+        MapControl.setLocation(uncleDarwin, 18, 8);
 
         Npc rangerDan = npcList[Constants.RANGERDAN];
-        MapControl.setStartLocation(rangerDan, 0, 12);
+        MapControl.setLocation(rangerDan, 0, 12);
 
-        MapControl.moveToLocation(player, 18, 8);
+        MapControl.setLocation(player, 18, 8);
     }
     
-    private static void setStartLocation(Npc npcList, int column, int row) {
+    private static void setLocation(Npc npc, int column, int row) {
         
+        Location actorStartLocation = survivalist.Survivalist.getCurrentGame().getMap().getLocations()[column][row];
+        npc.setLocation(actorStartLocation); 
         
-        
-    }
-
-    private static void setStartLocation(Player player, int column, int row) {
-        
-        player.getLocation().setColumn(column);
-        player.getLocation().setRow(row);
     }
 
     public static void moveToLocation(Player player, int column, int row) {
-        // get the location of the player (X coordinate)
-        player.getLocation().getColumn();
-        // get the location of the player (Y coordinate)
-        player.getLocation().getRow();
         // get the location to which you wish to move
+        
         // passed in with the parameters, isn't it?
 
         // IF the location has been visited
         if (survivalist.Survivalist.getCurrentGame().getMap().getLocations()[column][row].isVisited()) {
 
             // move the player to that location
-            player.getLocation().setColumn(column);
-            player.getLocation().setRow(row);
+            MapControl.setLocation(player, column, row);
 
             // let the player know he has traveled to the location
             System.out.println("You have traveled to the location.");
@@ -1017,9 +1009,8 @@ public class MapControl {
                 && player.getLocation().getColumn() - column <= 1 || column - player.getLocation().getColumn() <= 1
                 || player.getLocation().getRow() - row <= 1 || row - player.getLocation().getRow() <= 1) {
             
-            // move the playeer to the location
-            player.getLocation().setColumn(column);
-            player.getLocation().setRow(row);
+            // move the player to the location
+               MapControl.setLocation(player, column, row);
             
             // let the player know he has traveled to the location
             System.out.println("You have traveled to the location.");
