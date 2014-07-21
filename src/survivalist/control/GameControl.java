@@ -50,6 +50,9 @@ public class GameControl {
         // create list of buildings
         Building[] buildingList = GameControl.createBuildingList();
         GameControl.game.setBuilding(buildingList);
+        
+        // set the starting location of the player
+        MapControl.setStartLocation(survivalist.Survivalist.getCurrentGame().getPlayer(), npcList);
 
     }
 

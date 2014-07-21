@@ -31,7 +31,7 @@ public class MapControl {
         assignScenesToLocations(map, scenes);
 
         // move actors to starting location
-        moveToLocation(Survivalist.getCurrentGame().getPlayer(), Survivalist.getCurrentGame().getNpc());
+        setStartLocation(survivalist.Survivalist.getCurrentGame().getPlayer(), survivalist.Survivalist.getCurrentGame().getNpc());
 
         // display map
         return map;
@@ -966,20 +966,30 @@ public class MapControl {
     }
     static void moveToLocation(Player player, Npc[] npcList) {
 
+    static void setStartLocation(Player player, Npc[] npcList) {
+
         Npc aviatorBill = npcList[Constants.AVIATORBILL];
-        MapControl.moveToLocation(aviatorBill, 18, 9);
+        MapControl.setStartLocation(aviatorBill, 18, 9);
 
         Npc uncleDarwin = npcList[Constants.UNCLEDARWIN];
-        MapControl.moveToLocation(uncleDarwin, 18, 8);
+        MapControl.setStartLocation(uncleDarwin, 18, 8);
 
         Npc rangerDan = npcList[Constants.RANGERDAN];
-        MapControl.moveToLocation(rangerDan, 0, 12);
+        MapControl.setStartLocation(rangerDan, 0, 12);
 
         MapControl.moveToLocation(player, 18, 8);
     }
+    
+    private static void setStartLocation(Npc npcList, int column, int row) {
+        
+        
+        
+    }
 
-    private static void moveToLocation(Npc npcList, int column, int row) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    private static void setStartLocation(Player player, int column, int row) {
+        
+        player.getLocation().setColumn(column);
+        player.getLocation().setRow(row);
     }
 
     public static void moveToLocation(Player player, int column, int row) {
