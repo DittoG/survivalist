@@ -20,7 +20,7 @@ public class Location implements Serializable {
     private Animal[] animal;
     private Building[] building;
     private JLabel mapLabel;
-
+    
     public Location() {
     }
 

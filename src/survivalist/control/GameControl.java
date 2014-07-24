@@ -51,9 +51,9 @@ public class GameControl {
         Building[] buildingList = GameControl.createBuildingList();
         GameControl.game.setBuilding(buildingList);
         
-        // set the starting location of the player
+        // set the starting location of the player and NPCS
         MapControl.setStartLocation(survivalist.Survivalist.getCurrentGame().getPlayer(), npcList);
-
+        
     }
 
     public static void startSavedGame() {

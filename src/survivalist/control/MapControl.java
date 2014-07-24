@@ -902,6 +902,7 @@ public class MapControl {
         // get all locations
         Location[][] locations = map.getLocations();
 
+        // First Row
         JLabel jlforest48 = new MapMoveFrame().getJlForest48();
         locations[0][0].setMapLabel(jlforest48);
 
@@ -945,22 +946,22 @@ public class MapControl {
         locations[13][0].setMapLabel(jlWater31);
 
         JLabel jlforest56 = new MapMoveFrame().getJlForest56();
-        locations[12][0].setMapLabel(jlforest56);
+        locations[14][0].setMapLabel(jlforest56);
 
         JLabel jlforest57 = new MapMoveFrame().getJlForest57();
-        locations[12][0].setMapLabel(jlforest57);
+        locations[15][0].setMapLabel(jlforest57);
 
         JLabel jlforest58 = new MapMoveFrame().getJlForest58();
-        locations[12][0].setMapLabel(jlforest58);
+        locations[16][0].setMapLabel(jlforest58);
 
         JLabel jlforest59 = new MapMoveFrame().getJlForest59();
-        locations[12][0].setMapLabel(jlforest59);
+        locations[17][0].setMapLabel(jlforest59);
 
         JLabel jlforest60 = new MapMoveFrame().getJlForest60();
-        locations[12][0].setMapLabel(jlforest60);
+        locations[18][0].setMapLabel(jlforest60);
 
         JLabel jlforest53 = new MapMoveFrame().getJlForest53();
-        locations[12][0].setMapLabel(jlforest53);
+        locations[19][0].setMapLabel(jlforest53);
 
         // First Row
         // locations[0][0].setMapLabel(MapMoveFrame.getJlForest48());
@@ -977,19 +978,20 @@ public class MapControl {
         Npc rangerDan = npcList[Constants.RANGERDAN];
         MapControl.setStartLocation(rangerDan, 0, 12);
 
-        MapControl.moveToLocation(player, 18, 8);
+        MapControl.setStartLocation(player, 18, 8);
     }
     
     private static void setStartLocation(Npc npcList, int column, int row) {
-        
-        
         
     }
 
     private static void setStartLocation(Player player, int column, int row) {
         
+        player.setLocation(null);
+        
         player.getLocation().setColumn(column);
         player.getLocation().setRow(row);
+        
     }
 
     public static void moveToLocation(Player player, int column, int row) {
