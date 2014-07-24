@@ -9456,7 +9456,7 @@ public class MapMoveFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jlMountain99MouseEntered
 
     private void jlMountain99MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain99MouseExited
-        jlMountain60.setIcon(mountainIcon);
+        jlMountain99.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain99MouseExited
 
     private void jlMountain100MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain100MouseEntered
