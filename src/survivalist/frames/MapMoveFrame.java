@@ -26,6 +26,13 @@ public class MapMoveFrame extends javax.swing.JFrame {
     ImageIcon grassIcon = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"));
     ImageIcon waterRolloverIcon = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/waterRollover.png"));
     ImageIcon waterIcon = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/water.png"));
+    ImageIcon roadRolloverIcon = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIconRollover.gif")); 
+    ImageIcon roadIcon = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"));
+    ImageIcon roadRolloverIcon1 = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon1Rollover.png"));
+    ImageIcon roadIcon1 = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon1.png"));
+    ImageIcon roadRolloverIcon2 = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon2Rollover.png"));
+    ImageIcon roadIcon2 = new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon2.png"));
+    
     /**
      * Creates new form MapMoveFrame
      */
@@ -2693,11 +2700,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlForest142.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/pineTree.gif"))); // NOI18N
         jlForest142.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlForest142.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlForest142MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlForest142MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlForest142MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -3323,11 +3330,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlRoad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon2.png"))); // NOI18N
         jlRoad.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlRoad.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlRoadMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlRoadMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlRoadMouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -3340,8 +3347,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlRoad2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
         jlRoad2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlRoad2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlRoad2MouseExited(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass28MouseEntered(evt);
+                jlRoad2MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -3354,8 +3364,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlRoad3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
         jlRoad3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlRoad3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlRoad3MouseExited(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass28MouseEntered(evt);
+                jlRoad3MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -3368,8 +3381,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlRoad4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
         jlRoad4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlRoad4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlRoad4MouseExited(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass28MouseEntered(evt);
+                jlRoad4MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -3382,8 +3398,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlRoad5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
         jlRoad5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlRoad5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlRoad5MouseExited(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass28MouseEntered(evt);
+                jlRoad5MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -3396,8 +3415,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlRoad6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
         jlRoad6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlRoad6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlRoad6MouseExited(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass28MouseEntered(evt);
+                jlRoad6MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -3410,8 +3432,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlRoad7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
         jlRoad7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlRoad7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlRoad7MouseExited(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass28MouseEntered(evt);
+                jlRoad7MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -3424,8 +3449,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlRoad8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
         jlRoad8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlRoad8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlRoad8MouseExited(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass28MouseEntered(evt);
+                jlRoad8MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -3438,8 +3466,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlRoad9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
         jlRoad9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlRoad9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlRoad9MouseExited(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass28MouseEntered(evt);
+                jlRoad9MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -3452,8 +3483,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlRoad10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
         jlRoad10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlRoad10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlRoad10MouseExited(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass28MouseEntered(evt);
+                jlRoad10MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -3466,8 +3500,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlRoad1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon.png"))); // NOI18N
         jlRoad1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlRoad1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlRoad1MouseExited(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass28MouseEntered(evt);
+                jlRoad1MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -3480,8 +3517,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlRoad11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/roadIcon1.png"))); // NOI18N
         jlRoad11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlRoad11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlRoad11MouseExited(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass28MouseEntered(evt);
+                jlRoad11MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -3734,11 +3774,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlGrass15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"))); // NOI18N
         jlGrass15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlGrass15.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass15MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlGrass15MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlGrass15MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4087,11 +4127,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlGrass37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"))); // NOI18N
         jlGrass37.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlGrass37.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass37MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlGrass37MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlGrass37MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4104,11 +4144,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlGrass38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"))); // NOI18N
         jlGrass38.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlGrass38.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass38MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlGrass38MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlGrass38MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4248,11 +4288,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlGrass47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"))); // NOI18N
         jlGrass47.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlGrass47.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass47MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlGrass47MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlGrass47MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4280,11 +4320,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlGrass49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"))); // NOI18N
         jlGrass49.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlGrass49.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass49MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlGrass49MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlGrass49MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4312,11 +4352,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlGrass51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"))); // NOI18N
         jlGrass51.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlGrass51.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass51MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlGrass51MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlGrass51MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4328,11 +4368,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlGrass52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"))); // NOI18N
         jlGrass52.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlGrass52.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass52MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlGrass52MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlGrass52MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4344,11 +4384,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlGrass53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"))); // NOI18N
         jlGrass53.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlGrass53.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass53MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlGrass53MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlGrass53MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4360,11 +4400,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlGrass54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"))); // NOI18N
         jlGrass54.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlGrass54.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass54MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlGrass54MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlGrass54MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4376,11 +4416,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlGrass55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"))); // NOI18N
         jlGrass55.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlGrass55.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass55MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlGrass55MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlGrass55MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4408,11 +4448,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlGrass57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/grass.png"))); // NOI18N
         jlGrass57.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlGrass57.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlGrass57MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlGrass57MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlGrass57MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4439,6 +4479,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain1MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain1MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 19;
@@ -4472,11 +4520,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlMountain5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlMountain5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlMountain5MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlMountain5MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain5MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -4535,6 +4583,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain9MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain9MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 10;
         gridBagConstraints.gridy = 19;
@@ -4584,11 +4640,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlMountain14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlMountain14.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlMountain14MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlMountain14MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain14MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -5319,6 +5375,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain63.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain63.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain63MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain63MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 19;
@@ -5327,6 +5391,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain64.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain64.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain64MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain64MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 13;
@@ -5335,6 +5407,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain65.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain65.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain65MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain65MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 13;
@@ -5343,6 +5423,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain66.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain66.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain66.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain66MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain66MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 13;
@@ -5351,6 +5439,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain67.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain67.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain67.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain67MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain67MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 14;
@@ -5359,6 +5455,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain68.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain68.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain68MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain68MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 14;
@@ -5367,6 +5471,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain69.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain69.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain69.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain69MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain69MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 14;
@@ -5375,6 +5487,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain70.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain70.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain70.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain70MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain70MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 19;
@@ -5383,6 +5503,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain71.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain71.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain71MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain71MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 19;
@@ -5391,6 +5519,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain72.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain72.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain72MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain72MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 19;
@@ -5399,6 +5535,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain73.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain73.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain73MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain73MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 19;
@@ -5407,6 +5551,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain74.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain74.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain74MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain74MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 8;
         gridBagConstraints.gridy = 19;
@@ -5415,6 +5567,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain75.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain75.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain75MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain75MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 9;
         gridBagConstraints.gridy = 19;
@@ -5423,6 +5583,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain79.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain79.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain79.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain79MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain79MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 17;
@@ -5431,6 +5599,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain80.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain80.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain80.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain80MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain80MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 18;
@@ -5439,6 +5615,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain81.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain81.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain81MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain81MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 18;
@@ -5447,6 +5631,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain82.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain82.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain82.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain82MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain82MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 18;
@@ -5455,6 +5647,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain83.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain83.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain83MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain83MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 18;
@@ -5463,6 +5663,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain84.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain84.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain84MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain84MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 18;
@@ -5471,6 +5679,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain85.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain85.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain85MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain85MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 8;
         gridBagConstraints.gridy = 18;
@@ -5479,6 +5695,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain86.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain86.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain86MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain86MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 9;
         gridBagConstraints.gridy = 18;
@@ -5487,6 +5711,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain87.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain87.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain87MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain87MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 17;
@@ -5495,6 +5727,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain88.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain88.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain88MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain88MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 17;
@@ -5503,6 +5743,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain89.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain89.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain89MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain89MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 17;
@@ -5511,6 +5759,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain90.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain90.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain90MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain90MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 17;
@@ -5519,6 +5775,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain91.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain91.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain91.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain91MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain91MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 8;
         gridBagConstraints.gridy = 17;
@@ -5527,6 +5791,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain92.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain92.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain92.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain92MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain92MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 16;
@@ -5535,6 +5807,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain93.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain93.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain93.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain93MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain93MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 16;
@@ -5543,6 +5823,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain94.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain94.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain94MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain94MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 16;
@@ -5551,6 +5839,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain95.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain95.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain95.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain95MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain95MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 16;
@@ -5559,6 +5855,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain96.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain96.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain96.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain96MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain96MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 16;
@@ -5567,6 +5871,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain97.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain97.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain97.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain97MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain97MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 8;
         gridBagConstraints.gridy = 16;
@@ -5584,6 +5896,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain99.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain99.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain99MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain99MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 15;
@@ -5592,6 +5912,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain100.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain100.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain100.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain100MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain100MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 15;
@@ -5600,6 +5928,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain101.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain101.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain101.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain101MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain101MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 15;
@@ -5608,6 +5944,14 @@ public class MapMoveFrame extends javax.swing.JFrame {
 
         jlMountain102.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain102.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMountain102.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jlMountain102MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain102MouseEntered(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 15;
@@ -5644,11 +5988,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlMountain106.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain106.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlMountain106.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlMountain106MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlMountain106MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain106MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -5661,11 +6005,11 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlMountain107.setIcon(new javax.swing.ImageIcon(getClass().getResource("/survivalist/images/mountain.png"))); // NOI18N
         jlMountain107.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlMountain107.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jlMountain107MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 jlMountain107MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jlMountain107MouseEntered(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -9059,6 +9403,310 @@ public class MapMoveFrame extends javax.swing.JFrame {
         jlMountain60.setIcon(mountainIcon);
     }//GEN-LAST:event_jlMountain60MouseExited
 
+    private void jlMountain64MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain64MouseEntered
+        jlMountain64.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain64MouseEntered
+
+    private void jlMountain64MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain64MouseExited
+        jlMountain64.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain64MouseExited
+
+    private void jlMountain65MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain65MouseEntered
+        jlMountain65.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain65MouseEntered
+
+    private void jlMountain65MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain65MouseExited
+        jlMountain65.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain65MouseExited
+
+    private void jlMountain66MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain66MouseEntered
+        jlMountain66.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain66MouseEntered
+
+    private void jlMountain66MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain66MouseExited
+        jlMountain66.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain66MouseExited
+
+    private void jlMountain69MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain69MouseEntered
+        jlMountain69.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain69MouseEntered
+
+    private void jlMountain69MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain69MouseExited
+        jlMountain69.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain69MouseExited
+
+    private void jlMountain68MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain68MouseEntered
+        jlMountain68.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain68MouseEntered
+
+    private void jlMountain68MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain68MouseExited
+        jlMountain68.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain68MouseExited
+
+    private void jlMountain67MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain67MouseEntered
+        jlMountain67.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain67MouseEntered
+
+    private void jlMountain67MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain67MouseExited
+        jlMountain67.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain67MouseExited
+
+    private void jlMountain99MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain99MouseEntered
+        jlMountain99.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain99MouseEntered
+
+    private void jlMountain99MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain99MouseExited
+        jlMountain60.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain99MouseExited
+
+    private void jlMountain100MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain100MouseEntered
+        jlMountain100.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain100MouseEntered
+
+    private void jlMountain100MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain100MouseExited
+        jlMountain100.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain100MouseExited
+
+    private void jlMountain101MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain101MouseEntered
+        jlMountain101.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain101MouseEntered
+
+    private void jlMountain101MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain101MouseExited
+        jlMountain101.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain101MouseExited
+
+    private void jlMountain102MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain102MouseEntered
+        jlMountain102.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain102MouseEntered
+
+    private void jlMountain102MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain102MouseExited
+        jlMountain102.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain102MouseExited
+
+    private void jlMountain97MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain97MouseEntered
+        jlMountain97.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain97MouseEntered
+
+    private void jlMountain97MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain97MouseExited
+        jlMountain97.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain97MouseExited
+
+    private void jlMountain96MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain96MouseEntered
+        jlMountain96.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain96MouseEntered
+
+    private void jlMountain96MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain96MouseExited
+        jlMountain96.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain96MouseExited
+
+    private void jlMountain95MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain95MouseEntered
+        jlMountain95.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain95MouseEntered
+
+    private void jlMountain95MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain95MouseExited
+        jlMountain95.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain95MouseExited
+
+    private void jlMountain94MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain94MouseEntered
+        jlMountain94.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain94MouseEntered
+
+    private void jlMountain94MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain94MouseExited
+        jlMountain94.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain94MouseExited
+
+    private void jlMountain93MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain93MouseEntered
+        jlMountain93.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain93MouseEntered
+
+    private void jlMountain93MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain93MouseExited
+        jlMountain93.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain93MouseExited
+
+    private void jlMountain92MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain92MouseEntered
+        jlMountain92.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain92MouseEntered
+
+    private void jlMountain92MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain92MouseExited
+        jlMountain92.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain92MouseExited
+
+    private void jlMountain79MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain79MouseEntered
+        jlMountain79.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain79MouseEntered
+
+    private void jlMountain79MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain79MouseExited
+        jlMountain79.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain79MouseExited
+
+    private void jlMountain87MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain87MouseEntered
+        jlMountain87.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain87MouseEntered
+
+    private void jlMountain87MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain87MouseExited
+        jlMountain87.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain87MouseExited
+
+    private void jlMountain88MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain88MouseEntered
+        jlMountain88.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain88MouseEntered
+
+    private void jlMountain88MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain88MouseExited
+        jlMountain88.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain88MouseExited
+
+    private void jlMountain89MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain89MouseEntered
+        jlMountain89.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain89MouseEntered
+
+    private void jlMountain89MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain89MouseExited
+        jlMountain89.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain89MouseExited
+
+    private void jlMountain90MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain90MouseEntered
+        jlMountain90.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain90MouseEntered
+
+    private void jlMountain90MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain90MouseExited
+        jlMountain90.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain90MouseExited
+
+    private void jlMountain91MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain91MouseEntered
+        jlMountain91.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain91MouseEntered
+
+    private void jlMountain91MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain91MouseExited
+        jlMountain91.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain91MouseExited
+
+    private void jlMountain86MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain86MouseEntered
+        jlMountain86.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain86MouseEntered
+
+    private void jlMountain86MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain86MouseExited
+        jlMountain86.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain86MouseExited
+
+    private void jlMountain85MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain85MouseEntered
+        jlMountain85.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain85MouseEntered
+
+    private void jlMountain85MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain85MouseExited
+        jlMountain85.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain85MouseExited
+
+    private void jlMountain84MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain84MouseEntered
+        jlMountain84.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain84MouseEntered
+
+    private void jlMountain84MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain84MouseExited
+        jlMountain84.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain84MouseExited
+
+    private void jlMountain83MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain83MouseEntered
+       jlMountain83.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain83MouseEntered
+
+    private void jlMountain83MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain83MouseExited
+        jlMountain83.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain83MouseExited
+
+    private void jlMountain82MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain82MouseEntered
+        jlMountain82.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain82MouseEntered
+
+    private void jlMountain82MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain82MouseExited
+        jlMountain82.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain82MouseExited
+
+    private void jlMountain81MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain81MouseEntered
+        jlMountain81.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain81MouseEntered
+
+    private void jlMountain81MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain81MouseExited
+        jlMountain81.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain81MouseExited
+
+    private void jlMountain80MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain80MouseEntered
+        jlMountain80.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain80MouseEntered
+
+    private void jlMountain80MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain80MouseExited
+        jlMountain80.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain80MouseExited
+
+    private void jlMountain1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain1MouseEntered
+        jlMountain1.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain1MouseEntered
+
+    private void jlMountain1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain1MouseExited
+        jlMountain1.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain1MouseExited
+
+    private void jlMountain63MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain63MouseEntered
+        jlMountain63.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain63MouseEntered
+
+    private void jlMountain63MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain63MouseExited
+        jlMountain63.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain63MouseExited
+
+    private void jlMountain70MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain70MouseEntered
+        jlMountain70.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain70MouseEntered
+
+    private void jlMountain70MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain70MouseExited
+        jlMountain70.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain70MouseExited
+
+    private void jlMountain71MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain71MouseEntered
+        jlMountain71.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain71MouseEntered
+
+    private void jlMountain71MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain71MouseExited
+        jlMountain71.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain71MouseExited
+
+    private void jlMountain72MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain72MouseEntered
+        jlMountain72.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain72MouseEntered
+
+    private void jlMountain72MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain72MouseExited
+        jlMountain72.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain72MouseExited
+
+    private void jlMountain73MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain73MouseEntered
+        jlMountain73.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain73MouseEntered
+
+    private void jlMountain73MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain73MouseExited
+        jlMountain73.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain73MouseExited
+
+    private void jlMountain74MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain74MouseEntered
+        jlMountain74.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain74MouseEntered
+
+    private void jlMountain74MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain74MouseExited
+        jlMountain74.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain74MouseExited
+
+    private void jlMountain75MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain75MouseEntered
+        jlMountain75.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain75MouseEntered
+
+    private void jlMountain75MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain75MouseExited
+        jlMountain75.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain75MouseExited
+
+    private void jlMountain9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain9MouseEntered
+        jlMountain9.setIcon(mountainRollOverIcon);
+    }//GEN-LAST:event_jlMountain9MouseEntered
+
+    private void jlMountain9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMountain9MouseExited
+        jlMountain9.setIcon(mountainIcon);
+    }//GEN-LAST:event_jlMountain9MouseExited
+
     private void jlGrass37MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlGrass37MouseEntered
         jlGrass37.setIcon(grassRollOverIcon);
     }//GEN-LAST:event_jlGrass37MouseEntered
@@ -9164,16 +9812,105 @@ public class MapMoveFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jlGrass15MouseExited
 
     private void jlRoadMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoadMouseEntered
-        // TODO add your handling code here:
+        jlRoad.setIcon(roadRolloverIcon2);
     }//GEN-LAST:event_jlRoadMouseEntered
 
     private void jlRoadMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoadMouseExited
-        // TODO add your handling code here:
+        jlRoad.setIcon(roadIcon2);
     }//GEN-LAST:event_jlRoadMouseExited
 
     private void jlForest48MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlForest48MouseClicked
         MapControl.moveToLocation(survivalist.Survivalist.getCurrentGame().getPlayer(), 0, 0);
     }//GEN-LAST:event_jlForest48MouseClicked
+
+    private void jlRoad1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad1MouseEntered
+        jlRoad1.setIcon(roadRolloverIcon);
+    }//GEN-LAST:event_jlRoad1MouseEntered
+
+    private void jlRoad1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad1MouseExited
+        jlRoad1.setIcon(roadIcon);
+    }//GEN-LAST:event_jlRoad1MouseExited
+
+    private void jlRoad2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad2MouseEntered
+        jlRoad2.setIcon(roadRolloverIcon);
+    }//GEN-LAST:event_jlRoad2MouseEntered
+
+    private void jlRoad2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad2MouseExited
+        jlRoad2.setIcon(roadIcon);
+    }//GEN-LAST:event_jlRoad2MouseExited
+
+    private void jlRoad3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad3MouseEntered
+        jlRoad3.setIcon(roadRolloverIcon);
+    }//GEN-LAST:event_jlRoad3MouseEntered
+
+    private void jlRoad3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad3MouseExited
+        jlRoad3.setIcon(roadIcon);
+    }//GEN-LAST:event_jlRoad3MouseExited
+
+    private void jlRoad4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad4MouseEntered
+        jlRoad4.setIcon(roadRolloverIcon);
+    }//GEN-LAST:event_jlRoad4MouseEntered
+
+    private void jlRoad4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad4MouseExited
+        jlRoad4.setIcon(roadIcon);
+    }//GEN-LAST:event_jlRoad4MouseExited
+
+    private void jlRoad5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad5MouseEntered
+        jlRoad5.setIcon(roadRolloverIcon);
+    }//GEN-LAST:event_jlRoad5MouseEntered
+
+    private void jlRoad5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad5MouseExited
+        jlRoad5.setIcon(roadIcon);
+    }//GEN-LAST:event_jlRoad5MouseExited
+
+    private void jlRoad9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad9MouseEntered
+        jlRoad9.setIcon(roadRolloverIcon);
+    }//GEN-LAST:event_jlRoad9MouseEntered
+
+    private void jlRoad9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad9MouseExited
+        jlRoad9.setIcon(roadIcon);
+    }//GEN-LAST:event_jlRoad9MouseExited
+
+    private void jlRoad8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad8MouseEntered
+        jlRoad8.setIcon(roadRolloverIcon);
+    }//GEN-LAST:event_jlRoad8MouseEntered
+
+    private void jlRoad8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad8MouseExited
+        jlRoad8.setIcon(roadIcon);
+    }//GEN-LAST:event_jlRoad8MouseExited
+
+    private void jlRoad6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad6MouseEntered
+        jlRoad6.setIcon(roadRolloverIcon);
+    }//GEN-LAST:event_jlRoad6MouseEntered
+
+    private void jlRoad6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad6MouseExited
+        jlRoad6.setIcon(roadIcon);
+    }//GEN-LAST:event_jlRoad6MouseExited
+
+    private void jlRoad7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad7MouseEntered
+        jlRoad7.setIcon(roadRolloverIcon);
+    }//GEN-LAST:event_jlRoad7MouseEntered
+
+    private void jlRoad7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad7MouseExited
+        jlRoad7.setIcon(roadIcon);
+    }//GEN-LAST:event_jlRoad7MouseExited
+
+    private void jlRoad10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad10MouseEntered
+        jlRoad10.setIcon(roadRolloverIcon);
+    }//GEN-LAST:event_jlRoad10MouseEntered
+
+    private void jlRoad10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad10MouseExited
+        jlRoad10.setIcon(roadIcon);
+    }//GEN-LAST:event_jlRoad10MouseExited
+
+    private void jlRoad11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad11MouseEntered
+        jlRoad11.setIcon(roadRolloverIcon1);
+    }//GEN-LAST:event_jlRoad11MouseEntered
+
+    private void jlRoad11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlRoad11MouseExited
+        jlRoad11.setIcon(roadIcon1);
+    }//GEN-LAST:event_jlRoad11MouseExited
+
 
     /**
      * @param args the command line arguments

@@ -16,7 +16,7 @@ public class Npc implements Serializable {
 
     //class instance variables
     private String name;
-    private Location currentLocation;
+    private Location location;
 
     public Npc() {
     }
@@ -39,11 +39,11 @@ public class Npc implements Serializable {
     }
 
     public Location getLocation() {
-        return currentLocation;
+        return location;
     }
 
-    public void setLocation(Location currentLocation) {
-        this.currentLocation = currentLocation;
+    public void setLocation(Location location) {
+        this.location = location;
     }
 
     @Override

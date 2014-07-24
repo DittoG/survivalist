@@ -1,26 +1,15 @@
 package survivalist.model;
 
 import java.io.Serializable;
-import java.util.Objects;
 
-public class Player implements Serializable {
+public class Player extends Npc implements Serializable {
 
     //class instance variables
-    private String name;
     private double bestTime;
-    private Location currentLocation;
 
     public Player() {
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    
     public double getBestTime() {
         return bestTime;
     }
@@ -29,20 +18,10 @@ public class Player implements Serializable {
         this.bestTime = bestTime;
     }
 
-    public Location getLocation() {
-        return currentLocation;
-    }
-
-    public void setLocation(Location location) {
-        this.currentLocation = location;
-    }
-
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 97 * hash + Objects.hashCode(this.name);
-        hash = 97 * hash + (int) (Double.doubleToLongBits(this.bestTime) ^ (Double.doubleToLongBits(this.bestTime) >>> 32));
-        hash = 97 * hash + Objects.hashCode(this.currentLocation);
+        int hash = 3;
+        hash = 67 * hash + (int) (Double.doubleToLongBits(this.bestTime) ^ (Double.doubleToLongBits(this.bestTime) >>> 32));
         return hash;
     }
 
@@ -55,13 +34,7 @@ public class Player implements Serializable {
             return false;
         }
         final Player other = (Player) obj;
-        if (!Objects.equals(this.name, other.name)) {
-            return false;
-        }
         if (Double.doubleToLongBits(this.bestTime) != Double.doubleToLongBits(other.bestTime)) {
-            return false;
-        }
-        if (!Objects.equals(this.currentLocation, other.currentLocation)) {
             return false;
         }
         return true;
@@ -69,7 +42,6 @@ public class Player implements Serializable {
 
     @Override
     public String toString() {
-        return "Player{" + "name=" + name + ", bestTime=" + bestTime + ", location=" + currentLocation + '}';
+        return "Player{" + "bestTime=" + bestTime + '}';
     }
-    
 }
